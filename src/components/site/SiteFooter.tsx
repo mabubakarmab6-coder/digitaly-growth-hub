@@ -2,20 +2,21 @@ import { Cta } from "./Cta";
 import { PHONE_DISPLAY, WHATSAPP_URL } from "./constants";
 
 const agencyLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Industries", href: "#industries" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Insights", href: "#insights" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Work", href: "/#work" },
+  { label: "About", href: "/#about" },
+  { label: "Insights", href: "/#insights" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
 const personalLinks = [
-  { label: "Abubakar", href: "#founder" },
-  { label: "Experience", href: "#founder" },
-  { label: "Portfolio", href: "#work" },
-  { label: "Hire Me", href: "#founder" },
+  { label: "Abubakar", href: "/#founder" },
+  { label: "Experience", href: "/#founder" },
+  { label: "Portfolio", href: "/#work" },
+  { label: "Hire Me", href: "/#founder" },
 ];
 
 export function SiteFooter() {

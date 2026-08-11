@@ -33,7 +33,7 @@ export function SiteNav() {
     >
       <div className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:h-20 lg:flex lg:justify-between">
         <a
-          href="#top"
+          href="/"
           className="min-w-0 truncate text-[0.95rem] font-extrabold tracking-[0.14em] text-foreground"
         >
           DIGITALY<span className="text-primary">MARKET</span>
