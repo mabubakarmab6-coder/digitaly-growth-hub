@@ -78,6 +78,7 @@ function ServicesPage() {
         <ServicesFinalCta />
       </main>
       <SiteFooter />
-    </div>
+      <WhatsAppFloat />
+
   );
 }
