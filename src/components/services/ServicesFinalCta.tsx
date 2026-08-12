@@ -1,7 +1,9 @@
-import { ArrowRight, MessageCircle, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
-import { PHONE_DISPLAY, WHATSAPP_URL } from "@/components/site/constants";
+import { ContactActions } from "@/components/site/ContactActions";
+import { WHATSAPP_URL } from "@/components/site/constants";
+
 
 export function ServicesFinalCta() {
   return (
@@ -16,32 +18,20 @@ export function ServicesFinalCta() {
             Tell us about your business, your goals and what's getting in the way. We'll help you
             figure out where digital can make the biggest difference.
           </p>
-          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+          <div className="mt-10 flex justify-center">
             <Cta
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               variant="onNavy"
               size="lg"
+              className="w-full sm:w-auto"
             >
               Start a Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="outlineNavy"
-              size="lg"
-            >
-              <MessageCircle className="h-4 w-4" aria-hidden="true" /> Chat on WhatsApp
-            </Cta>
           </div>
-          <a
-            href="tel:+917734905729"
-            className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-navy-foreground/80 transition-colors hover:text-navy-foreground"
-          >
-            <Phone className="h-4 w-4" aria-hidden="true" /> {PHONE_DISPLAY}
-          </a>
+          <ContactActions tone="navy" className="mt-8 justify-center" />
+
         </Reveal>
       </div>
     </section>

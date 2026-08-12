@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
+
 import { ServicesHero } from "@/components/services/ServicesHero";
 import { ServicesIntro } from "@/components/services/ServicesIntro";
 import { ServiceCards } from "@/components/services/ServiceCards";
@@ -76,6 +78,8 @@ function ServicesPage() {
         <ServicesFinalCta />
       </main>
       <SiteFooter />
+      <WhatsAppFloat />
     </div>
   );
+
 }

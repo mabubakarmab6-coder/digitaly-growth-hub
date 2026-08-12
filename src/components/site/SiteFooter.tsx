@@ -1,5 +1,6 @@
 import { Cta } from "./Cta";
-import { PHONE_DISPLAY, WHATSAPP_URL } from "./constants";
+import { ContactActions } from "./ContactActions";
+
 
 const agencyLinks = [
   { label: "Home", href: "/" },
@@ -76,17 +77,8 @@ export function SiteFooter() {
             <Cta href="#contact" className="mt-5 w-full sm:w-auto">
               Start a Conversation
             </Cta>
-            <p className="mt-5 text-sm text-muted-foreground">
-              WhatsApp:{" "}
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-foreground transition-colors hover:text-primary"
-              >
-                {PHONE_DISPLAY}
-              </a>
-            </p>
+            <ContactActions className="mt-5" />
+
           </div>
         </div>
 
