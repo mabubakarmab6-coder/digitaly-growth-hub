@@ -1,7 +1,9 @@
-import { ArrowRight, MessageCircle, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
-import { PHONE_DISPLAY, WHATSAPP_URL } from "@/components/site/constants";
+import { ContactActions } from "@/components/site/ContactActions";
+import { WHATSAPP_URL } from "@/components/site/constants";
+
 
 export function ServicesFinalCta() {
   return (
