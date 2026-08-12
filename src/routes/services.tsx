@@ -79,6 +79,7 @@ function ServicesPage() {
       </main>
       <SiteFooter />
       <WhatsAppFloat />
-
+    </div>
   );
+
 }
