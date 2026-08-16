@@ -7,7 +7,7 @@ import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 const title = "Paid Marketing | DigitalyMarket";
 const description =
   "Paid marketing at DigitalyMarket: campaigns built around measurable business objectives, not vanity metrics. Detailed page coming soon.";
-const url = "https://digitaly-growth-hub.lovable.app/services/paid-marketing";
+const url = "https://digitalymarket.com/services/paid-marketing";
 
 export const Route = createFileRoute("/services/paid-marketing")({
   component: PaidPage,

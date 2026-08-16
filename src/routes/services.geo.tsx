@@ -7,7 +7,7 @@ import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 const title = "Generative Engine Optimization (GEO) | DigitalyMarket";
 const description =
   "GEO at DigitalyMarket: improving how your business is discovered across modern search and AI-driven answers. Detailed page coming soon.";
-const url = "https://digitaly-growth-hub.lovable.app/services/geo";
+const url = "https://digitalymarket.com/services/geo";
 
 export const Route = createFileRoute("/services/geo")({
   component: GeoPage,
