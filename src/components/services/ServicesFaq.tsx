@@ -25,6 +25,14 @@ const faqs = [
     a: "They can, when it's justified. Many businesses only need work in one or two areas at a time.",
   },
   {
+    q: "Do you work with small businesses?",
+    a: "Yes. Small and local businesses often have the clearest growth problems — what matters is that the work is proportionate to the goal.",
+  },
+  {
+    q: "Do you work with B2B and manufacturing businesses?",
+    a: "Yes. Longer buying cycles and technical products need a different approach to discovery, credibility and enquiry quality — that's factored into the diagnosis.",
+  },
+  {
     q: "Can you work alongside an existing marketing team?",
     a: "Yes. We can support an in-house team on a specific capability rather than replacing what already works.",
   },
