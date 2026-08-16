@@ -35,9 +35,11 @@ const capabilities = [
   {
     no: "03",
     journey: "Convert",
-    problem: "Your website isn't converting interest into action.",
+    problem:
+      "Your website may be getting visitors without turning enough of them into enquiries or customers.",
     title: "Website Creation",
-    outcome: "Turn attention into a clearer, more effective digital experience.",
+    outcome:
+      "Create a digital experience that makes it easier for the right visitors to understand, trust and act.",
     cta: "Explore Website Creation",
     href: "/services/web-creation",
     image: webImage,
