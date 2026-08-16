@@ -48,9 +48,11 @@ const capabilities = [
   {
     no: "04",
     journey: "Grow",
-    problem: "Your online store isn't reaching its potential.",
+    problem:
+      "Your online store has potential, but the path from discovery to purchase and repeat business isn't working hard enough.",
     title: "E-commerce Growth",
-    outcome: "Build a stronger path from discovery to customer and repeat growth.",
+    outcome:
+      "Build a stronger e-commerce growth system from discovery through conversion and retention.",
     cta: "Explore E-commerce Growth",
     href: "/services/ecommerce-growth",
     image: ecommerceImage,
