@@ -14,6 +14,10 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as IndustriesSlugRouteImport } from './routes/industries.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as ServicesEcommerceGrowthRouteImport } from './routes/services.ecommerce-growth'
+import { Route as ServicesGeoRouteImport } from './routes/services.geo'
+import { Route as ServicesPaidMarketingRouteImport } from './routes/services.paid-marketing'
+import { Route as ServicesWebCreationRouteImport } from './routes/services.web-creation'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,17 +44,45 @@ const ServicesIndexRoute = ServicesIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ServicesRoute,
 } as any)
+const ServicesEcommerceGrowthRoute = ServicesEcommerceGrowthRouteImport.update({
+  id: '/ecommerce-growth',
+  path: '/ecommerce-growth',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesGeoRoute = ServicesGeoRouteImport.update({
+  id: '/geo',
+  path: '/geo',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesPaidMarketingRoute = ServicesPaidMarketingRouteImport.update({
+  id: '/paid-marketing',
+  path: '/paid-marketing',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesWebCreationRoute = ServicesWebCreationRouteImport.update({
+  id: '/web-creation',
+  path: '/web-creation',
+  getParentRoute: () => ServicesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/services': typeof ServicesRouteWithChildren
   '/industries/$slug': typeof IndustriesSlugRoute
+  '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
+  '/services/geo': typeof ServicesGeoRoute
+  '/services/paid-marketing': typeof ServicesPaidMarketingRoute
+  '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries/': typeof IndustriesIndexRoute
   '/services/': typeof ServicesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/industries/$slug': typeof IndustriesSlugRoute
+  '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
+  '/services/geo': typeof ServicesGeoRoute
+  '/services/paid-marketing': typeof ServicesPaidMarketingRoute
+  '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries': typeof IndustriesIndexRoute
   '/services': typeof ServicesIndexRoute
 }
@@ -59,20 +91,44 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/services': typeof ServicesRouteWithChildren
   '/industries/$slug': typeof IndustriesSlugRoute
+  '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
+  '/services/geo': typeof ServicesGeoRoute
+  '/services/paid-marketing': typeof ServicesPaidMarketingRoute
+  '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries/': typeof IndustriesIndexRoute
   '/services/': typeof ServicesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/services' | '/industries/$slug' | '/industries/' | '/services/'
+    | '/'
+    | '/services'
+    | '/industries/$slug'
+    | '/services/ecommerce-growth'
+    | '/services/geo'
+    | '/services/paid-marketing'
+    | '/services/web-creation'
+    | '/industries/'
+    | '/services/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/industries/$slug' | '/industries' | '/services'
+  to:
+    | '/'
+    | '/industries/$slug'
+    | '/services/ecommerce-growth'
+    | '/services/geo'
+    | '/services/paid-marketing'
+    | '/services/web-creation'
+    | '/industries'
+    | '/services'
   id:
     | '__root__'
     | '/'
     | '/services'
     | '/industries/$slug'
+    | '/services/ecommerce-growth'
+    | '/services/geo'
+    | '/services/paid-marketing'
+    | '/services/web-creation'
     | '/industries/'
     | '/services/'
   fileRoutesById: FileRoutesById
@@ -121,14 +177,50 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesIndexRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/services/ecommerce-growth': {
+      id: '/services/ecommerce-growth'
+      path: '/ecommerce-growth'
+      fullPath: '/services/ecommerce-growth'
+      preLoaderRoute: typeof ServicesEcommerceGrowthRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/geo': {
+      id: '/services/geo'
+      path: '/geo'
+      fullPath: '/services/geo'
+      preLoaderRoute: typeof ServicesGeoRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/paid-marketing': {
+      id: '/services/paid-marketing'
+      path: '/paid-marketing'
+      fullPath: '/services/paid-marketing'
+      preLoaderRoute: typeof ServicesPaidMarketingRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/web-creation': {
+      id: '/services/web-creation'
+      path: '/web-creation'
+      fullPath: '/services/web-creation'
+      preLoaderRoute: typeof ServicesWebCreationRouteImport
+      parentRoute: typeof ServicesRoute
+    }
   }
 }
 
 interface ServicesRouteChildren {
+  ServicesEcommerceGrowthRoute: typeof ServicesEcommerceGrowthRoute
+  ServicesGeoRoute: typeof ServicesGeoRoute
+  ServicesPaidMarketingRoute: typeof ServicesPaidMarketingRoute
+  ServicesWebCreationRoute: typeof ServicesWebCreationRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
 }
 
 const ServicesRouteChildren: ServicesRouteChildren = {
+  ServicesEcommerceGrowthRoute: ServicesEcommerceGrowthRoute,
+  ServicesGeoRoute: ServicesGeoRoute,
+  ServicesPaidMarketingRoute: ServicesPaidMarketingRoute,
+  ServicesWebCreationRoute: ServicesWebCreationRoute,
   ServicesIndexRoute: ServicesIndexRoute,
 }
 
