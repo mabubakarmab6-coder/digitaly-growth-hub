@@ -3,29 +3,34 @@ import professional from "@/assets/industry-professional.jpg";
 import local from "@/assets/industry-local.jpg";
 import ecommerce from "@/assets/industry-ecommerce.jpg";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "./Reveal";
 
 const cards = [
   {
     title: "Manufacturers & B2B",
+    slug: "manufacturing-b2b",
     copy: "Build a stronger digital presence, generate better enquiries and create a reliable acquisition system.",
     image: manufacturing,
     alt: "Modern manufacturing floor with precision machinery under natural light",
   },
   {
     title: "Professional Services",
+    slug: "professional-services",
     copy: "Turn expertise into visibility, trust and qualified enquiries.",
     image: professional,
     alt: "Calm professional services office with a consultation table and documents",
   },
   {
     title: "Local & Service Businesses",
+    slug: "local-business",
     copy: "Help customers discover you, trust you and take action.",
     image: local,
     alt: "Warm local service business interior with a welcoming front counter",
   },
   {
     title: "E-commerce Businesses",
+    slug: "ecommerce",
     copy: "Improve visibility, customer acquisition and online growth.",
     image: ecommerce,
     alt: "Minimal branded e-commerce packaging and products arranged in daylight",
@@ -67,6 +72,13 @@ export function Industries() {
                 <div className="p-7">
                   <h3 className="text-lg font-semibold text-foreground">{card.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{card.copy}</p>
+                  <Link
+                    to="/industries/$slug"
+                    params={{ slug: card.slug }}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
+                  >
+                    Explore {card.title} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
                 </div>
               </Reveal>
             </li>
@@ -75,10 +87,10 @@ export function Industries() {
 
         <Reveal className="mt-12 flex justify-center">
           <a
-            href="#contact"
+            href="/industries"
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
           >
-            Not sure where you fit? Let's talk. <ArrowRight className="h-4 w-4" />
+            View all industries <ArrowRight className="h-4 w-4" />
           </a>
         </Reveal>
       </div>

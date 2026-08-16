@@ -14,7 +14,7 @@ export const CONTACT_EMAIL = "";
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Industries", href: "/#industries" },
+  { label: "Industries", href: "/industries" },
   { label: "Work", href: "/#work" },
   { label: "About", href: "/#about" },
   { label: "Insights", href: "/#insights" },
