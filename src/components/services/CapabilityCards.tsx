@@ -10,9 +10,11 @@ const capabilities = [
   {
     no: "01",
     journey: "Discover",
-    problem: "People can't find you.",
+    problem:
+      "Your customers are searching differently — but your business may not be showing up where decisions are being made.",
     title: "Generative Engine Optimization",
-    outcome: "Become more visible across search and AI discovery.",
+    outcome:
+      "Improve how your business is understood and discovered across search and AI-driven discovery.",
     cta: "Explore GEO",
     href: "/services/geo",
     image: geoImage,
