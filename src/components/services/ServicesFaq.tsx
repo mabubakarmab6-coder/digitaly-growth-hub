@@ -9,36 +9,36 @@ import { Reveal } from "@/components/site/Reveal";
 
 const faqs = [
   {
-    q: "Can I hire DigitalyMarket for only one service?",
-    a: "Yes. You can start with a single capability — GEO, paid marketing, a website or e-commerce growth — and expand later only if it makes sense.",
+    q: "Do I need to know which service I need before contacting you?",
+    a: "No. Most people arrive with a business problem, not a service in mind. Describing what's happening is enough to start.",
   },
   {
-    q: "What if I don't know which service I need?",
-    a: "That's completely normal. Tell us your goal and what's getting in the way, and we'll recommend the most practical path.",
+    q: "How do you determine what my business actually needs?",
+    a: "We understand the business first, then diagnose where growth is genuinely constrained before recommending anything.",
   },
   {
-    q: "Do you work with small businesses?",
-    a: "Yes. We work with small and local businesses and scale the solution to your stage and budget.",
+    q: "Do you offer custom solutions?",
+    a: "Yes — everything is built around your goals, market and current digital presence. There is no fixed package list.",
   },
   {
-    q: "Do you work with manufacturers and B2B companies?",
-    a: "Manufacturers and B2B companies are a primary focus. We understand longer sales cycles and enquiry-driven growth.",
+    q: "Can multiple capabilities be combined?",
+    a: "They can, when it's justified. Many businesses only need work in one or two areas at a time.",
+  },
+  {
+    q: "Can you work alongside an existing marketing team?",
+    a: "Yes. We can support an in-house team on a specific capability rather than replacing what already works.",
+  },
+  {
+    q: "Do you offer ongoing or retainer support?",
+    a: "Ongoing support is available when continuous strategy, execution and optimization genuinely benefit the business.",
+  },
+  {
+    q: "What happens during the first conversation?",
+    a: "We ask about your business, goals and what's getting in the way — and share an honest view of where the opportunity likely sits.",
   },
   {
     q: "Do you work with international clients?",
     a: "Yes. DigitalyMarket is global-first and works remotely across time zones, with India as a secondary focus market.",
-  },
-  {
-    q: "Do you offer custom solutions?",
-    a: "Every engagement is built around your goals, market and current digital presence. There is no fixed package list.",
-  },
-  {
-    q: "Do you offer monthly retainers?",
-    a: "Yes. Ongoing growth work runs as a monthly retainer so strategy, execution and optimization stay connected.",
-  },
-  {
-    q: "How do I get started?",
-    a: "Start a conversation or send a WhatsApp message. Share where your business is today and we'll take it from there.",
   },
 ];
 

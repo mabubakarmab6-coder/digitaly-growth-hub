@@ -4,7 +4,6 @@ import { Reveal } from "@/components/site/Reveal";
 import { ContactActions } from "@/components/site/ContactActions";
 import { WHATSAPP_URL } from "@/components/site/constants";
 
-
 export function ServicesFinalCta() {
   return (
     <section id="contact" className="surface-navy section-y">
@@ -12,11 +11,11 @@ export function ServicesFinalCta() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <p className="eyebrow text-navy-foreground/70">Let's talk</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.9rem]">
-            Don't know exactly what you need? That's okay.
+            Not sure which direction is right for you?
           </h2>
           <p className="mt-6 text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
-            Tell us about your business, your goals and what's getting in the way. We'll help you
-            figure out where digital can make the biggest difference.
+            You don't need to figure that out before contacting us. Tell us what's happening — we'll
+            help determine what makes sense.
           </p>
           <div className="mt-10 flex justify-center">
             <Cta
@@ -27,11 +26,13 @@ export function ServicesFinalCta() {
               size="lg"
               className="w-full sm:w-auto"
             >
-              Start a Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
           </div>
           <ContactActions tone="navy" className="mt-8 justify-center" />
-
+          <p className="mt-8 text-sm text-navy-foreground/60">
+            Custom solutions only. Ongoing support is discussed when it genuinely fits the business.
+          </p>
         </Reveal>
       </div>
     </section>
