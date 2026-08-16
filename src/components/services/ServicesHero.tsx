@@ -44,8 +44,8 @@ export function ServicesHero() {
             <Cta href="#contact" size="lg">
               Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href="#capabilities" variant="outline" size="lg">
-              <Compass className="h-4 w-4" aria-hidden="true" /> Explore Our Capabilities
+            <Cta href="#how-we-think" variant="outline" size="lg">
+              <Compass className="h-4 w-4" aria-hidden="true" /> See How We Help
             </Cta>
           </div>
 
