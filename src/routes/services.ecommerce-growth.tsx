@@ -7,7 +7,7 @@ import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 const title = "E-commerce Growth | DigitalyMarket";
 const description =
   "E-commerce growth at DigitalyMarket: strengthening discovery, store experience and conversion across online stores and marketplaces. Detailed page coming soon.";
-const url = "https://digitaly-growth-hub.lovable.app/services/ecommerce-growth";
+const url = "https://digitalymarket.com/services/ecommerce-growth";
 
 export const Route = createFileRoute("/services/ecommerce-growth")({
   component: EcommercePage,

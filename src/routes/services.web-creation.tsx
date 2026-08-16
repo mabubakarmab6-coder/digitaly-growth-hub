@@ -7,7 +7,7 @@ import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 const title = "Website Creation | DigitalyMarket";
 const description =
   "Website creation at DigitalyMarket: clear, credible websites that turn attention into enquiries. Detailed page coming soon.";
-const url = "https://digitaly-growth-hub.lovable.app/services/web-creation";
+const url = "https://digitalymarket.com/services/web-creation";
 
 export const Route = createFileRoute("/services/web-creation")({
   component: WebPage,

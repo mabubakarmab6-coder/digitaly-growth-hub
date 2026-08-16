@@ -12,7 +12,7 @@ import { industries } from "@/data/industries";
 const title = "Industries We Work With | Digital Growth by Industry | DigitalyMarket";
 const description =
   "Digital growth built around your industry — manufacturing and B2B, professional services, local and service businesses, and e-commerce brands.";
-const url = "https://digitaly-growth-hub.lovable.app/industries";
+const url = "https://digitalymarket.com/industries";
 
 export const Route = createFileRoute("/industries/")({
   component: IndustriesHub,
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/industries/")({
             "@type": "ListItem",
             position: i + 1,
             name: industry.name,
-            url: `https://digitaly-growth-hub.lovable.app/industries/${industry.slug}`,
+            url: `https://digitalymarket.com/industries/${industry.slug}`,
           })),
         }),
       },

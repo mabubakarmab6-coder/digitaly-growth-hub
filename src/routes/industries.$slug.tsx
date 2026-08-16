@@ -5,7 +5,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { IndustryDetail } from "@/components/industries/IndustryDetail";
 import { industryBySlug } from "@/data/industries";
 
-const origin = "https://digitaly-growth-hub.lovable.app";
+const origin = "https://digitalymarket.com";
 
 export const Route = createFileRoute("/industries/$slug")({
   loader: ({ params }) => {

@@ -19,7 +19,7 @@ const title =
   "Digital Growth Services | GEO, Paid Marketing, Websites & E-commerce | DigitalyMarket";
 const description =
   "DigitalyMarket's four core capabilities — GEO, paid marketing, website creation and e-commerce growth. We understand and diagnose your business first, then recommend what actually makes sense.";
-const url = "https://digitaly-growth-hub.lovable.app/services";
+const url = "https://digitalymarket.com/services";
 
 export const Route = createFileRoute("/services/")({
   component: ServicesPage,
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/services/")({
             "@type": "ListItem",
             position: i + 1,
             name,
-            url: `https://digitaly-growth-hub.lovable.app${path}`,
+            url: `https://digitalymarket.com${path}`,
           })),
         }),
       },
