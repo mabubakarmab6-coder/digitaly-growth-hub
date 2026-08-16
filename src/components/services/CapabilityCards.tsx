@@ -23,9 +23,10 @@ const capabilities = [
   {
     no: "02",
     journey: "Acquire",
-    problem: "You're paying for attention but not enough action.",
+    problem:
+      "You're paying for attention, but the right people aren't consistently taking action.",
     title: "Paid Marketing",
-    outcome: "Put your offer in front of the right people and create a stronger path to action.",
+    outcome: "Create a more focused path from targeted attention to meaningful action.",
     cta: "Explore Paid Marketing",
     href: "/services/paid-marketing",
     image: paidImage,
