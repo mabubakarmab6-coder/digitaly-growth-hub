@@ -62,6 +62,12 @@ export function GrowthStuck() {
             </li>
           ))}
         </ul>
+
+        <Reveal delay={120} className="mt-10">
+          <p className="text-lg font-semibold text-foreground sm:text-xl">
+            You don't need to diagnose the problem alone.
+          </p>
+        </Reveal>
       </div>
     </section>
   );
