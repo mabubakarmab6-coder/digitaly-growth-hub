@@ -60,7 +60,7 @@ export function ServicesFaq() {
             Questions before you start?
           </h2>
           <a
-            href="/faq"
+            href="/#faq"
             className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
           >
             View All FAQs <ArrowRight className="h-4 w-4" aria-hidden="true" />
