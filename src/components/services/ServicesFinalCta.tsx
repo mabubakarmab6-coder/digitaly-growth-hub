@@ -11,13 +11,12 @@ export function ServicesFinalCta() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <p className="eyebrow text-navy-foreground/70">Let's talk</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.9rem]">
-            Not sure which direction is right for you?
+            Let's figure out what your business actually needs.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
-            You don't need to figure that out before contacting us. Tell us what's happening — we'll
-            help determine what makes sense.
+            You don't need to arrive with a marketing plan. Bring us the problem. We'll start there.
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Cta
               href={WHATSAPP_URL}
               target="_blank"
@@ -27,6 +26,16 @@ export function ServicesFinalCta() {
               className="w-full sm:w-auto"
             >
               Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Cta>
+            <Cta
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outlineNavy"
+              size="lg"
+              className="w-full sm:w-auto"
+            >
+              WhatsApp Us
             </Cta>
           </div>
           <ContactActions tone="navy" className="mt-8 justify-center" />

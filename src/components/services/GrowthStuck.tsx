@@ -1,4 +1,4 @@
-import { Search, MousePointerClick, LayoutTemplate, ShoppingCart } from "lucide-react";
+import { Search, MousePointerClick, LayoutTemplate, ShoppingCart, Unlink } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 const situations = [
@@ -21,6 +21,11 @@ const situations = [
     icon: ShoppingCart,
     title: "Your store isn't reaching its potential",
     copy: "Products are live and traffic exists, but discovery, conversion or repeat purchase is falling short.",
+  },
+  {
+    icon: Unlink,
+    title: "Nothing feels connected",
+    copy: "You've tried different marketing activities over time, but they never added up to one working system.",
   },
 ];
 
@@ -57,6 +62,12 @@ export function GrowthStuck() {
             </li>
           ))}
         </ul>
+
+        <Reveal delay={120} className="mt-10">
+          <p className="text-lg font-semibold text-foreground sm:text-xl">
+            You don't need to diagnose the problem alone.
+          </p>
+        </Reveal>
       </div>
     </section>
   );

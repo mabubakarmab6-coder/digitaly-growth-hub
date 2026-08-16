@@ -10,9 +10,11 @@ const capabilities = [
   {
     no: "01",
     journey: "Discover",
-    problem: "People can't find you.",
+    problem:
+      "Your customers are searching differently — but your business may not be showing up where decisions are being made.",
     title: "Generative Engine Optimization",
-    outcome: "Become more visible across search and AI discovery.",
+    outcome:
+      "Improve how your business is understood and discovered across search and AI-driven discovery.",
     cta: "Explore GEO",
     href: "/services/geo",
     image: geoImage,
@@ -21,9 +23,10 @@ const capabilities = [
   {
     no: "02",
     journey: "Acquire",
-    problem: "You're paying for attention but not enough action.",
+    problem:
+      "You're paying for attention, but the right people aren't consistently taking action.",
     title: "Paid Marketing",
-    outcome: "Put your offer in front of the right people and create a stronger path to action.",
+    outcome: "Create a more focused path from targeted attention to meaningful action.",
     cta: "Explore Paid Marketing",
     href: "/services/paid-marketing",
     image: paidImage,
@@ -32,9 +35,11 @@ const capabilities = [
   {
     no: "03",
     journey: "Convert",
-    problem: "Your website isn't converting interest into action.",
+    problem:
+      "Your website may be getting visitors without turning enough of them into enquiries or customers.",
     title: "Website Creation",
-    outcome: "Turn attention into a clearer, more effective digital experience.",
+    outcome:
+      "Create a digital experience that makes it easier for the right visitors to understand, trust and act.",
     cta: "Explore Website Creation",
     href: "/services/web-creation",
     image: webImage,
@@ -43,9 +48,11 @@ const capabilities = [
   {
     no: "04",
     journey: "Grow",
-    problem: "Your online store isn't reaching its potential.",
+    problem:
+      "Your online store has potential, but the path from discovery to purchase and repeat business isn't working hard enough.",
     title: "E-commerce Growth",
-    outcome: "Build a stronger path from discovery to customer and repeat growth.",
+    outcome:
+      "Build a stronger e-commerce growth system from discovery through conversion and retention.",
     cta: "Explore E-commerce Growth",
     href: "/services/ecommerce-growth",
     image: ecommerceImage,
