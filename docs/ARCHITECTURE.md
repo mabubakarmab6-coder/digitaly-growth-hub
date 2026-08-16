@@ -14,6 +14,10 @@
 
 `src/routes/services.tsx` → `/services`
 
+`src/routes/industries.index.tsx` → `/industries` (industries hub)
+
+`src/routes/industries.$slug.tsx` → `/industries/:slug` (manufacturing-b2b, professional-services, local-business, ecommerce), content sourced from `src/data/industries.ts` and rendered by `src/components/industries/IndustryDetail.tsx`
+
 `src/routes/__root.tsx` → application shell
 
 `src/routes/routeTree.gen.ts` → generated route tree; do not edit manually.
