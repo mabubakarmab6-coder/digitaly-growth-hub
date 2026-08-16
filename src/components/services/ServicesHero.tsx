@@ -1,37 +1,64 @@
-import { ArrowRight, Compass, Search, Megaphone, Globe, ShoppingBag, TrendingUp } from "lucide-react";
+import { ArrowRight, Search, Megaphone, Globe, ShoppingBag, Compass } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
+import { WHATSAPP_URL } from "@/components/site/constants";
 
 const nodes = [
-  { icon: Search, label: "GEO", desc: "AI & search discovery" },
-  { icon: Megaphone, label: "Paid Marketing", desc: "Demand & acquisition" },
-  { icon: Globe, label: "Website", desc: "Conversion destination" },
-  { icon: ShoppingBag, label: "E-commerce", desc: "Store & marketplace" },
+  { icon: Search, label: "Discover", desc: "Be found by the right people" },
+  { icon: Megaphone, label: "Acquire", desc: "Reach demand that matters" },
+  { icon: Globe, label: "Convert", desc: "Turn interest into action" },
+  { icon: ShoppingBag, label: "Grow", desc: "Build repeatable momentum" },
 ];
+
+const arc = ["Problem", "Opportunity", "Growth"];
 
 export function ServicesHero() {
   return (
     <section className="hero-glow relative overflow-hidden">
       <div className="container-page grid items-center gap-12 pt-14 pb-16 md:pt-20 md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-24 lg:pb-28">
         <div className="max-w-xl">
-          <p className="eyebrow">Digital Growth Services</p>
+          <p className="eyebrow">How we can help</p>
           <h1 className="mt-5 text-[2.4rem] leading-[1.06] font-semibold text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Digital solutions built around{" "}
-            <span className="text-gradient-accent">your growth goals.</span>
+            Growth built around <span className="text-gradient-accent">your business.</span>
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Choose the capability you need — or bring us the business problem. We'll help identify
-            the right digital path for where you want to go.
+            Every business has a different growth bottleneck. We understand the problem first, then
+            determine what can actually move the needle.
           </p>
+
+          <ul className="mt-8 flex flex-wrap items-center gap-2.5">
+            {arc.map((step, i) => (
+              <li key={step} className="flex items-center gap-2.5">
+                <span className="rounded-full border border-hairline bg-card px-3.5 py-1.5 text-xs font-semibold tracking-wide text-foreground">
+                  {step}
+                </span>
+                {i < arc.length - 1 && (
+                  <ArrowRight className="h-3.5 w-3.5 text-primary/60" aria-hidden="true" />
+                )}
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Cta href="#contact" size="lg">
-              Start a Conversation <ArrowRight className="h-4 w-4" />
+              Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href="#not-sure" variant="outline" size="lg">
-              <Compass className="h-4 w-4" aria-hidden="true" /> I'm Not Sure What I Need
+            <Cta href="#capabilities" variant="outline" size="lg">
+              <Compass className="h-4 w-4" aria-hidden="true" /> Explore Our Capabilities
             </Cta>
           </div>
+
+          <p className="mt-6 text-sm text-muted-foreground">
+            You don't need to know which service you need.{" "}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary underline-offset-4 hover:underline"
+            >
+              Just tell us what's happening.
+            </a>
+          </p>
         </div>
 
         <Reveal delay={120} className="relative">
@@ -41,24 +68,28 @@ export function ServicesHero() {
           />
           <div className="rounded-[1.75rem] border border-hairline bg-card p-6 shadow-lift sm:p-8">
             <p className="text-xs font-semibold tracking-[0.18em] text-primary/70 uppercase">
-              The growth system
+              The growth journey
             </p>
             <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-              {nodes.map(({ icon: Icon, label, desc }) => (
+              {nodes.map(({ icon: Icon, label, desc }, i) => (
                 <li
                   key={label}
                   className="rounded-xl border border-hairline bg-surface/70 p-4 transition-colors duration-300 hover:border-primary/30"
                 >
-                  <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <div className="flex items-center gap-2">
+                    <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
+                    <span className="text-[0.65rem] font-semibold tracking-[0.18em] text-muted-foreground uppercase">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
                   <p className="mt-3 text-sm font-semibold text-foreground">{label}</p>
                   <p className="mt-1 text-xs text-muted-foreground">{desc}</p>
                 </li>
               ))}
             </ul>
-            <div className="mt-5 flex items-center gap-3 rounded-xl border border-primary/20 bg-accent/60 p-4">
-              <TrendingUp className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+            <div className="mt-5 rounded-xl border border-primary/20 bg-accent/60 p-4">
               <p className="text-sm font-semibold text-foreground">
-                Business growth — measured on your terms
+                Capabilities are chosen after we understand the business — never before.
               </p>
             </div>
           </div>
