@@ -1,4 +1,4 @@
-import { Search, MousePointerClick, LayoutTemplate, ShoppingCart } from "lucide-react";
+import { Search, MousePointerClick, LayoutTemplate, ShoppingCart, Unlink } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 const situations = [
