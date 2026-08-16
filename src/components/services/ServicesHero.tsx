@@ -17,13 +17,14 @@ export function ServicesHero() {
     <section className="hero-glow relative overflow-hidden">
       <div className="container-page grid items-center gap-12 pt-14 pb-16 md:pt-20 md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-24 lg:pb-28">
         <div className="max-w-xl">
-          <p className="eyebrow">How we can help</p>
-          <h1 className="mt-5 text-[2.4rem] leading-[1.06] font-semibold text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Growth built around <span className="text-gradient-accent">your business.</span>
+          <p className="eyebrow">What we can help you grow</p>
+          <h1 className="mt-5 text-[2.15rem] leading-[1.08] font-semibold text-foreground sm:text-5xl lg:text-[3.4rem]">
+            Growth doesn't start with a service. It starts with{" "}
+            <span className="text-gradient-accent">understanding the problem.</span>
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Every business has a different growth bottleneck. We understand the problem first, then
-            determine what can actually move the needle.
+            Tell us where your business is getting stuck. We'll understand the problem first, then
+            recommend the right growth path — not a package you don't need.
           </p>
 
           <ul className="mt-8 flex flex-wrap items-center gap-2.5">
