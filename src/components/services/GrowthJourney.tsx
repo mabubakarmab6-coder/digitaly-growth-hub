@@ -1,5 +1,7 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+
 
 const steps = [
   { label: "Discover", copy: "Be found when people look." },
