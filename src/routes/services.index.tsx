@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
+import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 
 import { ServicesHero } from "@/components/services/ServicesHero";
 import { GrowthStuck } from "@/components/services/GrowthStuck";
@@ -78,7 +78,7 @@ function ServicesPage() {
         <ServicesFinalCta />
       </main>
       <SiteFooter />
-      <WhatsAppFloat />
+      <GlobalFloatingCta />
     </div>
   );
 }
