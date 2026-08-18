@@ -69,10 +69,11 @@ export function CapabilityEcosystem() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-navy-foreground/70 sm:text-base">
-          Not every business needs all four. Some need one capability, some need several connected
+          Not every business needs all five. Some need one capability, some need several connected
           ones — the right combination depends on your business, and that's something we figure out
           together.
         </p>
+
       </div>
     </section>
   );
