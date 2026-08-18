@@ -1,5 +1,7 @@
 import { Cta } from "./Cta";
 import { ContactActions } from "./ContactActions";
+import { BrandLogo } from "./BrandLogo";
+
 
 
 const agencyLinks = [
@@ -26,13 +28,14 @@ export function SiteFooter() {
       <div className="container-page py-14 md:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div className="max-w-xs">
-            <p className="text-sm font-extrabold tracking-[0.14em] text-foreground">
-              DIGITALY<span className="text-primary">MARKET</span>
-            </p>
+            <a href="/" aria-label="DigitalyMarket home" className="inline-block">
+              <BrandLogo className="h-9 w-auto" />
+            </a>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Digital growth solutions built around your business.
             </p>
           </div>
+
 
           <nav aria-label="Agency">
             <h2 className="text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
