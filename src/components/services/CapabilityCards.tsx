@@ -7,7 +7,7 @@ import ecommerceImage from "@/assets/service-ecommerce.jpg";
 import marketplaceAsset from "@/assets/service-marketplace.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 
-import { Reveal } from "@/components/site/Reveal";
+
 
 const capabilities = [
   {
