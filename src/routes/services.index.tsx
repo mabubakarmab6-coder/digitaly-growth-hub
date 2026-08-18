@@ -18,7 +18,8 @@ import { ServicesFinalCta } from "@/components/services/ServicesFinalCta";
 const title =
   "Digital Growth Services | GEO, Paid Marketing, Websites & E-commerce | DigitalyMarket";
 const description =
-  "DigitalyMarket's four core capabilities — GEO, paid marketing, website creation and e-commerce growth. We understand and diagnose your business first, then recommend what actually makes sense.";
+  "DigitalyMarket's core capabilities — GEO, paid marketing, website creation, e-commerce growth and marketplace optimization. We understand and diagnose your business first, then recommend what actually makes sense.";
+
 const url = "https://digitalymarket.com/services";
 
 export const Route = createFileRoute("/services/")({
