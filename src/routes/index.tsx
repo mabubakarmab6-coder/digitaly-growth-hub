@@ -38,7 +38,6 @@ export const Route = createFileRoute("/")({
           "@type": "ProfessionalService",
           name: "DigitalyMarket",
           description,
-          telephone: "+917734905729",
           founder: {
             "@type": "Person",
             name: "Mohammad Abubakar",
