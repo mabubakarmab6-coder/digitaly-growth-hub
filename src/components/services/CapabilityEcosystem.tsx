@@ -1,4 +1,4 @@
-import { Search, Megaphone, Globe, ShoppingBag } from "lucide-react";
+import { Search, Megaphone, Globe, ShoppingBag, Store } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 const nodes = [
@@ -6,7 +6,13 @@ const nodes = [
   { icon: Megaphone, label: "Paid Marketing", copy: "Reach and demand, on demand." },
   { icon: Globe, label: "Website Creation", copy: "The place where interest becomes action." },
   { icon: ShoppingBag, label: "E-commerce Growth", copy: "From product discovery to repeat buyers." },
+  {
+    icon: Store,
+    label: "Marketplace Optimization",
+    copy: "Visibility and conversion where customers already shop.",
+  },
 ];
+
 
 export function CapabilityEcosystem() {
   return (
@@ -63,10 +69,11 @@ export function CapabilityEcosystem() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-navy-foreground/70 sm:text-base">
-          Not every business needs all four. Some need one capability, some need several connected
+          Not every business needs all five. Some need one capability, some need several connected
           ones — the right combination depends on your business, and that's something we figure out
           together.
         </p>
+
       </div>
     </section>
   );

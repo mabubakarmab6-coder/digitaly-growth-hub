@@ -4,13 +4,13 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 
-const title = "Website Creation | DigitalyMarket";
+const title = "Marketplace Optimization | Marketplace SEO & Listing Growth | DigitalyMarket";
 const description =
-  "Website creation at DigitalyMarket: clear, credible websites that turn attention into enquiries. Detailed page coming soon.";
-const url = "https://digitalymarket.com/services/web-creation";
+  "Marketplace Optimization at DigitalyMarket: improving marketplace search visibility, product listing quality and conversion across the platforms your business already sells on. Detailed page coming soon.";
+const url = "https://digitalymarket.com/services/marketplace-optimization";
 
-export const Route = createFileRoute("/services/web-creation")({
-  component: WebPage,
+export const Route = createFileRoute("/services/marketplace-optimization")({
+  component: MarketplaceOptimizationPage,
   head: () => ({
     meta: [
       { title },
@@ -27,15 +27,15 @@ export const Route = createFileRoute("/services/web-creation")({
   }),
 });
 
-function WebPage() {
+function MarketplaceOptimizationPage() {
   return (
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
         <ServiceComingSoon
-          eyebrow="Website Creation"
-          title="Turn attention into a clearer digital experience."
-          intro="A website should explain value quickly and make the next step obvious for the people you want to hear from."
+          eyebrow="Marketplace Optimization"
+          title="Your marketplace presence is another storefront — it needs to be found and chosen."
+          intro="Marketplace optimization covers search visibility, listing and catalog quality, product content and conversion across the marketplaces your business already sells on. It stays platform-agnostic — the work depends on where your customers actually buy."
         />
       </main>
       <SiteFooter />

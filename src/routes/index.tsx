@@ -11,6 +11,8 @@ import { WorkAndInsights } from "@/components/site/WorkAndInsights";
 import { Faq } from "@/components/site/Faq";
 import { Founder } from "@/components/site/Founder";
 import { FinalCta } from "@/components/site/FinalCta";
+import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
+
 import { SiteFooter } from "@/components/site/SiteFooter";
 
 const title = "DigitalyMarket | Digital Growth Agency for Modern Businesses";
@@ -38,7 +40,6 @@ export const Route = createFileRoute("/")({
           "@type": "ProfessionalService",
           name: "DigitalyMarket",
           description,
-          telephone: "+917734905729",
           founder: {
             "@type": "Person",
             name: "Mohammad Abubakar",
@@ -77,6 +78,8 @@ function Home() {
         <FinalCta />
       </main>
       <SiteFooter />
+      <GlobalFloatingCta />
     </div>
+
   );
 }

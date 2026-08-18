@@ -1,5 +1,3 @@
-export const PHONE_DISPLAY = "+91 77349 05729";
-export const PHONE_TEL = "tel:+917734905729";
 export const WHATSAPP_URL = "https://wa.me/917734905729";
 
 /**

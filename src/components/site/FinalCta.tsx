@@ -1,7 +1,8 @@
-import { ArrowRight, MessageCircle, Phone } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
-import { PHONE_DISPLAY, WHATSAPP_URL } from "./constants";
+import { ContactActions } from "./ContactActions";
+import { WHATSAPP_URL } from "./constants";
 
 export function FinalCta() {
   return (
@@ -30,14 +31,10 @@ export function FinalCta() {
               <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
             </Cta>
           </div>
-          <a
-            href="tel:+917734905729"
-            className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-navy-foreground/80 transition-colors hover:text-navy-foreground"
-          >
-            <Phone className="h-4 w-4" aria-hidden="true" /> {PHONE_DISPLAY}
-          </a>
+          <ContactActions tone="navy" className="mt-8 justify-center" />
         </Reveal>
       </div>
     </section>
   );
 }
+

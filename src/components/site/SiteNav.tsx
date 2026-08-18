@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Cta } from "./Cta";
+import { BrandLogo } from "./BrandLogo";
+
 import { NAV_LINKS } from "./constants";
 import { cn } from "@/lib/utils";
 
@@ -32,12 +34,10 @@ export function SiteNav() {
       )}
     >
       <div className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:h-20 lg:flex lg:justify-between">
-        <a
-          href="/"
-          className="min-w-0 truncate text-[0.95rem] font-extrabold tracking-[0.14em] text-foreground"
-        >
-          DIGITALY<span className="text-primary">MARKET</span>
+        <a href="/" aria-label="DigitalyMarket home" className="min-w-0 shrink-0">
+          <BrandLogo className="h-9 w-auto sm:h-10 lg:h-11" />
         </a>
+
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">

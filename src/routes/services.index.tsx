@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
+import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 
 import { ServicesHero } from "@/components/services/ServicesHero";
 import { GrowthStuck } from "@/components/services/GrowthStuck";
@@ -18,7 +18,8 @@ import { ServicesFinalCta } from "@/components/services/ServicesFinalCta";
 const title =
   "Digital Growth Services | GEO, Paid Marketing, Websites & E-commerce | DigitalyMarket";
 const description =
-  "DigitalyMarket's four core capabilities — GEO, paid marketing, website creation and e-commerce growth. We understand and diagnose your business first, then recommend what actually makes sense.";
+  "DigitalyMarket's core capabilities — GEO, paid marketing, website creation, e-commerce growth and marketplace optimization. We understand and diagnose your business first, then recommend what actually makes sense.";
+
 const url = "https://digitalymarket.com/services";
 
 export const Route = createFileRoute("/services/")({
@@ -48,6 +49,7 @@ export const Route = createFileRoute("/services/")({
             ["Paid Marketing", "/services/paid-marketing"],
             ["Website Creation", "/services/web-creation"],
             ["E-commerce Growth", "/services/ecommerce-growth"],
+            ["Marketplace Optimization", "/services/marketplace-optimization"],
           ].map(([name, path], i) => ({
             "@type": "ListItem",
             position: i + 1,
@@ -78,7 +80,7 @@ function ServicesPage() {
         <ServicesFinalCta />
       </main>
       <SiteFooter />
-      <WhatsAppFloat />
+      <GlobalFloatingCta />
     </div>
   );
 }

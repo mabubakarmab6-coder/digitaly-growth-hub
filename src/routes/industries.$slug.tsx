@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
+import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { IndustryDetail } from "@/components/industries/IndustryDetail";
 import { industryBySlug } from "@/data/industries";
 
@@ -75,7 +75,7 @@ function IndustryPage() {
         <IndustryDetail industry={industry} />
       </main>
       <SiteFooter />
-      <WhatsAppFloat />
+      <GlobalFloatingCta />
     </div>
   );
 }

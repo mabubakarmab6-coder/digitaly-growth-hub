@@ -1,5 +1,7 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+
 
 const steps = [
   { label: "Discover", copy: "Be found when people look." },
@@ -45,7 +47,21 @@ export function GrowthJourney() {
             </li>
           ))}
         </ol>
+
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+          If your business already sells through marketplaces, that presence sits across{" "}
+          <span className="font-medium text-foreground">Discover, Convert and Grow</span> at the
+          same time — which is where{" "}
+          <Link
+            to="/services/marketplace-optimization"
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
+            marketplace optimization
+          </Link>{" "}
+          fits into the same journey.
+        </p>
       </div>
     </section>
   );
 }
+

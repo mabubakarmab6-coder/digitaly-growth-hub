@@ -17,6 +17,7 @@ import { Route as IndustriesSlugRouteImport } from './routes/industries.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as ServicesEcommerceGrowthRouteImport } from './routes/services.ecommerce-growth'
 import { Route as ServicesGeoRouteImport } from './routes/services.geo'
+import { Route as ServicesMarketplaceOptimizationRouteImport } from './routes/services.marketplace-optimization'
 import { Route as ServicesPaidMarketingRouteImport } from './routes/services.paid-marketing'
 import { Route as ServicesWebCreationRouteImport } from './routes/services.web-creation'
 
@@ -60,6 +61,12 @@ const ServicesGeoRoute = ServicesGeoRouteImport.update({
   path: '/geo',
   getParentRoute: () => ServicesRoute,
 } as any)
+const ServicesMarketplaceOptimizationRoute =
+  ServicesMarketplaceOptimizationRouteImport.update({
+    id: '/marketplace-optimization',
+    path: '/marketplace-optimization',
+    getParentRoute: () => ServicesRoute,
+  } as any)
 const ServicesPaidMarketingRoute = ServicesPaidMarketingRouteImport.update({
   id: '/paid-marketing',
   path: '/paid-marketing',
@@ -78,6 +85,7 @@ export interface FileRoutesByFullPath {
   '/industries/$slug': typeof IndustriesSlugRoute
   '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
   '/services/geo': typeof ServicesGeoRoute
+  '/services/marketplace-optimization': typeof ServicesMarketplaceOptimizationRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries/': typeof IndustriesIndexRoute
@@ -89,6 +97,7 @@ export interface FileRoutesByTo {
   '/industries/$slug': typeof IndustriesSlugRoute
   '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
   '/services/geo': typeof ServicesGeoRoute
+  '/services/marketplace-optimization': typeof ServicesMarketplaceOptimizationRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries': typeof IndustriesIndexRoute
@@ -102,6 +111,7 @@ export interface FileRoutesById {
   '/industries/$slug': typeof IndustriesSlugRoute
   '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
   '/services/geo': typeof ServicesGeoRoute
+  '/services/marketplace-optimization': typeof ServicesMarketplaceOptimizationRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries/': typeof IndustriesIndexRoute
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/industries/$slug'
     | '/services/ecommerce-growth'
     | '/services/geo'
+    | '/services/marketplace-optimization'
     | '/services/paid-marketing'
     | '/services/web-creation'
     | '/industries/'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/industries/$slug'
     | '/services/ecommerce-growth'
     | '/services/geo'
+    | '/services/marketplace-optimization'
     | '/services/paid-marketing'
     | '/services/web-creation'
     | '/industries'
@@ -139,6 +151,7 @@ export interface FileRouteTypes {
     | '/industries/$slug'
     | '/services/ecommerce-growth'
     | '/services/geo'
+    | '/services/marketplace-optimization'
     | '/services/paid-marketing'
     | '/services/web-creation'
     | '/industries/'
@@ -211,6 +224,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesGeoRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/services/marketplace-optimization': {
+      id: '/services/marketplace-optimization'
+      path: '/marketplace-optimization'
+      fullPath: '/services/marketplace-optimization'
+      preLoaderRoute: typeof ServicesMarketplaceOptimizationRouteImport
+      parentRoute: typeof ServicesRoute
+    }
     '/services/paid-marketing': {
       id: '/services/paid-marketing'
       path: '/paid-marketing'
@@ -231,6 +251,7 @@ declare module '@tanstack/react-router' {
 interface ServicesRouteChildren {
   ServicesEcommerceGrowthRoute: typeof ServicesEcommerceGrowthRoute
   ServicesGeoRoute: typeof ServicesGeoRoute
+  ServicesMarketplaceOptimizationRoute: typeof ServicesMarketplaceOptimizationRoute
   ServicesPaidMarketingRoute: typeof ServicesPaidMarketingRoute
   ServicesWebCreationRoute: typeof ServicesWebCreationRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
@@ -239,6 +260,7 @@ interface ServicesRouteChildren {
 const ServicesRouteChildren: ServicesRouteChildren = {
   ServicesEcommerceGrowthRoute: ServicesEcommerceGrowthRoute,
   ServicesGeoRoute: ServicesGeoRoute,
+  ServicesMarketplaceOptimizationRoute: ServicesMarketplaceOptimizationRoute,
   ServicesPaidMarketingRoute: ServicesPaidMarketingRoute,
   ServicesWebCreationRoute: ServicesWebCreationRoute,
   ServicesIndexRoute: ServicesIndexRoute,

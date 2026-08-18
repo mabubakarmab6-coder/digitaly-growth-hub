@@ -57,6 +57,20 @@ const services = [
     ],
     cta: "Explore E-commerce",
   },
+  {
+    no: "05",
+    title: "Marketplace Optimization",
+    copy: "Make your marketplace presence discoverable, persuasive and optimised for conversion.",
+    capabilities: [
+      "Marketplace SEO",
+      "Product listing optimization",
+      "Keyword and search-term strategy",
+      "Catalog and category optimization",
+      "Storefront optimization",
+      "Marketplace analytics",
+    ],
+    cta: "Explore Marketplace Optimization",
+  },
 ];
 
 export function Services() {
@@ -66,13 +80,14 @@ export function Services() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Services</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Four ways we help businesses grow.
+            Five ways we help businesses grow.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Choose the capability you need — or bring us the problem and we'll help identify the
             right path.
           </p>
         </Reveal>
+
 
         <ul className="mt-14 grid gap-6 lg:grid-cols-2">
           {services.map((service, i) => (

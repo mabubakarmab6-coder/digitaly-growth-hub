@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
+import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { Reveal } from "@/components/site/Reveal";
 import { Cta } from "@/components/site/Cta";
 import { ContactActions } from "@/components/site/ContactActions";
@@ -189,7 +189,7 @@ function IndustriesHub() {
         </section>
       </main>
       <SiteFooter />
-      <WhatsAppFloat />
+      <GlobalFloatingCta />
     </div>
   );
 }

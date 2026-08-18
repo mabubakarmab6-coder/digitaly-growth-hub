@@ -1,13 +1,7 @@
-import { Instagram, Linkedin, Mail, MessageCircle, Phone } from "lucide-react";
+import { Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import {
-  CONTACT_EMAIL,
-  INSTAGRAM_URL,
-  LINKEDIN_URL,
-  PHONE_TEL,
-  WHATSAPP_URL,
-} from "./constants";
+import { CONTACT_EMAIL, INSTAGRAM_URL, LINKEDIN_URL, WHATSAPP_URL } from "./constants";
 
 type Action = {
   label: string;
@@ -18,7 +12,6 @@ type Action = {
 };
 
 const actions: Action[] = [
-  { label: "Call Us", icon: Phone, href: PHONE_TEL, ariaLabel: "Call DigitalyMarket" },
   {
     label: "WhatsApp",
     icon: MessageCircle,
@@ -26,6 +19,7 @@ const actions: Action[] = [
     external: true,
     ariaLabel: "Chat with DigitalyMarket on WhatsApp",
   },
+
   {
     label: "Email",
     icon: Mail,
