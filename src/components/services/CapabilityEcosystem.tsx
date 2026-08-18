@@ -1,4 +1,4 @@
-import { Search, Megaphone, Globe, ShoppingBag } from "lucide-react";
+import { Search, Megaphone, Globe, ShoppingBag, Store } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 const nodes = [
@@ -6,7 +6,13 @@ const nodes = [
   { icon: Megaphone, label: "Paid Marketing", copy: "Reach and demand, on demand." },
   { icon: Globe, label: "Website Creation", copy: "The place where interest becomes action." },
   { icon: ShoppingBag, label: "E-commerce Growth", copy: "From product discovery to repeat buyers." },
+  {
+    icon: Store,
+    label: "Marketplace Optimization",
+    copy: "Visibility and conversion where customers already shop.",
+  },
 ];
+
 
 export function CapabilityEcosystem() {
   return (
