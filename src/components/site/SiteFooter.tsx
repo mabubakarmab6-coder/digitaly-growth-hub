@@ -29,7 +29,7 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div className="max-w-xs">
             <a href="/" aria-label="DigitalyMarket home" className="inline-block">
-              <BrandLogo className="h-9 w-auto" />
+              <BrandLogo className="h-10 w-auto" />
             </a>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Digital growth solutions built around your business.

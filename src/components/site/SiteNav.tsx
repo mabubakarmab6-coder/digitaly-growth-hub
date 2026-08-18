@@ -35,7 +35,7 @@ export function SiteNav() {
     >
       <div className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:h-20 lg:flex lg:justify-between">
         <a href="/" aria-label="DigitalyMarket home" className="min-w-0 shrink-0">
-          <BrandLogo className="h-7 w-auto sm:h-8 lg:h-9" />
+          <BrandLogo className="h-9 w-auto sm:h-10 lg:h-11" />
         </a>
 
 
