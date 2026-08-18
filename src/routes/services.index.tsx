@@ -48,6 +48,7 @@ export const Route = createFileRoute("/services/")({
             ["Paid Marketing", "/services/paid-marketing"],
             ["Website Creation", "/services/web-creation"],
             ["E-commerce Growth", "/services/ecommerce-growth"],
+            ["Marketplace Optimization", "/services/marketplace-optimization"],
           ].map(([name, path], i) => ({
             "@type": "ListItem",
             position: i + 1,
