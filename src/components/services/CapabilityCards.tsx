@@ -4,6 +4,9 @@ import geoImage from "@/assets/service-geo.jpg";
 import paidImage from "@/assets/service-paid.jpg";
 import webImage from "@/assets/service-web.jpg";
 import ecommerceImage from "@/assets/service-ecommerce.jpg";
+import marketplaceAsset from "@/assets/service-marketplace.jpg.asset.json";
+import { Reveal } from "@/components/site/Reveal";
+
 import { Reveal } from "@/components/site/Reveal";
 
 const capabilities = [
