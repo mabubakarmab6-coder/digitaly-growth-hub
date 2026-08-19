@@ -9,7 +9,7 @@ const agencyLinks = [
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/#industries" },
   { label: "Work", href: "/#work" },
-  { label: "About", href: "/#about" },
+  { label: "About", href: "/about" },
   { label: "Insights", href: "/#insights" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "#contact" },
