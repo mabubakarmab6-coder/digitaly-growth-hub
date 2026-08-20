@@ -31,14 +31,14 @@ const actions: Action[] = [
     icon: Instagram,
     href: INSTAGRAM_URL,
     external: true,
-    ariaLabel: "DigitalyMarket on Instagram",
+    ariaLabel: "Visit DigitalyMarket on Instagram",
   },
   {
     label: "LinkedIn",
     icon: Linkedin,
     href: LINKEDIN_URL,
     external: true,
-    ariaLabel: "DigitalyMarket on LinkedIn",
+    ariaLabel: "Visit DigitalyMarket on LinkedIn",
   },
 ];
 
