@@ -84,6 +84,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "DigitalyMarket helps businesses grow through GEO, paid marketing, websites and e-commerce solutions.",
       },
       { name: "author", content: "DigitalyMarket" },
+      {
+        name: "google-site-verification",
+        content: "EqZrtxdyQDmh6l_BsNxR0UcG4vSvrwSC1RTfYNEgfc8",
+      },
       { property: "og:site_name", content: "DigitalyMarket" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
