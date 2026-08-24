@@ -1,11 +1,16 @@
-export const WHATSAPP_URL = "https://wa.me/917734905729";
-
 /**
- * DigitalyMarket contact / social destinations.
+ * DigitalyMarket contact / conversion destinations.
+ *
+ * Contact strategy is inquiry-first: every lead-generation CTA routes to the
+ * growth conversation inquiry experience. Direct-contact routes (phone, tel:,
+ * WhatsApp, personal email) are intentionally not exposed on the public site.
+ *
  * LinkedIn is intentionally empty until a verified profile URL exists;
  * the button renders in a "coming soon" state while empty.
  */
-export const CONTACT_EMAIL = "digitalymarket@gmail.com";
+export const INQUIRY_PATH = "/start";
+
+export const CONTACT_EMAIL = "mohammad@digitalymarket.com";
 export const INSTAGRAM_URL = "https://www.instagram.com/digital.y.market/";
 export const LINKEDIN_URL = "";
 
