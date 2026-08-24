@@ -10,9 +10,9 @@ export function Field({
   children,
 }: {
   label: string;
-  hint?: string;
-  error?: string;
-  htmlFor?: string;
+  hint?: string | undefined;
+  error?: string | undefined;
+  htmlFor?: string | undefined;
   children: ReactNode;
 }) {
   return (

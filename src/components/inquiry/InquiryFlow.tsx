@@ -124,7 +124,8 @@ export function InquiryFlow() {
     setErrors(e);
     if (Object.keys(e).length > 0) return;
     trackInquiry("inquiry_step_completed", { step });
-    if (stepEvents[step]) trackInquiry(stepEvents[step]);
+    const evt = stepEvents[step];
+    if (evt) trackInquiry(evt);
     if (step === 4) trackInquiry("inquiry_reviewed");
     goto(step + 1);
   };
@@ -222,7 +223,7 @@ export function InquiryFlow() {
       <div>
         <div className="flex items-center justify-between gap-4">
           <p className="text-xs font-semibold tracking-[0.16em] text-primary/80 uppercase">
-            Step {String(step).padStart(2, "0")} — {STEPS[step - 1].label}
+            Step {String(step).padStart(2, "0")} — {STEPS[step - 1]?.label}
           </p>
           <p className="text-xs text-muted-foreground">
             {step} of {STEPS.length}
