@@ -1,7 +1,7 @@
-import { Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { CONTACT_EMAIL, INSTAGRAM_URL, LINKEDIN_URL, WHATSAPP_URL } from "./constants";
+import { CONTACT_EMAIL, INSTAGRAM_URL, LINKEDIN_URL } from "./constants";
 
 type Action = {
   label: string;
@@ -11,15 +11,11 @@ type Action = {
   ariaLabel: string;
 };
 
+/**
+ * Secondary contact channels only. The primary conversion path is the
+ * inquiry experience — no phone, tel: or WhatsApp routes are exposed here.
+ */
 const actions: Action[] = [
-  {
-    label: "WhatsApp",
-    icon: MessageCircle,
-    href: WHATSAPP_URL,
-    external: true,
-    ariaLabel: "Chat with DigitalyMarket on WhatsApp",
-  },
-
   {
     label: "Email",
     icon: Mail,
