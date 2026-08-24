@@ -2,7 +2,7 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
 import { ContactActions } from "./ContactActions";
-import { WHATSAPP_URL } from "./constants";
+import { INQUIRY_PATH } from "./constants";
 
 export function FinalCta() {
   return (
@@ -18,13 +18,11 @@ export function FinalCta() {
             way. We'll help you identify where digital can make the biggest difference.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <Cta href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" variant="onNavy" size="lg">
+            <Cta href={INQUIRY_PATH} variant="onNavy" size="lg">
               Start a Conversation <ArrowRight className="h-4 w-4" />
             </Cta>
             <Cta
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={INQUIRY_PATH}
               variant="outlineNavy"
               size="lg"
             >

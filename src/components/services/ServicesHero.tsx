@@ -1,7 +1,7 @@
 import { ArrowRight, Search, Megaphone, Globe, ShoppingBag, Compass } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
-import { WHATSAPP_URL } from "@/components/site/constants";
+import { INQUIRY_PATH } from "@/components/site/constants";
 
 const nodes = [
   { icon: Search, label: "Discover", desc: "Be found by the right people" },
@@ -41,7 +41,7 @@ export function ServicesHero() {
           </ul>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Cta href="#contact" size="lg">
+            <Cta href={INQUIRY_PATH} size="lg">
               Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
             <Cta href="#how-we-think" variant="outline" size="lg">
@@ -52,9 +52,7 @@ export function ServicesHero() {
           <p className="mt-6 text-sm text-muted-foreground">
             You don't need to know which service you need.{" "}
             <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={INQUIRY_PATH}
               className="font-semibold text-primary underline-offset-4 hover:underline"
             >
               Just tell us what's happening.

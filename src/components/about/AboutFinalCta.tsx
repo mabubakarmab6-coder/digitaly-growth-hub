@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactActions } from "@/components/site/ContactActions";
-import { WHATSAPP_URL } from "@/components/site/constants";
+import { INQUIRY_PATH } from "@/components/site/constants";
 
 export function AboutFinalCta() {
   return (
@@ -19,9 +19,7 @@ export function AboutFinalCta() {
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Cta
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={INQUIRY_PATH}
               variant="onNavy"
               size="lg"
               className="w-full sm:w-auto"

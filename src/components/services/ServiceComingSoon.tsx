@@ -2,7 +2,7 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
-import { WHATSAPP_URL } from "@/components/site/constants";
+import { INQUIRY_PATH } from "@/components/site/constants";
 
 export function ServiceComingSoon({
   eyebrow,
@@ -35,7 +35,7 @@ export function ServiceComingSoon({
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Cta href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" size="lg">
+            <Cta href={INQUIRY_PATH} size="lg">
               <MessageCircle className="h-4 w-4" aria-hidden="true" /> Start My Growth Conversation
             </Cta>
             <Cta href="/services#capabilities" variant="outline" size="lg">

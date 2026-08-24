@@ -6,7 +6,7 @@ import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { Reveal } from "@/components/site/Reveal";
 import { Cta } from "@/components/site/Cta";
 import { ContactActions } from "@/components/site/ContactActions";
-import { WHATSAPP_URL } from "@/components/site/constants";
+import { INQUIRY_PATH } from "@/components/site/constants";
 import { industries } from "@/data/industries";
 
 const title = "Industries We Work With | Digital Growth by Industry | DigitalyMarket";
@@ -173,9 +173,7 @@ function IndustriesHub() {
               </p>
               <div className="mt-10 flex justify-center">
                 <Cta
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={INQUIRY_PATH}
                   variant="onNavy"
                   size="lg"
                   className="w-full sm:w-auto"
