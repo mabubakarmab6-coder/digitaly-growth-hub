@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as StartRouteImport } from './routes/start'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as IndustriesSlugRouteImport } from './routes/industries.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
@@ -40,6 +41,11 @@ const ServicesRoute = ServicesRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartRoute = StartRouteImport.update({
+  id: '/start',
+  path: '/start',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndustriesIndexRoute = IndustriesIndexRouteImport.update({
@@ -89,6 +95,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
   '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
   '/services/geo': typeof ServicesGeoRoute
@@ -102,6 +109,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
   '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
   '/services/geo': typeof ServicesGeoRoute
@@ -117,6 +125,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
   '/services/ecommerce-growth': typeof ServicesEcommerceGrowthRoute
   '/services/geo': typeof ServicesGeoRoute
@@ -133,6 +142,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/services'
     | '/sitemap.xml'
+    | '/start'
     | '/industries/$slug'
     | '/services/ecommerce-growth'
     | '/services/geo'
@@ -146,6 +156,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/sitemap.xml'
+    | '/start'
     | '/industries/$slug'
     | '/services/ecommerce-growth'
     | '/services/geo'
@@ -160,6 +171,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/services'
     | '/sitemap.xml'
+    | '/start'
     | '/industries/$slug'
     | '/services/ecommerce-growth'
     | '/services/geo'
@@ -175,6 +187,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StartRoute: typeof StartRoute
   IndustriesSlugRoute: typeof IndustriesSlugRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
 }
@@ -207,6 +220,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start': {
+      id: '/start'
+      path: '/start'
+      fullPath: '/start'
+      preLoaderRoute: typeof StartRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/industries/': {
@@ -295,6 +315,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StartRoute: StartRoute,
   IndustriesSlugRoute: IndustriesSlugRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
 }
