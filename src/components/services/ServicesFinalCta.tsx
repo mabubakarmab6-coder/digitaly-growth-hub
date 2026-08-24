@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactActions } from "@/components/site/ContactActions";
-import { WHATSAPP_URL } from "@/components/site/constants";
+import { INQUIRY_PATH } from "@/components/site/constants";
 
 export function ServicesFinalCta() {
   return (
@@ -18,9 +18,7 @@ export function ServicesFinalCta() {
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Cta
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={INQUIRY_PATH}
               variant="onNavy"
               size="lg"
               className="w-full sm:w-auto"
@@ -28,9 +26,7 @@ export function ServicesFinalCta() {
               Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
             <Cta
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={INQUIRY_PATH}
               variant="outlineNavy"
               size="lg"
               className="w-full sm:w-auto"

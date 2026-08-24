@@ -1,6 +1,6 @@
 import heroImage from "@/assets/hero-ecosystem.jpg";
 import { Cta } from "./Cta";
-import { WHATSAPP_URL } from "./constants";
+import { INQUIRY_PATH } from "./constants";
 import { MessageCircle, ArrowRight } from "lucide-react";
 
 export function Hero() {
@@ -19,13 +19,11 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Cta href="#contact" size="lg">
+            <Cta href={INQUIRY_PATH} size="lg">
               Start a Conversation <ArrowRight className="h-4 w-4" />
             </Cta>
             <Cta
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={INQUIRY_PATH}
               variant="outline"
               size="lg"
             >

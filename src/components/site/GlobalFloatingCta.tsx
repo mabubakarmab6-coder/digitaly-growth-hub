@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { WHATSAPP_URL } from "./constants";
+import { INQUIRY_PATH } from "./constants";
 
 /**
  * One global floating CTA, rendered on every public page.
@@ -26,7 +26,7 @@ export function GlobalFloatingCta() {
       }}
     >
       <a
-        href={WHATSAPP_URL}
+        href={INQUIRY_PATH}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with DigitalyMarket on WhatsApp"
