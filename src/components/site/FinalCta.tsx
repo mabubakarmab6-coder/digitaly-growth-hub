@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
 import { ContactActions } from "./ContactActions";
@@ -21,12 +21,8 @@ export function FinalCta() {
             <Cta href={INQUIRY_PATH} variant="onNavy" size="lg">
               Start a Conversation <ArrowRight className="h-4 w-4" />
             </Cta>
-            <Cta
-              href={INQUIRY_PATH}
-              variant="outlineNavy"
-              size="lg"
-            >
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+            <Cta href="/services" variant="outlineNavy" size="lg">
+              Explore What We Do
             </Cta>
           </div>
           <ContactActions tone="navy" className="mt-8 justify-center" />

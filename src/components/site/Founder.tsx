@@ -2,6 +2,7 @@ import founderSeated from "@/assets/founder-seated.jpg.asset.json";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
+import { INQUIRY_PATH } from "./constants";
 
 const highlights = [
   "E-commerce",
@@ -61,10 +62,10 @@ export function Founder() {
             ))}
           </ul>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Cta href="#contact" size="lg">
+            <Cta href={INQUIRY_PATH} size="lg">
               Explore Abubakar's Profile <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href="#contact" variant="outline" size="lg">
+            <Cta href={INQUIRY_PATH} variant="outline" size="lg">
               Looking to Hire?
             </Cta>
           </div>

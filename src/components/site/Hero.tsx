@@ -1,7 +1,7 @@
 import heroImage from "@/assets/hero-ecosystem.jpg";
 import { Cta } from "./Cta";
 import { INQUIRY_PATH } from "./constants";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { Compass, ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
@@ -22,12 +22,8 @@ export function Hero() {
             <Cta href={INQUIRY_PATH} size="lg">
               Start a Conversation <ArrowRight className="h-4 w-4" />
             </Cta>
-            <Cta
-              href={INQUIRY_PATH}
-              variant="outline"
-              size="lg"
-            >
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+            <Cta href="/services" variant="outline" size="lg">
+              <Compass className="h-4 w-4" /> Explore What We Do
             </Cta>
           </div>
 

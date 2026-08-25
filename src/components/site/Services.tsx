@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { INQUIRY_PATH } from "./constants";
 
 const services = [
   {
@@ -116,7 +117,7 @@ export function Services() {
                   ))}
                 </ul>
                 <a
-                  href="#contact"
+                  href={INQUIRY_PATH}
                   className="mt-8 inline-flex items-center gap-2 self-start text-sm font-semibold text-primary transition-all hover:gap-3"
                 >
                   {service.cta} <ArrowRight className="h-4 w-4" />

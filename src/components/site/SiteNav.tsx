@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Cta } from "./Cta";
 import { BrandLogo } from "./BrandLogo";
 
-import { NAV_LINKS } from "./constants";
+import { NAV_LINKS, INQUIRY_PATH } from "./constants";
 import { cn } from "@/lib/utils";
 
 export function SiteNav() {
@@ -55,7 +55,7 @@ export function SiteNav() {
         </nav>
 
         <div className="hidden lg:block">
-          <Cta href="#contact">Start a Conversation</Cta>
+          <Cta href={INQUIRY_PATH}>Start a Conversation</Cta>
         </div>
 
         <button
@@ -86,7 +86,7 @@ export function SiteNav() {
                 </li>
               ))}
             </ul>
-            <Cta href="#contact" onClick={() => setOpen(false)} className="mt-6 w-full" size="lg">
+            <Cta href={INQUIRY_PATH} onClick={() => setOpen(false)} className="mt-6 w-full" size="lg">
               Start a Conversation
             </Cta>
           </nav>

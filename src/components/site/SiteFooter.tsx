@@ -1,6 +1,7 @@
 import { Cta } from "./Cta";
 import { ContactActions } from "./ContactActions";
 import { BrandLogo } from "./BrandLogo";
+import { INQUIRY_PATH } from "./constants";
 
 
 
@@ -12,14 +13,14 @@ const agencyLinks = [
   { label: "About", href: "/about" },
   { label: "Insights", href: "/#insights" },
   { label: "FAQ", href: "/#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: INQUIRY_PATH },
 ];
 
 const personalLinks = [
   { label: "Abubakar", href: "/#founder" },
   { label: "Experience", href: "/#founder" },
   { label: "Portfolio", href: "/#work" },
-  { label: "Hire Me", href: "/#founder" },
+  { label: "Hire Me", href: INQUIRY_PATH },
 ];
 
 export function SiteFooter() {
@@ -77,8 +78,8 @@ export function SiteFooter() {
             <h2 className="text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
               Start here
             </h2>
-            <Cta href="#contact" className="mt-5 w-full sm:w-auto">
-              Start a Conversation
+            <Cta href={INQUIRY_PATH} className="mt-5 w-full sm:w-auto">
+              Start a Growth Conversation
             </Cta>
             <ContactActions className="mt-5" />
 

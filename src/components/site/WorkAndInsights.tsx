@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
+import { INQUIRY_PATH } from "./constants";
 
 const posts = [
   {
@@ -29,7 +30,7 @@ export function WorkAndInsights() {
                   challenges and real solutions. As projects go live, this space will showcase the
                   thinking and execution behind the work.
                 </p>
-                <Cta href="#contact" size="lg" className="mt-8">
+                <Cta href={INQUIRY_PATH} size="lg" className="mt-8">
                   Start Your Project <ArrowRight className="h-4 w-4" />
                 </Cta>
               </div>
@@ -60,7 +61,7 @@ export function WorkAndInsights() {
               </h2>
             </div>
             <a
-              href="#contact"
+              href={INQUIRY_PATH}
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
             >
               Explore Insights <ArrowRight className="h-4 w-4" />

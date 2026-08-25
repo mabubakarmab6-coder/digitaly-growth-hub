@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
@@ -36,7 +36,7 @@ export function ServiceComingSoon({
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Cta href={INQUIRY_PATH} size="lg">
-              <MessageCircle className="h-4 w-4" aria-hidden="true" /> Start My Growth Conversation
+              Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
             <Cta href="/services#capabilities" variant="outline" size="lg">
               Back to Services <ArrowRight className="h-4 w-4" aria-hidden="true" />
