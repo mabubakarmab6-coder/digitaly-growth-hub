@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "How do I get started?",
-    a: "Start a conversation or send a WhatsApp message. Tell us where your business is today and what's getting in the way — we'll take it from there.",
+    a: "Start a growth conversation. Tell us where your business is today and what's getting in the way — we'll review it and reply by email.",
   },
 ];
 

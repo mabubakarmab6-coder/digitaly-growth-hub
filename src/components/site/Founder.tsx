@@ -2,6 +2,7 @@ import founderSeated from "@/assets/founder-seated.jpg.asset.json";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
+import { INQUIRY_PATH } from "./constants";
 
 const highlights = [
   "E-commerce",

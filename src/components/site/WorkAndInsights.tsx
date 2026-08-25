@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
+import { INQUIRY_PATH } from "./constants";
 
 const posts = [
   {

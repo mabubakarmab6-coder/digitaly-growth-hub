@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Cta } from "./Cta";
 import { BrandLogo } from "./BrandLogo";
 
-import { NAV_LINKS } from "./constants";
+import { NAV_LINKS, INQUIRY_PATH } from "./constants";
 import { cn } from "@/lib/utils";
 
 export function SiteNav() {

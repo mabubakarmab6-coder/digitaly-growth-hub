@@ -1,6 +1,7 @@
 import { ArrowRight, Compass } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
+import { INQUIRY_PATH } from "@/components/site/constants";
 import heroEcosystem from "@/assets/hero-ecosystem.jpg";
 
 const arc = ["Business", "Diagnosis", "Growth"];

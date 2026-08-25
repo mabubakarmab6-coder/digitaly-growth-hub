@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { INQUIRY_PATH } from "./constants";
 
 const services = [
   {
