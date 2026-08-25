@@ -36,7 +36,7 @@ export function AboutHero() {
           </ul>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Cta href="#contact" size="lg" className="w-full sm:w-auto">
+            <Cta href={INQUIRY_PATH} size="lg" className="w-full sm:w-auto">
               Start a Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
             <Cta href="#how-we-think" variant="outline" size="lg" className="w-full sm:w-auto">

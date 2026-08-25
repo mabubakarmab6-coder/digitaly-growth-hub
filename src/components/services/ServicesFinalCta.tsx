@@ -26,12 +26,12 @@ export function ServicesFinalCta() {
               Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
             <Cta
-              href={INQUIRY_PATH}
+              href="/industries"
               variant="outlineNavy"
               size="lg"
               className="w-full sm:w-auto"
             >
-              WhatsApp Us
+              See Who We Help
             </Cta>
           </div>
           <ContactActions tone="navy" className="mt-8 justify-center" />
