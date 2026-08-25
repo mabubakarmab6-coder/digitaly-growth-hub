@@ -1,4 +1,6 @@
 import type { ComponentType } from 'react'
+import { template as newInquiryNotification } from './new-inquiry-notification'
+
 
 export interface TemplateEntry {
   component: ComponentType<any>
