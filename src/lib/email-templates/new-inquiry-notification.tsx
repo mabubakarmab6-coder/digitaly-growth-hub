@@ -46,7 +46,7 @@ const label = { fontSize: '12px', color: '#6b7280', margin: '0' }
 const value = { fontSize: '14px', color: '#111827', margin: '0 0 12px', whiteSpace: 'pre-line' as const }
 const hr = { borderColor: '#e5e7eb', margin: '8px 0 0' }
 
-const Row = ({ k, v }: { k: string; v?: string }) => (
+const Row = ({ k, v }: { k: string; v?: string | undefined }) => (
   <Section>
     <Text style={label}>{k}</Text>
     <Text style={value}>{v && v.trim() ? v : '—'}</Text>
