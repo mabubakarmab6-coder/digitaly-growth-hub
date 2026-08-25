@@ -139,28 +139,15 @@ export function InquiryFlow() {
     }
     setSubmitting(true);
     setSubmitError("");
-    const { error } = await supabase.from("inquiries").insert({
-      challenges: draft.challenges,
-      outcomes: draft.outcomes,
-      company_name: draft.companyName.trim(),
-      business_categories: draft.categories,
-      online_links: draft.links.map((l) => l.trim()).filter(Boolean),
-      business_description: draft.businessDescription.trim() || null,
-      pain_points: draft.painPoints.trim() || null,
-      full_name: draft.fullName.trim(),
-      work_email: draft.workEmail.trim(),
-      country: draft.country.trim(),
-      timeline: draft.timeline || null,
-      budget_allocated: draft.budgetAllocated || null,
-      budget_range: draft.budgetAllocated === "Yes" ? draft.budgetRange || null : null,
-      additional_context: draft.additionalContext.trim() || null,
-      consent: draft.consent,
-    });
-    setSubmitting(false);
-    if (error) {
+    try {
+      await submit_({ data: draft });
+    } catch {
+      setSubmitting(false);
       setSubmitError("We couldn't send your enquiry just now. Please try again in a moment.");
       return;
     }
+    setSubmitting(false);
+
     trackInquiry("inquiry_submitted", {
       challenge_count: draft.challenges.length,
       outcome_count: draft.outcomes.length,
