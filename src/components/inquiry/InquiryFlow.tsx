@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Loader2, Plus, Trash2 } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { useServerFn } from "@tanstack/react-start";
+import { submitInquiry } from "@/lib/inquiry/submit.functions";
 import { cn } from "@/lib/utils";
 import { CONTACT_EMAIL } from "@/components/site/constants";
 import {
@@ -91,6 +92,7 @@ export function InquiryFlow() {
   const [done, setDone] = useState(false);
   const startedRef = useRef(false);
   const topRef = useRef<HTMLDivElement>(null);
+  const submit_ = useServerFn(submitInquiry);
 
   useEffect(() => {
     setDraft(loadDraft());
