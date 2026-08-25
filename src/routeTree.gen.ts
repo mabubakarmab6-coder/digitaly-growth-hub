@@ -23,6 +23,7 @@ import { Route as ServicesGeoRouteImport } from './routes/services.geo'
 import { Route as ServicesMarketplaceOptimizationRouteImport } from './routes/services.marketplace-optimization'
 import { Route as ServicesPaidMarketingRouteImport } from './routes/services.paid-marketing'
 import { Route as ServicesWebCreationRouteImport } from './routes/services.web-creation'
+import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -95,6 +96,12 @@ const ServicesWebCreationRoute = ServicesWebCreationRouteImport.update({
   path: '/web-creation',
   getParentRoute: () => ServicesRoute,
 } as any)
+const LovableEmailTransactionalPreviewRoute =
+  LovableEmailTransactionalPreviewRouteImport.update({
+    id: '/lovable/email/transactional/preview',
+    path: '/lovable/email/transactional/preview',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -111,6 +118,7 @@ export interface FileRoutesByFullPath {
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries/': typeof IndustriesIndexRoute
   '/services/': typeof ServicesIndexRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -126,6 +134,7 @@ export interface FileRoutesByTo {
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries': typeof IndustriesIndexRoute
   '/services': typeof ServicesIndexRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -143,6 +152,7 @@ export interface FileRoutesById {
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/industries/': typeof IndustriesIndexRoute
   '/services/': typeof ServicesIndexRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -161,6 +171,7 @@ export interface FileRouteTypes {
     | '/services/web-creation'
     | '/industries/'
     | '/services/'
+    | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -176,6 +187,7 @@ export interface FileRouteTypes {
     | '/services/web-creation'
     | '/industries'
     | '/services'
+    | '/lovable/email/transactional/preview'
   id:
     | '__root__'
     | '/'
@@ -192,6 +204,7 @@ export interface FileRouteTypes {
     | '/services/web-creation'
     | '/industries/'
     | '/services/'
+    | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -203,6 +216,7 @@ export interface RootRouteChildren {
   StartRoute: typeof StartRoute
   IndustriesSlugRoute: typeof IndustriesSlugRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
+  LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -305,6 +319,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesWebCreationRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/lovable/email/transactional/preview': {
+      id: '/lovable/email/transactional/preview'
+      path: '/lovable/email/transactional/preview'
+      fullPath: '/lovable/email/transactional/preview'
+      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -339,6 +360,7 @@ const rootRouteChildren: RootRouteChildren = {
   StartRoute: StartRoute,
   IndustriesSlugRoute: IndustriesSlugRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
+  LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

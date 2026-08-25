@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Loader2, Plus, Trash2 } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { useServerFn } from "@tanstack/react-start";
+import { submitInquiry } from "@/lib/inquiry/submit.functions";
 import { cn } from "@/lib/utils";
 import { CONTACT_EMAIL } from "@/components/site/constants";
 import {
@@ -91,6 +92,7 @@ export function InquiryFlow() {
   const [done, setDone] = useState(false);
   const startedRef = useRef(false);
   const topRef = useRef<HTMLDivElement>(null);
+  const submit_ = useServerFn(submitInquiry);
 
   useEffect(() => {
     setDraft(loadDraft());
@@ -139,28 +141,15 @@ export function InquiryFlow() {
     }
     setSubmitting(true);
     setSubmitError("");
-    const { error } = await supabase.from("inquiries").insert({
-      challenges: draft.challenges,
-      outcomes: draft.outcomes,
-      company_name: draft.companyName.trim(),
-      business_categories: draft.categories,
-      online_links: draft.links.map((l) => l.trim()).filter(Boolean),
-      business_description: draft.businessDescription.trim() || null,
-      pain_points: draft.painPoints.trim() || null,
-      full_name: draft.fullName.trim(),
-      work_email: draft.workEmail.trim(),
-      country: draft.country.trim(),
-      timeline: draft.timeline || null,
-      budget_allocated: draft.budgetAllocated || null,
-      budget_range: draft.budgetAllocated === "Yes" ? draft.budgetRange || null : null,
-      additional_context: draft.additionalContext.trim() || null,
-      consent: draft.consent,
-    });
-    setSubmitting(false);
-    if (error) {
+    try {
+      await submit_({ data: draft });
+    } catch {
+      setSubmitting(false);
       setSubmitError("We couldn't send your enquiry just now. Please try again in a moment.");
       return;
     }
+    setSubmitting(false);
+
     trackInquiry("inquiry_submitted", {
       challenge_count: draft.challenges.length,
       outcome_count: draft.outcomes.length,
