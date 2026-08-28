@@ -2,16 +2,8 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
 import { INQUIRY_PATH } from "./constants";
-
-const posts = [
-  {
-    category: "GEO",
-    title: "How AI-driven discovery is changing the way customers find businesses",
-  },
-  { category: "Paid Marketing", title: "Building paid campaigns around business objectives" },
-  { category: "E-commerce", title: "From listing to loyalty: strengthening online retail growth" },
-  { category: "Web & Conversion", title: "What makes a business website actually generate enquiries" },
-];
+import { blogPosts } from "@/data/blog";
+import { Link } from "@tanstack/react-router";
 
 export function WorkAndInsights() {
   return (
@@ -60,30 +52,37 @@ export function WorkAndInsights() {
                 Ideas for businesses that want to grow.
               </h2>
             </div>
-            <a
-              href={INQUIRY_PATH}
+            <Link
+              to="/insights"
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
             >
               Explore Insights <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
           </Reveal>
 
           <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {posts.map((post, i) => (
-              <li key={post.title}>
+            {blogPosts.slice(0, 4).map((post, i) => (
+              <li key={post.slug}>
                 <Reveal
                   delay={i * 80}
-                  className="flex h-full flex-col rounded-2xl border border-hairline bg-card p-7 transition-all duration-500 hover:-translate-y-1 hover:shadow-soft"
+                  className="h-full"
                 >
-                  <span className="text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
-                    {post.category}
-                  </span>
-                  <h3 className="mt-4 flex-1 text-base leading-snug font-semibold text-foreground">
-                    {post.title}
-                  </h3>
-                  <span className="mt-6 text-xs font-medium tracking-wide text-muted-foreground">
-                    Coming soon
-                  </span>
+                  <Link 
+                    to="/insights/$slug" 
+                    params={{ slug: post.slug }}
+                    className="flex h-full flex-col rounded-2xl border border-hairline bg-card p-7 transition-all duration-500 hover:-translate-y-1 hover:shadow-soft group"
+                  >
+                    <span className="text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
+                      Digital Marketing
+                    </span>
+                    <h3 className="mt-4 flex-1 text-base leading-snug font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+                    <span className="mt-6 text-xs font-medium tracking-wide text-muted-foreground flex items-center justify-between">
+                      {post.publishDate}
+                      <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </span>
+                  </Link>
                 </Reveal>
               </li>
             ))}
