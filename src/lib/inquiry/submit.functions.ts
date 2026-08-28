@@ -54,9 +54,11 @@ export const submitInquiry = createServerFn({ method: "POST" })
       },
     });
 
-    const { data: inserted, error } = await supabase
+    const inquiryId = crypto.randomUUID();
+    const { error } = await supabase
       .from("inquiries")
       .insert({
+        id: inquiryId,
         challenges: data.challenges,
         outcomes: data.outcomes,
         company_name: data.companyName,
