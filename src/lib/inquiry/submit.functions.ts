@@ -54,9 +54,11 @@ export const submitInquiry = createServerFn({ method: "POST" })
       },
     });
 
-    const { data: inserted, error } = await supabase
+    const inquiryId = crypto.randomUUID();
+    const { error } = await supabase
       .from("inquiries")
       .insert({
+        id: inquiryId,
         challenges: data.challenges,
         outcomes: data.outcomes,
         company_name: data.companyName,
@@ -72,17 +74,18 @@ export const submitInquiry = createServerFn({ method: "POST" })
         budget_range: data.budgetAllocated === "Yes" ? data.budgetRange || null : null,
         additional_context: data.additionalContext || null,
         consent: data.consent,
-      })
-      .select("id")
-      .single();
+      });
 
-    if (error) throw new Error("Could not save the enquiry.");
+    if (error) {
+      console.error("Inquiry insert failed", error);
+      throw new Error("Could not save the enquiry.");
+    }
 
     // Notify the team. A notification failure must not fail the submission.
     try {
       const { sendTemplateEmail } = await import("@/lib/email-templates/send-email");
       await sendTemplateEmail("new-inquiry-notification", "mohammad@digitalymarket.com", {
-        idempotencyKey: `new-inquiry-notification-${inserted.id}`,
+        idempotencyKey: `new-inquiry-notification-${inquiryId}`,
         replyTo: data.workEmail,
         templateData: {
           fullName: data.fullName,
