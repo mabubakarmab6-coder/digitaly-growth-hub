@@ -85,7 +85,7 @@ export const submitInquiry = createServerFn({ method: "POST" })
     try {
       const { sendTemplateEmail } = await import("@/lib/email-templates/send-email");
       await sendTemplateEmail("new-inquiry-notification", "mohammad@digitalymarket.com", {
-        idempotencyKey: `new-inquiry-notification-${inserted.id}`,
+        idempotencyKey: `new-inquiry-notification-${inquiryId}`,
         replyTo: data.workEmail,
         templateData: {
           fullName: data.fullName,
