@@ -74,11 +74,12 @@ export const submitInquiry = createServerFn({ method: "POST" })
         budget_range: data.budgetAllocated === "Yes" ? data.budgetRange || null : null,
         additional_context: data.additionalContext || null,
         consent: data.consent,
-      })
-      .select("id")
-      .single();
+      });
 
-    if (error) throw new Error("Could not save the enquiry.");
+    if (error) {
+      console.error("Inquiry insert failed", error);
+      throw new Error("Could not save the enquiry.");
+    }
 
     // Notify the team. A notification failure must not fail the submission.
     try {
