@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-digital-marketing",
     title: "What Is Digital Marketing? A Practical Guide for Business Owners",
     description: "Discover exactly what digital marketing is, how it works, and why it is essential for modern business growth. A beginner-friendly guide covering key channels and strategies.",
-    publishDate: new Date().toISOString().split("T")[0],
+    publishDate: new Date().toISOString().split("T")[0]!,
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">If you own a business today, you have probably been told that you need to be online. But <strong>what is digital marketing</strong>, exactly? And more importantly, how does it actually help your business grow?</p>
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ecommerce-marketing",
     title: "What Is E-Commerce Marketing? Strategies to Drive Online Sales",
     description: "Learn what e-commerce marketing is and how to use it to drive traffic, convert visitors, and retain customers for your online store.",
-    publishDate: new Date().toISOString().split("T")[0],
+    publishDate: new Date().toISOString().split("T")[0]!,
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">With millions of online stores competing for attention, simply having a great product is no longer enough. To succeed, you need to actively drive traffic to your store and convert those visitors into paying customers. But <strong>what is e-commerce marketing</strong>, and how can you leverage it to grow your business?</p>
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ecommerce-growth",
     title: "What Is E-Commerce Growth? Scaling Your Online Store",
     description: "Understand the mechanics of e-commerce growth, from improving conversion rates to expanding product lines and entering new markets.",
-    publishDate: new Date().toISOString().split("T")[0],
+    publishDate: new Date().toISOString().split("T")[0]!,
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">Starting an online store is just the beginning. The real challenge—and opportunity—lies in scaling it. But <strong>what is e-commerce growth</strong>, and how does it differ from standard e-commerce marketing?</p>
@@ -179,7 +179,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-seo",
     title: "What Is SEO? The Ultimate Guide to Search Engine Optimization",
     description: "Learn what SEO is, how search engines work, and the essential strategies to rank higher on Google and drive organic traffic to your website.",
-    publishDate: new Date().toISOString().split("T")[0],
+    publishDate: new Date().toISOString().split("T")[0]!,
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">When you need a product, service, or answer, where do you go? Like billions of other people, you probably turn to Google. But have you ever wondered how Google decides which websites to show first? The answer lies in SEO. But <strong>what is SEO</strong>, and why is it critical for your business?</p>
