@@ -2,11 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
+import { ServiceDetail } from "@/components/services/ServiceDetail";
+import { services } from "@/data/services";
 
-const title = "Website Creation | DigitalyMarket";
-const description =
-  "Website creation at DigitalyMarket: clear, credible websites that turn attention into enquiries. Detailed page coming soon.";
+const service = services.find((s) => s.slug === "web-creation")!;
+const title = service.metaTitle;
+const description = service.metaDescription;
 const url = "https://digitalymarket.com/services/web-creation";
 
 export const Route = createFileRoute("/services/web-creation")({
@@ -24,6 +25,30 @@ export const Route = createFileRoute("/services/web-creation")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: service.eyebrow,
+          description,
+          url,
+          provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Services", item: "https://digitalymarket.com/services" },
+            { "@type": "ListItem", position: 2, name: service.eyebrow, item: url },
+          ],
+        }),
+      },
+    ],
   }),
 });
 
@@ -32,11 +57,7 @@ function WebPage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceComingSoon
-          eyebrow="Website Creation"
-          title="Turn attention into a clearer digital experience."
-          intro="A website should explain value quickly and make the next step obvious for the people you want to hear from."
-        />
+        <ServiceDetail service={service} />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />
