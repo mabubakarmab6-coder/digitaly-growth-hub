@@ -2,11 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
+import { ServiceDetail } from "@/components/services/ServiceDetail";
+import { services } from "@/data/services";
 
-const title = "E-commerce Growth | DigitalyMarket";
-const description =
-  "E-commerce growth at DigitalyMarket: strengthening discovery, store experience and conversion across online stores and marketplaces. Detailed page coming soon.";
+const service = services.find((s) => s.slug === "ecommerce-growth")!;
+const title = service.metaTitle;
+const description = service.metaDescription;
 const url = "https://digitalymarket.com/services/ecommerce-growth";
 
 export const Route = createFileRoute("/services/ecommerce-growth")({
@@ -24,6 +25,30 @@ export const Route = createFileRoute("/services/ecommerce-growth")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: service.eyebrow,
+          description,
+          url,
+          provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Services", item: "https://digitalymarket.com/services" },
+            { "@type": "ListItem", position: 2, name: service.eyebrow, item: url },
+          ],
+        }),
+      },
+    ],
   }),
 });
 
@@ -32,11 +57,7 @@ function EcommercePage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceComingSoon
-          eyebrow="E-commerce Growth"
-          title="From product discovery to repeat customers."
-          intro="Online stores grow when discovery, product presentation and conversion improve together — not in isolation."
-        />
+        <ServiceDetail service={service} />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />
