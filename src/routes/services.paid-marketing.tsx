@@ -2,12 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceDetail } from "@/components/services/ServiceDetail";
-import { services } from "@/data/services";
+import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 
-const service = services.find((s) => s.slug === "paid-marketing")!;
-const title = service.metaTitle;
-const description = service.metaDescription;
+const title = "Paid Marketing | DigitalyMarket";
+const description =
+  "Paid marketing at DigitalyMarket: campaigns built around measurable business objectives, not vanity metrics. Detailed page coming soon.";
 const url = "https://digitalymarket.com/services/paid-marketing";
 
 export const Route = createFileRoute("/services/paid-marketing")({
@@ -25,30 +24,6 @@ export const Route = createFileRoute("/services/paid-marketing")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: service.eyebrow,
-          description,
-          url,
-          provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" },
-        }),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Services", item: "https://digitalymarket.com/services" },
-            { "@type": "ListItem", position: 2, name: service.eyebrow, item: url },
-          ],
-        }),
-      },
-    ],
   }),
 });
 
@@ -57,7 +32,11 @@ function PaidPage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceDetail service={service} />
+        <ServiceComingSoon
+          eyebrow="Paid Marketing"
+          title="Put your offer in front of the right people."
+          intro="Paid marketing works when the targeting, the message and the destination all point at the same business objective."
+        />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />

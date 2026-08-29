@@ -2,12 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceDetail } from "@/components/services/ServiceDetail";
-import { services } from "@/data/services";
+import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 
-const service = services.find((s) => s.slug === "geo")!;
-const title = service.metaTitle;
-const description = service.metaDescription;
+const title = "Generative Engine Optimization (GEO) | DigitalyMarket";
+const description =
+  "GEO at DigitalyMarket: improving how your business is discovered across modern search and AI-driven answers. Detailed page coming soon.";
 const url = "https://digitalymarket.com/services/geo";
 
 export const Route = createFileRoute("/services/geo")({
@@ -25,30 +24,6 @@ export const Route = createFileRoute("/services/geo")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: service.eyebrow,
-          description,
-          url,
-          provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" },
-        }),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Services", item: "https://digitalymarket.com/services" },
-            { "@type": "ListItem", position: 2, name: service.eyebrow, item: url },
-          ],
-        }),
-      },
-    ],
   }),
 });
 
@@ -57,7 +32,11 @@ function GeoPage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceDetail service={service} />
+        <ServiceComingSoon
+          eyebrow="Generative Engine Optimization"
+          title="Be discoverable where people now search — including AI answers."
+          intro="GEO is about making your business understandable and findable across modern search and AI-driven discovery experiences."
+        />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />

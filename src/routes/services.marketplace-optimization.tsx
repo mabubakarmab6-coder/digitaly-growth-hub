@@ -2,12 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceDetail } from "@/components/services/ServiceDetail";
-import { services } from "@/data/services";
+import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
 
-const service = services.find((s) => s.slug === "marketplace-optimization")!;
-const title = service.metaTitle;
-const description = service.metaDescription;
+const title = "Marketplace Optimization | Marketplace SEO & Listing Growth | DigitalyMarket";
+const description =
+  "Marketplace Optimization at DigitalyMarket: improving marketplace search visibility, product listing quality and conversion across the platforms your business already sells on. Detailed page coming soon.";
 const url = "https://digitalymarket.com/services/marketplace-optimization";
 
 export const Route = createFileRoute("/services/marketplace-optimization")({
@@ -25,30 +24,6 @@ export const Route = createFileRoute("/services/marketplace-optimization")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: service.eyebrow,
-          description,
-          url,
-          provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" },
-        }),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Services", item: "https://digitalymarket.com/services" },
-            { "@type": "ListItem", position: 2, name: service.eyebrow, item: url },
-          ],
-        }),
-      },
-    ],
   }),
 });
 
@@ -57,7 +32,11 @@ function MarketplaceOptimizationPage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceDetail service={service} />
+        <ServiceComingSoon
+          eyebrow="Marketplace Optimization"
+          title="Your marketplace presence is another storefront — it needs to be found and chosen."
+          intro="Marketplace optimization covers search visibility, listing and catalog quality, product content and conversion across the marketplaces your business already sells on. It stays platform-agnostic — the work depends on where your customers actually buy."
+        />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />
