@@ -15,28 +15,32 @@ export function WorkAndInsights() {
               <div>
                 <p className="eyebrow">Work</p>
                 <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-                  Our next chapter is being built.
+                  Real projects. Real growth.
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  DigitalyMarket is building its public portfolio around real projects, real
-                  challenges and real solutions. As projects go live, this space will showcase the
-                  thinking and execution behind the work.
+                  Explore our latest work where we turn complex challenges into scalable digital solutions. See how we build authoritative online brands and showcase high-impact web design.
                 </p>
                 <Cta href={INQUIRY_PATH} size="lg" className="mt-8">
                   Start Your Project <ArrowRight className="h-4 w-4" />
                 </Cta>
               </div>
-              <div
-                className="grid grid-cols-2 gap-3 sm:gap-4"
-                aria-hidden="true"
-              >
-                {[0, 1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="aspect-4/3 rounded-2xl border border-hairline bg-surface"
-                    style={{ opacity: 1 - i * 0.18 }}
-                  />
-                ))}
+              <div className="relative aspect-square sm:aspect-video lg:aspect-[4/3] rounded-3xl border border-hairline bg-surface overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-surface opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end z-10">
+                  <span className="w-fit rounded-full border border-hairline bg-card/80 backdrop-blur-sm px-3 py-1 text-[0.65rem] font-bold tracking-wider text-primary uppercase mb-3">
+                    Website Development
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Digital Portfolio</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground line-clamp-2">
+                    A modern, high-performance portfolio website engineered to showcase creative design, in-depth case studies, and digital marketing expertise.
+                  </p>
+                  <a href="#" className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3">
+                    View Project <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+                {/* Abstract geometric shapes for visual interest */}
+                <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-colors duration-700" />
+                <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-full bg-accent/20 blur-2xl group-hover:bg-accent/30 transition-colors duration-700" />
               </div>
             </div>
           </Reveal>
