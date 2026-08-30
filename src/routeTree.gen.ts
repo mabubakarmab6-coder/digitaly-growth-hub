@@ -26,6 +26,8 @@ import { Route as ServicesGeoRouteImport } from './routes/services.geo'
 import { Route as ServicesMarketplaceOptimizationRouteImport } from './routes/services.marketplace-optimization'
 import { Route as ServicesPaidMarketingRouteImport } from './routes/services.paid-marketing'
 import { Route as ServicesWebCreationRouteImport } from './routes/services.web-creation'
+import { Route as WorkIndexRouteImport } from './routes/work.index'
+import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const IndexRoute = IndexRouteImport.update({
@@ -114,6 +116,16 @@ const ServicesWebCreationRoute = ServicesWebCreationRouteImport.update({
   path: '/web-creation',
   getParentRoute: () => ServicesRoute,
 } as any)
+const WorkIndexRoute = WorkIndexRouteImport.update({
+  id: '/work/',
+  path: '/work/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkSlugRoute = WorkSlugRouteImport.update({
+  id: '/work/$slug',
+  path: '/work/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LovableEmailTransactionalPreviewRoute =
   LovableEmailTransactionalPreviewRouteImport.update({
     id: '/lovable/email/transactional/preview',
@@ -136,9 +148,11 @@ export interface FileRoutesByFullPath {
   '/services/marketplace-optimization': typeof ServicesMarketplaceOptimizationRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
+  '/work/$slug': typeof WorkSlugRoute
   '/industries/': typeof IndustriesIndexRoute
   '/insights/': typeof InsightsIndexRoute
   '/services/': typeof ServicesIndexRoute
+  '/work/': typeof WorkIndexRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
@@ -154,9 +168,11 @@ export interface FileRoutesByTo {
   '/services/marketplace-optimization': typeof ServicesMarketplaceOptimizationRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
+  '/work/$slug': typeof WorkSlugRoute
   '/industries': typeof IndustriesIndexRoute
   '/insights': typeof InsightsIndexRoute
   '/services': typeof ServicesIndexRoute
+  '/work': typeof WorkIndexRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesById {
@@ -175,9 +191,11 @@ export interface FileRoutesById {
   '/services/marketplace-optimization': typeof ServicesMarketplaceOptimizationRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
+  '/work/$slug': typeof WorkSlugRoute
   '/industries/': typeof IndustriesIndexRoute
   '/insights/': typeof InsightsIndexRoute
   '/services/': typeof ServicesIndexRoute
+  '/work/': typeof WorkIndexRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRouteTypes {
@@ -197,9 +215,11 @@ export interface FileRouteTypes {
     | '/services/marketplace-optimization'
     | '/services/paid-marketing'
     | '/services/web-creation'
+    | '/work/$slug'
     | '/industries/'
     | '/insights/'
     | '/services/'
+    | '/work/'
     | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -215,9 +235,11 @@ export interface FileRouteTypes {
     | '/services/marketplace-optimization'
     | '/services/paid-marketing'
     | '/services/web-creation'
+    | '/work/$slug'
     | '/industries'
     | '/insights'
     | '/services'
+    | '/work'
     | '/lovable/email/transactional/preview'
   id:
     | '__root__'
@@ -235,9 +257,11 @@ export interface FileRouteTypes {
     | '/services/marketplace-optimization'
     | '/services/paid-marketing'
     | '/services/web-creation'
+    | '/work/$slug'
     | '/industries/'
     | '/insights/'
     | '/services/'
+    | '/work/'
     | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
 }
@@ -250,7 +274,9 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   StartRoute: typeof StartRoute
   IndustriesSlugRoute: typeof IndustriesSlugRoute
+  WorkSlugRoute: typeof WorkSlugRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
+  WorkIndexRoute: typeof WorkIndexRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
 
@@ -375,6 +401,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesWebCreationRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/work/': {
+      id: '/work/'
+      path: '/work'
+      fullPath: '/work/'
+      preLoaderRoute: typeof WorkIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/$slug': {
+      id: '/work/$slug'
+      path: '/work/$slug'
+      fullPath: '/work/$slug'
+      preLoaderRoute: typeof WorkSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/lovable/email/transactional/preview': {
       id: '/lovable/email/transactional/preview'
       path: '/lovable/email/transactional/preview'
@@ -430,19 +470,11 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   StartRoute: StartRoute,
   IndustriesSlugRoute: IndustriesSlugRoute,
+  WorkSlugRoute: WorkSlugRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
+  WorkIndexRoute: WorkIndexRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
