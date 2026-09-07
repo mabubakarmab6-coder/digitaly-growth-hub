@@ -142,8 +142,10 @@ export function InquiryFlow() {
     setSubmitting(true);
     setSubmitError("");
     try {
-      await submit_({ data: draft });
-    } catch {
+      const result = await submit_({ data: draft });
+      if (!result.ok) throw new Error("Enquiry submission was not accepted.");
+    } catch (error) {
+      console.error("Enquiry submission failed", error);
       setSubmitting(false);
       setSubmitError("We couldn't send your enquiry just now. Please try again in a moment.");
       return;
