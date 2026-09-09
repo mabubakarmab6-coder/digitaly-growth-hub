@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-digital-marketing",
     title: "What Is Digital Marketing? A Practical Guide for Business Owners",
     description: "Discover exactly what digital marketing is, how it works, and why it is essential for modern business growth. A beginner-friendly guide covering key channels and strategies.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-05",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">If you own a business today, you have probably been told that you need to be online. But <strong>what is digital marketing</strong>, exactly? And more importantly, how does it actually help your business grow?</p>
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ecommerce-marketing",
     title: "What Is E-Commerce Marketing? Strategies to Drive Online Sales",
     description: "Learn what e-commerce marketing is and how to use it to drive traffic, convert visitors, and retain customers for your online store.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-08",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">With millions of online stores competing for attention, simply having a great product is no longer enough. To succeed, you need to actively drive traffic to your store and convert those visitors into paying customers. But <strong>what is e-commerce marketing</strong>, and how can you leverage it to grow your business?</p>
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ecommerce-growth",
     title: "What Is E-Commerce Growth? Scaling Your Online Store",
     description: "Understand the mechanics of e-commerce growth, from improving conversion rates to expanding product lines and entering new markets.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-12",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">Starting an online store is just the beginning. The real challenge—and opportunity—lies in scaling it. But <strong>what is e-commerce growth</strong>, and how does it differ from standard e-commerce marketing?</p>
@@ -179,7 +179,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-seo",
     title: "What Is SEO? The Ultimate Guide to Search Engine Optimization",
     description: "Learn what SEO is, how search engines work, and the essential strategies to rank higher on Google and drive organic traffic to your website.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-15",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">When you need a product, service, or answer, where do you go? Like billions of other people, you probably turn to Google. But have you ever wondered how Google decides which websites to show first? The answer lies in SEO. But <strong>what is SEO</strong>, and why is it critical for your business?</p>
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ecommerce-seo",
     title: "What Is E-Commerce SEO? A Complete Guide to Growing Organic Sales",
     description: "Learn what e-commerce SEO means, how it differs from general SEO, and how to optimize product and category pages to turn organic traffic into organic sales.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-19",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">For an online store, traffic is the lifeblood of revenue. But paying for every single visitor through ads can quickly eat into your profit margins. This is where organic search comes in. But <strong>what is e-commerce SEO</strong>, and how can you leverage it to drive sustainable, long-term sales?</p>
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-paid-marketing",
     title: "What Is Paid Marketing? A Beginner's Guide to Online Advertising",
     description: "Discover the fundamentals of paid marketing, from Google and Meta Ads to understanding CPC, CPA, and how it compares to organic marketing strategies.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-22",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">In the digital landscape, visibility is everything. While organic strategies build long-term authority, sometimes you need instant visibility and immediate sales. This is where paid marketing shines. But <strong>what is paid marketing</strong>, and how does it actually work?</p>
@@ -323,7 +323,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-performance-marketing",
     title: "What Is Performance Marketing? A Guide to Measurable Digital Growth",
     description: "Explore performance marketing, key metrics like ROAS, CAC, and CPA, and why prioritizing revenue and measurable growth beats vanity metrics.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-26",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">For decades, marketing was famous for the quote: <em>"Half the money I spend on advertising is wasted; the trouble is I don't know which half."</em> Today, data has solved that problem. Enter performance marketing. But <strong>what is performance marketing</strong>, and how does it guarantee digital growth?</p>
@@ -360,7 +360,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-generative-engine-optimization",
     title: "What Is Generative Engine Optimization (GEO)? A Beginner's Guide to AI Search",
     description: "Prepare your business for the future of AI search. Learn what GEO is, how it compares to traditional SEO, and why E-E-A-T matters for AI systems.",
-    publishDate: new Date().toISOString().split("T")[0]!,
+    publishDate: "2026-08-29",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">The way people search for information is undergoing its biggest evolution since the invention of Google. AI chatbots and AI overviews are changing the game. To adapt, businesses must look beyond traditional SEO and understand a new concept. But <strong>what is Generative Engine Optimization (GEO)</strong>?</p>
