@@ -77,12 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DigitalyMarket | Digital Growth Agency for Modern Businesses" },
+      { title: "DigitalyMarket" },
       {
         name: "description",
         content:
-          "DigitalyMarket helps businesses grow through GEO, paid marketing, websites and e-commerce solutions.",
+          "DigitalyMarket is a digital growth agency helping businesses grow online.",
       },
+
       { name: "author", content: "DigitalyMarket" },
       {
         name: "google-site-verification",
