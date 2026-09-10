@@ -329,7 +329,7 @@ function GemsGalleryCaseStudy() {
                 ["04", "Build focused information architecture", "A structure designed to build trust."],
               ].map(([index, t, body], i) => (
                 <Reveal key={index} delay={i * 70}>
-                  <Card index={index} title={t} body={body} />
+                  <Card index={index!} title={t!} body={body!} />
                 </Reveal>
               ))}
             </div>
@@ -353,7 +353,7 @@ function GemsGalleryCaseStudy() {
                 ["Digital opportunity", "Where an owned digital presence could realistically help."],
               ].map(([t, body], i) => (
                 <Reveal key={t} delay={i * 60}>
-                  <Card title={t} body={body} />
+                  <Card title={t!} body={body!} />
                 </Reveal>
               ))}
             </div>
@@ -659,7 +659,7 @@ function GemsGalleryCaseStudy() {
                 ["Future opportunity", "Dedicated gemstone-specific content can increase specificity and search opportunities."],
               ].map(([t, body], i) => (
                 <Reveal key={t} delay={i * 70}>
-                  <Card title={t} body={body} />
+                  <Card title={t!} body={body!} />
                 </Reveal>
               ))}
             </div>
@@ -769,7 +769,7 @@ function GemsGalleryCaseStudy() {
                 ["GEO", "Used clear headings, explicit terminology and structured capability descriptions for generative engine readability.", "/services/geo"],
               ].map(([t, body], i) => (
                 <Reveal key={t} delay={i * 70}>
-                  <Card title={t} body={body} />
+                  <Card title={t!} body={body!} />
                 </Reveal>
               ))}
             </div>
