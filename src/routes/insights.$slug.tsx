@@ -2,7 +2,6 @@ import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { Reveal } from "@/components/site/Reveal";
 import { blogBySlug } from "@/data/blog";
 import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
@@ -105,7 +104,7 @@ function InsightsPage() {
       <SiteNav />
       <main className="flex-1">
         <article className="container-page py-16 sm:py-20 lg:py-28">
-          <Reveal className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
              {post.category ? (
                <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                  <Link to="/" className="transition-colors hover:text-foreground">Home</Link>
@@ -160,7 +159,7 @@ function InsightsPage() {
                   </ul>
                 </section>
               ) : null}
-          </Reveal>
+          </div>
         </article>
       </main>
       <SiteFooter />
