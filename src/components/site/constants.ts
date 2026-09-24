@@ -18,8 +18,8 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
-  { label: "Work", href: "/#work" },
+  { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
-  { label: "Insights", href: "/#insights" },
+  { label: "Insights", href: "/insights" },
   { label: "Abubakar", href: "/#founder" },
 ] as const;

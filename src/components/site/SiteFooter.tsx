@@ -8,10 +8,10 @@ import { INQUIRY_PATH } from "./constants";
 const agencyLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Industries", href: "/#industries" },
-  { label: "Work", href: "/#work" },
+  { label: "Industries", href: "/industries" },
+  { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
-  { label: "Insights", href: "/#insights" },
+  { label: "Insights", href: "/insights" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: INQUIRY_PATH },
 ];
@@ -19,7 +19,7 @@ const agencyLinks = [
 const personalLinks = [
   { label: "Abubakar", href: "/#founder" },
   { label: "Experience", href: "/#founder" },
-  { label: "Portfolio", href: "/#work" },
+  { label: "Portfolio", href: "/work" },
   { label: "Hire Me", href: INQUIRY_PATH },
 ];
 
