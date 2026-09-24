@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { Reveal } from "@/components/site/Reveal";
 import { blogBySlug } from "@/data/blog";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { INQUIRY_PATH } from "@/components/site/constants";
 
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/insights/$slug")({
     }
     const { post } = loaderData;
     const url = `${origin}/insights/${params.slug}`;
-    const title = `${post.title} | DigitalyMarket`;
+    const title = post.seoTitle ?? `${post.title} | DigitalyMarket`;
     return {
       meta: [
         { title: title },
@@ -34,7 +34,9 @@ export const Route = createFileRoute("/insights/$slug")({
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { property: "article:published_time", content: post.publishDate },
+        { property: "article:modified_time", content: post.modifiedDate ?? post.publishDate },
         { property: "article:author", content: post.author },
+        ...(post.category ? [{ property: "article:section", content: post.category }] : []),
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: title },
         { name: "twitter:description", content: post.description },
@@ -49,6 +51,7 @@ export const Route = createFileRoute("/insights/$slug")({
             headline: post.title,
             description: post.description,
             datePublished: post.publishDate,
+            dateModified: post.modifiedDate ?? post.publishDate,
             author: {
               "@type": "Person",
               name: post.author,
@@ -88,22 +91,42 @@ export const Route = createFileRoute("/insights/$slug")({
 
 function InsightsPage() {
   const { post } = Route.useLoaderData();
+  const relatedPosts = (post.relatedSlugs ?? [])
+    .map((slug) => blogBySlug[slug])
+    .filter((relatedPost) => relatedPost !== undefined);
+  const formattedDate = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${post.publishDate}T00:00:00Z`));
   return (
     <div className="min-h-dvh bg-background flex flex-col">
       <SiteNav />
       <main className="flex-1">
         <article className="container-page py-16 sm:py-20 lg:py-28">
           <Reveal className="max-w-3xl mx-auto">
-             <Link to="/insights" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors mb-8">
-                <ArrowLeft className="h-4 w-4" /> Back to Insights
-             </Link>
+             {post.category ? (
+               <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+                 <Link to="/" className="transition-colors hover:text-foreground">Home</Link>
+                 <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
+                 <Link to="/insights" className="transition-colors hover:text-foreground">Insights</Link>
+                 <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
+                 <span aria-current="page" className="text-foreground">{post.title}</span>
+               </nav>
+             ) : (
+               <Link to="/insights" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors mb-8">
+                  <ArrowLeft className="h-4 w-4" /> Back to Insights
+               </Link>
+             )}
+             {post.category ? <p className="eyebrow mb-5">{post.category}</p> : null}
              <h1 className="text-4xl leading-[1.1] font-semibold tracking-tight text-foreground sm:text-5xl">
                 {post.title}
              </h1>
              <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
                 <span>{post.author}</span>
                 <span>•</span>
-                <time dateTime={post.publishDate}>{new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+                <time dateTime={post.publishDate}>{formattedDate}</time>
              </div>
              <div 
                className="mt-12 text-foreground" 
@@ -117,6 +140,26 @@ function InsightsPage() {
                    Start a Conversation
                 </Cta>
              </div>
+              {relatedPosts.length > 0 ? (
+                <section aria-labelledby="related-insights" className="mt-16 border-t border-hairline pt-10">
+                  <p className="eyebrow">Continue learning</p>
+                  <h2 id="related-insights" className="mt-4 text-2xl font-semibold text-foreground">Related insights</h2>
+                  <ul className="mt-6 divide-y divide-hairline border-y border-hairline">
+                    {relatedPosts.map((relatedPost) => (
+                      <li key={relatedPost.slug}>
+                        <Link
+                          to="/insights/$slug"
+                          params={{ slug: relatedPost.slug }}
+                          className="group flex items-center justify-between gap-5 py-5 text-base font-semibold text-foreground transition-colors hover:text-primary"
+                        >
+                          <span>{relatedPost.title}</span>
+                          <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
           </Reveal>
         </article>
       </main>

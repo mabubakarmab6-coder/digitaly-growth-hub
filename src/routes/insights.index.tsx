@@ -6,6 +6,8 @@ import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { Reveal } from "@/components/site/Reveal";
 import { blogPosts } from "@/data/blog";
 
+const orderedPosts = [...blogPosts].sort((a, b) => b.publishDate.localeCompare(a.publishDate));
+
 const title = "Digital Growth Blog & Insights | DigitalyMarket";
 const description =
   "Expert insights, guides, and practical advice on digital marketing, SEO, GEO, and business growth.";
@@ -63,7 +65,7 @@ function InsightsIndex() {
         <section className="section-y">
           <div className="container-page">
             <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {blogPosts.map((post, i) => (
+              {orderedPosts.map((post, i) => (
                 <li key={post.slug}>
                   <Reveal delay={i * 90} className="h-full">
                     <Link
@@ -78,7 +80,7 @@ function InsightsIndex() {
                           {post.description}
                         </p>
                         <div className="mt-auto pt-6 flex items-center justify-between">
-                           <span className="text-xs font-medium text-foreground">{post.author}</span>
+                         <span className="text-xs font-medium text-foreground">{post.category ?? post.author}</span>
                            <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all group-hover:gap-3">
                              Read <ArrowRight className="h-4 w-4" aria-hidden="true" />
                            </span>

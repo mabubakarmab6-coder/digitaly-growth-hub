@@ -3,7 +3,11 @@ export interface BlogPost {
   title: string;
   description: string;
   publishDate: string;
+  modifiedDate?: string;
   author: string;
+  category?: string;
+  seoTitle?: string;
+  relatedSlugs?: string[];
   content: string; // HTML string or Markdown. I will use HTML string for simplicity if there is no MDX setup.
 }
 
@@ -397,6 +401,138 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-3xl font-bold mt-8 mb-4">Conclusion</h2>
       <p class="mb-4">Generative Engine Optimization is not a fad; it is the future of digital visibility. By combining traditional SEO best practices with high-quality, structured, and authoritative content, businesses can ensure they remain the go-to recommendation in the age of AI.</p>
     `
+  },
+  {
+    slug: "how-does-digital-marketing-work",
+    title: "How Does Digital Marketing Work? A Step-by-Step Guide for Businesses",
+    seoTitle: "How Does Digital Marketing Work? A Step-by-Step Guide",
+    description: "Explain how digital marketing works—from business objectives and audience research to channels, traffic, conversion, measurement, and optimization.",
+    publishDate: "2026-09-24",
+    modifiedDate: "2026-09-24",
+    author: "Mohammad Abubakar",
+    category: "Digital Marketing",
+    relatedSlugs: [
+      "what-is-digital-marketing",
+      "what-is-seo",
+      "what-is-paid-marketing",
+      "what-is-performance-marketing",
+      "what-is-generative-engine-optimization",
+    ],
+    content: `
+      <p class="mb-5 text-lg leading-relaxed">When people hear digital marketing, they often think of social media posts, Google Ads, SEO, email campaigns, or content creation. But these are only individual parts of a much larger system.</p>
+
+      <p class="mb-5">So, <strong>how does digital marketing work</strong>? At its core, digital marketing works by connecting a business with the right audience through digital channels and guiding potential customers through a journey—from discovering a business to taking an action that matters to the business.</p>
+
+      <p class="mb-8">That action could be buying a product, requesting a quotation, booking an appointment, submitting an enquiry, signing up, downloading a resource, or returning for another purchase. If you first need the definition and channel fundamentals, begin with our Level 1 guide, <a href="/insights/what-is-digital-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">What Is Digital Marketing?</a></p>
+
+      <aside aria-label="The digital marketing process" class="my-10 border-l-4 border-primary bg-surface px-6 py-7 sm:px-8">
+        <p class="eyebrow">Core model</p>
+        <p class="mt-4 text-base font-semibold leading-8 text-foreground sm:text-lg">Business Goal <span aria-hidden="true" class="text-primary">→</span> Audience <span aria-hidden="true" class="text-primary">→</span> Strategy <span aria-hidden="true" class="text-primary">→</span> Channels <span aria-hidden="true" class="text-primary">→</span> Message <span aria-hidden="true" class="text-primary">→</span> Traffic <span aria-hidden="true" class="text-primary">→</span> Experience <span aria-hidden="true" class="text-primary">→</span> Conversion <span aria-hidden="true" class="text-primary">→</span> Measurement <span aria-hidden="true" class="text-primary">→</span> Optimization</p>
+      </aside>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">What Is the Basic Process of Digital Marketing?</h2>
+      <ol class="mb-8 list-decimal space-y-2 pl-6 marker:font-semibold marker:text-primary">
+        <li>Define the business objective</li>
+        <li>Understand the target audience</li>
+        <li>Develop a marketing strategy</li>
+        <li>Select appropriate digital channels</li>
+        <li>Create relevant messaging and content</li>
+        <li>Attract qualified traffic</li>
+        <li>Provide a useful digital experience</li>
+        <li>Convert visitors into desired actions</li>
+        <li>Measure performance</li>
+        <li>Analyze and optimize</li>
+      </ol>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">1. Start With the Business Objective</h2>
+      <p class="mb-5">Digital marketing should begin with the business problem, not with a particular platform. A business may want to generate qualified leads, increase online sales, enter a new market, build awareness, reduce customer acquisition costs, increase repeat purchases, or improve website conversions. The objective determines what kind of strategy may be appropriate.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">2. Understand the Target Audience</h2>
+      <p class="mb-4">After defining the objective, the next step is understanding the people the business wants to reach. Useful questions include:</p>
+      <ul class="mb-6 list-disc space-y-2 pl-6 marker:text-primary">
+        <li>What problem are they trying to solve?</li>
+        <li>What are they searching for?</li>
+        <li>What triggers their purchase?</li>
+        <li>What objections do they have?</li>
+        <li>Where do they look for information?</li>
+        <li>What makes them trust a business?</li>
+      </ul>
+      <p class="mb-5">Understanding this behaviour helps determine what to communicate, where to communicate it, and when.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">3. Develop the Digital Marketing Strategy</h2>
+      <p class="mb-5">A <strong>digital marketing strategy</strong> connects the business objective with the customer journey. It can determine the target audience, positioning, key messages, content requirements, channel selection, conversion paths, budget allocation, measurement, and optimization priorities. A business may use SEO, <a href="/services/paid-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">paid marketing</a>, content, website optimization, <a href="/services/ecommerce-growth" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce growth</a>, and <a href="/services/geo" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">GEO</a> together when those components support the same objective.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">4. Choose the Right Digital Marketing Channels</h2>
+      <p class="mb-5">Common <strong>digital marketing channels</strong> include search engines, SEO, paid search, paid social, social media, content marketing, email marketing, websites, e-commerce platforms, online marketplaces, and AI-powered search and answer experiences. There is no universal list of channels every business must use. The objective is to identify which channels are relevant to the audience and business objective.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">5. Create the Right Message and Content</h2>
+      <p class="mb-5">Businesses may use blog articles, product pages, service pages, videos, social posts, case studies, guides, comparisons, demonstrations, advertisements, FAQs, and customer stories. Content should match the customer's stage. Someone discovering a problem needs different information from someone comparing solutions or ready to purchase. Content should be connected to customer intent rather than created simply to fill a content calendar.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">6. Attract Qualified Traffic</h2>
+      <p class="mb-5">Traffic can come from organic search, paid advertising, social media, marketplaces, referrals, and emerging AI-powered discovery. Traffic volume alone is not enough. A business could receive thousands of visitors with little interest in its offer, while another business receives fewer visitors but a higher proportion of qualified prospects. The question is whether the business is attracting the right people, not simply more people. Our guides to <a href="/insights/what-is-seo" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">SEO</a>, <a href="/insights/what-is-paid-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">paid marketing</a>, and <a href="/insights/what-is-generative-engine-optimization" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">GEO</a> explain how these discovery channels differ.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">7. Provide a Relevant Digital Experience</h2>
+      <p class="mb-4">Once visitors arrive, they may ask:</p>
+      <ul class="mb-6 list-disc space-y-2 pl-6 marker:text-primary">
+        <li>Am I in the right place?</li>
+        <li>Does this business solve my problem?</li>
+        <li>Can I trust it?</li>
+        <li>What does it offer?</li>
+        <li>How is it different?</li>
+        <li>What should I do next?</li>
+      </ul>
+      <p class="mb-5">Website structure, content quality, page speed, mobile experience, navigation, product or service presentation, trust signals, and calls to action can all affect the experience. This is where <a href="/services/web-creation" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">website creation and optimization</a> and conversion optimization become important.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">8. Convert Visitors Into Meaningful Actions</h2>
+      <p class="mb-5">A conversion is the desired action a visitor takes. For e-commerce: Visitor → Product → Cart → Checkout → Purchase. For a service business: Visitor → Service → Enquiry → Consultation → Customer. For B2B: Visitor → Research → Enquiry → Sales process → Customer. Not every visitor converts immediately, so the <strong>digital marketing funnel</strong> should be viewed as a customer journey rather than a single advertisement or post. The same principle is explored in our guides to <a href="/insights/what-is-ecommerce-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce marketing</a> and <a href="/insights/what-is-ecommerce-growth" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce growth</a>.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">9. Measure What Happens</h2>
+      <p class="mb-5">Depending on the business, useful metrics may include website traffic, traffic sources, engagement, leads, conversion rate, cost per lead, customer acquisition cost, cost per acquisition, revenue, return on ad spend, average order value, customer lifetime value, and repeat purchase rate. Measurement becomes useful when connected to decisions. Clicks alone do not tell the full story.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">10. Analyze the Data</h2>
+      <p class="mb-5">Analysis helps identify what is actually happening. High traffic with few enquiries can point toward landing-page relevance, messaging, trust, user experience, or conversion issues. Many clicks with expensive acquisition can point toward targeting, creative, audience quality, landing pages, conversion tracking, or the offer. Good first purchases with weak repeat business can point toward product experience, retention, customer communication, or customer lifetime value. The principle is simple: diagnose the problem before changing the tactic.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">11. Optimize the System</h2>
+      <p class="mb-5">Digital marketing is closer to Plan → Execute → Measure → Analyze → Improve → Measure Again than to Plan → Launch → Finish. Optimization can involve audience, channel, content, website, conversion, campaigns, and retention. This makes digital marketing an ongoing learning process. The measurement mindset is covered in more detail in our guide to <a href="/insights/what-is-performance-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">performance marketing</a>.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">How Do Different Digital Marketing Channels Work Together?</h2>
+      <p class="mb-5">Digital marketing channels do not necessarily operate independently. A potential customer might search for a problem, discover an educational article, visit a website, later see an advertisement, return to compare a service, read a case study, and submit an enquiry. Several touchpoints may contribute to a conversion, so evaluating every channel in isolation can provide an incomplete picture.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">A Simple Example of Digital Marketing in Practice</h2>
+      <p class="mb-5">Imagine a company selling premium industrial equipment. Its objective is to generate qualified B2B enquiries.</p>
+      <dl class="mb-8 divide-y divide-hairline border-y border-hairline">
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Business objective</dt><dd class="text-muted-foreground">Qualified enquiries</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Audience</dt><dd class="text-muted-foreground">Manufacturers and procurement decision-makers</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Research</dt><dd class="text-muted-foreground">Problems, searches, questions, and buying criteria</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Strategy</dt><dd class="text-muted-foreground">Organic discovery, paid acquisition, and conversion-focused website content</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Content</dt><dd class="text-muted-foreground">Service pages, technical information, FAQs, and educational content</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Traffic</dt><dd class="text-muted-foreground">SEO and paid campaigns</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Website experience</dt><dd class="text-muted-foreground">Capabilities, applications, specifications, and trust signals</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Conversion</dt><dd class="text-muted-foreground">Quotation or consultation</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Measurement</dt><dd class="text-muted-foreground">Qualified enquiries and acquisition economics</dd></div>
+        <div class="grid gap-1 py-4 sm:grid-cols-[10rem_1fr]"><dt class="font-semibold">Optimization</dt><dd class="text-muted-foreground">Targeting, content, landing pages, and conversion paths</dd></div>
+      </dl>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">Common Digital Marketing Mistakes</h2>
+      <ol class="mb-8 list-decimal space-y-2 pl-6 marker:font-semibold marker:text-primary">
+        <li>Starting with a platform</li>
+        <li>Focusing only on traffic</li>
+        <li>Chasing vanity metrics</li>
+        <li>Ignoring the website</li>
+        <li>Using every channel</li>
+        <li>Making decisions without measurement</li>
+        <li>Expecting every channel to produce immediate results</li>
+      </ol>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">So, How Does Digital Marketing Work?</h2>
+      <p class="mb-5">At its simplest: define the business objective; understand the audience; build a strategy; select appropriate channels; create relevant messaging and content; attract qualified traffic; provide a useful digital experience; convert visitors into meaningful actions; measure the results; analyze and optimize. Then repeat.</p>
+      <p class="mb-5">Digital marketing is not simply posting content, running advertisements, ranking on Google, or gaining followers. Those are components of a larger system.</p>
+
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">Final Takeaway</h2>
+      <p class="mb-5">The most useful way to understand digital marketing is to stop viewing it as a collection of independent tactics. Think of it as a system: Business → Audience → Strategy → Channels → Content → Traffic → Experience → Conversion → Measurement → Optimization.</p>
+      <p class="mb-5">When those elements are connected, digital marketing can become a measurable part of business growth. When they are disconnected, a business can end up generating activity without generating meaningful outcomes.</p>
+      <p class="mb-5">The goal isn't simply to do more digital marketing. It is to understand what the business needs, what the customer needs, and how the digital system can connect the two. Explore how DigitalyMarket brings these parts together through its <a href="/services" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">digital growth services</a>.</p>
+    `,
   }
 ];
 
