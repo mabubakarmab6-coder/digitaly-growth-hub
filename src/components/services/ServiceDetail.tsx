@@ -233,7 +233,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
               {service.related.map((r) => (
                 <Link
                   key={r.slug}
-                  to={`/services/${r.slug}` as string}
+                  to={r.slug === "geo" ? "/services/GEO" : (`/services/${r.slug}` as string)}
                   className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
                 >
                   {r.label}
