@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4"><a href="/services/seo" class="text-primary hover:underline">SEO</a> is the process of optimizing your website so that it ranks higher in search engine results (like Google) when people search for terms related to your business. It is a long-term strategy that drives free, organic traffic to your site.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Generative Engine Optimization (GEO)</h3>
-      <p class="mb-4">As AI tools like ChatGPT and Google's AI Overviews become more common, <a href="/services/geo" class="text-primary hover:underline">GEO</a> focuses on ensuring your brand is recommended by these AI systems. It is the evolution of traditional SEO for the AI era.</p>
+      <p class="mb-4">As AI tools like ChatGPT and Google's AI Overviews become more common, <a href="/services/GEO" class="text-primary hover:underline">GEO</a> focuses on ensuring your brand is recommended by these AI systems. It is the evolution of traditional SEO for the AI era.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Paid Advertising (PPC)</h3>
       <p class="mb-4"><a href="/services/paid-marketing" class="text-primary hover:underline">Pay-Per-Click (PPC) advertising</a> involves paying for ad placements on platforms like Google or Facebook. You only pay when someone clicks your ad. It is one of the fastest ways to generate leads and sales.</p>
@@ -222,7 +222,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">The Future: SEO vs. GEO</h2>
-      <p class="mb-4">While traditional SEO focuses on traditional search engines, the rise of AI chatbots (like ChatGPT) has introduced a new frontier: <a href="/services/geo" class="text-primary hover:underline">Generative Engine Optimization (GEO)</a>. Future-proofing your online presence means optimizing for both traditional search algorithms and modern AI language models.</p>
+      <p class="mb-4">While traditional SEO focuses on traditional search engines, the rise of AI chatbots (like ChatGPT) has introduced a new frontier: <a href="/services/GEO" class="text-primary hover:underline">Generative Engine Optimization (GEO)</a>. Future-proofing your online presence means optimizing for both traditional search algorithms and modern AI language models.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Why SEO Matters</h2>
       <p class="mb-4">Unlike paid advertising, where traffic stops the moment you stop paying, SEO provides compounding, long-term results. Ranking at the top of Google establishes immense trust with consumers and delivers a consistent stream of highly qualified leads to your business, 24/7.</p>
@@ -369,7 +369,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <p class="mb-4">The way people search for information is undergoing its biggest evolution since the invention of Google. AI chatbots and AI overviews are changing the game. To adapt, businesses must look beyond traditional SEO and understand a new concept. But <strong>what is Generative Engine Optimization (GEO)</strong>?</p>
       
-      <p class="mb-4"><a href="/services/geo" class="text-primary hover:underline">GEO (Generative Engine Optimization)</a> is the practice of optimizing your brand's digital presence so that it is accurately recognized, cited, and recommended by AI-driven Generative Engines like ChatGPT, Claude, and Google's AI Overviews.</p>
+      <p class="mb-4"><a href="/services/GEO" class="text-primary hover:underline">GEO (Generative Engine Optimization)</a> is the practice of optimizing your brand's digital presence so that it is accurately recognized, cited, and recommended by AI-driven Generative Engines like ChatGPT, Claude, and Google's AI Overviews.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Traditional Search vs. AI-Generated Answers</h2>
       <p class="mb-4">Traditional search engines (like classic Google) act as librarians, retrieving a list of blue links for the user to sift through. AI engines act as researchers; they read those links, synthesize the information, and deliver a direct, conversational answer.</p>
@@ -460,7 +460,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-5">Understanding this behaviour helps determine what to communicate, where to communicate it, and when.</p>
 
       <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">3. Develop the Digital Marketing Strategy</h2>
-      <p class="mb-5">A <strong>digital marketing strategy</strong> connects the business objective with the customer journey. It can determine the target audience, positioning, key messages, content requirements, channel selection, conversion paths, budget allocation, measurement, and optimization priorities. A business may use SEO, <a href="/services/paid-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">paid marketing</a>, content, website optimization, <a href="/services/ecommerce-growth" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce growth</a>, and <a href="/services/geo" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">GEO</a> together when those components support the same objective.</p>
+      <p class="mb-5">A <strong>digital marketing strategy</strong> connects the business objective with the customer journey. It can determine the target audience, positioning, key messages, content requirements, channel selection, conversion paths, budget allocation, measurement, and optimization priorities. A business may use SEO, <a href="/services/paid-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">paid marketing</a>, content, website optimization, <a href="/services/ecommerce-growth" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce growth</a>, and <a href="/services/GEO" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">GEO</a> together when those components support the same objective.</p>
 
       <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">4. Choose the Right Digital Marketing Channels</h2>
       <p class="mb-5">Common <strong>digital marketing channels</strong> include search engines, SEO, paid search, paid social, social media, content marketing, email marketing, websites, e-commerce platforms, online marketplaces, and AI-powered search and answer experiences. There is no universal list of channels every business must use. The objective is to identify which channels are relevant to the audience and business objective.</p>

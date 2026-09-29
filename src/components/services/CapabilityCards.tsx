@@ -19,7 +19,7 @@ const capabilities = [
     outcome:
       "Improve how your business is understood and discovered across search and AI-driven discovery.",
     cta: "Explore GEO",
-    href: "/services/geo",
+    href: "/services/GEO",
     image: geoImage,
     alt: "Abstract knowledge graph of connected nodes representing search and AI discovery",
   },

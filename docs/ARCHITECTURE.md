@@ -14,6 +14,8 @@
 
 `src/routes/services.tsx` → `/services`
 
+`src/routes/services.GEO.tsx` → `/services/GEO` (education-first GEO service page and canonical URL)
+
 `src/routes/industries.index.tsx` → `/industries` (industries hub)
 
 `src/routes/industries.$slug.tsx` → `/industries/:slug` (manufacturing-b2b, professional-services, local-business, ecommerce), content sourced from `src/data/industries.ts` and rendered by `src/components/industries/IndustryDetail.tsx`
@@ -28,7 +30,7 @@
 
 ## Services components
 
-`src/components/services/` contains the `/services` page system, including service cards, outcomes, audience, growth paths, process, FAQ and CTA components.
+`src/components/services/` contains the `/services` page system, including service cards, outcomes, audience, growth paths, process, FAQ and CTA components. `GeoServicePage.tsx` provides the dedicated GEO educational narrative.
 
 ## Assets
 
