@@ -1,6 +1,6 @@
 # DigitalyMarket Website Status
 
-**Last audited:** 2026-08-12
+**Last audited:** 2026-09-29
 **Project:** `digitaly-growth-hub`
 **Current branch:** `main`
 **Lovable project:** `e7179c8b-8337-4855-aa67-cd29ea3896b1`
@@ -32,15 +32,9 @@ The original project brief explicitly said: **homepage only; do not build other 
 
 The repository currently contains a `/services` page plus a substantial services component library. This is now an existing project fact, not something to silently delete. The next decision should be whether `/services` is retained as an intentional Phase 2 page or temporarily excluded from navigation until the information architecture is finalized.
 
-## Route/schema mismatch to resolve
+## Service route status
 
-The `/services` page JSON-LD currently references these future URLs:
-- `/services/geo`
-- `/services/paid-marketing`
-- `/services/web-creation`
-- `/services/ecommerce-growth`
-
-Those route files are not currently present in the repository. These URLs must not be treated as live pages until implemented, or the schema should be changed to avoid linking to non-existent URLs.
+The services overview and its JSON-LD reference implemented detail routes. The canonical Generative Engine Optimization route is `/services/GEO`; internal links and the sitemap use that exact casing.
 
 ## Known gaps / risks
 
@@ -53,7 +47,7 @@ Those route files are not currently present in the repository. These URLs must n
 7. No public portfolio, testimonials, client logos or performance claims should be invented.
 8. Founder experience must remain clearly separate from DigitalyMarket client proof.
 9. The remaining public information architecture should be finalized before adding many routes.
-10. Services subpages referenced by structured data are not yet implemented.
+10. The remaining service detail pages should be reviewed against the depth and transparency standard established by `/services/GEO`.
 
 ## Current maturity
 
@@ -63,10 +57,10 @@ Those route files are not currently present in the repository. These URLs must n
 | Homepage visual system | Built; needs final QA |
 | Founder section | Built with real assets |
 | Services overview | Built |
-| Services detail pages | Not built |
-| Industries detail pages | Not built |
-| Work/portfolio | Intentional no-fabrication placeholder |
-| Insights/blog system | Preview only; real articles not yet established |
+| Services detail pages | GEO complete; remaining pages require content review |
+| Industries detail pages | Built |
+| Work/portfolio | Built with one independent portfolio project |
+| Insights/blog system | Built and published |
 | About/founder profile page | Not built |
 | Contact system | Present as CTA/actions; requires end-to-end QA |
 | Technical SEO foundation | Partially built |

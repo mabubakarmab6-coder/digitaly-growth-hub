@@ -52,9 +52,9 @@ These should be used naturally, not stuffed.
 - [ ] Test redirects and canonicalization.
 - [ ] Check mobile Core Web Vitals/performance.
 
-## Important current mismatch
+## Service route integrity
 
-The services JSON-LD references `/services/geo`, `/services/paid-marketing`, `/services/web-creation`, and `/services/ecommerce-growth`, but those route files are not currently present. Do not leave structured data pointing at non-existent pages.
+Service structured data must reference implemented canonical routes. The canonical Generative Engine Optimization URL is `/services/GEO`; preserve that casing in internal links, metadata and the sitemap.
 
 ## GEO strategy
 
