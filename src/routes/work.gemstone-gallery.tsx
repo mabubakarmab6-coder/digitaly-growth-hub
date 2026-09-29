@@ -765,8 +765,8 @@ function GemsGalleryCaseStudy() {
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {[
                 ["Website Creation", "Designed and developed a focused 3-page B2B website to communicate capabilities and drive inquiries.", "/services/web-creation"],
-                ["SEO", "Applied foundational SEO principles including semantic structures, heading hierarchy and descriptive URLs.", "/services/geo"],
-                ["GEO", "Used clear headings, explicit terminology and structured capability descriptions for generative engine readability.", "/services/geo"],
+                ["SEO", "Applied foundational SEO principles including semantic structures, heading hierarchy and descriptive URLs.", "/services/GEO"],
+                ["GEO", "Used clear headings, explicit terminology and structured capability descriptions for generative engine readability.", "/services/GEO"],
               ].map(([t, body], i) => (
                 <Reveal key={t} delay={i * 70}>
                   <Card title={t!} body={body!} />

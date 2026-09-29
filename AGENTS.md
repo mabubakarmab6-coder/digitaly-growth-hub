@@ -9,4 +9,4 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep `/services/GEO` as the canonical GEO service URL and preserve `/services/geo` as a permanent redirect, because published links may still use the historical lowercase path.
+- Keep `/services/GEO` as the canonical GEO service URL and use it for every internal link, because TanStack Router treats case-only route variants as conflicting matches.

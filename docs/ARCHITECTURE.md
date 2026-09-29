@@ -14,7 +14,7 @@
 
 `src/routes/services.tsx` → `/services`
 
-`src/routes/services.GEO.tsx` → `/services/GEO` (education-first GEO service page); lowercase `/services/geo` permanently redirects to this canonical URL
+`src/routes/services.GEO.tsx` → `/services/GEO` (education-first GEO service page and canonical URL)
 
 `src/routes/industries.index.tsx` → `/industries` (industries hub)
 
