@@ -6,7 +6,7 @@ const capabilities = [
   {
     title: "Generative Engine Optimization",
     copy: "Be understood and discovered where buying decisions now start.",
-    href: "/services/geo",
+    href: "/services/GEO",
     icon: Search,
   },
   {

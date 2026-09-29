@@ -45,7 +45,7 @@ export const Route = createFileRoute("/services/")({
           "@type": "ItemList",
           name: "DigitalyMarket Capabilities",
           itemListElement: [
-            ["Generative Engine Optimization", "/services/geo"],
+            ["Generative Engine Optimization", "/services/GEO"],
             ["Paid Marketing", "/services/paid-marketing"],
             ["Website Creation", "/services/web-creation"],
             ["E-commerce Growth", "/services/ecommerce-growth"],
