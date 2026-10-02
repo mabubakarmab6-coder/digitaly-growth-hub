@@ -212,6 +212,13 @@
   color: transparent;
 }
 
+@utility action-primary {
+  background-color: var(--color-primary);
+  background-image: var(--gradient-accent);
+  color: var(--color-primary-foreground);
+  isolation: isolate;
+}
+
 @utility shadow-soft {
   box-shadow: var(--shadow-soft);
 }

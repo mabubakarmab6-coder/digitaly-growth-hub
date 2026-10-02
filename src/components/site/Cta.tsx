@@ -8,7 +8,7 @@ export const ctaVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-primary text-primary-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:bg-primary/92",
+          "action-primary shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:brightness-95",
         outline:
           "border border-hairline bg-card text-foreground hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-soft",
         onNavy:

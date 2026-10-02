@@ -18,7 +18,7 @@ export function GlobalFloatingCta() {
       <Link
         to={INQUIRY_PATH}
         aria-label="Start a growth conversation with DigitalyMarket"
-        className="pointer-events-auto inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-semibold tracking-tight text-primary-foreground shadow-lift transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/92 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        className="action-primary pointer-events-auto inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold tracking-tight shadow-lift transition-all duration-300 hover:-translate-y-0.5 hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         <span className="hidden sm:inline">Start a Growth Conversation</span>
         <span className="sm:hidden">Let's Talk</span>
