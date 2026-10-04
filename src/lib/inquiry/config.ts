@@ -9,10 +9,6 @@ export const SERVICE_OPTIONS = [
   "Not sure yet",
 ] as const;
 
-export const inquirySchema = z.object({
-  fullName: string;
-});
-
 export const inquiryInputSchema = z.object({
   fullName: z.string().trim().min(1, "Please enter your full name.").max(100, "Please keep your name under 100 characters."),
   workEmail: z.string().trim().email("Please enter a valid work email.").max(255, "Please keep your email under 255 characters."),
