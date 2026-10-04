@@ -21,20 +21,16 @@ export const submitInquiry = createServerFn({ method: "POST" })
       },
     });
 
-    const { error } = await supabase
-      .from("inquiries")
-      .insert({
-        id: inquiryId,
-        company_name: data.companyName,
-        full_name: data.fullName,
-        work_email: data.workEmail,
-        country: "",
-        selected_service: data.selectedService,
-        source_service: data.sourceService || null,
-        source_page: data.sourcePage || null,
-        additional_context: data.businessAndChallenge || null,
-        consent: true,
-      });
+    const { error } = await supabase.rpc("submit_inquiry", {
+      _id: inquiryId,
+      _full_name: data.fullName,
+      _work_email: data.workEmail,
+      _company_name: data.companyName,
+      _selected_service: data.selectedService,
+      _business_and_challenge: data.businessAndChallenge,
+      _source_service: data.sourceService,
+      _source_page: data.sourcePage,
+    });
 
     if (error) {
       console.error("Inquiry database insert failed", {
