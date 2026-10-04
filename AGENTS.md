@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep `/services/GEO` as the canonical GEO service URL and use it for every internal link, because TanStack Router treats case-only route variants as conflicting matches.
+- Keep one root-mounted inquiry provider that intercepts `/start` fallback links, because every public CTA must open the same accessible inquiry dialog.

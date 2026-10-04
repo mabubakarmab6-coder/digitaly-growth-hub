@@ -15,18 +15,11 @@ import type { TemplateEntry } from './registry'
 export interface NewInquiryProps {
   fullName?: string
   workEmail?: string
-  country?: string
   companyName?: string
-  categories?: string
-  links?: string
-  businessDescription?: string
-  painPoints?: string
-  challenges?: string
-  outcomes?: string
-  timeline?: string
-  budgetAllocated?: string
-  budgetRange?: string
-  additionalContext?: string
+  selectedService?: string
+  businessAndChallenge?: string
+  sourceService?: string
+  sourcePage?: string
   submittedAt?: string
 }
 
@@ -68,24 +61,13 @@ const Email = (p: NewInquiryProps) => (
         <Text style={sectionTitle}>About them</Text>
         <Row k="Full name" v={p.fullName} />
         <Row k="Work email" v={p.workEmail} />
-        <Row k="Country" v={p.country} />
-
-        <Text style={sectionTitle}>Their business</Text>
         <Row k="Company" v={p.companyName} />
-        <Row k="Business type" v={p.categories} />
-        <Row k="Online presence" v={p.links} />
-        <Row k="About the business" v={p.businessDescription} />
-        <Row k="Challenges in their words" v={p.painPoints} />
+        <Row k="Selected service" v={p.selectedService} />
+        <Row k="Business and challenge" v={p.businessAndChallenge} />
 
-        <Text style={sectionTitle}>Their challenge</Text>
-        <Row k="Challenges" v={p.challenges} />
-        <Row k="Desired outcomes" v={p.outcomes} />
-
-        <Text style={sectionTitle}>Their project</Text>
-        <Row k="Timeline" v={p.timeline} />
-        <Row k="Budget allocated" v={p.budgetAllocated} />
-        <Row k="Budget range" v={p.budgetRange} />
-        <Row k="Additional context" v={p.additionalContext} />
+        <Text style={sectionTitle}>Source context</Text>
+        <Row k="Source service" v={p.sourceService} />
+        <Row k="Source page" v={p.sourcePage} />
       </Container>
     </Body>
   </Html>
@@ -100,18 +82,11 @@ export const template = {
   previewData: {
     fullName: 'Jane Doe',
     workEmail: 'jane@example.com',
-    country: 'United Kingdom',
     companyName: 'Northline Manufacturing',
-    categories: 'Manufacturer / B2B',
-    links: 'northline.example.com',
-    businessDescription: 'B2B components supplier serving OEMs across Europe.',
-    painPoints: 'Enquiries dropped after a website redesign.',
-    challenges: 'Generating more qualified leads',
-    outcomes: 'More enquiries / leads',
-    timeline: '1–3 months',
-    budgetAllocated: 'Yes',
-    budgetRange: '₹1–3 lakh',
-    additionalContext: 'Prefer a call in the mornings.',
+    selectedService: 'Website',
+    businessAndChallenge: 'B2B components supplier looking to improve qualified enquiries.',
+    sourceService: 'Website',
+    sourcePage: '/services/web-creation',
     submittedAt: '25 Aug 2026, 17:20 UTC',
   },
 } satisfies TemplateEntry

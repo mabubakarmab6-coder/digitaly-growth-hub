@@ -1,40 +1,19 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { SiteNav } from "@/components/site/SiteNav";
-import { SiteFooter } from "@/components/site/SiteFooter";
-import { InquiryFlow } from "@/components/inquiry/InquiryFlow";
-
-const title = "Start a Growth Conversation | DigitalyMarket";
-const description =
-  "Tell us where your business is today and what's getting in the way. A short, structured enquiry — we review it and reply by email with the next appropriate step.";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/start")({
-  component: StartPage,
+  beforeLoad: () => {
+    throw redirect({ to: "/", replace: true });
+  },
   head: () => ({
     meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
+      { title: "Start a Conversation | DigitalyMarket" },
+      { name: "description", content: "Start a conversation with DigitalyMarket." },
+      { name: "robots", content: "noindex, follow" },
+      { property: "og:title", content: "Start a Conversation | DigitalyMarket" },
+      { property: "og:description", content: "Start a conversation with DigitalyMarket." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://digitalymarket.com/start" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://digitalymarket.com/start" }],
+    links: [{ rel: "canonical", href: "https://digitalymarket.com/" }],
   }),
 });
-
-function StartPage() {
-  return (
-    <div className="min-h-screen bg-background">
-      <SiteNav />
-      <main>
-        <section className="hero-glow section-y">
-          <div className="container-page">
-            <InquiryFlow />
-          </div>
-        </section>
-      </main>
-      <SiteFooter />
-    </div>
-  );
-}

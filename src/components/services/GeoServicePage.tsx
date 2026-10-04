@@ -181,7 +181,7 @@ export function GeoServicePage() {
               environment.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Cta href={INQUIRY_PATH} size="lg" className="h-auto min-h-12 py-3 text-center">
+              <Cta href={INQUIRY_PATH} inquiryService="GEO" size="lg" className="h-auto min-h-12 py-3 text-center">
                 {primaryCta} <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
               </Cta>
               <Cta href="#how-geo-works" variant="outline" size="lg">
@@ -539,7 +539,7 @@ export function GeoServicePage() {
               Your customers are changing how they search. Let’s understand where your digital presence
               stands and where GEO may fit.
             </p>
-            <Cta href={INQUIRY_PATH} variant="onNavy" size="lg" className="mt-9 h-auto min-h-12 py-3 text-center">
+            <Cta href={INQUIRY_PATH} inquiryService="GEO" variant="onNavy" size="lg" className="mt-9 h-auto min-h-12 py-3 text-center">
               {primaryCta} <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
             </Cta>
           </Reveal>

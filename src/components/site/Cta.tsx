@@ -26,8 +26,15 @@ export const ctaVariants = cva(
   },
 );
 
-type CtaProps = AnchorHTMLAttributes<HTMLAnchorElement> & VariantProps<typeof ctaVariants>;
+type CtaProps = AnchorHTMLAttributes<HTMLAnchorElement> &
+  VariantProps<typeof ctaVariants> & { inquiryService?: string };
 
-export function Cta({ className, variant, size, ...props }: CtaProps) {
-  return <a className={cn(ctaVariants({ variant, size }), className)} {...props} />;
+export function Cta({ className, variant, size, inquiryService, ...props }: CtaProps) {
+  return (
+    <a
+      className={cn(ctaVariants({ variant, size }), className)}
+      data-inquiry-service={inquiryService}
+      {...props}
+    />
+  );
 }
