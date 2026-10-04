@@ -1,6 +1,4 @@
 import { createServerFn } from "@tanstack/react-start";
-import { createClient } from "@supabase/supabase-js";
-import type { Database } from "@/integrations/supabase/types";
 import { inquiryInputSchema } from "./config";
 
 export const submitInquiry = createServerFn({ method: "POST" })
@@ -8,28 +6,29 @@ export const submitInquiry = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     if (data.website) return { ok: true as const };
     const inquiryId = crypto.randomUUID();
-    const key = process.env["SUPABASE_PUBLISHABLE_KEY"]!;
-    const supabase = createClient<Database>(process.env["SUPABASE_URL"]!, key, {
-      auth: { persistSession: false },
-      global: {
-        fetch: (input, init) => {
-          const h = new Headers(init?.headers);
-          if (key.startsWith("sb_") && h.get("Authorization") === `Bearer ${key}`) h.delete("Authorization");
-          h.set("apikey", key);
-          return fetch(input, { ...init, headers: h });
-        },
-      },
-    });
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
-    const { error } = await supabase.rpc("submit_inquiry", {
-      _id: inquiryId,
-      _full_name: data.fullName,
-      _work_email: data.workEmail,
-      _company_name: data.companyName,
-      _selected_service: data.selectedService,
-      _business_and_challenge: data.businessAndChallenge,
-      _source_service: data.sourceService,
-      _source_page: data.sourcePage,
+    const windowStart = new Date(Date.now() - 60 * 60 * 1000).toISOString();
+    const { count, error: countError } = await supabaseAdmin
+      .from("inquiries")
+      .select("id", { count: "exact", head: true })
+      .ilike("work_email", data.workEmail)
+      .gte("created_at", windowStart);
+
+    if (countError) throw new Error("Could not validate this enquiry.");
+    if ((count ?? 0) >= 3) throw new Error("Please wait before sending another enquiry.");
+
+    const { error } = await supabaseAdmin.from("inquiries").insert({
+      id: inquiryId,
+      full_name: data.fullName,
+      work_email: data.workEmail,
+      company_name: data.companyName,
+      country: "",
+      selected_service: data.selectedService,
+      additional_context: data.businessAndChallenge || null,
+      source_service: data.sourceService || null,
+      source_page: data.sourcePage || null,
+      consent: true,
     });
 
     if (error) {
