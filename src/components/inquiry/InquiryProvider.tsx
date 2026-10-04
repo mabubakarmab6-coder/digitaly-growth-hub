@@ -84,7 +84,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       event.stopPropagation();
-      openInquiry(link.dataset.inquiryService);
+      openInquiry(link.dataset["inquiryService"]);
     };
     document.addEventListener("click", interceptInquiryLinks, true);
     return () => document.removeEventListener("click", interceptInquiryLinks, true);
