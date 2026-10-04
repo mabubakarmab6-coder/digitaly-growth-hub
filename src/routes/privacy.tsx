@@ -28,7 +28,7 @@ const sections: { heading: string; body: string[] }[] = [
   {
     heading: "What we collect",
     body: [
-      "When you submit a growth conversation enquiry, we collect the details you choose to share: your name, work email, country, business name, business category, links to your online presence, and the context you write about your business, challenges, timeline and budget.",
+      "When you submit an enquiry, we collect your name, work email, company or business name, the service you select, and any optional context you share about your business or challenge. We also record the page and service context from which you opened the enquiry form.",
       "We do not ask for a phone number, home address or any payment information.",
     ],
   },

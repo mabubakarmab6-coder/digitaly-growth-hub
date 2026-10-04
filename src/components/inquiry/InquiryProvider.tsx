@@ -83,7 +83,6 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       const link = target.closest<HTMLAnchorElement>('a[href="/start"], a[href$="/start"]');
       if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
-      event.stopPropagation();
       openInquiry(link.dataset["inquiryService"]);
     };
     document.addEventListener("click", interceptInquiryLinks, true);
