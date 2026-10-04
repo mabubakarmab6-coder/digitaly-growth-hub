@@ -31,6 +31,9 @@ export type Database = {
           online_links: string[]
           outcomes: string[]
           pain_points: string | null
+          selected_service: string | null
+          source_page: string | null
+          source_service: string | null
           timeline: string | null
           work_email: string
         }
@@ -50,6 +53,9 @@ export type Database = {
           online_links?: string[]
           outcomes?: string[]
           pain_points?: string | null
+          selected_service?: string | null
+          source_page?: string | null
+          source_service?: string | null
           timeline?: string | null
           work_email: string
         }
@@ -69,6 +75,9 @@ export type Database = {
           online_links?: string[]
           outcomes?: string[]
           pain_points?: string | null
+          selected_service?: string | null
+          source_page?: string | null
+          source_service?: string | null
           timeline?: string | null
           work_email?: string
         }
