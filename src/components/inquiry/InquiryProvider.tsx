@@ -4,6 +4,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type FormEvent,
   type ReactNode,
@@ -54,18 +55,19 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const [done, setDone] = useState(false);
+  const formStarted = useRef(false);
   const submit = useServerFn(submitInquiry);
 
   const openInquiry = useCallback((sourceService?: string) => {
     const sourcePage = `${window.location.pathname}${window.location.search}`.slice(0, 500);
-    const service = normalizeService(sourceService);
+    const service = normalizeService(sourceService || sourcePage);
     setDone(false);
     setSubmitError("");
     setDraft((current) => ({
       ...current,
       sourcePage,
       sourceService: service,
-      selectedService: current.selectedService || (service || undefined),
+      selectedService: current.selectedService || service,
     }));
     setOpen(true);
     trackInquiry("inquiry_popup_open", {
@@ -95,6 +97,13 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   const contextValue = useMemo(() => openInquiry, [openInquiry]);
 
   const update = <K extends keyof InquiryDraft>(key: K, value: InquiryDraft[K]) => {
+    if (!formStarted.current) {
+      formStarted.current = true;
+      trackInquiry("inquiry_form_started", {
+        source_page: draft.sourcePage || "unknown",
+        source_service: draft.sourceService || "general",
+      });
+    }
     setDraft((current) => ({ ...current, [key]: value }));
     setErrors((current) => ({ ...current, [key]: undefined }));
   };
@@ -126,6 +135,17 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
         selected_service: parsed.data.selectedService,
       });
       clearDraft();
+      setDraft({
+        fullName: "",
+        workEmail: "",
+        companyName: "",
+        selectedService: "",
+        businessAndChallenge: "",
+        sourceService: "",
+        sourcePage: "",
+        website: "",
+      });
+      formStarted.current = false;
       setDone(true);
     } catch {
       setSubmitError("Something went wrong while sending your enquiry. Please try again.");
@@ -145,7 +165,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       fullName: "",
       workEmail: "",
       companyName: "",
-      selectedService: undefined,
+      selectedService: "",
       businessAndChallenge: "",
       sourceService: "",
       sourcePage: "",
@@ -208,7 +228,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
                     required
                     aria-invalid={Boolean(errors.selectedService) || undefined}
                     value={draft.selectedService ?? ""}
-                    onChange={(event) => update("selectedService", event.target.value as InquiryDraft["selectedService"])}
+                    onChange={(event) => update("selectedService", event.target.value)}
                     className={cn("min-h-12 w-full rounded-xl border border-hairline bg-card px-4 py-3 text-base text-foreground shadow-soft/50 outline-none focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20", errors.selectedService && "border-destructive/60")}
                   >
                     <option value="" disabled>Select a service</option>

@@ -20,14 +20,23 @@ export const inquiryInputSchema = z.object({
   website: z.string().max(0).optional().default(""),
 });
 
-export type InquiryDraft = z.input<typeof inquiryInputSchema>;
+export type InquiryDraft = {
+  fullName: string;
+  workEmail: string;
+  companyName: string;
+  selectedService: string;
+  businessAndChallenge: string;
+  sourceService: string;
+  sourcePage: string;
+  website: string;
+};
 export type ValidatedInquiry = z.output<typeof inquiryInputSchema>;
 
 export const EMPTY_DRAFT: InquiryDraft = {
   fullName: "",
   workEmail: "",
   companyName: "",
-  selectedService: undefined,
+  selectedService: "",
   businessAndChallenge: "",
   sourceService: "",
   sourcePage: "",
