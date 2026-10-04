@@ -33,7 +33,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
               {service.intro}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Cta href={INQUIRY_PATH} size="lg">
+              <Cta href={INQUIRY_PATH} inquiryService={service.eyebrow} size="lg">
                 Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Cta>
               <Cta href="/services#capabilities" variant="outline" size="lg">
@@ -224,7 +224,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
               this capability.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Cta href={INQUIRY_PATH} size="lg">
+              <Cta href={INQUIRY_PATH} inquiryService={service.eyebrow} size="lg">
                 Start My Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Cta>
             </div>

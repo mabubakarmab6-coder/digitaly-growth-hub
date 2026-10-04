@@ -1,6 +1,6 @@
 import { EMPTY_DRAFT, type InquiryDraft } from "./config";
 
-const KEY = "dm_inquiry_draft_v1";
+const KEY = "dm_inquiry_popup_draft_v2";
 
 export function loadDraft(): InquiryDraft {
   if (typeof window === "undefined") return EMPTY_DRAFT;

@@ -31,6 +31,9 @@ export type Database = {
           online_links: string[]
           outcomes: string[]
           pain_points: string | null
+          selected_service: string | null
+          source_page: string | null
+          source_service: string | null
           timeline: string | null
           work_email: string
         }
@@ -50,6 +53,9 @@ export type Database = {
           online_links?: string[]
           outcomes?: string[]
           pain_points?: string | null
+          selected_service?: string | null
+          source_page?: string | null
+          source_service?: string | null
           timeline?: string | null
           work_email: string
         }
@@ -69,6 +75,9 @@ export type Database = {
           online_links?: string[]
           outcomes?: string[]
           pain_points?: string | null
+          selected_service?: string | null
+          source_page?: string | null
+          source_service?: string | null
           timeline?: string | null
           work_email?: string
         }
@@ -79,7 +88,19 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      submit_inquiry: {
+        Args: {
+          _business_and_challenge: string
+          _company_name: string
+          _full_name: string
+          _id: string
+          _selected_service: string
+          _source_page: string
+          _source_service: string
+          _work_email: string
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never

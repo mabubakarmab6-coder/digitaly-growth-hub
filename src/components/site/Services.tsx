@@ -118,6 +118,7 @@ export function Services() {
                 </ul>
                 <a
                   href={INQUIRY_PATH}
+                  data-inquiry-service={service.title === "Generative Engine Optimization" ? "GEO" : service.title === "Website Creation" ? "Website" : service.title === "E-commerce Growth" || service.title === "Marketplace Optimization" ? "E-commerce / Marketplace" : service.title}
                   className="mt-8 inline-flex items-center gap-2 self-start text-sm font-semibold text-primary transition-all hover:gap-3"
                 >
                   {service.cta} <ArrowRight className="h-4 w-4" />

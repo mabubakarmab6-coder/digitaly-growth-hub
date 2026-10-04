@@ -1,91 +1,44 @@
-export const CHALLENGE_OPTIONS = [
-  "Getting discovered / increasing visibility",
-  "Generating more qualified leads",
-  "Improving website performance / conversions",
-  "Growing e-commerce sales",
-  "Improving marketplace performance",
-  "Something else",
-  "I'm not sure yet",
+import { z } from "zod";
+
+export const SERVICE_OPTIONS = [
+  "Paid Marketing",
+  "SEO",
+  "GEO",
+  "Website",
+  "E-commerce / Marketplace",
+  "Not sure yet",
 ] as const;
 
-export const OUTCOME_OPTIONS = [
-  "More visibility",
-  "More enquiries / leads",
-  "More sales",
-  "Better conversion",
-  "Better marketplace performance",
-  "A stronger digital presence",
-  "Something else",
-] as const;
-
-export const BUSINESS_CATEGORY_OPTIONS = [
-  "Manufacturer / B2B",
-  "Professional Services",
-  "Local Business",
-  "E-commerce Brand",
-  "Marketplace Seller",
-  "Other",
-] as const;
-
-export const TIMELINE_OPTIONS = [
-  "As soon as possible",
-  "Within the next month",
-  "1–3 months",
-  "3–6 months",
-  "Just exploring",
-] as const;
-
-export const BUDGET_ALLOCATED_OPTIONS = ["Yes", "No", "I'm not sure"] as const;
-
-export const BUDGET_RANGE_OPTIONS = [
-  "Under ₹25,000",
-  "₹25,000–₹50,000",
-  "₹50,000–₹1 lakh",
-  "₹1–3 lakh",
-  "₹3 lakh+",
-  "Prefer not to say",
-] as const;
+export const inquiryInputSchema = z.object({
+  fullName: z.string().trim().min(1, "Please enter your full name.").max(100, "Please keep your name under 100 characters."),
+  workEmail: z.string().trim().email("Please enter a valid work email.").max(255, "Please keep your email under 255 characters."),
+  companyName: z.string().trim().min(1, "Please enter your company or business name.").max(200, "Please keep the business name under 200 characters."),
+  selectedService: z.enum(SERVICE_OPTIONS, { message: "Please select the closest service." }),
+  businessAndChallenge: z.string().trim().max(4000, "Please keep this under 4,000 characters."),
+  sourceService: z.string().trim().max(80).optional().default(""),
+  sourcePage: z.string().trim().max(500).optional().default(""),
+  website: z.string().max(0).optional().default(""),
+});
 
 export type InquiryDraft = {
-  challenges: string[];
-  outcomes: string[];
-  companyName: string;
-  categories: string[];
-  links: string[];
-  businessDescription: string;
-  painPoints: string;
   fullName: string;
   workEmail: string;
-  country: string;
-  timeline: string;
-  budgetAllocated: string;
-  budgetRange: string;
-  additionalContext: string;
-  consent: boolean;
+  companyName: string;
+  selectedService: string;
+  businessAndChallenge: string;
+  sourceService: string;
+  sourcePage: string;
+  website: string;
 };
+export type ValidatedInquiry = z.output<typeof inquiryInputSchema>;
 
 export const EMPTY_DRAFT: InquiryDraft = {
-  challenges: [],
-  outcomes: [],
-  companyName: "",
-  categories: [],
-  links: [""],
-  businessDescription: "",
-  painPoints: "",
   fullName: "",
   workEmail: "",
-  country: "",
-  timeline: "",
-  budgetAllocated: "",
-  budgetRange: "",
-  additionalContext: "",
-  consent: false,
+  companyName: "",
+  selectedService: "",
+  businessAndChallenge: "",
+  sourceService: "",
+  sourcePage: "",
+  website: "",
 };
-
-export const STEPS = [
-  { id: 1, label: "Your challenge" },
-  { id: 2, label: "Your business" },
-  { id: 3, label: "About you" },
-  { id: 4, label: "Your project" },
-  { id: 5, label: "Review & submit" },
-] as const;

@@ -22,6 +22,20 @@
       "when": 1788801174723,
       "tag": "0002_restore_inquiry_insert_grants",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791138595633,
+      "tag": "0003_add_inquiry_context_fields",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791138742088,
+      "tag": "0004_secure_rate_limited_inquiry_submission",
+      "breakpoints": true
     }
   ]
 }
