@@ -1,0 +1,3 @@
+REVOKE EXECUTE ON FUNCTION public.submit_inquiry(uuid, text, text, text, text, text, text, text) FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.submit_inquiry(uuid, text, text, text, text, text, text, text) TO service_role;
+COMMENT ON FUNCTION public.submit_inquiry(uuid, text, text, text, text, text, text, text) IS 'DEPRECATED: direct execution is restricted; enquiries are submitted through the server function.';
