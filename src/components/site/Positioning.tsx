@@ -1,4 +1,5 @@
-import { Sparkles, Target, Layout, ShoppingBag } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { Sparkles, Target, Layout, ShoppingBag, Store } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const pillars = [
@@ -6,23 +7,33 @@ const pillars = [
     icon: Sparkles,
     title: "GEO",
     copy: "Get discovered across modern search and AI-driven discovery.",
+    href: "/services/GEO",
   },
   {
     icon: Target,
     title: "Paid Marketing",
     copy: "Reach the right customers with performance-focused campaigns.",
+    href: "/services/paid-marketing",
   },
   {
     icon: Layout,
     title: "Web Creation",
     copy: "Build digital experiences that communicate value and generate enquiries.",
+    href: "/services/web-creation",
   },
   {
     icon: ShoppingBag,
     title: "E-commerce",
     copy: "Strengthen online visibility, conversion and growth.",
+    href: "/services/ecommerce-growth",
   },
-];
+  {
+    icon: Store,
+    title: "Marketplace Optimization",
+    copy: "Improve marketplace visibility, product listings and conversion.",
+    href: "/services/marketplace-optimization",
+  },
+] as const;
 
 export function Positioning() {
   return (
@@ -39,21 +50,26 @@ export function Positioning() {
           </p>
         </Reveal>
 
-        <ul className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-5">
           {pillars.map((pillar, i) => (
             <li key={pillar.title}>
-              <Reveal
-                delay={i * 80}
-                className="group h-full bg-card p-7 transition-colors duration-300 hover:bg-accent/40"
-              >
-                <pillar.icon
-                  className="h-6 w-6 text-primary transition-transform duration-300 group-hover:-translate-y-0.5"
-                  aria-hidden="true"
-                />
-                <h3 className="mt-5 text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
-                  {pillar.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{pillar.copy}</p>
+              <Reveal delay={i * 80} className="h-full">
+                <Link
+                  to={pillar.href}
+                  aria-label={`Explore ${pillar.title}`}
+                  className="group block h-full bg-card p-7 transition-colors duration-300 hover:bg-accent/40 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
+                >
+                  <pillar.icon
+                    className="h-6 w-6 text-primary transition-transform duration-300 group-hover:-translate-y-0.5"
+                    aria-hidden="true"
+                  />
+                  <h3 className="mt-5 text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
+                    {pillar.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {pillar.copy}
+                  </p>
+                </Link>
               </Reveal>
             </li>
           ))}
