@@ -56,6 +56,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   const [submitError, setSubmitError] = useState("");
   const [done, setDone] = useState(false);
   const formStarted = useRef(false);
+  const lastTrigger = useRef<HTMLAnchorElement | null>(null);
   const submit = useServerFn(submitInquiry);
 
   const openInquiry = useCallback((sourceService?: string) => {
@@ -83,6 +84,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       const link = target.closest<HTMLAnchorElement>('a[href="/start"], a[href$="/start"]');
       if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
+      lastTrigger.current = link;
       openInquiry(link.dataset["inquiryService"]);
     };
     document.addEventListener("click", interceptInquiryLinks, true);
@@ -173,10 +175,17 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
     setErrors({});
   };
 
+  const handleOpenChange = (nextOpen: boolean) => {
+    setOpen(nextOpen);
+    if (!nextOpen) {
+      window.setTimeout(() => lastTrigger.current?.focus(), 0);
+    }
+  };
+
   return (
     <InquiryContext.Provider value={contextValue}>
       {children}
-      <Dialog open={open} onOpenChange={setOpen}>
+      <Dialog open={open} onOpenChange={handleOpenChange}>
         <DialogContent className="inquiry-dialog top-0 left-0 flex h-dvh w-full max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-hidden border-0 p-0 sm:top-1/2 sm:left-1/2 sm:h-auto sm:max-h-[calc(100dvh-3rem)] sm:max-w-2xl sm:-translate-x-1/2 sm:-translate-y-1/2 sm:rounded-2xl sm:border">
           {done ? (
             <div className="flex min-h-[28rem] flex-col items-center justify-center px-6 py-14 text-center sm:px-12">
