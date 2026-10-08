@@ -1,6 +1,7 @@
 import type { ValidatedInquiry } from "./config";
 
-const ENDPOINT = "https://script.google.com/macros/s/AKfycbwZWN7iUPZCDoOdet5g1q0GOllRTb4-dYwR2XFePaJ5hEGfzDAK0yf4ZWb8BT7ezUg4/exec";
+const ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbwZWN7iUPZCDoOdet5g1q0GOllRTb4-dYwR2XFePaJ5hEGfzDAK0yf4ZWb8BT7ezUg4/exec";
 
 export function mapGoogleInquiry(data: ValidatedInquiry, submissionId: string) {
   return {

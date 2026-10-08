@@ -10,9 +10,21 @@ export const SERVICE_OPTIONS = [
 ] as const;
 
 export const inquiryInputSchema = z.object({
-  fullName: z.string().trim().min(1, "Please enter your full name.").max(100, "Please keep your name under 100 characters."),
-  workEmail: z.string().trim().email("Please enter a valid work email.").max(255, "Please keep your email under 255 characters."),
-  companyName: z.string().trim().min(1, "Please enter your company or business name.").max(200, "Please keep the business name under 200 characters."),
+  fullName: z
+    .string()
+    .trim()
+    .min(1, "Please enter your full name.")
+    .max(100, "Please keep your name under 100 characters."),
+  workEmail: z
+    .string()
+    .trim()
+    .email("Please enter a valid work email.")
+    .max(255, "Please keep your email under 255 characters."),
+  companyName: z
+    .string()
+    .trim()
+    .min(1, "Please enter your company or business name.")
+    .max(200, "Please keep the business name under 200 characters."),
   selectedService: z.enum(SERVICE_OPTIONS, { message: "Please select the closest service." }),
   businessAndChallenge: z.string().trim().max(4000, "Please keep this under 4,000 characters."),
   sourceService: z.string().trim().max(80).optional().default(""),

@@ -11,12 +11,7 @@ import {
 } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { useServerFn } from "@tanstack/react-start";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { inquiryInputSchema, SERVICE_OPTIONS, type InquiryDraft } from "@/lib/inquiry/config";
@@ -25,7 +20,12 @@ import { submitInquiry } from "@/lib/inquiry/submit.functions";
 import { Field, TextArea, TextInput } from "./fields";
 
 type OpenInquiry = (sourceService?: string) => void;
-type Errors = Partial<Record<"fullName" | "workEmail" | "companyName" | "selectedService" | "businessAndChallenge", string>>;
+type Errors = Partial<
+  Record<
+    "fullName" | "workEmail" | "companyName" | "selectedService" | "businessAndChallenge",
+    string
+  >
+>;
 
 const InquiryContext = createContext<OpenInquiry | null>(null);
 
@@ -36,7 +36,11 @@ function normalizeService(value?: string) {
   if (normalized.includes("paid") || normalized.includes("performance")) return "Paid Marketing";
   if (normalized === "seo" || normalized.includes("search engine optimization")) return "SEO";
   if (normalized.includes("website") || normalized.includes("web creation")) return "Website";
-  if (normalized.includes("e-commerce") || normalized.includes("ecommerce") || normalized.includes("marketplace")) {
+  if (
+    normalized.includes("e-commerce") ||
+    normalized.includes("ecommerce") ||
+    normalized.includes("marketplace")
+  ) {
     return "E-commerce / Marketplace";
   }
   return "";
@@ -84,7 +88,15 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       const target = event.target;
       if (!(target instanceof Element)) return;
       const link = target.closest<HTMLAnchorElement>('a[href="/start"], a[href$="/start"]');
-      if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (
+        !link ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
       event.preventDefault();
       lastTrigger.current = link;
       openInquiry(link.dataset["inquiryService"]);
@@ -135,11 +147,13 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
     setSubmitting(true);
     setSubmitError("");
     try {
-      const result = await submit({ data: {
-        ...parsed.data,
-        userAgent: navigator.userAgent.slice(0, 1000),
-        submissionId: pendingSubmission.current?.id,
-      } });
+      const result = await submit({
+        data: {
+          ...parsed.data,
+          userAgent: navigator.userAgent.slice(0, 1000),
+          submissionId: pendingSubmission.current?.id,
+        },
+      });
       if (!result.ok) throw new Error("Submission was not accepted");
       pendingSubmission.current = null;
       trackInquiry("inquiry_form_submitted", {
@@ -162,7 +176,9 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       setDone(true);
     } catch {
       // Do not log user answers or credentials in the browser.
-      console.error("Enquiry submission failed: the server did not confirm delivery. Answers have been retained.");
+      console.error(
+        "Enquiry submission failed: the server did not confirm delivery. Answers have been retained.",
+      );
       setSubmitError("Something went wrong while sending your enquiry. Please try again.");
       trackInquiry("inquiry_form_error", {
         source_page: parsed.data.sourcePage || "unknown",
@@ -214,7 +230,11 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
                 We've received your enquiry and will review the information you've shared. We'll get
                 back to you by email with the appropriate next step.
               </DialogDescription>
-              <Button type="button" onClick={closeSuccess} className="action-primary mt-8 min-h-12 rounded-full px-7">
+              <Button
+                type="button"
+                onClick={closeSuccess}
+                className="action-primary mt-8 min-h-12 rounded-full px-7"
+              >
                 Back to DigitalyMarket
               </Button>
             </div>
@@ -233,18 +253,53 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
               <div className="min-h-0 flex-1 overflow-y-auto px-5 py-6 sm:px-8 sm:py-7">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Full Name *" htmlFor="inquiry-full-name" error={errors.fullName}>
-                    <TextInput id="inquiry-full-name" name="fullName" autoComplete="name" maxLength={100} autoFocus value={draft.fullName} invalid={Boolean(errors.fullName)} onChange={(event) => update("fullName", event.target.value)} />
+                    <TextInput
+                      id="inquiry-full-name"
+                      name="fullName"
+                      autoComplete="name"
+                      maxLength={100}
+                      autoFocus
+                      value={draft.fullName}
+                      invalid={Boolean(errors.fullName)}
+                      onChange={(event) => update("fullName", event.target.value)}
+                    />
                   </Field>
                   <Field label="Work Email *" htmlFor="inquiry-work-email" error={errors.workEmail}>
-                    <TextInput id="inquiry-work-email" name="workEmail" type="email" inputMode="email" autoComplete="email" maxLength={255} value={draft.workEmail} invalid={Boolean(errors.workEmail)} onChange={(event) => update("workEmail", event.target.value)} />
+                    <TextInput
+                      id="inquiry-work-email"
+                      name="workEmail"
+                      type="email"
+                      inputMode="email"
+                      autoComplete="email"
+                      maxLength={255}
+                      value={draft.workEmail}
+                      invalid={Boolean(errors.workEmail)}
+                      onChange={(event) => update("workEmail", event.target.value)}
+                    />
                   </Field>
                 </div>
 
-                <Field label="Company / Business Name *" htmlFor="inquiry-company" error={errors.companyName}>
-                  <TextInput id="inquiry-company" name="companyName" autoComplete="organization" maxLength={200} value={draft.companyName} invalid={Boolean(errors.companyName)} onChange={(event) => update("companyName", event.target.value)} />
+                <Field
+                  label="Company / Business Name *"
+                  htmlFor="inquiry-company"
+                  error={errors.companyName}
+                >
+                  <TextInput
+                    id="inquiry-company"
+                    name="companyName"
+                    autoComplete="organization"
+                    maxLength={200}
+                    value={draft.companyName}
+                    invalid={Boolean(errors.companyName)}
+                    onChange={(event) => update("companyName", event.target.value)}
+                  />
                 </Field>
 
-                <Field label="What best describes what you need help with? *" htmlFor="inquiry-service" error={errors.selectedService}>
+                <Field
+                  label="What best describes what you need help with? *"
+                  htmlFor="inquiry-service"
+                  error={errors.selectedService}
+                >
                   <select
                     id="inquiry-service"
                     name="selectedService"
@@ -252,32 +307,88 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
                     aria-invalid={Boolean(errors.selectedService) || undefined}
                     value={draft.selectedService ?? ""}
                     onChange={(event) => update("selectedService", event.target.value)}
-                    className={cn("min-h-12 w-full rounded-xl border border-hairline bg-card px-4 py-3 text-base text-foreground shadow-soft/50 outline-none focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20", errors.selectedService && "border-destructive/60")}
+                    className={cn(
+                      "min-h-12 w-full rounded-xl border border-hairline bg-card px-4 py-3 text-base text-foreground shadow-soft/50 outline-none focus-visible:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary/20",
+                      errors.selectedService && "border-destructive/60",
+                    )}
                   >
-                    <option value="" disabled>Select a service</option>
-                    {SERVICE_OPTIONS.map((option) => <option key={option} value={option}>{option}</option>)}
+                    <option value="" disabled>
+                      Select a service
+                    </option>
+                    {SERVICE_OPTIONS.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
                   </select>
                 </Field>
 
-                <Field label="Tell us about your business and what you'd like help with." htmlFor="inquiry-context" error={errors.businessAndChallenge}>
-                  <TextArea id="inquiry-context" name="businessAndChallenge" maxLength={4000} rows={6} value={draft.businessAndChallenge} onChange={(event) => update("businessAndChallenge", event.target.value)} placeholder="Tell us what your business does, what you're trying to achieve, or where you're facing a challenge. Explain it in your own words." className="min-h-36" />
+                <Field
+                  label="Tell us about your business and what you'd like help with."
+                  htmlFor="inquiry-context"
+                  error={errors.businessAndChallenge}
+                >
+                  <TextArea
+                    id="inquiry-context"
+                    name="businessAndChallenge"
+                    maxLength={4000}
+                    rows={6}
+                    value={draft.businessAndChallenge}
+                    onChange={(event) => update("businessAndChallenge", event.target.value)}
+                    placeholder="Tell us what your business does, what you're trying to achieve, or where you're facing a challenge. Explain it in your own words."
+                    className="min-h-36"
+                  />
                 </Field>
 
                 <div className="sr-only" aria-hidden="true">
                   <label htmlFor="inquiry-website">Website</label>
-                  <input id="inquiry-website" name="website" tabIndex={-1} autoComplete="off" value={draft.website} onChange={(event) => update("website", event.target.value)} />
+                  <input
+                    id="inquiry-website"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={draft.website}
+                    onChange={(event) => update("website", event.target.value)}
+                  />
                 </div>
 
                 <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
-                  By sending this enquiry, you agree that DigitalyMarket may contact you about it. See our <a href="/privacy" className="font-semibold text-primary underline-offset-4 hover:underline">Privacy Policy</a>.
+                  By sending this enquiry, you agree that DigitalyMarket may contact you about it.
+                  See our{" "}
+                  <a
+                    href="/privacy"
+                    className="font-semibold text-primary underline-offset-4 hover:underline"
+                  >
+                    Privacy Policy
+                  </a>
+                  .
                 </p>
 
-                {submitError ? <p role="alert" className="mt-4 rounded-lg border border-destructive/25 bg-destructive/5 px-4 py-3 text-sm font-medium text-destructive">{submitError}</p> : null}
+                {submitError ? (
+                  <p
+                    role="alert"
+                    className="mt-4 rounded-lg border border-destructive/25 bg-destructive/5 px-4 py-3 text-sm font-medium text-destructive"
+                  >
+                    {submitError}
+                  </p>
+                ) : null}
               </div>
 
               <footer className="shrink-0 border-t border-hairline bg-background px-5 py-4 sm:px-8">
-                <Button type="submit" disabled={submitting} className="action-primary min-h-12 w-full rounded-full px-7 text-sm font-semibold">
-                  {submitting ? <><Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> Sending</> : <>Send Enquiry <ArrowRight className="h-4 w-4" aria-hidden="true" /></>}
+                <Button
+                  type="submit"
+                  disabled={submitting}
+                  className="action-primary min-h-12 w-full rounded-full px-7 text-sm font-semibold"
+                >
+                  {submitting ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> Sending
+                    </>
+                  ) : (
+                    <>
+                      Send Enquiry <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </>
+                  )}
                 </Button>
               </footer>
             </form>
