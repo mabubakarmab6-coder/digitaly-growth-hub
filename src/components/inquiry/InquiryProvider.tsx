@@ -56,6 +56,8 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   const [submitError, setSubmitError] = useState("");
   const [done, setDone] = useState(false);
   const formStarted = useRef(false);
+  const submissionInFlight = useRef(false);
+  const pendingSubmission = useRef<{ fingerprint: string; id: string } | null>(null);
   const lastTrigger = useRef<HTMLAnchorElement | null>(null);
   const submit = useServerFn(submitInquiry);
 
@@ -111,7 +113,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (submitting) return;
+    if (submissionInFlight.current) return;
     const parsed = inquiryInputSchema.safeParse(draft);
     if (!parsed.success) {
       const nextErrors: Errors = {};
@@ -125,11 +127,21 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       return;
     }
 
+    submissionInFlight.current = true;
+    const fingerprint = JSON.stringify(parsed.data);
+    if (pendingSubmission.current?.fingerprint !== fingerprint) {
+      pendingSubmission.current = { fingerprint, id: crypto.randomUUID() };
+    }
     setSubmitting(true);
     setSubmitError("");
     try {
-      const result = await submit({ data: parsed.data });
+      const result = await submit({ data: {
+        ...parsed.data,
+        userAgent: navigator.userAgent.slice(0, 1000),
+        submissionId: pendingSubmission.current?.id,
+      } });
       if (!result.ok) throw new Error("Submission was not accepted");
+      pendingSubmission.current = null;
       trackInquiry("inquiry_form_submitted", {
         source_page: parsed.data.sourcePage || "unknown",
         source_service: parsed.data.sourceService || "general",
@@ -149,12 +161,15 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       formStarted.current = false;
       setDone(true);
     } catch {
+      // Do not log user answers or credentials in the browser.
+      console.error("Enquiry submission failed: the server did not confirm delivery. Answers have been retained.");
       setSubmitError("Something went wrong while sending your enquiry. Please try again.");
       trackInquiry("inquiry_form_error", {
         source_page: parsed.data.sourcePage || "unknown",
         source_service: parsed.data.sourceService || "general",
       });
     } finally {
+      submissionInFlight.current = false;
       setSubmitting(false);
     }
   };

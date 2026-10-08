@@ -18,6 +18,8 @@ export const inquiryInputSchema = z.object({
   sourceService: z.string().trim().max(80).optional().default(""),
   sourcePage: z.string().trim().max(500).optional().default(""),
   website: z.string().max(0).optional().default(""),
+  userAgent: z.string().max(1000).optional().default(""),
+  submissionId: z.string().uuid().optional(),
 });
 
 export type InquiryDraft = {
