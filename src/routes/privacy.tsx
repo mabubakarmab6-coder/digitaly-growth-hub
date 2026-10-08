@@ -28,7 +28,7 @@ const sections: { heading: string; body: string[] }[] = [
   {
     heading: "What we collect",
     body: [
-      "When you submit an enquiry, we collect your name, work email, company or business name, the service you select, and any optional context you share about your business or challenge. We also record the page and service context from which you opened the enquiry form.",
+      "When you submit an enquiry, we collect your name, work email, company or business name, the service you select, and any optional context you share about your business or challenge. We also record the page and service context from which you opened the enquiry form, and your browser's user agent.",
       "We do not ask for a phone number, home address or any payment information.",
     ],
   },
@@ -36,6 +36,7 @@ const sections: { heading: string; body: string[] }[] = [
     heading: "Why we collect it",
     body: [
       "We use your enquiry to understand your business, assess whether we can genuinely help, and reply to you by email with the next appropriate step. That is the only purpose.",
+      "Enquiries are stored securely and sent to our connected Google Sheet through Google Apps Script so we can manage and respond to them. These details are not sent to website analytics.",
     ],
   },
   {
