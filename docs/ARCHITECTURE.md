@@ -16,6 +16,8 @@
 
 `src/routes/services.GEO.tsx` → `/services/GEO` (education-first GEO service page and canonical URL)
 
+`src/routes/services.paid-marketing.tsx` → `/services/paid-marketing`, using `PaidMarketingPage.tsx` and `src/data/paid-marketing.ts` for the dedicated eight-section narrative. Existing navigation, footer, global enquiry provider and tracking remain shared and unchanged.
+
 `src/routes/industries.index.tsx` → `/industries` (industries hub)
 
 `src/routes/industries.$slug.tsx` → `/industries/:slug` (manufacturing-b2b, professional-services, local-business, ecommerce), content sourced from `src/data/industries.ts` and rendered by `src/components/industries/IndustryDetail.tsx`

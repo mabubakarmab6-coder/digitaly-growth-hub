@@ -2,12 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
+import { PaidMarketingPage } from "@/components/services/PaidMarketingPage";
+import { paidMarketing } from "@/data/paid-marketing";
 
-const title = "Paid Marketing | DigitalyMarket";
-const description =
-  "Paid marketing at DigitalyMarket: campaigns built around measurable business objectives, not vanity metrics. Detailed page coming soon.";
-const url = "https://digitalymarket.com/services/paid-marketing";
+const { title, description, url } = paidMarketing;
 
 export const Route = createFileRoute("/services/paid-marketing")({
   component: PaidPage,
@@ -24,6 +22,20 @@ export const Route = createFileRoute("/services/paid-marketing")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          { "@type": "Service", name: "Paid Marketing", serviceType: "Paid Marketing Strategy and Campaign Management", description, url, provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" } },
+          { "@type": "BreadcrumbList", itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://digitalymarket.com/" },
+            { "@type": "ListItem", position: 2, name: "Services", item: "https://digitalymarket.com/services" },
+            { "@type": "ListItem", position: 3, name: "Paid Marketing", item: url },
+          ] },
+        ],
+      }),
+    }],
   }),
 });
 
@@ -32,11 +44,7 @@ function PaidPage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceComingSoon
-          eyebrow="Paid Marketing"
-          title="Put your offer in front of the right people."
-          intro="Paid marketing works when the targeting, the message and the destination all point at the same business objective."
-        />
+        <PaidMarketingPage />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />
