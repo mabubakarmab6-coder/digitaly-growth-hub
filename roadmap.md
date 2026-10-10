@@ -1,7 +1,7 @@
 # Roadmap
 
-- [ ] Build the approved seven-section visual-first Web Creation page without changing shared integrations.
-- [ ] Verify Web Creation visuals, metadata, links and enquiry behavior across desktop/tablet/mobile; report limitations.
+- [x] Build the approved seven-section visual-first Web Creation page without changing shared integrations.
+- [x] Verify Web Creation visuals, metadata, links and enquiry opening/validation across desktop/tablet/mobile; full delivery remains subject to the existing Google timeout below.
 
 - [x] Replace the Paid Marketing placeholder with the approved eight-section service page.
 - [x] Verify page SEO, links, FAQs, enquiry context and validation tracking on desktop, tablet and mobile; record submission limitation.

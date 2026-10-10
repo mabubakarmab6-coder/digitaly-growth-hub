@@ -18,6 +18,8 @@
 
 `src/routes/services.paid-marketing.tsx` → `/services/paid-marketing`, using `PaidMarketingPage.tsx` and `src/data/paid-marketing.ts` for the dedicated eight-section narrative. Existing navigation, footer, global enquiry provider and tracking remain shared and unchanged.
 
+`src/routes/services.web-creation.tsx` → `/services/web-creation`, using `WebCreationPage.tsx`, `WebsiteMockups.tsx` and page-scoped `web-creation.css` for the seven-section visual narrative. The generated lamp photograph supports clearly labelled fictional HTML interface mockups, not portfolio claims.
+
 `src/routes/industries.index.tsx` → `/industries` (industries hub)
 
 `src/routes/industries.$slug.tsx` → `/industries/:slug` (manufacturing-b2b, professional-services, local-business, ecommerce), content sourced from `src/data/industries.ts` and rendered by `src/components/industries/IndustryDetail.tsx`
