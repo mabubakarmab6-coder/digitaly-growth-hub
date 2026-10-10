@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] Build the approved seven-section visual-first Web Creation page without changing shared integrations.
+- [ ] Verify Web Creation visuals, metadata, links and enquiry behavior across desktop/tablet/mobile; report limitations.
+
 - [x] Replace the Paid Marketing placeholder with the approved eight-section service page.
 - [x] Verify page SEO, links, FAQs, enquiry context and validation tracking on desktop, tablet and mobile; record submission limitation.
 - [x] Report tested outcomes, limitations and rollback in docs/PAID_MARKETING_HANDOVER.md; not published.
