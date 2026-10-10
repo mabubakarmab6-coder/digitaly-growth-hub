@@ -2,11 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
-import { ServiceComingSoon } from "@/components/services/ServiceComingSoon";
+import { WebCreationPage } from "@/components/services/WebCreationPage";
 
-const title = "Website Creation | DigitalyMarket";
+const title = "Website Design & Development Services | DigitalyMarket";
 const description =
-  "Website creation at DigitalyMarket: clear, credible websites that turn attention into enquiries. Detailed page coming soon.";
+  "Explore business-focused website creation, redesign, and optimization built around your goals, user experience, and growth readiness.";
 const url = "https://digitalymarket.com/services/web-creation";
 
 export const Route = createFileRoute("/services/web-creation")({
@@ -24,6 +24,46 @@ export const Route = createFileRoute("/services/web-creation")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              name: "Website Design & Development",
+              serviceType: "Website Creation, Redesign and Optimization",
+              description,
+              url,
+              provider: {
+                "@type": "Organization",
+                name: "DigitalyMarket",
+                url: "https://digitalymarket.com",
+              },
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://digitalymarket.com/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Services",
+                  item: "https://digitalymarket.com/services",
+                },
+                { "@type": "ListItem", position: 3, name: "Web Creation", item: url },
+              ],
+            },
+          ],
+        }),
+      },
+    ],
   }),
 });
 
@@ -32,11 +72,7 @@ function WebPage() {
     <div className="min-h-dvh bg-background">
       <SiteNav />
       <main>
-        <ServiceComingSoon
-          eyebrow="Website Creation"
-          title="Turn attention into a clearer digital experience."
-          intro="A website should explain value quickly and make the next step obvious for the people you want to hear from."
-        />
+        <WebCreationPage />
       </main>
       <SiteFooter />
       <GlobalFloatingCta />

@@ -1,0 +1,367 @@
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Accessibility,
+  Check,
+  Code2,
+  Gauge,
+  Globe,
+  Layers,
+  MonitorSmartphone,
+  MousePointer2,
+  ShieldCheck,
+} from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { Cta } from "@/components/site/Cta";
+import { INQUIRY_PATH } from "@/components/site/constants";
+import { HeroMockup, PathVisual } from "./WebsiteMockups";
+import "./web-creation.css";
+
+function ProjectCta({ navy = false }: { navy?: boolean }) {
+  return (
+    <Cta
+      href={INQUIRY_PATH}
+      inquiryService="Website"
+      variant={navy ? "onNavy" : "primary"}
+      size="lg"
+    >
+      Discuss Your Website Project <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+    </Cta>
+  );
+}
+
+const heading = "mt-3 text-3xl font-semibold leading-tight sm:text-4xl";
+const copy = "text-base leading-relaxed text-muted-foreground";
+const paths = [
+  {
+    kind: "create",
+    title: "Create something new.",
+    label: "Website creation",
+    text: "A new website shaped around your goals, audience and the functionality your business needs.",
+  },
+  {
+    kind: "redesign",
+    title: "Rethink what exists.",
+    label: "Website redesign",
+    text: "Rework the structure, design and usability of an existing website for a clearer experience.",
+  },
+  {
+    kind: "optimize",
+    title: "Improve what matters.",
+    label: "Website optimization",
+    text: "Target the parts of your current website that need attention, rather than rebuild by default.",
+  },
+] as const;
+const steps = [
+  ["Discovery", "Understand your business, audience and requirements."],
+  ["Strategy", "Define the structure, priorities and user journeys."],
+  ["Design", "Shape the visual language and key page experiences."],
+  ["Development", "Build the agreed functionality and responsive layouts."],
+  ["Testing", "Review interactions, devices and essential journeys."],
+  ["Launch", "Prepare the release and agreed handover."],
+];
+const foundations = [
+  {
+    icon: MonitorSmartphone,
+    title: "Every screen",
+    text: "Layouts and journeys considered across desktop, tablet and mobile.",
+  },
+  {
+    icon: Accessibility,
+    title: "Usable by design",
+    text: "Clear navigation, readable content and accessibility considerations.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Careful implementation",
+    text: "Security-conscious choices and functional testing of key journeys.",
+  },
+  {
+    icon: Gauge,
+    title: "Lean foundations",
+    text: "Performance-conscious assets and development, without score promises.",
+  },
+  {
+    icon: Code2,
+    title: "Built to be maintained",
+    text: "Organized implementation and an agreed approach to future updates.",
+  },
+  {
+    icon: Globe,
+    title: "Ready for discovery",
+    text: "Relevant SEO, GEO and conversion foundations within project scope.",
+  },
+];
+
+export function WebCreationPage() {
+  return (
+    <div className="web-creation">
+      <section
+        aria-labelledby="web-hero-title"
+        className="border-b border-hairline bg-background pt-9 pb-12 md:pt-12 md:pb-16"
+      >
+        <div className="container-page">
+          <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
+            <Link to="/services" className="hover:text-foreground">
+              Services
+            </Link>
+            <span aria-hidden="true"> / </span>
+            <span>Web Creation</span>
+          </nav>
+          <div className="mt-8 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div className="max-w-xl">
+              <p className="eyebrow">Website design & development</p>
+              <h1
+                id="web-hero-title"
+                className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl"
+              >
+                Websites built around your business goals.
+              </h1>
+            </div>
+            <div className="max-w-md">
+              <p className={copy}>
+                Create, redesign or improve your website—with clear user experiences and the right
+                foundations for what comes next.
+              </p>
+              <div className="mt-6">
+                <ProjectCta />
+              </div>
+            </div>
+          </div>
+          <HeroMockup />
+        </div>
+      </section>
+
+      <section aria-labelledby="web-paths-title" className="section-y">
+        <div className="container-page">
+          <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <div>
+              <p className="eyebrow">01 / What we build or improve</p>
+              <h2 id="web-paths-title" className={heading}>
+                Three starting points.
+                <br />
+                Your business decides the path.
+              </h2>
+            </div>
+            <p className={`max-w-sm ${copy}`}>
+              Business websites, landing pages and online stores. New builds or focused
+              improvements.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-10 md:grid-cols-3">
+            {paths.map((path) => (
+              <article key={path.kind} className="min-w-0">
+                <PathVisual kind={path.kind} />
+                <p className="text-xs font-medium text-primary">{path.label}</p>
+                <h3 className="mt-2 text-xl font-semibold">{path.title}</h3>
+                <p className={`mt-3 ${copy}`}>{path.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="web-approach-title" className="section-y surface-navy">
+        <div className="container-page">
+          <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <div>
+              <p className="eyebrow text-navy-muted">02 / Business-first. Growth-ready.</p>
+              <h2 id="web-approach-title" className={heading}>
+                A website is a connected experience.
+              </h2>
+            </div>
+            <p className="max-w-sm text-base leading-relaxed text-navy-muted">
+              Business priorities and visitor needs shape the design. Technical foundations make
+              that experience work.
+            </p>
+          </div>
+          <figure>
+            <div className="web-framework">
+              <div>
+                <div className="web-framework-node">
+                  <span className="text-sm text-navy-muted">The purpose</span>
+                  <h3 className="mt-2 text-xl font-semibold">Business goals</h3>
+                  <p className="mt-2 text-sm text-navy-muted">What the website needs to support.</p>
+                </div>
+                <div className="web-framework-node">
+                  <span className="text-sm text-navy-muted">The people</span>
+                  <h3 className="mt-2 text-xl font-semibold">Audience needs</h3>
+                  <p className="mt-2 text-sm text-navy-muted">What visitors need to find and do.</p>
+                </div>
+              </div>
+              <div className="web-framework-center">
+                <Layers className="mx-auto h-8 w-8 text-navy-muted" aria-hidden="true" />
+                <h3 className="mt-5 text-2xl font-semibold">
+                  Your website
+                  <br />
+                  experience
+                </h3>
+                <div className="mt-6 flex justify-center gap-2 text-xs text-navy-muted">
+                  <span>Discover</span>
+                  <ArrowRight size={14} />
+                  <span>Understand</span>
+                  <ArrowRight size={14} />
+                  <span>Act</span>
+                </div>
+              </div>
+              <div>
+                <div className="web-framework-node">
+                  <span className="text-sm text-navy-muted">The experience</span>
+                  <h3 className="mt-2 text-xl font-semibold">UX & interface design</h3>
+                  <p className="mt-2 text-sm text-navy-muted">
+                    Clear structure and purposeful interactions.
+                  </p>
+                </div>
+                <div className="web-framework-node">
+                  <span className="text-sm text-navy-muted">The foundation</span>
+                  <h3 className="mt-2 text-xl font-semibold">Technology & readiness</h3>
+                  <p className="mt-2 text-sm text-navy-muted">
+                    Maintainability, discovery and conversion.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <figcaption className="mt-8 text-center text-sm text-navy-muted">
+              Considered together. Prioritized to the needs of your project.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="web-process-title" className="section-y">
+        <div className="container-page">
+          <p className="eyebrow">03 / The website project process</p>
+          <h2 id="web-process-title" className={heading}>
+            A clear path from idea to launch.
+          </h2>
+          <p className={`mt-4 max-w-xl ${copy}`}>
+            Six practical stages. The depth and sequence adapt to your requirements and agreed
+            scope—not a fixed package or timeline.
+          </p>
+          <ol className="web-process mt-12">
+            {steps.map(([title, text], i) => (
+              <li key={title}>
+                <span className="text-xs font-semibold text-primary">0{i + 1}</span>
+                <h3 className="mt-3 text-lg font-semibold">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{text}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section aria-labelledby="web-quality-title" className="section-y bg-surface">
+        <div className="container-page">
+          <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+            <div>
+              <p className="eyebrow">04 / Quality & growth foundations</p>
+              <h2 id="web-quality-title" className={heading}>
+                Beyond how it looks.
+              </h2>
+              <p className={`mt-5 max-w-sm ${copy}`}>
+                The details underneath the design matter too. We consider the foundations relevant
+                to your website and its intended use.
+              </p>
+              <div className="mt-8 flex items-center gap-4 border-y border-hairline py-5">
+                <MousePointer2 className="h-6 w-6 text-primary" aria-hidden="true" />
+                <div>
+                  <p className="font-medium">A purposeful next step</p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    From interest to an appropriate action.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-x-8 gap-y-7 sm:grid-cols-2">
+              {foundations.map((item) => (
+                <div key={item.title} className="border-t border-hairline pt-5">
+                  <item.icon className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <h3 className="mt-3 text-base font-semibold">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className="mt-10 border-t border-hairline pt-6 text-sm leading-relaxed text-muted-foreground">
+            Foundations are not a promise of complete security, formal accessibility compliance or
+            guaranteed performance. Deeper{" "}
+            <Link
+              to="/services/GEO"
+              className="font-medium text-primary underline underline-offset-4"
+            >
+              GEO work
+            </Link>
+            , SEO, conversion optimization and{" "}
+            <Link
+              to="/services/ecommerce-growth"
+              className="font-medium text-primary underline underline-offset-4"
+            >
+              e-commerce growth
+            </Link>{" "}
+            may require separately agreed scope.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="web-scope-title" className="section-y">
+        <div className="container-page grid gap-8 md:grid-cols-2 md:gap-16">
+          <div>
+            <p className="eyebrow">05 / Scope & post-launch support</p>
+            <h2 id="web-scope-title" className={heading}>
+              You don't need every detail figured out.
+            </h2>
+            <p className={`mt-5 ${copy}`}>
+              Start with your business, your current website and what you want to change. Discovery
+              helps clarify requirements and shape a tailored proposal.
+            </p>
+          </div>
+          <div className="self-center border-l-2 border-primary/30 pl-6">
+            <ul className="space-y-5">
+              {[
+                "Requirements defined around your business",
+                "Priorities and deliverables agreed together",
+                "Post-launch support matched to website needs and scope",
+              ].map((text) => (
+                <li key={text} className="flex gap-3 text-base leading-relaxed">
+                  <Check className="mt-1 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                  {text}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Ongoing maintenance and support are not automatically unlimited or included in every
+              project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="web-final-title"
+        className="surface-navy py-14 pb-24 md:py-16 md:pb-24"
+      >
+        <div className="container-page flex flex-col justify-between gap-8 md:flex-row md:items-center">
+          <div className="max-w-xl">
+            <p className="eyebrow text-navy-muted">Your next website starts here</p>
+            <h2 id="web-final-title" className={heading}>
+              Make your website work for your business.
+            </h2>
+            <p className="mt-4 max-w-lg text-base leading-relaxed text-navy-muted">
+              Tell us what you're building or improving. Let's identify the right website approach
+              for your goals.
+            </p>
+          </div>
+          <div className="shrink-0">
+            <ProjectCta navy />
+            <Link
+              to="/services"
+              className="mt-5 flex items-center gap-2 text-sm text-navy-muted hover:text-navy-foreground"
+            >
+              Explore our wider capabilities <ArrowUpRight size={14} aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
