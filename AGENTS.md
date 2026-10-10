@@ -13,3 +13,4 @@
 - Keep one root-mounted inquiry provider that intercepts `/start` fallback links, because every public CTA must open the same accessible inquiry dialog.
 - Forward enquiries to Google Apps Script only inside the existing server submission pipeline, retaining stored rows and owner notifications and reusing submission IDs for unchanged retries, because browser CORS and partial delivery must not erase answers or duplicate local records.
 - Keep the dedicated Paid Marketing content in its own data module and page component composed within the existing route shell, because its approved narrative differs from generic service templates without requiring shared design or integration changes.
+- Keep Web Creation's illustrative HTML mockups and scoped styles in page-specific modules within the existing route shell, because its visual narrative must not alter shared site branding or enquiry behavior.
