@@ -24,14 +24,46 @@ export const Route = createFileRoute("/services/web-creation")({
       { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: url }],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@graph": [
-      { "@type": "Service", name: "Website Design & Development", serviceType: "Website Creation, Redesign and Optimization", description, url, provider: { "@type": "Organization", name: "DigitalyMarket", url: "https://digitalymarket.com" } },
-      { "@type": "BreadcrumbList", itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://digitalymarket.com/" },
-        { "@type": "ListItem", position: 2, name: "Services", item: "https://digitalymarket.com/services" },
-        { "@type": "ListItem", position: 3, name: "Web Creation", item: url },
-      ] },
-    ] }) }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              name: "Website Design & Development",
+              serviceType: "Website Creation, Redesign and Optimization",
+              description,
+              url,
+              provider: {
+                "@type": "Organization",
+                name: "DigitalyMarket",
+                url: "https://digitalymarket.com",
+              },
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://digitalymarket.com/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Services",
+                  item: "https://digitalymarket.com/services",
+                },
+                { "@type": "ListItem", position: 3, name: "Web Creation", item: url },
+              ],
+            },
+          ],
+        }),
+      },
+    ],
   }),
 });
 
