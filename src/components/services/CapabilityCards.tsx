@@ -3,8 +3,6 @@ import { Link } from "@tanstack/react-router";
 import geoImage from "@/assets/service-geo.jpg";
 import paidImage from "@/assets/service-paid.jpg";
 import webImage from "@/assets/service-web.jpg";
-import ecommerceImage from "@/assets/service-ecommerce.jpg";
-import marketplaceAsset from "@/assets/service-marketplace.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 
 
@@ -48,32 +46,6 @@ const capabilities = [
     image: webImage,
     alt: "Layered website interface blocks illustrating a conversion-focused web layout",
   },
-  {
-    no: "04",
-    journey: "Grow",
-    problem:
-      "Your online store has potential, but the path from discovery to purchase and repeat business isn't working hard enough.",
-    title: "E-commerce Growth",
-    outcome:
-      "Build a stronger e-commerce growth system from discovery through conversion and retention.",
-    cta: "Explore E-commerce Growth",
-    href: "/services/ecommerce-growth",
-    image: ecommerceImage,
-    alt: "Abstract commerce visual with product cards, cart and an upward growth arrow",
-  },
-  {
-    no: "05",
-    journey: "Discover · Convert · Grow",
-    problem:
-      "You already sell on marketplaces, but your listings aren't being found, chosen or converting as well as they should.",
-    title: "Marketplace Optimization",
-    outcome:
-      "Treat your marketplace presence as another storefront — discoverable, persuasive and optimised for conversion.",
-    cta: "Explore Marketplace Optimization",
-    href: "/services/marketplace-optimization",
-    image: marketplaceAsset.url,
-    alt: "Abstract marketplace visual with product listing cards, search field and rising performance bars",
-  },
 ] as const;
 
 export function CapabilityCards() {
@@ -83,7 +55,7 @@ export function CapabilityCards() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Core capabilities</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Five capabilities. One growth journey.
+            Three capabilities. One growth journey.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Each capability answers a different business problem. They can work alone or together —

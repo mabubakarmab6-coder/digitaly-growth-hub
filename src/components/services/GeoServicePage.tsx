@@ -145,16 +145,6 @@ const relatedServices = [
     copy: "Capture active demand while organic and generative discoverability develops over time.",
     to: "/services/paid-marketing" as const,
   },
-  {
-    title: "E-commerce Growth",
-    copy: "Connect product discovery with category clarity, store experience and conversion.",
-    to: "/services/ecommerce-growth" as const,
-  },
-  {
-    title: "Marketplace Optimization",
-    copy: "Align marketplace listings and storefronts with the brand's wider digital presence.",
-    to: "/services/marketplace-optimization" as const,
-  },
 ] as const;
 
 export function GeoServicePage() {

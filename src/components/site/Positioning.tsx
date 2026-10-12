@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Sparkles, Target, Layout, ShoppingBag, Store } from "lucide-react";
+import { Sparkles, Target, Layout } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const pillars = [
@@ -21,18 +21,6 @@ const pillars = [
     copy: "Build digital experiences that communicate value and generate enquiries.",
     href: "/services/web-creation",
   },
-  {
-    icon: ShoppingBag,
-    title: "E-commerce",
-    copy: "Strengthen online visibility, conversion and growth.",
-    href: "/services/ecommerce-growth",
-  },
-  {
-    icon: Store,
-    title: "Marketplace Optimization",
-    copy: "Improve marketplace visibility, product listings and conversion.",
-    href: "/services/marketplace-optimization",
-  },
 ] as const;
 
 export function Positioning() {
@@ -50,7 +38,7 @@ export function Positioning() {
           </p>
         </Reveal>
 
-        <ul className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-5">
+        <ul className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-3">
           {pillars.map((pillar, i) => (
             <li key={pillar.title}>
               <Reveal delay={i * 80} className="h-full">

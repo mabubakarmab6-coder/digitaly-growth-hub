@@ -44,34 +44,6 @@ const services = [
     ],
     cta: "Explore Web Creation",
   },
-  {
-    no: "04",
-    title: "E-commerce Growth",
-    copy: "Strengthen your online store and marketplace presence from visibility to conversion.",
-    capabilities: [
-      "E-commerce strategy",
-      "Marketplace optimization",
-      "Product and listing optimization",
-      "Shopify growth",
-      "Amazon, Etsy and marketplace support",
-      "Conversion optimization",
-    ],
-    cta: "Explore E-commerce",
-  },
-  {
-    no: "05",
-    title: "Marketplace Optimization",
-    copy: "Make your marketplace presence discoverable, persuasive and optimised for conversion.",
-    capabilities: [
-      "Marketplace SEO",
-      "Product listing optimization",
-      "Keyword and search-term strategy",
-      "Catalog and category optimization",
-      "Storefront optimization",
-      "Marketplace analytics",
-    ],
-    cta: "Explore Marketplace Optimization",
-  },
 ];
 
 export function Services() {
@@ -81,7 +53,7 @@ export function Services() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Services</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Five ways we help businesses grow.
+            Three ways we help businesses grow.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Choose the capability you need — or bring us the problem and we'll help identify the
@@ -118,7 +90,7 @@ export function Services() {
                 </ul>
                 <a
                   href={INQUIRY_PATH}
-                  data-inquiry-service={service.title === "Generative Engine Optimization" ? "GEO" : service.title === "Website Creation" ? "Website" : service.title === "E-commerce Growth" || service.title === "Marketplace Optimization" ? "E-commerce / Marketplace" : service.title}
+                  data-inquiry-service={service.title === "Generative Engine Optimization" ? "GEO" : service.title === "Website Creation" ? "Website" : service.title}
                   className="mt-8 inline-flex items-center gap-2 self-start text-sm font-semibold text-primary transition-all hover:gap-3"
                 >
                   {service.cta} <ArrowRight className="h-4 w-4" />

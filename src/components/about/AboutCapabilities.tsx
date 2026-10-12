@@ -1,4 +1,4 @@
-import { ArrowRight, Search, Megaphone, Globe, ShoppingBag, Store } from "lucide-react";
+import { ArrowRight, Search, Megaphone, Globe } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 
@@ -21,18 +21,6 @@ const capabilities = [
     href: "/services/web-creation",
     icon: Globe,
   },
-  {
-    title: "E-commerce Growth",
-    copy: "Discovery, conversion and repeat purchase, working together.",
-    href: "/services/ecommerce-growth",
-    icon: ShoppingBag,
-  },
-  {
-    title: "Marketplace Optimization",
-    copy: "Listings that get found, chosen and converted.",
-    href: "/services/marketplace-optimization",
-    icon: Store,
-  },
 ] as const;
 
 export function AboutCapabilities() {
@@ -42,11 +30,11 @@ export function AboutCapabilities() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">What we do</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Five capabilities, applied only where they fit.
+            Three capabilities, applied only where they fit.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             The diagnosis decides which of these matter for your business — often it's one or two,
-            not all five.
+            not all three.
           </p>
         </Reveal>
 
