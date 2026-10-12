@@ -17,7 +17,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 
 const title = "DigitalyMarket | Digital Growth Agency for Modern Businesses";
 const description =
-  "DigitalyMarket helps manufacturers, B2B companies, service businesses and e-commerce brands grow through GEO, paid marketing, websites and e-commerce solutions.";
+  "DigitalyMarket helps manufacturers, B2B companies, service businesses and e-commerce brands grow through GEO, paid marketing, website creation.";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -50,7 +50,6 @@ export const Route = createFileRoute("/")({
             "Generative Engine Optimization",
             "Paid Marketing",
             "Website Creation",
-            "E-commerce Growth",
           ],
         }),
       },

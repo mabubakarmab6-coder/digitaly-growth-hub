@@ -268,9 +268,7 @@ export function PaidMarketingPage() {
                   website and conversion journey
                 </Link>{" "}
                 or a connected{" "}
-                <Link to="/services/ecommerce-growth" className={relatedLink}>
-                  e-commerce growth approach
-                </Link>{" "}
+                e-commerce growth approach{" "}
                 may support the next step.{" "}
                 <Link to="/services/GEO" className={relatedLink}>
                   Generative Engine Optimization

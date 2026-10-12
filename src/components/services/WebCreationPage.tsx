@@ -292,12 +292,7 @@ export function WebCreationPage() {
               GEO work
             </Link>
             , SEO, conversion optimization and{" "}
-            <Link
-              to="/services/ecommerce-growth"
-              className="font-medium text-primary underline underline-offset-4"
-            >
-              e-commerce growth
-            </Link>{" "}
+            e-commerce growth{" "}
             may require separately agreed scope.
           </p>
         </div>
