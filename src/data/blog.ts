@@ -115,7 +115,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Email remains the king of e-commerce retention. From welcome series for new subscribers to abandoned cart recovery emails, email marketing helps you bring hesitant shoppers back to your store.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Marketplace Optimization</h3>
-      <p class="mb-4">If you sell on Amazon or other marketplaces, <a href="/services/marketplace-optimization" class="text-primary hover:underline">marketplace optimization</a> is a crucial subset of e-commerce marketing. It involves optimizing your product listings to rank higher within the marketplace's internal search engine.</p>
+      <p class="mb-4">If you sell on Amazon or other marketplaces, marketplace optimization is a crucial subset of e-commerce marketing. It involves optimizing your product listings to rank higher within the marketplace's internal search engine.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">The E-Commerce Marketing Funnel</h2>
       <p class="mb-4">To effectively market an e-commerce brand, you must understand the customer journey:</p>
@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">E-commerce growth goes beyond just running ads or sending emails. It is a holistic, data-driven approach to scaling an online business by optimizing every touchpoint of the customer journey, from acquisition to fulfillment and retention.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">The Pillars of E-Commerce Growth</h2>
-      <p class="mb-4">Sustainable <a href="/services/ecommerce-growth" class="text-primary hover:underline">e-commerce growth</a> relies on improving three primary metrics:</p>
+      <p class="mb-4">Sustainable e-commerce growth relies on improving three primary metrics:</p>
       <ol class="list-decimal pl-6 mb-4 space-y-2">
         <li><strong>Traffic:</strong> The number of visitors coming to your store.</li>
         <li><strong>Conversion Rate (CVR):</strong> The percentage of visitors who make a purchase.</li>
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">3. Expansion into New Channels</h3>
-      <p class="mb-4">Growth often requires diversifying where you sell. If you only sell on Shopify, consider expanding to Amazon, eBay, or Walmart. <a href="/services/marketplace-optimization" class="text-primary hover:underline">Marketplace optimization</a> can open up entirely new revenue streams with massive built-in audiences.</p>
+      <p class="mb-4">Growth often requires diversifying where you sell. If you only sell on Shopify, consider expanding to Amazon, eBay, or Walmart. Marketplace optimization can open up entirely new revenue streams with massive built-in audiences.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">4. Supply Chain and Fulfillment Efficiency</h3>
       <p class="mb-4">Growth is not just about marketing; it is about operations. Fast, reliable shipping is a major conversion driver. Optimizing your inventory management and fulfillment processes prevents stockouts and reduces shipping costs, improving your profit margins.</p>
@@ -257,7 +257,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">A smart internal linking structure—such as "Related Products" or breadcrumb navigation—helps search engines understand the hierarchy of your store and spreads ranking authority across your product catalog.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">The Role of Search Intent</h2>
-      <p class="mb-4">Understanding <strong>search intent</strong> is crucial for <a href="/services/ecommerce-growth" class="text-primary hover:underline">e-commerce growth</a>. If a user searches "best running shoes" (informational/comparative intent), a blog post is best. If they search "buy Nike Pegasus size 10" (transactional intent), they need to land directly on a highly optimized product page.</p>
+      <p class="mb-4">Understanding <strong>search intent</strong> is crucial for e-commerce growth. If a user searches "best running shoes" (informational/comparative intent), a blog post is best. If they search "buy Nike Pegasus size 10" (transactional intent), they need to land directly on a highly optimized product page.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Turning Organic Traffic Into Organic Sales</h2>
       <p class="mb-4">Getting traffic is only half the battle. E-commerce SEO must work hand-in-hand with Conversion Rate Optimization (CRO). Clear calls-to-action (Add to Cart), trustworthy reviews, and a frictionless checkout process ensure that your hard-earned organic traffic actually converts into revenue.</p>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Platforms like Facebook, Instagram, and LinkedIn allow you to show ads based on demographics, interests, and behaviors. This is ideal for <strong>discovery</strong>—introducing your brand to people who didn't know they needed your product yet.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Shopping Ads</h3>
-      <p class="mb-4">Crucial for <a href="/services/ecommerce-growth" class="text-primary hover:underline">e-commerce businesses</a>, Shopping ads display your product image, title, and price directly in Google search results, allowing shoppers to compare before they even click.</p>
+      <p class="mb-4">Crucial for e-commerce businesses, Shopping ads display your product image, title, and price directly in Google search results, allowing shoppers to compare before they even click.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Key Metrics to Know</h2>
       <ul class="list-disc pl-6 mb-4 space-y-2">
@@ -351,7 +351,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">A user might see your Facebook ad, ignore it, search for your brand on Google two days later, and then finally make a purchase through an email link. <strong>Attribution</strong> is the science of determining which channels actually deserve credit for the sale, allowing you to allocate your budget accurately.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Why Revenue and Profit Beat Vanity Metrics</h2>
-      <p class="mb-4">In performance marketing, likes, shares, and raw traffic volumes are considered "vanity metrics." They look nice on a dashboard but don't pay the bills. The entire focus of performance marketing is ensuring that the Customer Acquisition Cost (CAC) remains significantly lower than the Customer Lifetime Value (CLV), resulting in highly profitable <a href="/services/ecommerce-growth" class="text-primary hover:underline">business growth</a>.</p>
+      <p class="mb-4">In performance marketing, likes, shares, and raw traffic volumes are considered "vanity metrics." They look nice on a dashboard but don't pay the bills. The entire focus of performance marketing is ensuring that the Customer Acquisition Cost (CAC) remains significantly lower than the Customer Lifetime Value (CLV), resulting in highly profitable business growth.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Continuous Optimization</h2>
       <p class="mb-4">Performance campaigns are never "finished." They require rigorous A/B testing. Marketers will test different ad creatives, headlines, audiences, and landing page layouts to incrementally improve the conversion rate and drive down the CPA.</p>
@@ -460,7 +460,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-5">Understanding this behaviour helps determine what to communicate, where to communicate it, and when.</p>
 
       <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">3. Develop the Digital Marketing Strategy</h2>
-      <p class="mb-5">A <strong>digital marketing strategy</strong> connects the business objective with the customer journey. It can determine the target audience, positioning, key messages, content requirements, channel selection, conversion paths, budget allocation, measurement, and optimization priorities. A business may use SEO, <a href="/services/paid-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">paid marketing</a>, content, website optimization, <a href="/services/ecommerce-growth" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce growth</a>, and <a href="/services/GEO" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">GEO</a> together when those components support the same objective.</p>
+      <p class="mb-5">A <strong>digital marketing strategy</strong> connects the business objective with the customer journey. It can determine the target audience, positioning, key messages, content requirements, channel selection, conversion paths, budget allocation, measurement, and optimization priorities. A business may use SEO, <a href="/services/paid-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">paid marketing</a>, content, website optimization, e-commerce growth, and <a href="/services/GEO" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">GEO</a> together when those components support the same objective.</p>
 
       <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">4. Choose the Right Digital Marketing Channels</h2>
       <p class="mb-5">Common <strong>digital marketing channels</strong> include search engines, SEO, paid search, paid social, social media, content marketing, email marketing, websites, e-commerce platforms, online marketplaces, and AI-powered search and answer experiences. There is no universal list of channels every business must use. The objective is to identify which channels are relevant to the audience and business objective.</p>

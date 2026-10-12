@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] Remove the two retired commerce service routes and unused page-only components/data.
+- [x] Remove retired service listings, internal links and SEO references without replacement routes or redirects.
+- [x] Verify retirement, remaining navigation/services and unchanged inquiry opening; report redirect decisions in docs/COMMERCE_SERVICE_REMOVAL.md.
+
 - [x] Build the approved seven-section visual-first Web Creation page without changing shared integrations.
 - [x] Verify Web Creation visuals, metadata, links and enquiry opening/validation across desktop/tablet/mobile; full delivery remains subject to the existing Google timeout below.
 
