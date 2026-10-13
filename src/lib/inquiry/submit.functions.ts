@@ -8,29 +8,19 @@ export const submitInquiry = createServerFn({ method: "POST" })
     const inquiryId = data.submissionId ?? crypto.randomUUID();
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
-    // A retry of unchanged answers reuses the stored row and notification.
-    // Never expose an existing enquiry or accept a mismatched ID as a retry.
-    const { data: existing, error: lookupError } = await supabaseAdmin
-      .from("inquiries")
-      .select(
-        "full_name,work_email,company_name,selected_service,additional_context,source_service,source_page",
-      )
-      .eq("id", inquiryId)
-      .maybeSingle();
-    if (lookupError) throw new Error("Could not validate this enquiry.");
-    if (
-      existing &&
-      (existing.full_name !== data.fullName ||
-        existing.work_email !== data.workEmail ||
-        existing.company_name !== data.companyName ||
-        existing.selected_service !== data.selectedService ||
-        (existing.additional_context ?? "") !== data.businessAndChallenge ||
-        (existing.source_service ?? "") !== data.sourceService ||
-        (existing.source_page ?? "") !== data.sourcePage)
-    )
-      throw new Error("Could not validate this enquiry.");
+    // Retries reuse the client-generated submission ID. The insert conflict tells us the
+    // row already exists without ever reading stored enquiry data back.
+    let isRetry = false;
+    if (data.submissionId) {
+      const { count: existingCount, error: lookupError } = await supabaseAdmin
+        .from("inquiries")
+        .select("id", { count: "exact", head: true })
+        .eq("id", inquiryId);
+      if (lookupError) throw new Error("Could not validate this enquiry.");
+      isRetry = (existingCount ?? 0) > 0;
+    }
 
-    if (!existing) {
+    if (!isRetry) {
       const windowStart = new Date(Date.now() - 60 * 60 * 1000).toISOString();
       const { count, error: countError } = await supabaseAdmin
         .from("inquiries")
