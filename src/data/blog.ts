@@ -418,6 +418,7 @@ export const blogPosts: BlogPost[] = [
       "what-is-seo",
       "what-is-paid-marketing",
       "what-is-performance-marketing",
+      "what-is-ecommerce-seo",
       "what-is-generative-engine-optimization",
     ],
     content: `
