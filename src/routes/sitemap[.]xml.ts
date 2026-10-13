@@ -4,6 +4,7 @@ import { industries } from "@/data/industries";
 import { blogPosts } from "@/data/blog";
 
 const BASE_URL = "https://digitalymarket.com";
+const LAST_MODIFIED = "2026-10-13";
 
 interface SitemapEntry {
   path: string;
@@ -44,6 +45,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           [
             `  <url>`,
             `    <loc>${BASE_URL}${e.path}</loc>`,
+            `    <lastmod>${LAST_MODIFIED}</lastmod>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,

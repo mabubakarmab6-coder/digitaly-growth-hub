@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Digital marketing is a broad term that encompasses several specific channels. Here are the most important ones for business growth:</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Search Engine Optimization (SEO)</h3>
-      <p class="mb-4"><a href="/services/seo" class="text-primary hover:underline">SEO</a> is the process of optimizing your website so that it ranks higher in search engine results (like Google) when people search for terms related to your business. It is a long-term strategy that drives free, organic traffic to your site.</p>
+      <p class="mb-4"><a href="/insights/what-is-seo" class="text-primary hover:underline">SEO</a> is the process of optimizing your website so that it ranks higher in search engine results (like Google) when people search for terms related to your business. It is a long-term strategy that drives free, organic traffic to your site.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Generative Engine Optimization (GEO)</h3>
       <p class="mb-4">As AI tools like ChatGPT and Google's AI Overviews become more common, <a href="/services/GEO" class="text-primary hover:underline">GEO</a> focuses on ensuring your brand is recommended by these AI systems. It is the evolution of traditional SEO for the AI era.</p>
@@ -82,12 +82,13 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Define your goals:</strong> Are you looking for brand awareness, direct sales, or B2B leads?</li>
         <li><strong>Understand your audience:</strong> Where do your ideal customers spend their time online? What problems are they trying to solve?</li>
         <li><strong>Optimize your website:</strong> Your website is your digital storefront. Ensure it is fast, mobile-friendly, and clearly explains what you do. Check out our <a href="/services/web-creation" class="text-primary hover:underline">website creation services</a> if you need help here.</li>
-        <li><strong>Choose one or two channels:</strong> Don't try to be everywhere at once. If you are a B2B service, start with SEO and LinkedIn. If you are e-commerce, start with Google Ads and Instagram.</li>
+        <li><strong>Choose one or two channels:</strong> Don't try to be everywhere at once. If you are a B2B service, start with SEO and LinkedIn (see how this applies to <a href="/industries/professional-services" class="text-primary hover:underline">digital growth for professional services firms</a>). If you are e-commerce, start with Google Ads and Instagram.</li>
         <li><strong>Measure and adjust:</strong> Use analytics tools to track your performance and double down on what works.</li>
       </ol>
 
       <h2 class="text-3xl font-bold mt-8 mb-4">Final Takeaway</h2>
       <p class="mb-4">Answering "what is digital marketing" is simple: it is the most effective way to grow your business in the modern world. By understanding your audience and leveraging the right digital channels, you can turn online attention into real-world revenue.</p>
+      <p class="mb-4">This guide is written by Mohammad Abubakar, founder of DigitalyMarket. Learn more <a href="/about" class="text-primary hover:underline">about DigitalyMarket and how we work</a>.</p>
     `
   }
 ,
@@ -106,7 +107,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">A successful strategy typically involves a mix of several different channels. Here are the most effective ones:</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Search Engine Optimization (SEO)</h3>
-      <p class="mb-4">E-commerce SEO involves optimizing your product pages and category pages so they rank high on Google. This ensures that when a customer searches for a product you sell, your store appears first. It involves keyword research, optimizing meta tags, and ensuring fast page load speeds.</p>
+      <p class="mb-4">E-commerce SEO involves optimizing your product pages and category pages so they rank high on Google. This ensures that when a customer searches for a product you sell, your store appears first. It involves keyword research, optimizing meta tags, and ensuring fast page load speeds. For a deeper walkthrough, read <a href="/insights/what-is-ecommerce-seo" class="text-primary hover:underline">what e-commerce SEO is and how it works</a>.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Pay-Per-Click (PPC) Advertising</h3>
       <p class="mb-4">Running Google Shopping Ads or Meta (Facebook/Instagram) Ads allows you to put your products directly in front of targeted audiences. <a href="/services/paid-marketing" class="text-primary hover:underline">Paid marketing</a> is highly measurable and can provide immediate sales.</p>
@@ -199,7 +200,7 @@ export const blogPosts: BlogPost[] = [
       </ol>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">The Three Pillars of SEO</h2>
-      <p class="mb-4">A successful <a href="/services/seo" class="text-primary hover:underline">SEO strategy</a> is built on three foundational pillars:</p>
+      <p class="mb-4">A successful SEO strategy is built on three foundational pillars:</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">1. On-Page SEO</h3>
       <p class="mb-4">This involves optimizing the content and structure of individual web pages. Key elements include:</p>
@@ -220,6 +221,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Mobile-Friendliness:</strong> Google uses mobile-first indexing, meaning it primarily uses the mobile version of your site for ranking.</li>
         <li><strong>Site Architecture:</strong> Ensuring a logical structure and clear internal linking so bots can easily crawl your site.</li>
       </ul>
+      <p class="mb-4">Online stores apply these pillars differently, across product and category pages. Our guide to <a href="/insights/what-is-ecommerce-seo" class="text-primary hover:underline">e-commerce SEO</a> explains the differences.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">The Future: SEO vs. GEO</h2>
       <p class="mb-4">While traditional SEO focuses on traditional search engines, the rise of AI chatbots (like ChatGPT) has introduced a new frontier: <a href="/services/GEO" class="text-primary hover:underline">Generative Engine Optimization (GEO)</a>. Future-proofing your online presence means optimizing for both traditional search algorithms and modern AI language models.</p>
@@ -240,7 +242,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">E-commerce SEO (Search Engine Optimization) is the process of optimizing your online store so that your product pages, category pages, and content rank higher in search engine results like Google. When someone searches for a product you sell, your store appears at the top—for free.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">How It Differs From General SEO</h2>
-      <p class="mb-4">While traditional <a href="/services/seo" class="text-primary hover:underline">SEO</a> often focuses on long-form blog content and lead generation, e-commerce SEO is highly transactional. The goal isn't just to educate; it's to sell. The primary focus is on optimizing hundreds or thousands of specific product pages and category architectures rather than just a few informational articles.</p>
+      <p class="mb-4">While traditional <a href="/insights/what-is-seo" class="text-primary hover:underline">SEO</a> often focuses on long-form blog content and lead generation, e-commerce SEO is highly transactional. The goal isn't just to educate; it's to sell. The primary focus is on optimizing hundreds or thousands of specific product pages and category architectures rather than just a few informational articles.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Core Components of E-Commerce SEO</h2>
       
@@ -310,7 +312,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">One of the greatest advantages of paid marketing is budget control. You can start with just $10 a day to test messaging and audiences. Once you find a campaign that generates a positive return on investment, you can confidently scale that budget up.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Paid vs. Organic Marketing</h2>
-      <p class="mb-4">Paid marketing delivers instant results, rapid testing, and precise targeting. Organic marketing (like <a href="/services/seo" class="text-primary hover:underline">SEO</a>) takes months to build but provides compounding, free traffic over time. The most successful businesses integrate both: using paid ads for immediate cash flow while building their organic presence in the background.</p>
+      <p class="mb-4">Paid marketing delivers instant results, rapid testing, and precise targeting. Organic marketing (like <a href="/insights/what-is-seo" class="text-primary hover:underline">SEO</a>) takes months to build but provides compounding, free traffic over time. The most successful businesses integrate both: using paid ads for immediate cash flow while building their organic presence in the background.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Common Mistakes to Avoid</h2>
       <ul class="list-disc pl-6 mb-4 space-y-2">
@@ -387,7 +389,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Google's concept of E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) is critical in the GEO era. AI engines want to cite trusted experts. Showcasing real-world experience, author credentials, and generating brand mentions across high-authority websites will signal to the AI that your brand is the definitive authority in your niche.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Limitations and Misconceptions of GEO</h2>
-      <p class="mb-4">A common misconception is that GEO replaces <a href="/services/seo" class="text-primary hover:underline">SEO</a>. It doesn't. Currently, AI models heavily rely on traditional search indexes (like Bing or Google) to retrieve real-time data before generating an answer (a process known as Retrieval-Augmented Generation, or RAG). Therefore, strong technical SEO and high organic rankings remain the foundation of good GEO.</p>
+      <p class="mb-4">A common misconception is that GEO replaces <a href="/insights/what-is-seo" class="text-primary hover:underline">SEO</a>. It doesn't. Currently, AI models heavily rely on traditional search indexes (like Bing or Google) to retrieve real-time data before generating an answer (a process known as Retrieval-Augmented Generation, or RAG). Therefore, strong technical SEO and high organic rankings remain the foundation of good GEO.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">How Businesses Should Approach GEO</h2>
       <p class="mb-4">To prepare your business for the future of search:</p>
@@ -416,6 +418,7 @@ export const blogPosts: BlogPost[] = [
       "what-is-seo",
       "what-is-paid-marketing",
       "what-is-performance-marketing",
+      "what-is-ecommerce-seo",
       "what-is-generative-engine-optimization",
     ],
     content: `
