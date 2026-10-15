@@ -85,5 +85,57 @@ export const workProjects: WorkProject[] = [
         label: "SEO & GEO"
       }
     ]
+  },
+  {
+    id: "sensytalk",
+    slug: "SensyTalk",
+    title: "SensyTalk",
+    category: "B2B SaaS Redesign & CRO Engineering",
+    shortDescription: "Transforming an official Meta WhatsApp Partner's digital presence from a fragmented WordPress page builder into a high-converting, evidence-led B2B SaaS experience.",
+    fullDescription: [
+      "SensyTalk is an official Meta WhatsApp Business Solution Partner (BSP) delivering cloud-based WhatsApp marketing broadcasts, 24/7 AI chatbots, a collaborative multi-agent inbox, and the proprietary SensyConnect Telecalling CRM Android app.",
+      "Despite possessing enterprise-grade messaging infrastructure, SensyTalk's legacy website suffered from deceptive popup lead forms, unpinned navigation, a broken mobile menu, and an absence of direct product proof.",
+      "DigitalyMarket executed an end-to-end transformation: diagnosing conversion leaks through a rigorous CRO audit, establishing a dual-audience messaging architecture, crafting an obsidian and emerald high-contrast design system, and implementing a blazing-fast React 19 Single Page Application.",
+      "The new platform incorporates an interactive business ROI calculator with customizable order values and INR/USD currency toggling, dedicated vertical landing pages for high-intent industries, and a persistent Click-to-WhatsApp widget that lets prospects test automated bot response speeds in real time."
+    ],
+    challenge: "SensyTalk's legacy website operated more like an unpolished promotional flyer than an enterprise B2B platform. High-intent evaluators clicking 'See All Features' were trapped in aggressive lead forms, the header vanished on scroll, mobile subpages were completely unreachable, and the site lacked a live WhatsApp chat trigger to demonstrate product capability.",
+    objectives: [
+      "Pass the 5-Second Test by positioning SensyTalk as a comprehensive B2B messaging operating system rather than a bulk promo tool.",
+      "Eliminate deceptive conversion traps and replace forced lead capture with transparent product tours and interactive specs.",
+      "Engineer a dual-layer evaluation architecture balancing plain-English business ROI with technical Meta Cloud API v18.0 specs.",
+      "Provide empirical product proof with an authentic Click-to-WhatsApp live test widget and real platform screenshots.",
+      "Replace bloated WordPress/Elementor dependencies with a lightweight, high-performance React front-end architecture."
+    ],
+    approach: "The project commenced with an evidence-led CRO and technical DOM audit, uncovering empirical structural bottlenecks on the live WordPress site. We then overhauled the value proposition around customer drop-off reduction and 98% open rates before engineering the high-contrast UI and custom React 19 application.",
+    client: "SensyTalk (Meta WhatsApp Business Solution Partner)",
+    year: "2026",
+    services: ["CRO Audit", "B2B Messaging Strategy", "UX/UI Design System", "React 19 Engineering", "SEO & GEO Architecture"],
+    detailedServices: [
+      { id: "cro-audit", title: "Conversion Rate Optimization (CRO)", status: "Completed", shortDescription: "Audited live DOM and user flows, eliminating popup traps and streamlining visitor conversion pathways." },
+      { id: "ux-ui", title: "UX/UI Design System", status: "Completed", shortDescription: "Engineered an obsidian and emerald dark design system with 11.4:1 contrast ratios and modular component cards." },
+      { id: "website-creation", title: "Web Creation & Front-End Engineering", status: "Completed", shortDescription: "Engineered a production-ready Single Page Application with dynamic ROI calculator and deep hash routing." },
+      { id: "seo", title: "Technical SEO Foundations", status: "Completed", shortDescription: "Structured semantic heading hierarchies, canonical URLs, and Core Web Vitals optimization." },
+      { id: "geo", title: "Generative Engine Optimization (GEO)", status: "Completed", shortDescription: "Architected Schema.org JSON-LD and direct question-and-answer vectors for AI answer engines." }
+    ],
+    technologies: ["React 19", "Vite 8", "Tailwind CSS", "Lucide Icons", "TypeScript", "CRO", "SEO", "GEO"],
+    imageUrl: "/work/sensytalk-hero.jpg",
+    liveUrl: "https://sensytalk-redesign.vercel.app",
+    status: "Preview Deployed (Production Rollout Pending)",
+    nextSteps: "Production DNS cutover from legacy WordPress to Vercel, automated CRM webhook ingestion, and 30-day post-launch conversion tracking.",
+    results: [
+      {
+        metric: "1.72s",
+        label: "Build Speed (Vite 8)"
+      },
+      {
+        metric: "11.4:1",
+        label: "WCAG AA Contrast Ratio"
+      },
+      {
+        metric: "100%",
+        label: "Friction-Free Exploration"
+      }
+    ]
   }
 ];
+

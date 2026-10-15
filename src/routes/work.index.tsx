@@ -75,10 +75,19 @@ function WorkIndex() {
                           </div>
                         </div>
                         <div className="relative aspect-video md:aspect-auto md:h-full bg-surface overflow-hidden border-t md:border-t-0 md:border-l border-hairline">
-                          {/* Placeholder abstract design similar to homepage */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-surface" />
-                          <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-colors duration-700" />
-                          <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-full bg-accent/20 blur-2xl group-hover:bg-accent/30 transition-colors duration-700" />
+                          {project.imageUrl ? (
+                            <img
+                              src={project.imageUrl}
+                              alt={project.title}
+                              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                          ) : (
+                            <>
+                              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-surface" />
+                              <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-colors duration-700" />
+                              <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-full bg-accent/20 blur-2xl group-hover:bg-accent/30 transition-colors duration-700" />
+                            </>
+                          )}
                         </div>
                       </div>
                     </Link>

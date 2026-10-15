@@ -37,6 +37,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           })),
           { path: "/work", changefreq: "monthly", priority: "0.8" },
           { path: "/work/gemstone-gallery", changefreq: "monthly", priority: "0.8" },
+          { path: "/work/SensyTalk", changefreq: "monthly", priority: "0.8" },
           { path: "/privacy", changefreq: "yearly", priority: "0.3" },
         ];
 

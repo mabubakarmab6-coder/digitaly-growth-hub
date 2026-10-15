@@ -27,6 +27,7 @@ import { Route as ServicesWebCreationRouteImport } from './routes/services.web-c
 import { Route as WorkIndexRouteImport } from './routes/work.index'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as WorkGemstoneGalleryRouteImport } from './routes/work.gemstone-gallery'
+import { Route as WorkSensyTalkRouteImport } from './routes/work.SensyTalk'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const IndexRoute = IndexRouteImport.update({
@@ -119,6 +120,11 @@ const WorkGemstoneGalleryRoute = WorkGemstoneGalleryRouteImport.update({
   path: '/work/gemstone-gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkSensyTalkRoute = WorkSensyTalkRouteImport.update({
+  id: '/work/SensyTalk',
+  path: '/work/SensyTalk',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LovableEmailTransactionalPreviewRoute =
   LovableEmailTransactionalPreviewRouteImport.update({
     id: '/lovable/email/transactional/preview',
@@ -141,6 +147,7 @@ export interface FileRoutesByFullPath {
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/gemstone-gallery': typeof WorkGemstoneGalleryRoute
+  '/work/SensyTalk': typeof WorkSensyTalkRoute
   '/industries/': typeof IndustriesIndexRoute
   '/insights/': typeof InsightsIndexRoute
   '/services/': typeof ServicesIndexRoute
@@ -160,6 +167,7 @@ export interface FileRoutesByTo {
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/gemstone-gallery': typeof WorkGemstoneGalleryRoute
+  '/work/SensyTalk': typeof WorkSensyTalkRoute
   '/industries': typeof IndustriesIndexRoute
   '/insights': typeof InsightsIndexRoute
   '/services': typeof ServicesIndexRoute
@@ -182,6 +190,7 @@ export interface FileRoutesById {
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/gemstone-gallery': typeof WorkGemstoneGalleryRoute
+  '/work/SensyTalk': typeof WorkSensyTalkRoute
   '/industries/': typeof IndustriesIndexRoute
   '/insights/': typeof InsightsIndexRoute
   '/services/': typeof ServicesIndexRoute
@@ -205,6 +214,7 @@ export interface FileRouteTypes {
     | '/services/web-creation'
     | '/work/$slug'
     | '/work/gemstone-gallery'
+    | '/work/SensyTalk'
     | '/industries/'
     | '/insights/'
     | '/services/'
@@ -224,6 +234,7 @@ export interface FileRouteTypes {
     | '/services/web-creation'
     | '/work/$slug'
     | '/work/gemstone-gallery'
+    | '/work/SensyTalk'
     | '/industries'
     | '/insights'
     | '/services'
@@ -245,6 +256,7 @@ export interface FileRouteTypes {
     | '/services/web-creation'
     | '/work/$slug'
     | '/work/gemstone-gallery'
+    | '/work/SensyTalk'
     | '/industries/'
     | '/insights/'
     | '/services/'
@@ -263,6 +275,7 @@ export interface RootRouteChildren {
   IndustriesSlugRoute: typeof IndustriesSlugRoute
   WorkSlugRoute: typeof WorkSlugRoute
   WorkGemstoneGalleryRoute: typeof WorkGemstoneGalleryRoute
+  WorkSensyTalkRoute: typeof WorkSensyTalkRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
   WorkIndexRoute: typeof WorkIndexRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
@@ -396,6 +409,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkGemstoneGalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/SensyTalk': {
+      id: '/work/SensyTalk'
+      path: '/work/SensyTalk'
+      fullPath: '/work/SensyTalk'
+      preLoaderRoute: typeof WorkSensyTalkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/lovable/email/transactional/preview': {
       id: '/lovable/email/transactional/preview'
       path: '/lovable/email/transactional/preview'
@@ -449,6 +469,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndustriesSlugRoute: IndustriesSlugRoute,
   WorkSlugRoute: WorkSlugRoute,
   WorkGemstoneGalleryRoute: WorkGemstoneGalleryRoute,
+  WorkSensyTalkRoute: WorkSensyTalkRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
   WorkIndexRoute: WorkIndexRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,

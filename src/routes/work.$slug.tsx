@@ -12,7 +12,9 @@ const origin = "https://digitalymarket.com";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
-    const project = workProjects.find(p => p.slug === params.slug);
+    const project = workProjects.find(
+      p => p.slug === params.slug || p.slug.toLowerCase() === params.slug.toLowerCase()
+    );
     if (!project) throw notFound();
     return { project };
   },
