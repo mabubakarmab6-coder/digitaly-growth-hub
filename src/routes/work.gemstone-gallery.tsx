@@ -6,9 +6,10 @@ import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { Reveal } from "@/components/site/Reveal";
 import { Cta } from "@/components/site/Cta";
 import { INQUIRY_PATH } from "@/components/site/constants";
+import { GEMS_GALLERY_LIVE_URL } from "@/data/work";
 
 const url = "https://digitalymarket.com/work/gemstone-gallery";
-const liveUrl = "https://gemsgallery.digitalymarket.com/";
+const liveUrl = GEMS_GALLERY_LIVE_URL;
 const brandUrl = "https://digitalymarket.com/";
 const ogImage = "https://digitalymarket.com/work/gems-gallery-og.jpg";
 
@@ -484,7 +485,7 @@ function GemsGalleryCaseStudy() {
                   <span className="h-2.5 w-2.5 rounded-full bg-navy-foreground/25" aria-hidden="true" />
                   <span className="h-2.5 w-2.5 rounded-full bg-navy-foreground/25" aria-hidden="true" />
                   <span className="ml-3 truncate text-xs text-navy-foreground/60">
-                    gemsgallery.digitalymarket.com
+                    {new URL(liveUrl).hostname}
                   </span>
                 </div>
                 <img
