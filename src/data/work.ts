@@ -1,3 +1,5 @@
+export const GEMS_GALLERY_LIVE_URL = "https://lapidary-lab-suite.vercel.app/";
+
 export type ServiceStatus = "Completed" | "Ongoing" | "Planned" | "Not Applicable";
 
 export interface ProjectServiceArea {
@@ -68,7 +70,7 @@ export const workProjects: WorkProject[] = [
     ],
     technologies: ["UX Strategy", "Information Architecture", "AI-Assisted Development", "SEO", "GEO"],
     imageUrl: "",
-    liveUrl: "https://gemsgallery.digitalymarket.com",
+    liveUrl: GEMS_GALLERY_LIVE_URL,
     status: "Completed",
     nextSteps: "Future improvements could include technical SEO completion, tracking measurement from traffic to inquiry, and content expansion around manufacturing processes.",
     results: [

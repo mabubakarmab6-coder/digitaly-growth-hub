@@ -495,7 +495,7 @@ function SensyTalkCaseStudy() {
                 <Cta href={INQUIRY_PATH} size="lg">
                   Start a Project Conversation
                 </Cta>
-                <Cta href={liveUrl} target="_blank" rel="noopener noreferrer" variant="secondary" size="lg">
+                <Cta href={liveUrl} target="_blank" rel="noopener noreferrer" variant="outline" size="lg">
                   Inspect SensyTalk Preview <ArrowUpRight className="h-4 w-4" />
                 </Cta>
               </div>

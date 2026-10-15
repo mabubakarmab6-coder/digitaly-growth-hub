@@ -1,5 +1,8 @@
 # Roadmap
 
+- [x] Update Gems Gallery live links and structured data to the approved Vercel address; verify the case-study navigation.
+- [ ] Disconnect the former Gems Gallery subdomain (blocked: connected to a different project; external DNS is managed at GoDaddy).
+
 - [x] Remove the two retired commerce service routes and unused page-only components/data.
 - [x] Remove retired service listings, internal links and SEO references without replacement routes or redirects.
 - [x] Verify retirement, remaining navigation/services and unchanged inquiry opening; report redirect decisions in docs/COMMERCE_SERVICE_REMOVAL.md.
