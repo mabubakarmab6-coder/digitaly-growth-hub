@@ -47,14 +47,6 @@ export const NAV_LINKS = [
     ],
   },
   {
-    label: "About",
-    href: "/about",
-    children: [
-      { label: "About DigitalyMarket", href: "/about", description: "Who we are and how we think" },
-      { label: "About Founder", href: "/about#founder", description: "Meet Mohammad Abubakar Siddiqui" },
-    ],
-  },
-  {
     label: "Insights",
     href: "/insights",
     children: [
@@ -62,6 +54,14 @@ export const NAV_LINKS = [
       { label: "What Is Digital Marketing?", href: "/insights/what-is-digital-marketing" },
       { label: "How Does Digital Marketing Work?", href: "/insights/how-does-digital-marketing-work" },
       { label: "What Is SEO?", href: "/insights/what-is-seo" },
+    ],
+  },
+  {
+    label: "About",
+    href: "/about",
+    children: [
+      { label: "About DigitalyMarket", href: "/about", description: "Who we are and how we think" },
+      { label: "About Founder", href: "/about#founder", description: "Meet Mohammad Abubakar Siddiqui" },
     ],
   },
 ] as const;
