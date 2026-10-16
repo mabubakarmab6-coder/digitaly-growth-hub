@@ -64,5 +64,4 @@ export const NAV_LINKS = [
       { label: "What Is SEO?", href: "/insights/what-is-seo" },
     ],
   },
-  { label: "Abubakar", href: "/#founder" },
 ] as const;
