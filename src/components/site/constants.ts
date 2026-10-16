@@ -16,10 +16,46 @@ export const LINKEDIN_URL = "";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Industries", href: "/industries" },
-  { label: "Work", href: "/work" },
+  {
+    label: "Services",
+    href: "/services",
+    children: [
+      { label: "All Services", href: "/services", description: "Find the right starting point" },
+      { label: "Generative Engine Optimization", href: "/services/GEO", description: "Visibility in search and AI answers" },
+      { label: "Paid Marketing", href: "/services/paid-marketing", description: "Strategy and campaign management" },
+      { label: "Website Creation", href: "/services/web-creation", description: "Websites built around business goals" },
+    ],
+  },
+  {
+    label: "Industries",
+    href: "/industries",
+    children: [
+      { label: "All Industries", href: "/industries" },
+      { label: "Manufacturing & B2B", href: "/industries/manufacturing-b2b" },
+      { label: "Professional Services", href: "/industries/professional-services" },
+      { label: "Local Business", href: "/industries/local-business" },
+      { label: "E-commerce", href: "/industries/ecommerce" },
+    ],
+  },
+  {
+    label: "Work",
+    href: "/work",
+    children: [
+      { label: "All Work", href: "/work" },
+      { label: "Gems Gallery", href: "/work/gemstone-gallery", description: "B2B website case study" },
+      { label: "SensyTalk", href: "/work/SensyTalk", description: "B2B SaaS redesign" },
+    ],
+  },
   { label: "About", href: "/about" },
-  { label: "Insights", href: "/insights" },
+  {
+    label: "Insights",
+    href: "/insights",
+    children: [
+      { label: "All Insights", href: "/insights" },
+      { label: "What Is Digital Marketing?", href: "/insights/what-is-digital-marketing" },
+      { label: "How Does Digital Marketing Work?", href: "/insights/how-does-digital-marketing-work" },
+      { label: "What Is SEO?", href: "/insights/what-is-seo" },
+    ],
+  },
   { label: "Abubakar", href: "/#founder" },
 ] as const;
