@@ -46,7 +46,14 @@ export const NAV_LINKS = [
       { label: "SensyTalk", href: "/work/SensyTalk", description: "B2B SaaS redesign" },
     ],
   },
-  { label: "About", href: "/about" },
+  {
+    label: "About",
+    href: "/about",
+    children: [
+      { label: "About DigitalyMarket", href: "/about", description: "Who we are and how we think" },
+      { label: "About Founder", href: "/about#founder", description: "Meet Mohammad Abubakar Siddiqui" },
+    ],
+  },
   {
     label: "Insights",
     href: "/insights",
@@ -57,5 +64,4 @@ export const NAV_LINKS = [
       { label: "What Is SEO?", href: "/insights/what-is-seo" },
     ],
   },
-  { label: "Abubakar", href: "/#founder" },
 ] as const;
