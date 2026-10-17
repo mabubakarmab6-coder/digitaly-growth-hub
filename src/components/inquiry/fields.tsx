@@ -7,25 +7,27 @@ export function Field({
   error,
   htmlFor,
   children,
+  className,
 }: {
   label: string;
   hint?: string | undefined;
   error?: string | undefined;
   htmlFor?: string | undefined;
   children: ReactNode;
+  className?: string | undefined;
 }) {
   return (
-    <div className="mt-8 first:mt-0">
+    <div className={cn("flex flex-col gap-2", className)}>
       <label
         htmlFor={htmlFor}
         className="block text-sm font-semibold tracking-tight text-foreground"
       >
         {label}
       </label>
-      {hint && <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{hint}</p>}
-      <div className="mt-3">{children}</div>
+      {hint && <p className="text-sm leading-relaxed text-muted-foreground">{hint}</p>}
+      <div className="w-full">{children}</div>
       {error && (
-        <p role="alert" className="mt-2 text-sm font-medium text-destructive">
+        <p role="alert" className="text-sm font-medium text-destructive">
           {error}
         </p>
       )}

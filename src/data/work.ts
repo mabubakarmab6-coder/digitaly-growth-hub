@@ -72,7 +72,7 @@ export const workProjects: WorkProject[] = [
       { id: "marketplace-optimization", title: "Marketplace Optimization", status: "Not Applicable" }
     ],
     technologies: ["UX Strategy", "Information Architecture", "AI-Assisted Development", "SEO", "GEO"],
-    imageUrl: "",
+    imageUrl: "/work/gems-gallery-hero.jpg",
     liveUrl: GEMS_GALLERY_LIVE_URL,
     status: "Completed",
     nextSteps: "Future improvements could include technical SEO completion, tracking measurement from traffic to inquiry, and content expansion around manufacturing processes.",

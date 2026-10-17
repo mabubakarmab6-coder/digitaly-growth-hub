@@ -474,37 +474,51 @@ function GemsGalleryCaseStudy() {
               intro="The live site is the clearest way to review the outcome — the structure, language and conversion paths described here are all visible on it."
             />
             <Reveal className="mt-12">
-              <a
-                href={liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block overflow-hidden rounded-3xl border border-hairline bg-navy shadow-lift transition-transform duration-500 hover:-translate-y-1"
-              >
-                <div className="flex items-center gap-2 border-b border-navy-foreground/10 px-5 py-3">
-                  <span className="h-2.5 w-2.5 rounded-full bg-navy-foreground/25" aria-hidden="true" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-navy-foreground/25" aria-hidden="true" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-navy-foreground/25" aria-hidden="true" />
-                  <span className="ml-3 truncate text-xs text-navy-foreground/60">
-                    {new URL(liveUrl).hostname}
-                  </span>
+              <div className="overflow-hidden rounded-3xl border border-hairline bg-navy shadow-lift">
+                <div className="flex items-center justify-between border-b border-navy-foreground/10 px-5 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-rose-500/80" aria-hidden="true" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-amber-500/80" aria-hidden="true" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" aria-hidden="true" />
+                    <div className="ml-3 flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-navy-foreground/80">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
+                      <span className="truncate">{new URL(liveUrl).hostname}</span>
+                    </div>
+                  </div>
+                  <a
+                    href={liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-medium text-navy-foreground/80 transition-colors hover:bg-white/10 hover:text-navy-foreground"
+                    aria-label="Open Gems Gallery live website in a new window"
+                  >
+                    <span>Open in new tab</span>
+                    <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </a>
                 </div>
-                <img
-                  src="/work/gems-gallery-hero.jpg"
-                  alt="Visual representation of the Gems Gallery B2B website direction: faceted gemstone geometry on a deep navy digital layout"
-                  loading="lazy"
-                  width={1600}
-                  height={1008}
-                  className="aspect-[16/10] w-full object-cover opacity-90"
-                />
-                <div className="flex flex-wrap items-center justify-between gap-3 px-6 py-5">
-                  <p className="text-sm text-navy-foreground/70">
-                    Home · Manufacturing · About — with Quote Request and WhatsApp inquiry paths.
+                <div className="relative h-[520px] w-full bg-navy sm:h-[620px] lg:h-[720px]">
+                  <iframe
+                    src={liveUrl}
+                    title="Gems Gallery Live Website Preview"
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                    className="h-full w-full border-0 bg-background"
+                  />
+                </div>
+                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-navy-foreground/10 px-6 py-4">
+                  <p className="text-sm text-navy-foreground/75">
+                    Live interactive site · Home, Manufacturing &amp; About paths fully navigable.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy-foreground group-hover:gap-3">
-                    Explore the live site <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                  </span>
+                  <a
+                    href={liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-2 text-sm font-semibold text-navy-foreground transition-all hover:gap-3"
+                  >
+                    Explore full live site <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                  </a>
                 </div>
-              </a>
+              </div>
             </Reveal>
           </div>
         </section>

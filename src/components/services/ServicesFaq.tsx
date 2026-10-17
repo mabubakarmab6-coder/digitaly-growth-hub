@@ -37,8 +37,8 @@ const faqs = [
     a: "Yes. We can support an in-house team on a specific capability rather than replacing what already works.",
   },
   {
-    q: "Do you offer ongoing or retainer support?",
-    a: "Ongoing support is available when continuous strategy, execution and optimization genuinely benefit the business.",
+    q: "Do you offer ongoing strategic and optimization support?",
+    a: "Ongoing support is available when continuous strategy, execution and technical optimization genuinely benefit the business.",
   },
   {
     q: "What happens during the first conversation?",

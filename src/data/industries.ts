@@ -408,7 +408,7 @@ export const industries: Industry[] = [
     faqs: [
       {
         q: "Can a small practice work with DigitalyMarket?",
-        a: "Yes. Small and independent practices are a good fit, and the scope is built around your stage and budget.",
+        a: "Yes. Small and independent practices are a good fit, and the scope is built around your stage and requirements.",
       },
       {
         q: "We rely on referrals. Do we need digital at all?",
@@ -604,7 +604,7 @@ export const industries: Industry[] = [
     faqs: [
       {
         q: "Do you only work with large businesses?",
-        a: "No. Small local businesses are a genuine fit, and we scale the work to your budget and stage.",
+        a: "No. Small local businesses are a genuine fit, and we scale the work to your operational priorities and stage.",
       },
       {
         q: "We only serve one city. Is that too small?",
@@ -619,8 +619,8 @@ export const industries: Industry[] = [
         a: "No. Describe what is happening in the business and we will start there.",
       },
       {
-        q: "Can you help with paid ads for a small budget?",
-        a: "We will tell you honestly whether a budget is workable before suggesting it. If it is not, we will suggest something else.",
+        q: "Can you help with focused local advertising campaigns?",
+        a: "We evaluate your category competition and local search demand first. If paid channels are the most effective path to attract local customers, we structure campaigns targeting high-intent local queries.",
       },
       {
         q: "Can you work with businesses outside India?",
@@ -820,8 +820,8 @@ export const industries: Industry[] = [
         a: "Yes. We work with e-commerce brands globally and remotely.",
       },
       {
-        q: "Do you offer monthly retainers?",
-        a: "Yes. E-commerce growth compounds, so ongoing work usually runs as a monthly retainer.",
+        q: "Do you offer ongoing growth partnerships?",
+        a: "Yes. E-commerce growth compounds over time, so ongoing partnerships provide continuous conversion optimization, analytics, and channel refinement.",
       },
     ],
     related: ["local-business", "manufacturing-b2b"],

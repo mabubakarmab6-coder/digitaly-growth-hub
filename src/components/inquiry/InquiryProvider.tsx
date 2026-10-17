@@ -274,7 +274,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
                 </DialogDescription>
               </header>
 
-              <div className="min-h-0 flex-1 overflow-y-auto px-5 py-6 sm:px-8 sm:py-7">
+              <div className="min-h-0 flex-1 overflow-y-auto px-5 py-6 sm:px-8 sm:py-7 space-y-6">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Full Name *" htmlFor="inquiry-full-name" error={errors.fullName}>
                     <TextInput
@@ -376,7 +376,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
                   />
                 </div>
 
-                <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
+                <p className="pt-1 text-xs leading-relaxed text-muted-foreground">
                   By sending this enquiry, you agree that DigitalyMarket may contact you about it.
                   See our{" "}
                   <a

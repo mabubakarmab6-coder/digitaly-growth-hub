@@ -125,20 +125,20 @@ export const services: ServiceContent[] = [
     ],
     faqs: [
       {
-        q: "Do you redesign existing sites or only build new ones?",
-        a: "Both. Sometimes the structure is sound and the message is the problem, in which case a rebuild would be wasteful. The diagnosis decides.",
+        q: "Do you redesign existing websites or build new platforms from scratch?",
+        a: "Both. If your existing platform has sound architecture, we can refine the positioning, messaging, and conversion pathways without unnecessary reconstruction. If legacy technical debt or inflexible page builders constrain your growth, we engineer a modern, high-performance platform from the ground up.",
       },
       {
-        q: "Will the site be built for SEO and AI discovery?",
-        a: "Yes. Semantic structure, metadata, schema, performance and crawlability are part of the build rather than a later add-on.",
+        q: "Will the website be engineered for SEO and AI answer engine discovery?",
+        a: "Yes. Semantic HTML structure, schema markup, Core Web Vitals optimization, accessible components, and machine-readable content hierarchies are foundational elements of every build from day one, not afterthought add-ons.",
       },
       {
-        q: "Can we update content ourselves?",
-        a: "That's a decision we make together based on how often your content changes and who will maintain it.",
+        q: "Can our internal team easily update content and publish pages?",
+        a: "Yes. We configure clean, accessible content structures and workflows so your marketing team can publish updates, case studies, and insights without breaking layouts or relying on ongoing developer intervention.",
       },
       {
-        q: "How long does a website take?",
-        a: "It depends on scope, page count and how quickly content and approvals move. We give a realistic range after the diagnosis rather than a headline number upfront.",
+        q: "How long does a website creation project typically take?",
+        a: "Project timelines depend on sitemap scope, custom interactive components, and content approval cycles. We establish an explicit milestone timeline following the diagnostic phase rather than relying on arbitrary estimates.",
       },
     ],
     related: [
@@ -232,20 +232,20 @@ export const services: ServiceContent[] = [
     ],
     faqs: [
       {
-        q: "What budget do we need to start?",
-        a: "It depends on your category's competition and what a customer is worth to you. We'd rather set a budget that can produce a statistically readable result on one channel than spread a small budget thinly across several.",
+        q: "Which advertising platforms are best suited for our business?",
+        a: "We remain platform-agnostic and follow proven buyer intent. High-consideration search categories typically start on search networks like Google Ads, whereas visually driven, targeted audience categories often leverage Meta or LinkedIn. The platform decision stems from your buyer's research habits.",
       },
       {
-        q: "Which platforms do you work with?",
-        a: "We stay platform-agnostic and follow the demand. Search-led categories usually start with search; visual and impulse categories usually start with social. The decision comes from your buyer, not a preferred toolset.",
+        q: "How do you ensure campaigns attract qualified buyers rather than junk leads?",
+        a: "We align campaign targeting tightly with buyer intent, apply negative keyword filtering, and optimize ad messaging around concrete buyer criteria. Furthermore, we ensure the destination landing page pre-qualifies visitors before they initiate an enquiry.",
       },
       {
-        q: "Do you also fix the landing page?",
-        a: "When the page is the bottleneck, yes — otherwise the campaign is paying for traffic that was never going to convert. That work may sit under website creation depending on scope.",
+        q: "Do you optimize landing experiences as part of paid marketing?",
+        a: "Yes. An advertising campaign cannot succeed if the destination page creates friction or fails to explain value. We audit and refine landing page messaging, conversion pathways, and tracking triggers to ensure traffic converts effectively.",
       },
       {
-        q: "How quickly will we see results?",
-        a: "Early signal usually appears within weeks; a reliable cost per qualified enquiry takes longer because it depends on your sales cycle and how quickly you can feed back on lead quality.",
+        q: "How do you measure campaign performance and progress?",
+        a: "We track verified commercial actions: qualified enquiry volume, conversion rate, buyer engagement, and pipeline progression. You receive clean, transparent reporting that attributes performance directly to specific campaigns and audiences.",
       },
     ],
     related: [
@@ -340,20 +340,20 @@ export const services: ServiceContent[] = [
     ],
     faqs: [
       {
-        q: "Is GEO different from SEO?",
-        a: "It overlaps heavily. GEO keeps every SEO fundamental — crawlability, structure, useful content — and adds the clarity and answer-shaped writing that AI systems rely on when they summarise a category. Treating them as separate disciplines usually produces worse results than treating GEO as SEO with a wider surface area.",
+        q: "How does Generative Engine Optimization (GEO) differ from traditional SEO?",
+        a: "GEO builds upon core SEO fundamentals—crawlability, structured data, topical depth—and expands them for AI answer engines. It optimizes your entity clarity, data schema, and content formatting so large language models can parse, attribute, and cite your business when answering buyer queries.",
       },
       {
-        q: "How long before anything changes?",
-        a: "Technical and structural fixes register quickly. Topical authority and consistent inclusion in AI answers build over months, not weeks. We're explicit about which parts of the plan are fast and which are slow.",
+        q: "How quickly do GEO optimizations begin to take effect?",
+        a: "Technical and structural improvements are indexed quickly by web crawlers. Establishing topical authority and consistent brand citation across generative answer engines compounds over several months as language models refresh their training datasets and real-time search retrievals.",
       },
       {
-        q: "Can you guarantee we'll appear in AI answers?",
-        a: "No, and nobody credible can. Answer engines change frequently and don't publish ranking rules. What we can do is remove ambiguity, improve coverage and make your pages the most citable source in your niche.",
+        q: "Can you guarantee that our business will be cited in AI answers?",
+        a: "No credible firm guarantees inclusion in AI answers because LLMs and answer engines evolve continuously without public ranking rules. What we do is eliminate entity ambiguity, build citable data structures, and establish authoritative topical coverage so your brand is the most credible source available.",
       },
       {
-        q: "Do we need to publish a lot of content?",
-        a: "Not necessarily volume — depth. A smaller set of pages that fully answer the decisions your buyers make usually outperforms a large library of thin posts.",
+        q: "Do we need to publish high volumes of blog content for GEO?",
+        a: "Depth and structure matter far more than raw volume. A focused architecture of comprehensive, answer-shaped pages that address genuine buyer decisions will consistently outperform an unfocused library of thin blog posts.",
       },
     ],
     related: [

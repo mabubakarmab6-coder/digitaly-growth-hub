@@ -113,27 +113,27 @@ export const paidMarketing = {
   faqs: [
     {
       q: "What does paid marketing management include?",
-      a: "Depending on the agreed scope, it may include strategy, audience and channel selection, campaign setup and management, budget monitoring, reporting and optimization. Responsibilities and deliverables are clarified before work begins; not every platform or supporting service is automatically included.",
+      a: "Depending on the agreed scope, it may include strategy, audience and channel selection, campaign setup and management, performance monitoring, reporting and optimization. Responsibilities and deliverables are clarified before work begins; not every platform or supporting service is automatically included.",
     },
     {
       q: "Which platforms may be suitable, and how are they selected?",
-      a: "Google Ads, Meta Ads or another relevant channel may be appropriate. Selection depends on your objective, audience, business model, available budget, buying journey and measurement readiness—not a default platform checklist.",
+      a: "Google Ads, Meta Ads or another relevant channel may be appropriate. Selection depends on your objective, audience, business model, buying journey and measurement readiness—not a default platform checklist.",
     },
     {
-      q: "What affects the advertising budget required?",
-      a: "Your goals, market competition, audience, chosen channels, offer, buying journey and measurement needs all affect the budget discussion. There is no single budget that suits every business. A tailored proposal should distinguish advertising spend from management and any supporting work.",
+      q: "How are campaign priorities and channels selected for our business?",
+      a: "Channel selection depends on your commercial objectives, target audience demographics, search intent, category competition, and measurement readiness. We recommend channels where high-intent demand already exists rather than spreading efforts across unproven platforms.",
     },
     {
-      q: "Are advertising spend and management fees separate?",
-      a: "Yes. Advertising spend pays the advertising platforms for campaign delivery; management fees cover the agreed DigitalyMarket work. Do not assume advertising spend is included in management fees. The proposal clarifies responsibilities and costs.",
+      q: "What is the onboarding and campaign preparation process?",
+      a: "We begin with a comprehensive diagnostic audit of your audience, messaging, historical campaign data, conversion tracking accuracy, and landing page readiness before launching any campaign.",
     },
     {
       q: "How is campaign performance measured?",
-      a: "Metrics are chosen around the objective and available data. These may include reach, traffic costs, tracked conversions, lead quality or purchases and revenue. Metrics are interpreted together, with tracking accuracy and attribution limitations made clear.",
+      a: "Metrics are chosen around the objective and available data. These may include reach, qualified response rate, tracked conversions, lead quality or purchases and revenue. Metrics are interpreted together, with tracking accuracy and attribution limitations made clear.",
     },
     {
       q: "Does DigitalyMarket guarantee leads, sales or results?",
-      a: "No. Outcomes depend on factors including your offer, audience, competition, budget, landing page, tracking and sales process. We focus on an appropriate strategy, responsible measurement and evidence-led improvements, not guaranteed outcomes.",
+      a: "No. Outcomes depend on factors including your offer, audience, competition, landing page, tracking and sales process. We focus on an appropriate strategy, responsible measurement and evidence-led improvements, not guaranteed outcomes.",
     },
     {
       q: "What if our website or conversion tracking needs improvement?",
