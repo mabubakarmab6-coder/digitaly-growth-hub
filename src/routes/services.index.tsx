@@ -16,9 +16,9 @@ import { ServicesFaq } from "@/components/services/ServicesFaq";
 import { ServicesFinalCta } from "@/components/services/ServicesFinalCta";
 
 const title =
-  "Digital Growth Services | GEO, Paid Marketing, Websites | DigitalyMarket";
+  "Digital Growth Services | Web Creation, Paid Marketing, GEO | DigitalyMarket";
 const description =
-  "DigitalyMarket's core capabilities — GEO, paid marketing, website creation. We understand and diagnose your business first, then recommend what actually makes sense.";
+  "DigitalyMarket's core capabilities — web creation, paid marketing and GEO. We understand and diagnose your business first, then recommend what actually makes sense.";
 
 const url = "https://digitalymarket.com/services";
 
@@ -45,9 +45,9 @@ export const Route = createFileRoute("/services/")({
           "@type": "ItemList",
           name: "DigitalyMarket Capabilities",
           itemListElement: [
-            ["Generative Engine Optimization", "/services/GEO"],
-            ["Paid Marketing", "/services/paid-marketing"],
             ["Website Creation", "/services/web-creation"],
+            ["Paid Marketing", "/services/paid-marketing"],
+            ["Generative Engine Optimization", "/services/GEO"],
           ].map(([name, path], i) => ({
             "@type": "ListItem",
             position: i + 1,

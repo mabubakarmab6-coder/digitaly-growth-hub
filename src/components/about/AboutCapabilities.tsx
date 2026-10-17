@@ -4,10 +4,10 @@ import { Reveal } from "@/components/site/Reveal";
 
 const capabilities = [
   {
-    title: "Generative Engine Optimization",
-    copy: "Be understood and discovered where buying decisions now start.",
-    href: "/services/GEO",
-    icon: Search,
+    title: "Website Creation",
+    copy: "A digital experience built to convert the right visitors.",
+    href: "/services/web-creation",
+    icon: Globe,
   },
   {
     title: "Paid Marketing",
@@ -16,10 +16,10 @@ const capabilities = [
     icon: Megaphone,
   },
   {
-    title: "Website Creation",
-    copy: "A digital experience built to convert the right visitors.",
-    href: "/services/web-creation",
-    icon: Globe,
+    title: "Generative Engine Optimization",
+    copy: "Be understood and discovered where buying decisions now start.",
+    href: "/services/GEO",
+    icon: Search,
   },
 ] as const;
 

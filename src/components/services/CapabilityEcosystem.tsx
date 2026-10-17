@@ -2,9 +2,9 @@ import { Search, Megaphone, Globe } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 const nodes = [
-  { icon: Search, label: "GEO", copy: "Discovery across search and AI answers." },
-  { icon: Megaphone, label: "Paid Marketing", copy: "Reach and demand, on demand." },
   { icon: Globe, label: "Website Creation", copy: "The place where interest becomes action." },
+  { icon: Megaphone, label: "Paid Marketing", copy: "Reach and demand, on demand." },
+  { icon: Search, label: "GEO", copy: "Discovery across search and AI answers." },
 ];
 
 

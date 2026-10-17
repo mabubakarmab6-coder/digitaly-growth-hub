@@ -14,7 +14,7 @@ export function Hero() {
             <span className="text-gradient-accent">Into Business Growth.</span>
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            GEO, paid marketing, websites and e-commerce solutions built around your business goals
+            Web creation, paid marketing and GEO solutions built around your business goals
             — not a one-size-fits-all package.
           </p>
 
@@ -46,9 +46,9 @@ export function Hero() {
           </div>
           <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:absolute lg:-bottom-8 lg:left-6 lg:mt-0 lg:grid-cols-3 lg:gap-2">
             {[
-              ["GEO", "AI discovery"],
-              ["Paid", "Acquisition"],
               ["Web Creation", "Conversion"],
+              ["Paid", "Acquisition"],
+              ["GEO", "AI discovery"],
             ].map(([term, desc], i) => (
               <div
                 key={term}

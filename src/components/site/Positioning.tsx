@@ -4,10 +4,10 @@ import { Reveal } from "./Reveal";
 
 const pillars = [
   {
-    icon: Sparkles,
-    title: "GEO",
-    copy: "Get discovered across modern search and AI-driven discovery.",
-    href: "/services/GEO",
+    icon: Layout,
+    title: "Web Creation",
+    copy: "Build digital experiences that communicate value and generate enquiries.",
+    href: "/services/web-creation",
   },
   {
     icon: Target,
@@ -16,10 +16,10 @@ const pillars = [
     href: "/services/paid-marketing",
   },
   {
-    icon: Layout,
-    title: "Web Creation",
-    copy: "Build digital experiences that communicate value and generate enquiries.",
-    href: "/services/web-creation",
+    icon: Sparkles,
+    title: "GEO",
+    copy: "Get discovered across modern search and AI-driven discovery.",
+    href: "/services/GEO",
   },
 ] as const;
 

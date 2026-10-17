@@ -5,16 +5,17 @@ import { INQUIRY_PATH } from "./constants";
 const services = [
   {
     no: "01",
-    title: "Generative Engine Optimization",
-    copy: "Improve how your business is discovered across modern search and AI-driven discovery experiences.",
+    title: "Website Creation",
+    copy: "Create websites that communicate value clearly and turn attention into enquiries.",
     capabilities: [
-      "GEO strategy",
-      "AI search visibility",
-      "Entity and content optimization",
-      "Topical authority",
-      "Discoverability strategy",
+      "Business websites",
+      "Landing pages",
+      "E-commerce websites",
+      "Conversion-focused UX",
+      "Website redesign",
+      "Analytics and tracking",
     ],
-    cta: "Explore GEO",
+    cta: "Explore Web Creation",
   },
   {
     no: "02",
@@ -32,17 +33,16 @@ const services = [
   },
   {
     no: "03",
-    title: "Website Creation",
-    copy: "Create websites that communicate value clearly and turn attention into enquiries.",
+    title: "Generative Engine Optimization",
+    copy: "Improve how your business is discovered across modern search and AI-driven discovery experiences.",
     capabilities: [
-      "Business websites",
-      "Landing pages",
-      "E-commerce websites",
-      "Conversion-focused UX",
-      "Website redesign",
-      "Analytics and tracking",
+      "GEO strategy",
+      "AI search visibility",
+      "Entity and content optimization",
+      "Topical authority",
+      "Discoverability strategy",
     ],
-    cta: "Explore Web Creation",
+    cta: "Explore GEO",
   },
 ];
 

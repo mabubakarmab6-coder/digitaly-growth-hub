@@ -1,10 +1,10 @@
 import { z } from "zod";
 
 export const SERVICE_OPTIONS = [
-  "Paid Marketing",
-  "SEO",
-  "GEO",
   "Website",
+  "Paid Marketing",
+  "GEO",
+  "SEO",
   "E-commerce / Marketplace",
   "Not sure yet",
 ] as const;
