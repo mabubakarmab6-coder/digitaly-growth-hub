@@ -56,12 +56,12 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <nav aria-label="Personal">
+          <nav aria-label="Services">
             <h2 className="text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
-              Personal
+              Services
             </h2>
             <ul className="mt-5 space-y-3">
-              {personalLinks.map((link) => (
+              {serviceLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
