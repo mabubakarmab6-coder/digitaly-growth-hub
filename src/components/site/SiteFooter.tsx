@@ -82,15 +82,14 @@ export function SiteFooter() {
             <Cta href={INQUIRY_PATH} className="mt-5 w-full sm:w-auto">
               Start a Growth Conversation
             </Cta>
-            <ContactActions className="mt-5" />
-
           </div>
         </div>
 
-        <div className="mt-14 border-t border-hairline pt-6">
+        <div className="mt-14 flex flex-col-reverse items-start gap-6 border-t border-hairline pt-6 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} DigitalyMarket. Digital growth agency.
           </p>
+          <ContactActions />
         </div>
       </div>
     </footer>
