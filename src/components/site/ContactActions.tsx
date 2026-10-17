@@ -17,7 +17,7 @@ type Action = {
  */
 const actions: Action[] = [
   {
-    label: CONTACT_EMAIL,
+    label: "Email",
     icon: Mail,
     href: `mailto:${CONTACT_EMAIL}`,
     ariaLabel: `Email DigitalyMarket at ${CONTACT_EMAIL}`,
