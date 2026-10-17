@@ -19,9 +19,9 @@ const agencyLinks = [
 
 const serviceLinks = [
   { label: "All Services", href: "/services" },
-  { label: "Generative Engine Optimization", href: "/services/GEO" },
-  { label: "Paid Marketing", href: "/services/paid-marketing" },
   { label: "Website Creation", href: "/services/web-creation" },
+  { label: "Paid Marketing", href: "/services/paid-marketing" },
+  { label: "Generative Engine Optimization", href: "/services/GEO" },
 ];
 
 export function SiteFooter() {

@@ -10,16 +10,16 @@ import { Reveal } from "@/components/site/Reveal";
 const capabilities = [
   {
     no: "01",
-    journey: "Discover",
+    journey: "Convert",
     problem:
-      "Your customers are searching differently — but your business may not be showing up where decisions are being made.",
-    title: "Generative Engine Optimization",
+      "Your website may be getting visitors without turning enough of them into enquiries or customers.",
+    title: "Website Creation",
     outcome:
-      "Improve how your business is understood and discovered across search and AI-driven discovery.",
-    cta: "Explore GEO",
-    href: "/services/GEO",
-    image: geoImage,
-    alt: "Abstract knowledge graph of connected nodes representing search and AI discovery",
+      "Create a digital experience that makes it easier for the right visitors to understand, trust and act.",
+    cta: "Explore Website Creation",
+    href: "/services/web-creation",
+    image: webImage,
+    alt: "Layered website interface blocks illustrating a conversion-focused web layout",
   },
   {
     no: "02",
@@ -35,16 +35,16 @@ const capabilities = [
   },
   {
     no: "03",
-    journey: "Convert",
+    journey: "Discover",
     problem:
-      "Your website may be getting visitors without turning enough of them into enquiries or customers.",
-    title: "Website Creation",
+      "Your customers are searching differently — but your business may not be showing up where decisions are being made.",
+    title: "Generative Engine Optimization",
     outcome:
-      "Create a digital experience that makes it easier for the right visitors to understand, trust and act.",
-    cta: "Explore Website Creation",
-    href: "/services/web-creation",
-    image: webImage,
-    alt: "Layered website interface blocks illustrating a conversion-focused web layout",
+      "Improve how your business is understood and discovered across search and AI-driven discovery.",
+    cta: "Explore GEO",
+    href: "/services/GEO",
+    image: geoImage,
+    alt: "Abstract knowledge graph of connected nodes representing search and AI discovery",
   },
 ] as const;
 

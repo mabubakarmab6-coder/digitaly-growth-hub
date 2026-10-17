@@ -49,7 +49,7 @@ export const Route = createFileRoute("/about")({
             name: "DigitalyMarket",
             url: "https://digitalymarket.com",
             description:
-              "A business-first digital growth partner offering GEO, paid marketing, website creation, e-commerce growth and marketplace optimization.",
+              "A business-first digital growth partner offering web creation, paid marketing and GEO.",
             founder: {
               "@type": "Person",
               name: "Mohammad Abubakar Siddiqui",

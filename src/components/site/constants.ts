@@ -21,9 +21,9 @@ export const NAV_LINKS = [
     href: "/services",
     children: [
       { label: "All Services", href: "/services", description: "Find the right starting point" },
-      { label: "Generative Engine Optimization", href: "/services/GEO", description: "Visibility in search and AI answers" },
-      { label: "Paid Marketing", href: "/services/paid-marketing", description: "Strategy and campaign management" },
       { label: "Website Creation", href: "/services/web-creation", description: "Websites built around business goals" },
+      { label: "Paid Marketing", href: "/services/paid-marketing", description: "Strategy and campaign management" },
+      { label: "Generative Engine Optimization", href: "/services/GEO", description: "Visibility in search and AI answers" },
     ],
   },
   {

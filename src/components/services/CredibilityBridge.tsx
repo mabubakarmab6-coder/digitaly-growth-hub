@@ -8,7 +8,7 @@ const pillars = [
   },
   {
     label: "Expertise",
-    copy: "A working understanding of modern discovery, paid acquisition, website conversion and e-commerce growth.",
+    copy: "A working understanding of website conversion, paid acquisition, modern discovery and e-commerce growth.",
   },
   {
     label: "Evidence",

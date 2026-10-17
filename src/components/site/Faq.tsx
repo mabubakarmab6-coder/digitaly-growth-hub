@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Can I hire DigitalyMarket for just one service?",
-    a: "Absolutely. You can start with a single capability — GEO, paid marketing, a website or e-commerce growth — and expand later if it makes sense.",
+    a: "Absolutely. You can start with a single capability — web creation, paid marketing or GEO — and expand later if it makes sense.",
   },
   {
     q: "Do you offer monthly retainers?",
