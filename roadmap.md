@@ -26,3 +26,6 @@
 - [x] Connect every inquiry CTA with source context.
 - [x] Retire the old `/start` experience safely.
 - [x] Complete accessibility, responsive, regression, storage, and email QA.
+
+- [x] Feature SensyTalk in the homepage Work section instead of Gems Gallery.
+- [x] Point the site's LinkedIn link at the official DigitalyMarket company page.
