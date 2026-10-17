@@ -44,14 +44,17 @@ export function Hero() {
               className="h-full w-full object-cover"
             />
           </div>
-          <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:absolute lg:-bottom-8 lg:left-6 lg:mt-0 lg:grid-cols-2 lg:gap-2">
+          <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:absolute lg:-bottom-8 lg:left-6 lg:mt-0 lg:grid-cols-3 lg:gap-2">
             {[
               ["GEO", "AI discovery"],
               ["Paid", "Acquisition"],
-            ].map(([term, desc]) => (
+              ["Web Creation", "Conversion"],
+            ].map(([term, desc], i) => (
               <div
                 key={term}
-                className="rounded-xl border border-hairline bg-card/90 px-4 py-3 shadow-soft backdrop-blur"
+                className={`rounded-xl border border-hairline bg-card/90 px-4 py-3 shadow-soft backdrop-blur${
+                  i === 2 ? " col-span-2 sm:col-span-1" : ""
+                }`}
               >
                 <dt className="text-xs font-semibold tracking-wide text-foreground">{term}</dt>
                 <dd className="text-xs text-muted-foreground">{desc}</dd>
