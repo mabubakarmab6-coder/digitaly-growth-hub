@@ -30,3 +30,5 @@
 - [x] Feature SensyTalk in the homepage Work section instead of Gems Gallery.
 - [x] Point the site's LinkedIn link at the official DigitalyMarket company page.
 - [x] Show the published email address alongside Instagram and LinkedIn contact buttons.
+- [x] Label the email button "Email" so it matches the Instagram and LinkedIn buttons, keeping the address in its accessible name.
+- [x] Move the footer contact buttons into the full-width bottom row so all three sit together on one line.
