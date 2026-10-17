@@ -1,7 +1,7 @@
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { INSTAGRAM_URL, LINKEDIN_URL } from "./constants";
+import { CONTACT_EMAIL, INSTAGRAM_URL, LINKEDIN_URL } from "./constants";
 
 type Action = {
   label: string;
@@ -16,6 +16,12 @@ type Action = {
  * inquiry experience — no phone, tel: or WhatsApp routes are exposed here.
  */
 const actions: Action[] = [
+  {
+    label: CONTACT_EMAIL,
+    icon: Mail,
+    href: `mailto:${CONTACT_EMAIL}`,
+    ariaLabel: `Email DigitalyMarket at ${CONTACT_EMAIL}`,
+  },
   {
     label: "Instagram",
     icon: Instagram,
