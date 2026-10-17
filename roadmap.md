@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Reorder agency service listings, summaries and enquiry choices to Web Creation → Paid Marketing → GEO; verify across the website without publishing.
+
 - [x] Update Gems Gallery live links and structured data to the approved Vercel address; verify the case-study navigation.
 - [ ] Disconnect the former Gems Gallery subdomain (blocked: connected to a different project; external DNS is managed at GoDaddy).
 
