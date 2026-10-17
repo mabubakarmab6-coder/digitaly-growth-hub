@@ -16,7 +16,7 @@ export function Credibility() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Experience</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Built on real-world business experience.
+            Built on Real-World Business Experience.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             DigitalyMarket brings together experience across e-commerce, marketplaces, sales,

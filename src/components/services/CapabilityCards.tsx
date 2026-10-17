@@ -55,7 +55,7 @@ export function CapabilityCards() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Core capabilities</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Three capabilities. One growth journey.
+            Three Capabilities. One Growth Journey.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Each capability answers a different business problem. They can work alone or together —

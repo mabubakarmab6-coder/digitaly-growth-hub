@@ -23,7 +23,7 @@ export function CredibilityBridge() {
         <Reveal className="max-w-xl">
           <p className="eyebrow">Credibility</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Want to see how we think?
+            Want to See How We Think?
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Explore our approach, the way we frame problems and the work as it develops. We'd rather

@@ -56,7 +56,7 @@ export function PaidMarketingPage() {
               id="paid-hero"
               className="mt-4 text-4xl leading-tight font-semibold tracking-normal text-foreground sm:text-5xl"
             >
-              Paid marketing, built around your business goals.
+              Paid Marketing, Built Around Your Business Goals.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Reach relevant audiences with a strategy that connects your offer, campaigns and
@@ -93,7 +93,7 @@ export function PaidMarketingPage() {
         <div className="container-page">
           <p className="eyebrow">Challenges & opportunities</p>
           <h2 id="paid-challenges" className={`${heading} max-w-2xl`}>
-            When advertising deserves a closer look.
+            When Advertising Deserves a Closer Look.
           </h2>
           <p className={`mt-5 max-w-2xl ${body}`}>
             Paid marketing can be useful in different situations. The first step is identifying
@@ -121,7 +121,7 @@ export function PaidMarketingPage() {
             <div>
               <p className="eyebrow">What DigitalyMarket manages</p>
               <h2 id="paid-manages" className={heading}>
-                A connected campaign system.
+                A Connected Campaign System.
               </h2>
             </div>
             <p className={`${body} self-end`}>
@@ -154,7 +154,7 @@ export function PaidMarketingPage() {
         <div className="container-page">
           <p className="eyebrow">How the engagement works</p>
           <h2 id="paid-process" className={heading}>
-            From business context to the next informed decision.
+            From Business Context to the Next Informed Decision.
           </h2>
           <p className={`mt-5 max-w-2xl ${body}`}>
             A straightforward sequence, adapted to your starting point. Timelines and deliverables
@@ -179,7 +179,7 @@ export function PaidMarketingPage() {
             id="paid-measure"
             className="mt-4 max-w-2xl text-3xl leading-tight font-semibold tracking-normal sm:text-4xl"
           >
-            Measure what matters. Understand what it means.
+            Measure What Matters. Understand What It Means.
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-navy-muted">
             Launching ads is only the beginning. Choose measures that fit the objective, then
@@ -237,12 +237,12 @@ export function PaidMarketingPage() {
         <div className="container-page">
           <p className="eyebrow">Is it right for your business?</p>
           <h2 id="paid-fit" className={heading}>
-            Start with readiness, not a sales pitch.
+            Start With Readiness, Not a Sales Pitch.
           </h2>
           <div className="mt-10 grid gap-10 lg:grid-cols-2">
             <div>
               <h3 className="text-xl font-semibold tracking-normal">
-                Worth exploring when you have
+                Worth Exploring When You Have
               </h3>
               <ul className="mt-6 space-y-4">
                 {content.readiness.map((item) => (
@@ -255,7 +255,7 @@ export function PaidMarketingPage() {
             </div>
             <div className="border-t border-hairline pt-6 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
               <h3 className="text-xl font-semibold tracking-normal">
-                Sometimes the foundations come first
+                Sometimes the Foundations Come First
               </h3>
               <p className={`mt-6 ${body}`}>
                 If the offer, website, tracking, budget or follow-up process isn't ready,
@@ -293,7 +293,7 @@ export function PaidMarketingPage() {
           <div>
             <p className="eyebrow">Frequently asked questions</p>
             <h2 id="paid-faq" className={heading}>
-              Before you enquire.
+              Before You Enquire.
             </h2>
             <p className={`mt-5 ${body}`}>
               Practical answers about scope, costs, readiness and realistic expectations.
@@ -322,7 +322,7 @@ export function PaidMarketingPage() {
           <div className="max-w-3xl">
             <p className="eyebrow">Your next step</p>
             <h2 id="paid-close" className={heading}>
-              Let's understand what growth means for your business.
+              Let's Understand What Growth Means for Your Business.
             </h2>
             <p className={`mt-6 max-w-2xl ${body}`}>
               Tell us about your goals, your current activity and what's getting in the way. We'll

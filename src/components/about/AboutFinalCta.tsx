@@ -11,7 +11,7 @@ export function AboutFinalCta() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <p className="eyebrow text-navy-foreground/70">Let's talk</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.9rem]">
-            Bring us the business problem. We'll start there.
+            Bring Us the Business Problem. We'll Start There.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
             No pitch deck, no pressure. Just a conversation about where your business is today and

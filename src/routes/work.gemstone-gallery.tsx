@@ -251,7 +251,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Project overview"
-              heading="An offline manufacturing business, translated into a focused digital presence."
+              heading="An Offline Manufacturing Business, Translated Into a Focused Digital Presence."
               intro="Gems Gallery is an independent portfolio project exploring how an established, manufacturing-oriented gemstone business can communicate its expertise to professional buyers online."
             />
             <dl className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -279,7 +279,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Project snapshot"
-              heading="Not prompt → AI → website."
+              heading="Not Prompt → AI → Website."
               intro="The project moved through a deliberate sequence before a single page was published."
             />
             <div className="mt-10">
@@ -295,7 +295,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="The challenge"
-              heading="Offline expertise does not automatically become digital visibility."
+              heading="Offline Expertise Does Not Automatically Become Digital Visibility."
               intro="Gemstone manufacturing businesses can hold years of practical expertise while having limited digital infrastructure for communicating that expertise beyond their existing network. The question became: how can an offline manufacturing capability be translated into a digital experience that helps professional buyers understand the business, evaluate its capabilities and start a conversation?"
             />
             <div className="mt-10">
@@ -321,7 +321,7 @@ function GemsGalleryCaseStudy() {
         {/* Objectives */}
         <section className="section-y bg-surface">
           <div className="container-page">
-            <SectionHead eyebrow="Objectives" heading="Four objectives defined the project." />
+            <SectionHead eyebrow="Objectives" heading="Four Objectives Defined the Project." />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 ["01", "Create an owned digital presence", "A destination capable of communicating manufacturing capability."],
@@ -342,7 +342,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Research"
-              heading="Understanding the business before deciding the structure."
+              heading="Understanding the Business Before Deciding the Structure."
               intro="Research was discussion and questionnaire based: understanding how the business operates, how gemstones are processed and what professional buyers need to know before making contact. It preceded every structural decision."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -366,7 +366,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Strategic direction"
-              heading="From selling gemstones to communicating manufacturing capability."
+              heading="From Selling Gemstones to Communicating Manufacturing Capability."
               intro="The strategy deliberately positioned the website toward professional buyers — manufacturers, wholesalers, sourcing professionals and miners — rather than retail consumers. That single decision reshaped the entire experience."
               onNavy
             />
@@ -389,7 +389,7 @@ function GemsGalleryCaseStudy() {
         {/* Audience */}
         <section className="section-y">
           <div className="container-page">
-            <SectionHead eyebrow="Audience" heading="Who the experience was designed for." />
+            <SectionHead eyebrow="Audience" heading="Who the Experience Was Designed For." />
             <div className="mt-12 grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
                 <div className="rounded-3xl bg-navy p-10 text-center shadow-lift">
@@ -431,7 +431,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Information architecture"
-              heading="A focused three-page structure."
+              heading="A Focused Three-Page Structure."
               intro="The architecture was intentionally narrow so every page carried a job: Understand → Evaluate → Trust → Inquire."
             />
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -470,7 +470,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="The website"
-              heading="A published, owned digital asset."
+              heading="A Published, Owned Digital Asset."
               intro="The live site is the clearest way to review the outcome — the structure, language and conversion paths described here are all visible on it."
             />
             <Reveal className="mt-12">
@@ -516,7 +516,7 @@ function GemsGalleryCaseStudy() {
               <div className="h-full rounded-3xl border border-hairline bg-card p-8">
                 <p className="eyebrow">Home page</p>
                 <h3 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-                  Establishing what the business is.
+                  Establishing What the Business Is.
                 </h3>
                 <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                   {[
@@ -544,7 +544,7 @@ function GemsGalleryCaseStudy() {
               <div className="h-full rounded-3xl border border-hairline bg-card p-8">
                 <p className="eyebrow">Manufacturing page</p>
                 <h3 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-                  Showing capability in the buyer's language.
+                  Showing Capability in the Buyer's Language.
                 </h3>
                 <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                   {[
@@ -571,7 +571,7 @@ function GemsGalleryCaseStudy() {
               <div className="h-full rounded-3xl border border-hairline bg-card p-8">
                 <p className="eyebrow">About page</p>
                 <h3 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-                  Providing the context that reduces uncertainty.
+                  Providing the Context That Reduces Uncertainty.
                 </h3>
                 <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                   {["Business context", "Since 1990", "Jaipur", "Sanjay Singh", "Values"].map((x) => (
@@ -594,7 +594,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Intended conversion journey"
-              heading="The path the experience was designed to support."
+              heading="The Path the Experience Was Designed to Support."
               intro="This is the intended journey, not measured performance data."
             />
             <div className="mt-10">
@@ -618,7 +618,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="ACTDF framework"
-              heading="Five factors behind the B2B digital experience."
+              heading="Five Factors Behind the B2B Digital Experience."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
               {[
@@ -650,7 +650,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Strategic trade-off"
-              heading="Colour-based material spectrum instead of gemstone names."
+              heading="Colour-Based Material Spectrum Instead of Gemstone Names."
               intro="Not every decision is universally correct. This one was made deliberately, with a known cost."
             />
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -674,7 +674,7 @@ function GemsGalleryCaseStudy() {
               <div className="h-full rounded-3xl border border-hairline bg-card p-8">
                 <p className="eyebrow">SEO foundations</p>
                 <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-                  Search-friendly structure, built in from the start.
+                  Search-Friendly Structure, Built in From the Start.
                 </h2>
                 <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
                   {[
@@ -700,7 +700,7 @@ function GemsGalleryCaseStudy() {
               <div className="h-full rounded-3xl border border-hairline bg-card p-8">
                 <p className="eyebrow">GEO awareness</p>
                 <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-                  Written to be understood, by people and by machines.
+                  Written to Be Understood, by People and by Machines.
                 </h2>
                 <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
                   {[
@@ -729,7 +729,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="AI-assisted development"
-              heading="Human strategy. AI-assisted execution."
+              heading="Human Strategy. AI-Assisted Execution."
             />
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               {[
@@ -762,7 +762,7 @@ function GemsGalleryCaseStudy() {
         {/* Execution */}
         <section className="section-y bg-surface">
           <div className="container-page">
-            <SectionHead eyebrow="Execution" heading="What DigitalyMarket delivered on this project." />
+            <SectionHead eyebrow="Execution" heading="What DigitalyMarket Delivered on This Project." />
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {[
                 ["Website Creation", "Designed and developed a focused 3-page B2B website to communicate capabilities and drive inquiries.", "/services/web-creation"],
@@ -790,7 +790,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Project outcome"
-              heading="A focused digital foundation for future B2B growth."
+              heading="A Focused Digital Foundation for Future B2B Growth."
               onNavy
             />
             <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -830,7 +830,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Next steps"
-              heading="What could come next — clearly separate from what is complete."
+              heading="What Could Come Next — Clearly Separate From What Is Complete."
             />
             <ol className="mt-12 space-y-5">
               {[
@@ -866,7 +866,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <Reveal className="max-w-3xl">
               <h2 className="text-3xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-4xl">
-                A website is the deliverable. The strategy is the value.
+                A Website Is the Deliverable. The Strategy Is the Value.
               </h2>
             </Reveal>
             <div className="mt-10">
@@ -894,7 +894,7 @@ function GemsGalleryCaseStudy() {
                 Next
               </p>
               <h2 className="mt-4 text-3xl leading-[1.15] font-semibold tracking-tight text-navy-foreground sm:text-4xl">
-                See the project, or talk about yours.
+                See the Project, or Talk About Yours.
               </h2>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Cta href={liveUrl} target="_blank" rel="noopener noreferrer" variant="onNavy" size="lg">

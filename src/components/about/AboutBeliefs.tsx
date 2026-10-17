@@ -36,7 +36,7 @@ export function AboutBeliefs() {
           <Reveal className="lg:sticky lg:top-28 lg:self-start">
             <p className="eyebrow">What we believe</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-              Principles that decide what we recommend.
+              Principles That Decide What We Recommend.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               These aren't slogans. They're the filters we apply before suggesting any piece of

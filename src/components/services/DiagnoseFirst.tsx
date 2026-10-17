@@ -16,7 +16,7 @@ export function DiagnoseFirst() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Diagnose first</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            We don't start with a service. We start with the business.
+            We Don't Start With a Service. We Start With the Business.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             You don't need to know which capability you need before contacting us. Working out what

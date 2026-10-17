@@ -44,7 +44,7 @@ export function Industries() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Who we help</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Built for businesses ready to grow.
+            Built for Businesses Ready to Grow.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             From manufacturers building their digital presence to local businesses looking for their

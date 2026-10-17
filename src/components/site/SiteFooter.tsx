@@ -77,7 +77,7 @@ export function SiteFooter() {
 
           <div>
             <h2 className="text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
-              Start here
+              Start Here
             </h2>
             <Cta href={INQUIRY_PATH} className="mt-5 w-full sm:w-auto">
               Start a Growth Conversation

@@ -133,7 +133,7 @@ function InsightsPage() {
              />
              
              <div className="mt-16 pt-8 border-t border-hairline">
-                <h3 className="text-2xl font-semibold mb-4">Ready to implement a digital marketing strategy?</h3>
+                <h3 className="text-2xl font-semibold mb-4">Ready to Implement a Digital Marketing Strategy?</h3>
                 <p className="text-muted-foreground mb-6">Let's discuss how we can help your business grow online.</p>
                 <Cta href={INQUIRY_PATH}>
                    Start a Conversation
@@ -142,7 +142,7 @@ function InsightsPage() {
               {relatedPosts.length > 0 ? (
                 <section aria-labelledby="related-insights" className="mt-16 border-t border-hairline pt-10">
                   <p className="eyebrow">Continue learning</p>
-                  <h2 id="related-insights" className="mt-4 text-2xl font-semibold text-foreground">Related insights</h2>
+                  <h2 id="related-insights" className="mt-4 text-2xl font-semibold text-foreground">Related Insights</h2>
                   <ul className="mt-6 divide-y divide-hairline border-y border-hairline">
                     {relatedPosts.map((relatedPost) => (
                       <li key={relatedPost.slug}>
@@ -174,7 +174,7 @@ function InsightsNotFound() {
       <SiteNav />
       <main className="container-page py-20 flex-1">
         <h1 className="text-3xl font-semibold text-foreground sm:text-4xl">
-          We couldn't find that article.
+          We Couldn't Find That Article.
         </h1>
         <p className="mt-5 max-w-xl text-muted-foreground">
           The post may have moved or been deleted. Browse our latest insights on the blog.

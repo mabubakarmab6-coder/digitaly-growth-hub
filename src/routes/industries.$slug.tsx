@@ -86,7 +86,7 @@ function IndustryNotFound() {
       <SiteNav />
       <main className="container-page section-y">
         <h1 className="text-3xl font-semibold text-foreground sm:text-4xl">
-          We couldn't find that industry.
+          We Couldn't Find That Industry.
         </h1>
         <p className="mt-5 max-w-xl text-muted-foreground">
           The page may have moved. Browse the industries we work with, or start a conversation and

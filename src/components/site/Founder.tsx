@@ -38,7 +38,7 @@ export function Founder() {
         <Reveal delay={120}>
           <p className="eyebrow">Leadership</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Agency leadership grounded in commercial execution.
+            Agency Leadership Grounded in Commercial Execution.
           </h2>
           <p className="mt-6 text-lg font-semibold text-foreground">Mohammad Abubakar</p>
           <p className="text-sm text-primary">Founder &amp; Principal Growth Strategist</p>

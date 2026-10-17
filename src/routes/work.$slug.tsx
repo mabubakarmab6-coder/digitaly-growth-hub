@@ -118,7 +118,7 @@ function WorkPage() {
              </div>
              
              <div className="mt-20 pt-10 border-t border-hairline text-center">
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Ready to start your project?</h3>
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Ready to Start Your Project?</h3>
                 <p className="text-muted-foreground mb-8 max-w-xl mx-auto">We build high-performance digital solutions tailored for growth.</p>
                 <Cta href={INQUIRY_PATH} size="lg">
                    Start a Conversation
@@ -139,7 +139,7 @@ function WorkNotFound() {
       <SiteNav />
       <main className="container-page py-20 flex-1">
         <h1 className="text-3xl font-semibold text-foreground sm:text-4xl">
-          We couldn't find that project.
+          We Couldn't Find That Project.
         </h1>
         <p className="mt-5 max-w-xl text-muted-foreground">
           The case study may have moved or been deleted. Browse our portfolio.

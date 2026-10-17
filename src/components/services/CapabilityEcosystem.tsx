@@ -15,7 +15,7 @@ export function CapabilityEcosystem() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow text-navy-foreground/70">Ecosystem</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.6rem]">
-            Growth rarely happens in isolation.
+            Growth Rarely Happens in Isolation.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
             The right capabilities can work together — but only when they're right for your

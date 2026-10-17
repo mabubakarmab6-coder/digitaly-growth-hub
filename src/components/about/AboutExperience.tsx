@@ -35,7 +35,7 @@ export function AboutExperience() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Experience &amp; expertise</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Credibility built on real business exposure.
+            Credibility Built on Real Business Exposure.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             The agency is young. The thinking behind it comes from years of working across the

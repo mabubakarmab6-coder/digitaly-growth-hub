@@ -39,7 +39,7 @@ function WorkIndex() {
             <Reveal className="max-w-3xl">
               <p className="eyebrow">Digital Portfolio</p>
               <h1 className="mt-5 text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
-                Real projects. <span className="text-primary">Real growth.</span>
+                Real Projects. <span className="text-primary">Real Growth.</span>
               </h1>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Explore our latest work where we turn complex challenges into scalable digital solutions. See how we build authoritative online brands and showcase high-impact web design.

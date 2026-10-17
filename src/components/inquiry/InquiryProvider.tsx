@@ -248,7 +248,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
                 <Check className="h-6 w-6" aria-hidden="true" />
               </span>
               <DialogTitle className="mt-6 text-3xl leading-tight text-foreground">
-                Thanks — we've got it.
+                Thanks — We've Got It.
               </DialogTitle>
               <DialogDescription className="mt-4 max-w-lg text-base leading-relaxed">
                 We've received your enquiry and will review the information you've shared. We'll get
@@ -267,7 +267,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
               <header className="shrink-0 border-b border-hairline px-5 pt-6 pb-5 sm:px-8 sm:pt-8">
                 <p className="eyebrow pr-10">Start a conversation</p>
                 <DialogTitle className="mt-3 pr-10 text-2xl leading-tight text-foreground sm:text-3xl">
-                  Let's understand what you need
+                  Let's Understand What You Need
                 </DialogTitle>
                 <DialogDescription className="mt-3 max-w-xl text-sm leading-relaxed sm:text-base">
                   Tell us a little about your business and what you're looking to improve.

@@ -500,7 +500,7 @@ export function GeoServicePage() {
           </Reveal>
           <Reveal delay={80}>
             <div className="rounded-lg border border-hairline bg-card p-7 shadow-soft sm:p-8">
-              <h3 className="text-xl font-semibold text-foreground">What no responsible strategy can guarantee</h3>
+              <h3 className="text-xl font-semibold text-foreground">What No Responsible Strategy Can Guarantee</h3>
               <ul className="mt-6 space-y-3">
                 {["A specific AI citation or recommendation", "A specific AI-generated answer", "A fixed ranking or amount of traffic", "A fixed revenue or business outcome"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">

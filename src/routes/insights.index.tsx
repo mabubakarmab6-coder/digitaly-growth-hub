@@ -53,7 +53,7 @@ function InsightsIndex() {
             <Reveal className="max-w-3xl">
               <p className="eyebrow">Insights & Guides</p>
               <h1 className="mt-5 text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
-                Practical advice for <span className="text-primary">digital growth.</span>
+                Practical Advice for <span className="text-primary">Digital Growth.</span>
               </h1>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Explore our expert insights on SEO, digital marketing strategy, paid media, and everything you need to grow your business online.

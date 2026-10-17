@@ -30,7 +30,7 @@ export function AboutCapabilities() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">What we do</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Three capabilities, applied only where they fit.
+            Three Capabilities, Applied Only Where They Fit.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             The diagnosis decides which of these matter for your business — often it's one or two,

@@ -34,7 +34,7 @@ export function BusinessContext() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Business context</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            The capabilities stay consistent. The way we apply them changes.
+            The Capabilities Stay Consistent. The Way We Apply Them Changes.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Illustrative examples of how the same capability can look different depending on the

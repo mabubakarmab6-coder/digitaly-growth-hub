@@ -19,7 +19,7 @@ export function WorkAndInsights() {
               <div>
                 <p className="eyebrow">Work</p>
                 <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-                  Real projects. Real growth.
+                  Real Projects. Real Growth.
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                   Explore our latest work where we turn complex challenges into scalable digital solutions. See how we build authoritative online brands and showcase high-impact web design.
@@ -57,7 +57,7 @@ export function WorkAndInsights() {
             <div className="max-w-2xl">
               <p className="eyebrow">Insights</p>
               <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-                Ideas for businesses that want to grow.
+                Ideas for Businesses That Want to Grow.
               </h2>
             </div>
             <Link

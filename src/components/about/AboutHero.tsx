@@ -13,8 +13,8 @@ export function AboutHero() {
         <div className="max-w-xl">
           <p className="eyebrow">About DigitalyMarket</p>
           <h1 className="mt-5 text-[2.15rem] leading-[1.08] font-semibold text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Growth starts with understanding{" "}
-            <span className="text-gradient-accent">the business behind it.</span>
+            Growth Starts With Understanding{" "}
+            <span className="text-gradient-accent">the Business Behind It.</span>
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             DigitalyMarket is a digital growth partner built around a simple conviction: the

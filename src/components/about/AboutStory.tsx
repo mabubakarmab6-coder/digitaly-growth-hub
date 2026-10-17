@@ -38,7 +38,7 @@ export function AboutStory() {
           <Reveal className="max-w-xl">
             <p className="eyebrow">Origin</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-              Built from the business side, not the agency side.
+              Built From the Business Side, Not the Agency Side.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               DigitalyMarket didn't begin as a marketing idea. It began with years of watching

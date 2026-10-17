@@ -28,7 +28,7 @@ export function AboutFounder() {
         <Reveal delay={110}>
           <p className="eyebrow">Leadership</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            The strategic leadership behind DigitalyMarket.
+            The Strategic Leadership Behind DigitalyMarket.
           </h2>
           <p className="mt-6 text-lg font-semibold text-foreground">
             Mohammad Abubakar Siddiqui

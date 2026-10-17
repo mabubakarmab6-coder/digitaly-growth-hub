@@ -43,10 +43,10 @@ export const services: ServiceContent[] = [
     metaTitle: "Website Creation & Design Services | DigitalyMarket",
     metaDescription:
       "Websites built to explain value quickly and convert attention into enquiries — clear structure, fast performance, honest copy and a technical foundation that supports search.",
-    h1: "A website that explains your value and makes the next step obvious.",
+    h1: "A Website That Explains Your Value and Makes the Next Step Obvious.",
     intro:
       "Most business websites fail quietly. They look acceptable, load slowly, describe the company instead of the customer's problem, and leave the visitor unsure what to do. A website should carry the argument for your business when nobody from your team is in the room.",
-    whatItIsHeading: "What the work covers",
+    whatItIsHeading: "What the Work Covers",
     whatItIs: [
       "Positioning and message architecture: what to say, in what order, so a stranger understands the value within seconds.",
       "Information architecture: a page and navigation structure that reflects how people actually decide.",
@@ -55,7 +55,7 @@ export const services: ServiceContent[] = [
       "Technical foundation: performance, accessibility, semantic structure, metadata and schema so the site is search- and AI-ready from day one.",
       "Content that is truthful — no invented claims, logos or statistics.",
     ],
-    signalsHeading: "Signs the website is the constraint",
+    signalsHeading: "Signs the Website Is the Constraint",
     signals: [
       {
         title: "Traffic arrives and leaves",
@@ -74,7 +74,7 @@ export const services: ServiceContent[] = [
         body: "Small updates require developer time, so the site stays out of date.",
       },
     ],
-    approachHeading: "How we approach websites",
+    approachHeading: "How We Approach Websites",
     approach: [
       {
         title: "Understand",
@@ -97,7 +97,7 @@ export const services: ServiceContent[] = [
         body: "Post-launch review of behaviour and enquiry quality, then targeted refinement.",
       },
     ],
-    outcomesHeading: "What a good website should lead to",
+    outcomesHeading: "What a Good Website Should Lead To",
     outcomes: [
       "Visitors who understand your value quickly",
       "A clear, obvious next step on every meaningful page",
@@ -105,7 +105,7 @@ export const services: ServiceContent[] = [
       "A technical base that supports search and AI discovery",
       "Fewer unqualified enquiries and more relevant conversations",
     ],
-    evaluateHeading: "What we'd evaluate first",
+    evaluateHeading: "What We'd Evaluate First",
     evaluate: [
       "Clarity of the message in the first screen",
       "Page speed and Core Web Vitals on mobile",
@@ -151,10 +151,10 @@ export const services: ServiceContent[] = [
     metaTitle: "Paid Marketing Services | Search, Social & Demand Capture | DigitalyMarket",
     metaDescription:
       "Paid marketing built around business outcomes — intent-led targeting, message clarity, landing experiences and measurement that shows what a lead actually costs.",
-    h1: "Put your offer in front of the right people — and know what it costs.",
+    h1: "Put Your Offer in Front of the Right People — and Know What It Costs.",
     intro:
       "Paid media is the fastest way to test demand and the fastest way to waste money. It works when targeting, message and destination all point at the same business objective, and when measurement is honest enough to tell you which parts are carrying the result.",
-    whatItIsHeading: "What the work covers",
+    whatItIsHeading: "What the Work Covers",
     whatItIs: [
       "Objective definition: what a successful outcome is worth to your business before any budget moves.",
       "Channel selection based on where demand already exists — capturing intent before trying to create it.",
@@ -163,7 +163,7 @@ export const services: ServiceContent[] = [
       "Landing experience: the page the click lands on is part of the campaign, not an afterthought.",
       "Measurement: conversion tracking, lead quality feedback and a clear read on cost per real enquiry.",
     ],
-    signalsHeading: "Signs paid marketing is the constraint",
+    signalsHeading: "Signs Paid Marketing Is the Constraint",
     signals: [
       {
         title: "Spend is up, enquiries aren't",
@@ -182,7 +182,7 @@ export const services: ServiceContent[] = [
         body: "Organic discovery is being built, but the pipeline needs something working this quarter.",
       },
     ],
-    approachHeading: "How we approach paid",
+    approachHeading: "How We Approach Paid",
     approach: [
       {
         title: "Understand",
@@ -205,7 +205,7 @@ export const services: ServiceContent[] = [
         body: "Continuous testing of audiences, creative and landing pages against cost per qualified enquiry.",
       },
     ],
-    outcomesHeading: "What good paid marketing should lead to",
+    outcomesHeading: "What Good Paid Marketing Should Lead To",
     outcomes: [
       "A clear, defensible cost per qualified enquiry",
       "Budget concentrated on the segments that convert",
@@ -213,7 +213,7 @@ export const services: ServiceContent[] = [
       "Landing experiences that don't leak the traffic you paid for",
       "Reporting you can make decisions from without translation",
     ],
-    evaluateHeading: "What we'd evaluate first",
+    evaluateHeading: "What We'd Evaluate First",
     evaluate: [
       "Current account structure and where spend is leaking",
       "Conversion tracking accuracy and lead-quality feedback loops",
@@ -259,10 +259,10 @@ export const services: ServiceContent[] = [
     metaTitle: "Generative Engine Optimization (GEO) Services | DigitalyMarket",
     metaDescription:
       "GEO services that make your business understandable to search engines and AI answer engines — entity clarity, structured data, topical depth and content people actually cite.",
-    h1: "Be discoverable where people now search — including AI answers.",
+    h1: "Be Discoverable Where People Now Search — Including AI Answers.",
     intro:
       "People no longer only type keywords into a search box. They ask assistants, compare options inside AI answers and arrive already half-decided. Generative Engine Optimization is the work of making your business clear, credible and quotable enough to be part of those answers — and still rank in classic search.",
-    whatItIsHeading: "What GEO actually involves",
+    whatItIsHeading: "What GEO Actually Involves",
     whatItIs: [
       "Entity clarity: making it unambiguous who you are, what you do, who you serve and where — across your site, structured data and the places that describe your business.",
       "Topical depth: covering the questions your buyers genuinely ask, in enough detail that your pages are the most useful source on the topic rather than the shortest.",
@@ -270,7 +270,7 @@ export const services: ServiceContent[] = [
       "Answer-shaped content: definitions, comparisons, criteria and trade-offs written plainly, so an engine can lift a correct, attributable summary from your page.",
       "Technical foundation: crawlability, indexability, page speed and correct canonicals — the parts that quietly cap everything else.",
     ],
-    signalsHeading: "Signs GEO is the constraint",
+    signalsHeading: "Signs GEO Is the Constraint",
     signals: [
       {
         title: "You're invisible in AI answers",
@@ -289,7 +289,7 @@ export const services: ServiceContent[] = [
         body: "Individual pages exist in isolation, so no topic ever accumulates authority.",
       },
     ],
-    approachHeading: "How we approach GEO",
+    approachHeading: "How We Approach GEO",
     approach: [
       {
         title: "Understand",
@@ -312,7 +312,7 @@ export const services: ServiceContent[] = [
         body: "We track how visibility changes across search and AI surfaces, then keep refining coverage and clarity.",
       },
     ],
-    outcomesHeading: "What good GEO should lead to",
+    outcomesHeading: "What Good GEO Should Lead To",
     outcomes: [
       "A business that is described consistently and correctly wherever it appears",
       "Content that answers buying questions rather than restating your services",
@@ -320,7 +320,7 @@ export const services: ServiceContent[] = [
       "Discovery that compounds instead of resetting with each campaign",
       "Enquiries from people who already understand what you do",
     ],
-    evaluateHeading: "What we'd evaluate first",
+    evaluateHeading: "What We'd Evaluate First",
     evaluate: [
       "How search engines and AI tools currently describe your business",
       "Crawlability, indexation and technical blockers",

@@ -41,7 +41,7 @@ export function AboutHowWeThink() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">How we think</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            One way of working, applied to every business.
+            One Way of Working, Applied to Every Business.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             This is our operating philosophy, not a service ladder. Each stage earns the next one.

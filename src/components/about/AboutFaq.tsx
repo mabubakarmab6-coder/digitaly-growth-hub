@@ -33,7 +33,7 @@ export function AboutFaq() {
         <Reveal>
           <p className="eyebrow">FAQ</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            A few things people ask first.
+            A Few Things People Ask First.
           </h2>
           <a
             href="/services#faq"

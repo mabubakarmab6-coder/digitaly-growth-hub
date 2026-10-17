@@ -5,53 +5,53 @@ export const paidMarketing = {
   url: "https://digitalymarket.com/services/paid-marketing",
   challenges: [
     {
-      title: "The right people aren't finding you",
+      title: "The Right People Aren't Finding You",
       body: "For a B2B manufacturer, relevance may matter more than volume. Understand who makes the buying decision and where advertising can reach them.",
     },
     {
-      title: "Enquiries are inconsistent or poorly qualified",
+      title: "Enquiries Are Inconsistent or Poorly Qualified",
       body: "Review the audience, message and desired action together. More leads are not necessarily better leads.",
     },
     {
-      title: "Clicks aren't explaining business value",
+      title: "Clicks Aren't Explaining Business Value",
       body: "Connect campaign activity to meaningful actions and, where available, lead quality or purchases—not just traffic.",
     },
     {
-      title: "Channel choices feel uncertain",
+      title: "Channel Choices Feel Uncertain",
       body: "For a service business or an online store, the right starting point depends on demand, the buying journey and what can be measured.",
     },
     {
-      title: "Reporting leaves important gaps",
+      title: "Reporting Leaves Important Gaps",
       body: "Check which actions are tracked, whether the data is reliable and what the current reports cannot tell you.",
     },
     {
-      title: "The ad and destination don't connect",
+      title: "The Ad and Destination Don't Connect",
       body: "An interested visitor still needs a clear offer and a usable next step. Landing-page friction can undermine a well-targeted campaign.",
     },
   ],
   capabilities: [
     {
-      title: "Strategy and campaign planning",
+      title: "Strategy and Campaign Planning",
       body: "Define the objective, offer, audience and priorities. Establish what success would mean before choosing campaign tactics.",
     },
     {
-      title: "Audience and channel selection",
+      title: "Audience and Channel Selection",
       body: "Assess audience intent and behavior. Consider Google Ads, Meta Ads or other relevant channels only when they fit the objective and resources.",
     },
     {
-      title: "Campaign setup and management",
+      title: "Campaign Setup and Management",
       body: "Prepare the agreed campaign structure, targeting, messaging and settings, then manage activity against the plan.",
     },
     {
-      title: "Budget allocation and monitoring",
+      title: "Budget Allocation and Monitoring",
       body: "Allocate advertising spend around priorities and review delivery, costs and available evidence before making changes.",
     },
     {
-      title: "Tracking, measurement and reporting",
+      title: "Tracking, Measurement and Reporting",
       body: "Agree meaningful conversion actions, assess measurement readiness and explain performance alongside data limitations.",
     },
     {
-      title: "Ongoing optimization and testing",
+      title: "Ongoing Optimization and Testing",
       body: "Test justified changes to audiences, keywords, creative, messaging and campaign structure. Learn from evidence rather than changing everything at once.",
     },
   ],
@@ -65,15 +65,15 @@ export const paidMarketing = {
       body: "Recommend suitable channels, a measurement approach and a practical sequence of priorities.",
     },
     {
-      title: "Set up and launch",
+      title: "Set Up and Launch",
       body: "Prepare the agreed campaigns, tracking and supporting elements before activity begins.",
     },
     {
-      title: "Measure and optimize",
+      title: "Measure and Optimize",
       body: "Review the evidence, identify opportunities and implement justified improvements.",
     },
     {
-      title: "Report and refine",
+      title: "Report and Refine",
       body: "Explain what happened, what it means and what should happen next.",
     },
   ],

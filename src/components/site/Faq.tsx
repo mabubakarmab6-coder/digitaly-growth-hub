@@ -48,7 +48,7 @@ export function Faq() {
         <Reveal>
           <p className="eyebrow">FAQ</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-            Questions, answered honestly.
+            Questions, Answered Honestly.
           </h2>
         </Reveal>
         <Reveal delay={100}>

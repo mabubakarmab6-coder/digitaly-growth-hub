@@ -48,15 +48,15 @@ export const industries: Industry[] = [
     cardAlt: "Modern manufacturing floor with precision machinery under natural light",
     heroImage: manufacturingHero,
     heroAlt: "Precision machined components on a workbench inside a modern manufacturing facility",
-    h1Lead: "Digital growth for manufacturers and",
-    h1Accent: "B2B companies.",
+    h1Lead: "Digital Growth for Manufacturers and",
+    h1Accent: "B2B Companies.",
     heroCopy:
       "Your capability is real. The question is whether the people evaluating suppliers can find it, understand it and trust it before they ever contact you.",
     metaTitle: "Digital Marketing for Manufacturers & B2B Companies | DigitalyMarket",
     metaDescription:
       "Digital growth for manufacturers, suppliers and B2B companies — stronger visibility, clearer capability communication and better qualified enquiries. Start with a conversation.",
     context: {
-      heading: "How digital growth works in a B2B business",
+      heading: "How Digital Growth Works in a B2B Business",
       paragraphs: [
         "Manufacturing and B2B buying rarely happens in a single session. A specification is written, options are researched quietly, a shortlist forms, and only then does an enquiry arrive. Much of that journey happens without you in the room.",
         "That means digital is not a replacement for your sales team — it is what your sales team walks into. When a buyer, engineer or procurement lead arrives at a conversation already convinced you are credible, the entire cycle behaves differently.",
@@ -77,7 +77,7 @@ export const industries: Industry[] = [
       ],
     },
     gap: {
-      heading: "Your business has evolved. Has your digital presence kept up?",
+      heading: "Your Business Has Evolved. Has Your Digital Presence Kept Up?",
       intro:
         "Most manufacturers we speak to have built genuine capability over years. The digital layer around that capability is often the part that stayed still.",
       have: [
@@ -96,7 +96,7 @@ export const industries: Industry[] = [
       ],
     },
     stuck: {
-      heading: "Where manufacturing and B2B businesses get stuck",
+      heading: "Where Manufacturing and B2B Businesses Get Stuck",
       intro:
         "Not every business has every one of these. Depending on your market and stage, some may sound familiar.",
       items: [
@@ -156,7 +156,7 @@ export const industries: Industry[] = [
     insights: [
       {
         eyebrow: "Strategic insight",
-        title: "Buyers do not shortlist suppliers. They shortlist certainty.",
+        title: "Buyers Do Not Shortlist Suppliers. They Shortlist Certainty.",
         body: [
           "In most B2B decisions, someone has to defend the choice internally. That person is not looking for the most impressive supplier — they are looking for the one they can justify.",
           "Which is why capability alone rarely wins the shortlist. What wins is clarity: what you do, who you do it for, what problems you routinely solve, and what happens next. When those answers are easy to find, you reduce the perceived risk of choosing you.",
@@ -164,7 +164,7 @@ export const industries: Industry[] = [
       },
       {
         eyebrow: "Strategic insight",
-        title: "A capability page is a sales asset, not a specification sheet.",
+        title: "A Capability Page Is a Sales Asset, Not a Specification Sheet.",
         body: [
           "Most manufacturing websites are organised around internal structure: machines, departments, certifications. Buyers arrive organised around their problem instead.",
           "Reorganising the same information around applications and outcomes often changes enquiry quality before anything is spent on advertising.",
@@ -172,7 +172,7 @@ export const industries: Industry[] = [
       },
     ],
     framework: {
-      heading: "How a B2B buyer actually moves",
+      heading: "How a B2B Buyer Actually Moves",
       intro:
         "A useful frame for where your digital presence may be losing momentum. Every business sits differently on it.",
       steps: [
@@ -248,15 +248,15 @@ export const industries: Industry[] = [
     cardAlt: "Calm professional services office with a consultation table and documents",
     heroImage: professionalHero,
     heroAlt: "Two professionals in a focused consultation across a table with documents",
-    h1Lead: "Digital growth for firms that sell",
-    h1Accent: "expertise.",
+    h1Lead: "Digital Growth for Firms That Sell",
+    h1Accent: "Expertise.",
     heroCopy:
       "Your clients are buying judgement they cannot inspect in advance. Digital's job is to make that judgement visible, credible and easy to act on.",
     metaTitle: "Digital Marketing for Professional Services Firms | DigitalyMarket",
     metaDescription:
       "Digital growth for consultants, accounting firms and specialist practices — make expertise visible, build credibility and generate meaningful enquiries.",
     context: {
-      heading: "How digital growth works in a professional practice",
+      heading: "How Digital Growth Works in a Professional Practice",
       paragraphs: [
         "Professional services are bought on confidence. The client cannot test the outcome before committing, so they look for signals: clarity of thinking, relevance of experience, and how well you understand a situation like theirs.",
         "That makes your digital presence less about promotion and more about demonstration. The firms that grow well online are usually the ones that show how they think, not the ones that describe how good they are.",
@@ -277,7 +277,7 @@ export const industries: Industry[] = [
       ],
     },
     gap: {
-      heading: "Your expertise has deepened. Has your visibility followed?",
+      heading: "Your Expertise Has Deepened. Has Your Visibility Followed?",
       intro:
         "Most established practices already hold the substance. What is often missing is the public surface that lets someone new recognise it.",
       have: [
@@ -296,7 +296,7 @@ export const industries: Industry[] = [
       ],
     },
     stuck: {
-      heading: "Where professional practices get stuck",
+      heading: "Where Professional Practices Get Stuck",
       intro: "Depending on your firm's size and specialism, some of these may apply more than others.",
       items: [
         "Growth is almost entirely referral-dependent and hard to forecast.",
@@ -353,7 +353,7 @@ export const industries: Industry[] = [
     insights: [
       {
         eyebrow: "Strategic insight",
-        title: "Authority is not claimed. It is inferred.",
+        title: "Authority Is Not Claimed. It Is Inferred.",
         body: [
           "Nobody believes a firm because it calls itself a leading practice. They believe it because something they read made a complicated thing simpler.",
           "This is why a single genuinely useful explanation of a problem your clients face will usually outperform a page of credentials. It gives the reader an experience of your judgement instead of a description of it.",
@@ -361,7 +361,7 @@ export const industries: Industry[] = [
       },
       {
         eyebrow: "Strategic insight",
-        title: "Narrowing the message rarely narrows the pipeline.",
+        title: "Narrowing the Message Rarely Narrows the Pipeline.",
         body: [
           "Most practices resist specificity because it feels like turning work away. In practice the opposite tends to happen: a clearly defined focus makes referrals easier to give and makes you easier to remember.",
           "The service range does not have to shrink. The message just has to lead with the client you serve best.",
@@ -369,7 +369,7 @@ export const industries: Industry[] = [
       },
     ],
     framework: {
-      heading: "How a client arrives at a professional firm",
+      heading: "How a Client Arrives at a Professional Firm",
       intro: "A simple way to locate where confidence is being lost.",
       steps: [
         { label: "Trigger", desc: "A problem becomes urgent enough to act on." },
@@ -445,15 +445,15 @@ export const industries: Industry[] = [
     cardAlt: "Warm local service business interior with a welcoming front counter",
     heroImage: localHero,
     heroAlt: "A friendly staff member welcoming a customer at a modern service business counter",
-    h1Lead: "Digital growth for local and",
-    h1Accent: "service businesses.",
+    h1Lead: "Digital Growth for Local and",
+    h1Accent: "Service Businesses.",
     heroCopy:
       "Most local decisions are made quickly, on a phone, between two or three options. The goal is simple: be one of them, and be the easiest to act on.",
     metaTitle: "Digital Marketing for Local & Service Businesses | DigitalyMarket",
     metaDescription:
       "Digital growth for gyms, salons, clinics and local service providers — be discovered by nearby customers, build trust and make it easy to book or call.",
     context: {
-      heading: "How digital growth works for a local business",
+      heading: "How Digital Growth Works for a Local Business",
       paragraphs: [
         "Local buying decisions are fast and comparative. Someone searches, glances at a few options, forms an impression in seconds and acts. There is very little time to persuade.",
         "That compresses everything into three practical questions: can they find you, do they trust you quickly, and is taking the next step effortless. Most local growth problems live in one of those three places.",
@@ -474,7 +474,7 @@ export const industries: Industry[] = [
       ],
     },
     gap: {
-      heading: "Your service is good. Is it easy to find and easy to choose?",
+      heading: "Your Service Is Good. Is It Easy to Find and Easy to Choose?",
       intro:
         "Local businesses usually deliver well in person. The gap tends to sit in the few minutes before a customer ever walks in.",
       have: [
@@ -493,7 +493,7 @@ export const industries: Industry[] = [
       ],
     },
     stuck: {
-      heading: "Where local and service businesses get stuck",
+      heading: "Where Local and Service Businesses Get Stuck",
       intro: "You may recognise a few of these; not every business faces all of them.",
       items: [
         "Customers nearby simply do not know the business exists.",
@@ -549,7 +549,7 @@ export const industries: Industry[] = [
     insights: [
       {
         eyebrow: "Strategic insight",
-        title: "Most local businesses do not have a traffic problem.",
+        title: "Most Local Businesses Do Not Have a Traffic Problem.",
         body: [
           "When we look at a struggling local business, the issue is rarely that nobody visited. It is that the people who visited could not quickly answer their own questions.",
           "Fixing clarity — what you do, what it costs roughly, where you are, how to start — usually produces more enquiries than adding a new channel on top of the same confusion.",
@@ -557,7 +557,7 @@ export const industries: Industry[] = [
       },
       {
         eyebrow: "Strategic insight",
-        title: "Speed of response is a marketing channel.",
+        title: "Speed of Response Is a Marketing Channel.",
         body: [
           "For local services, the business that replies first frequently wins, regardless of who ranked higher.",
           "That makes response handling part of the growth system rather than an operational detail — and it is often the cheapest improvement available.",
@@ -565,7 +565,7 @@ export const industries: Industry[] = [
       },
     ],
     framework: {
-      heading: "The local customer journey",
+      heading: "The Local Customer Journey",
       intro: "Short, fast and easy to lose. Each stage is a place to win or drop the customer.",
       steps: [
         { label: "Need", desc: "Something needs doing, usually soon." },
@@ -641,15 +641,15 @@ export const industries: Industry[] = [
     cardAlt: "Minimal branded e-commerce packaging and products arranged in daylight",
     heroImage: ecommerceHero,
     heroAlt: "Minimal branded product packaging beside a phone showing a clean product page",
-    h1Lead: "Digital growth for",
-    h1Accent: "e-commerce brands.",
+    h1Lead: "Digital Growth for",
+    h1Accent: "E-Commerce Brands.",
     heroCopy:
       "Traffic is rarely the whole story. Growth usually comes from how products are discovered, how they are presented, and what happens after the first order.",
     metaTitle: "E-commerce Growth & Digital Marketing Agency | DigitalyMarket",
     metaDescription:
       "E-commerce growth across product discovery, acquisition, store experience, conversion and retention — built around your catalogue, margins and goals.",
     context: {
-      heading: "How digital growth works in e-commerce",
+      heading: "How Digital Growth Works in E-Commerce",
       paragraphs: [
         "E-commerce is unusually measurable, which makes it easy to optimise the wrong thing. Spend rises, sessions rise, and profitability quietly does not.",
         "The useful view is the whole system: how products get discovered, how well the store converts the attention it already receives, and how much a customer is worth beyond their first purchase. Changing one without the others rarely holds.",
@@ -670,7 +670,7 @@ export const industries: Industry[] = [
       ],
     },
     gap: {
-      heading: "Your catalogue has grown. Has your commerce experience kept up?",
+      heading: "Your Catalogue Has Grown. Has Your Commerce Experience Kept Up?",
       intro:
         "Most stores start simple and accumulate. What worked at fifty orders a month often quietly caps growth later.",
       have: [
@@ -689,7 +689,7 @@ export const industries: Industry[] = [
       ],
     },
     stuck: {
-      heading: "Where e-commerce brands get stuck",
+      heading: "Where E-Commerce Brands Get Stuck",
       intro: "Depending on your category and stage, some of these will matter more than others.",
       items: [
         "Ad costs rise and profitability falls as spend increases.",
@@ -746,7 +746,7 @@ export const industries: Industry[] = [
     insights: [
       {
         eyebrow: "Strategic insight",
-        title: "Most stores scale spend before they fix economics.",
+        title: "Most Stores Scale Spend Before They Fix Economics.",
         body: [
           "Doubling the budget on a store that converts poorly doubles the cost of the same problem. The order matters: conversion and customer value first, scale second.",
           "This is unglamorous work — product pages, objections, delivery clarity, post-purchase flow — but it is what makes paid acquisition survivable at a larger number.",
@@ -754,7 +754,7 @@ export const industries: Industry[] = [
       },
       {
         eyebrow: "Strategic insight",
-        title: "Product discovery is no longer one search box.",
+        title: "Product Discovery Is No Longer One Search Box.",
         body: [
           "Customers now find products through conventional search, social feeds, marketplaces and increasingly through AI-assisted answers that summarise options for them.",
           "That shifts some weight from ranking a page to being clearly described, structured and referenced well enough that systems can represent your products accurately.",
@@ -762,7 +762,7 @@ export const industries: Industry[] = [
       },
     ],
     framework: {
-      heading: "The commerce growth loop",
+      heading: "The Commerce Growth Loop",
       intro: "Growth compounds when each stage feeds the next rather than being optimised alone.",
       steps: [
         { label: "Discover", desc: "The product is found by someone who could want it." },

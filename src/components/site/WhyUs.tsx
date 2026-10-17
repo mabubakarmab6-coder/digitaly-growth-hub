@@ -19,8 +19,8 @@ export function WhyUs() {
         <Reveal>
           <p className="eyebrow text-navy-foreground/70">Why DigitalyMarket</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.75rem]">
-            Marketing experience is useful.
-            <span className="block text-navy-muted">Business experience is better.</span>
+            Marketing Experience Is Useful.
+            <span className="block text-navy-muted">Business Experience Is Better.</span>
           </h2>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
             We've worked close to the business side — selling, managing marketplaces, working with

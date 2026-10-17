@@ -73,8 +73,8 @@ function IndustriesHub() {
             <Reveal className="max-w-3xl">
               <p className="eyebrow">Industries</p>
               <h1 className="mt-5 text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
-                Different businesses grow in{" "}
-                <span className="text-primary">different ways.</span>
+                Different Businesses Grow in{" "}
+                <span className="text-primary">Different Ways.</span>
               </h1>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 A manufacturer being shortlisted by a procurement team and a local service business
@@ -98,7 +98,7 @@ function IndustriesHub() {
             <Reveal className="max-w-2xl">
               <p className="eyebrow">Where we work</p>
               <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-                Four kinds of businesses we understand well.
+                Four Kinds of Businesses We Understand Well.
               </h2>
             </Reveal>
 
@@ -143,7 +143,7 @@ function IndustriesHub() {
             <Reveal className="max-w-2xl">
               <p className="eyebrow">How we approach it</p>
               <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-                Industry knowledge is a starting point, not a template.
+                Industry Knowledge Is a Starting Point, Not a Template.
               </h2>
             </Reveal>
             <ul className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -165,7 +165,7 @@ function IndustriesHub() {
             <Reveal className="mx-auto max-w-3xl text-center">
               <p className="eyebrow text-navy-foreground/70">Don't see your industry?</p>
               <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.9rem]">
-                The principles travel further than the labels.
+                The Principles Travel Further Than the Labels.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
                 If your business isn't listed here, that doesn't mean we can't help. Tell us how your

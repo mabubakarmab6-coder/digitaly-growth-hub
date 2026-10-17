@@ -53,7 +53,7 @@ export function Services() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Services</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Three ways we help businesses grow.
+            Three Ways We Help Businesses Grow.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Choose the capability you need — or bring us the problem and we'll help identify the

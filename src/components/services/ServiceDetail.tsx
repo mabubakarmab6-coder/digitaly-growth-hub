@@ -158,7 +158,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
         <div className="container-page grid gap-6 md:grid-cols-2">
           <Reveal>
             <div className="h-full rounded-2xl border border-border bg-card p-8">
-              <h2 className="text-xl font-semibold text-foreground">This usually fits</h2>
+              <h2 className="text-xl font-semibold text-foreground">This Usually Fits</h2>
               <ul className="mt-6 space-y-4">
                 {service.fitFor.map((f) => (
                   <li key={f} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -171,7 +171,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
           </Reveal>
           <Reveal>
             <div className="h-full rounded-2xl border border-border bg-card p-8">
-              <h2 className="text-xl font-semibold text-foreground">This is the wrong starting point if</h2>
+              <h2 className="text-xl font-semibold text-foreground">This Is the Wrong Starting Point If</h2>
               <ul className="mt-6 space-y-4">
                 {service.notFitFor.map((f) => (
                   <li key={f} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -191,7 +191,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
           <Reveal>
             <p className="eyebrow">FAQ</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-              {service.eyebrow} questions
+              {service.eyebrow} Questions
             </h2>
           </Reveal>
           <Reveal>
@@ -216,7 +216,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
         <div className="container-page">
           <Reveal className="max-w-2xl">
             <h2 className="text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-              Not sure this is the right starting point?
+              Not Sure This Is the Right Starting Point?
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               Most businesses arrive with a problem, not a service in mind. Describe what's happening

@@ -29,7 +29,7 @@ export function Positioning() {
       <div className="container-page">
         <Reveal className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16">
           <h2 className="max-w-md text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Growth shouldn't start with a marketing package.
+            Growth Shouldn't Start With a Marketing Package.
           </h2>
           <p className="max-w-xl self-end text-base leading-relaxed text-muted-foreground sm:text-lg">
             Every business has different challenges, customers and growth opportunities.

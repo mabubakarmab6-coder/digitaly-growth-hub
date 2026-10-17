@@ -19,8 +19,8 @@ export function ServicesHero() {
         <div className="max-w-xl">
           <p className="eyebrow">What we can help you grow</p>
           <h1 className="mt-5 text-[2.15rem] leading-[1.08] font-semibold text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Growth doesn't start with a service. It starts with{" "}
-            <span className="text-gradient-accent">understanding the problem.</span>
+            Growth Doesn't Start With a Service. It Starts With{" "}
+            <span className="text-gradient-accent">Understanding the Problem.</span>
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Tell us where your business is getting stuck. We'll understand the problem first, then

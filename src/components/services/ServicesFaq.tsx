@@ -57,7 +57,7 @@ export function ServicesFaq() {
         <Reveal>
           <p className="eyebrow">FAQ</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-            Questions before you start?
+            Questions Before You Start?
           </h2>
           <a
             href="/#faq"

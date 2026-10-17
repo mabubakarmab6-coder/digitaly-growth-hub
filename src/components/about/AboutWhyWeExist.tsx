@@ -28,7 +28,7 @@ export function AboutWhyWeExist() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Why we exist</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Marketing works better when it answers a business question.
+            Marketing Works Better When It Answers a Business Question.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Fragmented, one-size-fits-all digital work can look busy and still leave the real

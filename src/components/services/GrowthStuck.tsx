@@ -36,7 +36,7 @@ export function GrowthStuck() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Start with the problem</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Where is your growth getting stuck?
+            Where Is Your Growth Getting Stuck?
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             These are situations we see often. You may recognise one, a few, or something different

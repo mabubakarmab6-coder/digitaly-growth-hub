@@ -15,8 +15,8 @@ export function Process() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">How we work</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-            No complicated process.
-            <span className="block text-muted-foreground">Just a clear path to growth.</span>
+            No Complicated Process.
+            <span className="block text-muted-foreground">Just a Clear Path to Growth.</span>
           </h2>
         </Reveal>
 

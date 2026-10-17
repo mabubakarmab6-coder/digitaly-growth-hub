@@ -115,7 +115,7 @@ export function WebCreationPage() {
                 id="web-hero-title"
                 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl"
               >
-                Websites built around your business goals.
+                Websites Built Around Your Business Goals.
               </h1>
             </div>
             <div className="max-w-md">
@@ -138,9 +138,9 @@ export function WebCreationPage() {
             <div>
               <p className="eyebrow">01 / What we build or improve</p>
               <h2 id="web-paths-title" className={heading}>
-                Three starting points.
+                Three Starting Points.
                 <br />
-                Your business decides the path.
+                Your Business Decides the Path.
               </h2>
             </div>
             <p className={`max-w-sm ${copy}`}>
@@ -167,7 +167,7 @@ export function WebCreationPage() {
             <div>
               <p className="eyebrow text-navy-muted">02 / Business-first. Growth-ready.</p>
               <h2 id="web-approach-title" className={heading}>
-                A website is a connected experience.
+                A Website Is a Connected Experience.
               </h2>
             </div>
             <p className="max-w-sm text-base leading-relaxed text-navy-muted">
@@ -180,21 +180,21 @@ export function WebCreationPage() {
               <div>
                 <div className="web-framework-node">
                   <span className="text-sm text-navy-muted">The purpose</span>
-                  <h3 className="mt-2 text-xl font-semibold">Business goals</h3>
+                  <h3 className="mt-2 text-xl font-semibold">Business Goals</h3>
                   <p className="mt-2 text-sm text-navy-muted">What the website needs to support.</p>
                 </div>
                 <div className="web-framework-node">
                   <span className="text-sm text-navy-muted">The people</span>
-                  <h3 className="mt-2 text-xl font-semibold">Audience needs</h3>
+                  <h3 className="mt-2 text-xl font-semibold">Audience Needs</h3>
                   <p className="mt-2 text-sm text-navy-muted">What visitors need to find and do.</p>
                 </div>
               </div>
               <div className="web-framework-center">
                 <Layers className="mx-auto h-8 w-8 text-navy-muted" aria-hidden="true" />
                 <h3 className="mt-5 text-2xl font-semibold">
-                  Your website
+                  Your Website
                   <br />
-                  experience
+                  Experience
                 </h3>
                 <div className="mt-6 flex justify-center gap-2 text-xs text-navy-muted">
                   <span>Discover</span>
@@ -207,14 +207,14 @@ export function WebCreationPage() {
               <div>
                 <div className="web-framework-node">
                   <span className="text-sm text-navy-muted">The experience</span>
-                  <h3 className="mt-2 text-xl font-semibold">UX & interface design</h3>
+                  <h3 className="mt-2 text-xl font-semibold">UX & Interface Design</h3>
                   <p className="mt-2 text-sm text-navy-muted">
                     Clear structure and purposeful interactions.
                   </p>
                 </div>
                 <div className="web-framework-node">
                   <span className="text-sm text-navy-muted">The foundation</span>
-                  <h3 className="mt-2 text-xl font-semibold">Technology & readiness</h3>
+                  <h3 className="mt-2 text-xl font-semibold">Technology & Readiness</h3>
                   <p className="mt-2 text-sm text-navy-muted">
                     Maintainability, discovery and conversion.
                   </p>
@@ -232,7 +232,7 @@ export function WebCreationPage() {
         <div className="container-page">
           <p className="eyebrow">03 / The website project process</p>
           <h2 id="web-process-title" className={heading}>
-            A clear path from idea to launch.
+            A Clear Path From Idea to Launch.
           </h2>
           <p className={`mt-4 max-w-xl ${copy}`}>
             Six practical stages. The depth and sequence adapt to your requirements and agreed
@@ -256,7 +256,7 @@ export function WebCreationPage() {
             <div>
               <p className="eyebrow">04 / Quality & growth foundations</p>
               <h2 id="web-quality-title" className={heading}>
-                Beyond how it looks.
+                Beyond How It Looks.
               </h2>
               <p className={`mt-5 max-w-sm ${copy}`}>
                 The details underneath the design matter too. We consider the foundations relevant
@@ -303,7 +303,7 @@ export function WebCreationPage() {
           <div>
             <p className="eyebrow">05 / Scope & post-launch support</p>
             <h2 id="web-scope-title" className={heading}>
-              You don't need every detail figured out.
+              You Don't Need Every Detail Figured Out.
             </h2>
             <p className={`mt-5 ${copy}`}>
               Start with your business, your current website and what you want to change. Discovery
@@ -339,7 +339,7 @@ export function WebCreationPage() {
           <div className="max-w-xl">
             <p className="eyebrow text-navy-muted">Your next website starts here</p>
             <h2 id="web-final-title" className={heading}>
-              Make your website work for your business.
+              Make Your Website Work for Your Business.
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-navy-muted">
               Tell us what you're building or improving. Let's identify the right website approach

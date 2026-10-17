@@ -32,7 +32,7 @@ export function AboutWhoWeWorkWith() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Who we work with</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            We adapt the growth solution to the business — not the other way around.
+            We Adapt the Growth Solution to the Business — Not the Other Way Around.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             We work with businesses globally, with a strong understanding of the Indian market. What

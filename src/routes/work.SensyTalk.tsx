@@ -258,7 +258,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Project overview"
-              heading="A high-performance SaaS platform trapped behind an outdated web storefront."
+              heading="A High-Performance SaaS Platform Trapped Behind an Outdated Web Storefront."
               intro="SensyTalk is an official Meta WhatsApp Business Solution Partner (BSP) with enterprise-grade tech: 24/7 AI chatbots, a multi-agent shared inbox, and the SensyConnect telecalling CRM Android app. DigitalyMarket led an end-to-end transformation to align their web presence with enterprise buyer expectations."
             />
             <dl className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -286,7 +286,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Execution pipeline"
-              heading="Evidence first. Code second."
+              heading="Evidence First. Code Second."
               intro="We never start with guesswork or generic templates. The redesign moved through a deliberate sequence grounded in empirical audit findings."
             />
             <div className="mt-10">
@@ -309,7 +309,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="The challenge"
-              heading="Great infrastructure. Multiple conversion bottlenecks."
+              heading="Great Infrastructure. Multiple Conversion Bottlenecks."
               intro="Despite strong underlying technology, our deep inspection of the legacy WordPress/Elementor codebase uncovered critical conversion leaks that broke the buyer journey before trust could be established."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -334,7 +334,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Strategic Objectives"
-              heading="Five pillars of the transformation."
+              heading="Five Pillars of the Transformation."
               intro="Every architectural decision was tied directly to friction reduction and buyer psychological clarity."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -358,7 +358,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Positioning & Messaging"
-              heading="From technical feature jargon to commercial urgency."
+              heading="From Technical Feature Jargon to Commercial Urgency."
               intro="We completely re-anchored the messaging around customer drop-off reduction, speed-to-reply, and verified Meta market benchmarks."
             />
             <div className="mt-12 overflow-x-auto rounded-3xl border border-hairline bg-card shadow-soft">
@@ -395,7 +395,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="UX/UI & Visual System"
-              heading="High-contrast obsidian & emerald architecture."
+              heading="High-Contrast Obsidian & Emerald Architecture."
               intro="Inspired by modern developer-first SaaS benchmarks (Linear, Supabase, Stripe), we engineered a WCAG AA-compliant visual system with an 11.4:1 contrast ratio."
             />
             
@@ -440,7 +440,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Front-End Architecture"
-              heading="Zero bloat. Instant execution."
+              heading="Zero Bloat. Instant Execution."
               intro="We replaced fragile page builders with a clean, decoupled React 19 Single Page Application."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -467,7 +467,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Evidence & Transparency"
-              heading="Radical honesty. Zero fabricated metrics."
+              heading="Radical Honesty. Zero Fabricated Metrics."
               intro="At DigitalyMarket, we adhere to strict evidence governance. We distinguish clearly between what was observed, what was implemented, and what remains pending."
             />
             <div className="mt-10 rounded-3xl border-l-4 border-primary bg-card p-8 shadow-soft">
@@ -486,7 +486,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <Reveal className="rounded-3xl border border-hairline bg-gradient-to-br from-card via-surface to-card p-10 sm:p-16 text-center shadow-lift">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-                Is your SaaS trapped behind an outdated website?
+                Is Your SaaS Trapped Behind an Outdated Website?
               </h2>
               <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
                 We combine deep CRO audits, B2B outcome positioning, and modern front-end engineering to turn websites into 24/7 revenue engines.

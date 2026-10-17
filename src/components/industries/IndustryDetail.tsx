@@ -118,7 +118,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
             <Reveal className="rounded-2xl border border-hairline bg-card p-8 shadow-soft">
               <h3 className="text-sm font-semibold tracking-wide text-muted-foreground uppercase">
-                What you already have
+                What You Already Have
               </h3>
               <ul className="mt-6 space-y-3">
                 {industry.gap.have.map((item) => (
@@ -131,7 +131,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
             </Reveal>
             <Reveal delay={100} className="rounded-2xl border border-hairline bg-card p-8 shadow-soft">
               <h3 className="text-sm font-semibold tracking-wide text-muted-foreground uppercase">
-                What growth now asks for
+                What Growth Now Asks For
               </h3>
               <ul className="mt-6 space-y-3">
                 {industry.gap.need.map((item) => (
@@ -177,7 +177,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
           <Reveal className="max-w-2xl">
             <p className="eyebrow">Challenges</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-              What tends to hold growth back — and why it matters.
+              What Tends to Hold Growth Back — and Why It Matters.
             </h2>
           </Reveal>
           <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -203,7 +203,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
           <Reveal className="max-w-2xl">
             <p className="eyebrow">From challenge to opportunity</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-              Every constraint points to a practical next move.
+              Every Constraint Points to a Practical Next Move.
             </h2>
           </Reveal>
           <ul className="mt-12 space-y-5">
@@ -291,7 +291,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
           <Reveal className="max-w-2xl">
             <p className="eyebrow">What we look at</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-              How we evaluate a business in this space.
+              How We Evaluate a Business in This Space.
             </h2>
           </Reveal>
           <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -313,7 +313,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
           <Reveal>
             <p className="eyebrow">FAQ</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl">
-              Questions from {industry.shortName.toLowerCase()} businesses.
+              Questions From {industry.shortName} Businesses.
             </h2>
           </Reveal>
           <Reveal delay={100}>
@@ -340,7 +340,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
             <Reveal className="max-w-2xl">
               <p className="eyebrow">Related industries</p>
               <h2 className="mt-4 text-2xl font-semibold text-foreground sm:text-3xl">
-                Explore other businesses we work with.
+                Explore Other Businesses We Work With.
               </h2>
             </Reveal>
             <ul className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -374,7 +374,7 @@ export function IndustryDetail({ industry }: { industry: Industry }) {
           <Reveal className="mx-auto max-w-3xl text-center">
             <p className="eyebrow text-navy-foreground/70">Let's talk</p>
             <h2 className="mt-4 text-3xl leading-[1.15] font-semibold sm:text-4xl lg:text-[2.9rem]">
-              Tell us about your business — we'll help identify the right path.
+              Tell Us About Your Business — We'll Help Identify the Right Path.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-navy-foreground/75 sm:text-lg">
               You don't need to arrive with a brief. Share where things are today and what feels
