@@ -10,17 +10,18 @@ const agencyLinks = [
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Work", href: "/work" },
-  { label: "About", href: "/about" },
   { label: "Insights", href: "/insights" },
+  { label: "About", href: "/about" },
+  { label: "About Founder", href: "/about#founder" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: INQUIRY_PATH },
 ];
 
-const personalLinks = [
-  { label: "Abubakar", href: "/#founder" },
-  { label: "Experience", href: "/#founder" },
-  { label: "Portfolio", href: "/work" },
-  { label: "Hire Me", href: INQUIRY_PATH },
+const serviceLinks = [
+  { label: "All Services", href: "/services" },
+  { label: "Generative Engine Optimization", href: "/services/GEO" },
+  { label: "Paid Marketing", href: "/services/paid-marketing" },
+  { label: "Website Creation", href: "/services/web-creation" },
 ];
 
 export function SiteFooter() {
