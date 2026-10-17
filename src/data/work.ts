@@ -1,5 +1,8 @@
 export const GEMS_GALLERY_LIVE_URL = "https://lapidary-lab-suite.vercel.app/";
 
+/** Project featured in the homepage Work section. */
+export const FEATURED_WORK_SLUG = "SensyTalk";
+
 export type ServiceStatus = "Completed" | "Ongoing" | "Planned" | "Not Applicable";
 
 export interface ProjectServiceArea {

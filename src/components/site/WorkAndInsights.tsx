@@ -3,10 +3,13 @@ import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";
 import { INQUIRY_PATH } from "./constants";
 import { blogPosts } from "@/data/blog";
-import { workProjects } from "@/data/work";
+import { FEATURED_WORK_SLUG, workProjects } from "@/data/work";
 import { Link } from "@tanstack/react-router";
 
 export function WorkAndInsights() {
+  const featured =
+    workProjects.find((project) => project.slug === FEATURED_WORK_SLUG) ?? workProjects[0];
+
   return (
     <>
       <section id="work" className="section-y">
@@ -29,13 +32,13 @@ export function WorkAndInsights() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-surface opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end z-10">
                   <span className="w-fit rounded-full border border-hairline bg-card/80 backdrop-blur-sm px-3 py-1 text-[0.65rem] font-bold tracking-wider text-primary uppercase mb-3">
-                    {workProjects[0]?.category || "Website Development"}
+                    {featured?.category || "Website Development"}
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground">{workProjects[0]?.title || "Digital Portfolio"}</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground">{featured?.title || "SensyTalk"}</h3>
                   <p className="mt-2 text-sm sm:text-base text-muted-foreground line-clamp-2">
-                    {workProjects[0]?.shortDescription || "A modern, high-performance portfolio website engineered to showcase creative design, in-depth case studies, and digital marketing expertise."}
+                    {featured?.shortDescription || "A high-converting B2B SaaS experience engineered around evidence, clarity and product proof."}
                   </p>
-                  <Link to="/work/$slug" params={{ slug: workProjects[0]?.slug || "gemstone-gallery" }} className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3 relative z-20">
+                  <Link to="/work/$slug" params={{ slug: featured?.slug || FEATURED_WORK_SLUG }} className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3 relative z-20">
                     View Project <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
