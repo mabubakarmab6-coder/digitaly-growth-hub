@@ -29,3 +29,4 @@
 
 - [x] Feature SensyTalk in the homepage Work section instead of Gems Gallery.
 - [x] Point the site's LinkedIn link at the official DigitalyMarket company page.
+- [x] Show the published email address alongside Instagram and LinkedIn contact buttons.
