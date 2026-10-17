@@ -40,10 +40,10 @@ export function Credibility() {
 
         <Reveal className="mt-10">
           <a
-            href="#founder"
+            href="/about#founder"
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
           >
-            Explore Abubakar's Experience <ArrowRight className="h-4 w-4" />
+            Meet Our Leadership &amp; Growth Philosophy <ArrowRight className="h-4 w-4" />
           </a>
         </Reveal>
       </div>

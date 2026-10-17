@@ -36,20 +36,20 @@ export function Founder() {
         </Reveal>
 
         <Reveal delay={120}>
-          <p className="eyebrow">Founder</p>
+          <p className="eyebrow">Leadership</p>
           <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Meet the person behind the growth mindset.
+            Agency leadership grounded in commercial execution.
           </h2>
           <p className="mt-6 text-lg font-semibold text-foreground">Mohammad Abubakar</p>
-          <p className="text-sm text-primary">Founder &amp; Growth Strategist</p>
+          <p className="text-sm text-primary">Founder &amp; Principal Growth Strategist</p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            E-commerce, growth marketing, business development and digital strategy — brought
-            together to help businesses make smarter digital decisions.
+            DigitalyMarket was founded on a direct principle: digital marketing should be measured
+            by commercial business outcomes, customer acquisition economics, and qualified pipeline.
           </p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Abubakar's career has moved across sales, e-commerce, marketplaces, operations, business
-            development and entrepreneurship. DigitalyMarket brings those experiences together into
-            a modern approach to digital growth.
+            With a background spanning commercial sales, e-commerce, marketplace scale, B2B operations,
+            and multi-channel growth systems, Abubakar leads the agency's strategic advisory and
+            growth architecture for ambitious clients.
           </p>
           <ul className="mt-7 flex flex-wrap gap-2">
             {highlights.map((item) => (
@@ -63,10 +63,10 @@ export function Founder() {
           </ul>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Cta href={INQUIRY_PATH} size="lg">
-              Explore Abubakar's Profile <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              Start a Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href={INQUIRY_PATH} variant="outline" size="lg">
-              Looking to Hire?
+            <Cta href="/about" variant="outline" size="lg">
+              Our Strategic Methodology
             </Cta>
           </div>
         </Reveal>

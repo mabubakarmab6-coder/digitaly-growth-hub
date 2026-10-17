@@ -26,8 +26,8 @@ export function AboutFinalCta() {
             >
               Start a Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href="/#founder" variant="outlineNavy" size="lg" className="w-full sm:w-auto">
-              Meet Mohammad Abubakar Siddiqui
+            <Cta href="/work" variant="outlineNavy" size="lg" className="w-full sm:w-auto">
+              Explore Our Case Studies
             </Cta>
           </div>
           <ContactActions tone="navy" className="mt-8 justify-center" />

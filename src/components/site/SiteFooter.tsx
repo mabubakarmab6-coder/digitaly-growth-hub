@@ -86,9 +86,17 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 flex flex-col-reverse items-start gap-6 border-t border-hairline pt-6 md:flex-row md:items-center md:justify-between">
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} DigitalyMarket. Digital growth agency.
-          </p>
+          <div className="flex flex-wrap items-center gap-6 text-xs text-muted-foreground">
+            <p>
+              © {new Date().getFullYear()} DigitalyMarket. Digital growth agency.
+            </p>
+            <a href="/privacy" className="transition-colors hover:text-foreground">
+              Privacy Policy
+            </a>
+            <a href="/sitemap.xml" className="transition-colors hover:text-foreground">
+              Sitemap
+            </a>
+          </div>
           <ContactActions />
         </div>
       </div>

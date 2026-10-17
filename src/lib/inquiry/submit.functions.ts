@@ -31,6 +31,13 @@ export const submitInquiry = createServerFn({ method: "POST" })
       if (countError) throw new Error("Could not validate this enquiry.");
       if ((count ?? 0) >= 3) throw new Error("Please wait before sending another enquiry.");
 
+      const sanitizedSourcePage =
+        !data.sourcePage ||
+        data.sourcePage === "/start" ||
+        data.sourcePage.startsWith("/start?")
+          ? "/"
+          : data.sourcePage;
+
       const { error } = await supabaseAdmin.from("inquiries").insert({
         id: inquiryId,
         full_name: data.fullName,
@@ -40,7 +47,7 @@ export const submitInquiry = createServerFn({ method: "POST" })
         selected_service: data.selectedService,
         additional_context: data.businessAndChallenge || null,
         source_service: data.sourceService || null,
-        source_page: data.sourcePage || null,
+        source_page: sanitizedSourcePage,
         consent: true,
       });
 
@@ -67,7 +74,7 @@ export const submitInquiry = createServerFn({ method: "POST" })
             selectedService: data.selectedService,
             businessAndChallenge: data.businessAndChallenge,
             sourceService: data.sourceService,
-            sourcePage: data.sourcePage,
+            sourcePage: sanitizedSourcePage,
             submittedAt: new Date().toUTCString(),
           },
         });

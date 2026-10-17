@@ -66,7 +66,11 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   const submit = useServerFn(submitInquiry);
 
   const openInquiry = useCallback((sourceService?: string) => {
-    const sourcePage = `${window.location.pathname}${window.location.search}`.slice(0, 500);
+    let sourcePage = `${window.location.pathname}${window.location.search}`.slice(0, 500);
+    // Sanitize sourcePage: ensure /start is never stored
+    if (!sourcePage || sourcePage === "/start" || sourcePage.startsWith("/start?")) {
+      sourcePage = "/";
+    }
     const service = normalizeService(sourceService || sourcePage);
     setDone(false);
     setSubmitError("");
@@ -84,10 +88,22 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("inquire") === "true" || window.location.hash === "#inquire") {
+      openInquiry();
+      const cleanUrl = window.location.pathname;
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+  }, [openInquiry]);
+
+  useEffect(() => {
     const interceptInquiryLinks = (event: MouseEvent) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
-      const link = target.closest<HTMLAnchorElement>('a[href="/start"], a[href$="/start"]');
+      const link = target.closest<HTMLAnchorElement>(
+        'a[href="/start"], a[href$="/start"], a[href="#inquire"], a[data-inquiry]',
+      );
       if (
         !link ||
         event.button !== 0 ||
@@ -146,10 +162,18 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
     }
     setSubmitting(true);
     setSubmitError("");
+    const sanitizedSourcePage =
+      !parsed.data.sourcePage ||
+      parsed.data.sourcePage === "/start" ||
+      parsed.data.sourcePage.startsWith("/start?")
+        ? "/"
+        : parsed.data.sourcePage;
+
     try {
       const result = await submit({
         data: {
           ...parsed.data,
+          sourcePage: sanitizedSourcePage,
           userAgent: navigator.userAgent.slice(0, 1000),
           submissionId: pendingSubmission.current?.id,
         },
@@ -157,7 +181,7 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       if (!result.ok) throw new Error("Submission was not accepted");
       pendingSubmission.current = null;
       trackInquiry("inquiry_form_submitted", {
-        source_page: parsed.data.sourcePage || "unknown",
+        source_page: sanitizedSourcePage,
         source_service: parsed.data.sourceService || "general",
         selected_service: parsed.data.selectedService,
       });

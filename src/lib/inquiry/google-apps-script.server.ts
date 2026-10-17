@@ -4,6 +4,13 @@ const ENDPOINT =
   "https://script.google.com/macros/s/AKfycbwZWN7iUPZCDoOdet5g1q0GOllRTb4-dYwR2XFePaJ5hEGfzDAK0yf4ZWb8BT7ezUg4/exec";
 
 export function mapGoogleInquiry(data: ValidatedInquiry, submissionId: string) {
+  const sanitizedSourcePage =
+    !data.sourcePage ||
+    data.sourcePage === "/start" ||
+    data.sourcePage.startsWith("/start?")
+      ? "/"
+      : data.sourcePage;
+
   return {
     fullName: data.fullName,
     workEmail: data.workEmail,
@@ -20,7 +27,7 @@ export function mapGoogleInquiry(data: ValidatedInquiry, submissionId: string) {
     selectedService: data.selectedService,
     businessAndChallenge: data.businessAndChallenge,
     sourceService: data.sourceService,
-    sourcePage: data.sourcePage,
+    sourcePage: sanitizedSourcePage,
     submissionId,
   };
 }

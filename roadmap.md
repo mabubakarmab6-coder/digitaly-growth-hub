@@ -32,3 +32,6 @@
 - [x] Show the published email address alongside Instagram and LinkedIn contact buttons.
 - [x] Label the email button "Email" so it matches the Instagram and LinkedIn buttons, keeping the address in its accessible name.
 - [x] Move the footer contact buttons into the full-width bottom row so all three sit together on one line.
+- [x] Reposition Abubakar as Founder & Principal Growth Strategist across homepage, About page, and credibility sections (eliminating solo/recruiter CTAs).
+- [x] Sanitize `/start` references before Supabase database insertion and Google Apps Script forwarding, redirect direct `/start` hits to `/?inquire=true`, and add Supabase migration to clean historical entries.
+- [x] Add Privacy Policy and Sitemap links to the footer bottom row.

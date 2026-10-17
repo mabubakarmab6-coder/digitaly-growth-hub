@@ -27,12 +27,12 @@ export function WhyUs() {
             customers, improving operations and building growth initiatives. That experience shapes
             how we approach digital marketing today.
           </p>
-          <Cta href="#founder" variant="onNavy" size="lg" className="mt-9">
-            Meet Abubakar <ArrowRight className="h-4 w-4" />
+          <Cta href="/about#founder" variant="onNavy" size="lg" className="mt-9">
+            Our Leadership &amp; Methodology <ArrowRight className="h-4 w-4" />
           </Cta>
           <p className="mt-6 max-w-md text-xs leading-relaxed text-navy-foreground/50">
-            This is founder experience across previous roles and ventures — not a list of
-            DigitalyMarket clients.
+            Founded on real commercial execution across previous enterprises and ventures — shaping
+            every client growth system we build.
           </p>
         </Reveal>
 
