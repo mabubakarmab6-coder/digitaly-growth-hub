@@ -16,7 +16,7 @@ const pillars = [
   },
   {
     label: "Expertise",
-    copy: "A working command of modern discovery, paid acquisition, website conversion, e-commerce growth and marketplace performance.",
+    copy: "A working command of website conversion, paid acquisition, modern discovery, e-commerce growth and marketplace performance.",
   },
   {
     label: "Evidence",
