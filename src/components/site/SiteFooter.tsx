@@ -27,7 +27,7 @@ const serviceLinks = [
 export function SiteFooter() {
   return (
     <footer className="border-t border-hairline bg-background">
-      <div className="container-page py-14 md:py-20">
+      <div className="container-page pt-14 pb-28 md:pt-20 md:pb-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div className="max-w-xs">
             <a href="/" aria-label="DigitalyMarket home" className="inline-block">
