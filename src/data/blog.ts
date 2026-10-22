@@ -87,6 +87,30 @@ export const blogPosts: BlogPost[] = [
         <li>Scalable, predictable business growth</li>
       </ul>
 
+      <h2 class="text-3xl font-bold mt-8 mb-4">How the Channels Work Together</h2>
+      <p class="mb-4">The biggest mistake businesses make is treating each channel as a separate project. In practice, digital marketing works as a connected system:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Your website is the foundation.</strong> Every channel—ads, search, social, email—eventually sends people to your website. If the site is slow, unclear, or hard to use on a phone, money spent on traffic is wasted. This is why we treat <a href="/services/web-creation" class="text-primary hover:underline">website creation</a> as the starting point of any growth plan.</li>
+        <li><strong>Content feeds SEO and GEO.</strong> The articles and guides you publish answer the questions your buyers type into Google—or ask AI assistants. Strong answers earn rankings in search results and citations in AI-generated responses.</li>
+        <li><strong>Paid ads accelerate what already works.</strong> <a href="/services/paid-marketing" class="text-primary hover:underline">Paid marketing</a> delivers immediate visibility while organic efforts build. It also generates data fast: you learn which messages and audiences convert, then apply those lessons everywhere else.</li>
+        <li><strong>Email and social retain the attention you earn.</strong> Most visitors will not buy on their first visit. Staying in touch turns one-time visitors into repeat customers and referrals.</li>
+      </ul>
+      <p class="mb-4">A business that runs these channels in isolation pays more for worse results. A business that connects them compounds the return on every rupee or dollar spent.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">Common Digital Marketing Mistakes to Avoid</h2>
+      <p class="mb-4">After working with businesses across manufacturing, professional services, local markets, and e-commerce, we see the same avoidable mistakes repeated:</p>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Buying traffic before fixing the website.</strong> Ads cannot compensate for a confusing or slow site. Fix the destination first.</li>
+        <li><strong>Chasing every new platform.</strong> Being average on six channels loses to being excellent on two. Choose channels based on where your buyers actually are.</li>
+        <li><strong>Expecting instant results from SEO.</strong> Organic search typically takes months to build momentum. Plan for it as a long-term asset, not a quick win, and use paid channels for immediate pipeline.</li>
+        <li><strong>Measuring vanity metrics.</strong> Likes and impressions feel good but do not pay salaries. Track enquiries, qualified leads, and revenue instead.</li>
+        <li><strong>Setting and forgetting.</strong> Digital marketing rewards continuous testing. Markets, competitors, and platforms change; your strategy should too.</li>
+      </ol>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">What Results Should You Realistically Expect?</h2>
+      <p class="mb-4">Honest expectations matter more than big promises. Paid campaigns can generate enquiries within days of launch, but need testing budget and iteration before they become efficient. SEO and content typically take three to six months to show meaningful traction, then compound. GEO—being recommended by AI assistants—is newer still, and depends heavily on how clearly your business entity, services, and expertise are described across the web.</p>
+      <p class="mb-4">No reputable agency can guarantee a specific ranking or a fixed number of leads. What a good partner can guarantee is a disciplined process: diagnose before prescribing, measure everything, and tell you plainly what is working and what is not.</p>
+
       <h2 class="text-3xl font-bold mt-8 mb-4">How to Start With Digital Marketing</h2>
       <p class="mb-4">If you are new to digital marketing, getting started can feel overwhelming. Follow these practical steps:</p>
       <ol class="list-decimal pl-6 mb-4 space-y-2">
