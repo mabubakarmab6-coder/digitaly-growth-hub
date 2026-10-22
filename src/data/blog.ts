@@ -17,6 +17,7 @@ export const blogPosts: BlogPost[] = [
     title: "What Is Digital Marketing? A Practical Guide for Business Owners",
     description: "Discover exactly what digital marketing is, how it works, and why it is essential for modern business growth. A beginner-friendly guide covering key channels and strategies.",
     publishDate: "2026-08-05",
+    modifiedDate: "2026-10-22",
     author: "Mohammad Abubakar",
     content: `
       <p class="mb-4">If you own a business today, you have probably been told that you need to be online. But <strong>what is digital marketing</strong>, exactly? And more importantly, how does it actually help your business grow?</p>
