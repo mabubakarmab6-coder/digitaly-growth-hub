@@ -123,6 +123,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-3xl font-bold mt-8 mb-4">Final Takeaway</h2>
       <p class="mb-4">Answering "what is digital marketing" is simple: it is the most effective way to grow your business in the modern world. By understanding your audience and leveraging the right digital channels, you can turn online attention into real-world revenue.</p>
+      <p class="mb-4">Ready to see how this applies to your business? <a href="/start" class="text-primary hover:underline">Start a conversation with DigitalyMarket</a> and we will help you identify the channels worth your investment. To go deeper, read our step-by-step guide on <a href="/insights/how-does-digital-marketing-work" class="text-primary hover:underline">how digital marketing works in practice</a>.</p>
       <p class="mb-4">This guide is written by Mohammad Abubakar, founder of DigitalyMarket. Learn more <a href="/about" class="text-primary hover:underline">about DigitalyMarket and how we work</a>.</p>
     `
   }
