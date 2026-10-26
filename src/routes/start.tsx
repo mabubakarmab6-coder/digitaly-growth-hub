@@ -12,8 +12,9 @@ export const Route = createFileRoute("/start")({
       { property: "og:title", content: "Start a Conversation | DigitalyMarket" },
       { property: "og:description", content: "Start a conversation with DigitalyMarket." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://digitalymarket.com/start" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://digitalymarket.com/" }],
+    links: [{ rel: "canonical", href: "https://digitalymarket.com/start" }],
   }),
 });
