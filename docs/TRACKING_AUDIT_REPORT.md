@@ -26,8 +26,8 @@
 | **Google Tag Manager** | `GTM-KKPZ3XL5` | Inline `<head>` script + `<body>` `<noscript>` iframe | All Pages | <span style="color:green">**Active & Healthy**</span> |
 | **Google Search Console** | `EqZrtxdyQDmh6l_BsNxR0UcG4vSvrwSC1RTfYNEgfc8` | `<meta name="google-site-verification">` | Head Meta Tag | <span style="color:green">**Active & Verified**</span> |
 | **Google Analytics 4 (GA4)** | `G-Y4C6BMK9WG` | GTM Tag ID `7` (`__googtag`) | `gtm.init` (Page Initialization) | <span style="color:green">**Active (Basic Only)**</span> |
-| **Meta (Facebook) Pixel #1** | `1615445166763879` | Hardcoded in root HTML `<script>` & `<noscript>` | Immediate Execution | <span style="color:orange">**Redundant / Conflict**</span> |
-| **Meta (Facebook) Pixel #2** | `1791505495459296` | GTM Tag ID `10` (Custom HTML) | `gtm.init` (All Pages) | <span style="color:orange">**Redundant / Conflict**</span> |
+| **Meta (Facebook) Pixel #1** | `1615445166763879` | ~~Hardcoded in root HTML `<script>` & `<noscript>`~~ | Removed from code | <span style="color:gray">**REMOVED / DECOMMISSIONED**</span> |
+| **Meta (Facebook) Pixel #2** | `1791505495459296` | GTM Tag ID `10` (Custom HTML) | `gtm.init` (All Pages) | <span style="color:green">**Active (Sole Authorized Pixel)**</span> |
 | **Google Ads Remarketing** | `AW-10976434396` | GTM Tag ID `5` (`__sp`) | `gtm.init` (All Pages) | <span style="color:green">**Active**</span> |
 | **Google Ads Conversion** | ID: `10976434396`<br>Label: `qNK4CNzkxOMcENyx_PEo` | GTM Tag ID `6` (`__awct`) | `gtm.js` (Container Loaded / All Pages) | <span style="color:red">**🚨 CRITICAL ERROR**</span> |
 | **Microsoft Clarity** | `y55ed0nfer` | GTM Tag ID `12` (Clarity Template) | `gtm.js` (All Pages) | <span style="color:green">**Active & Recording**</span> |
