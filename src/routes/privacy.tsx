@@ -54,7 +54,7 @@ const sections: { heading: string; body: string[] }[] = [
   {
     heading: "Analytics",
     body: [
-      "We use standard website analytics to understand how pages are used — for example how many people begin or complete an enquiry. The free-text answers you write in the enquiry are never sent to analytics tools.",
+      "This website does not use analytics, advertising pixels or tracking cookies. We do not record which pages you visit.",
     ],
   },
   {

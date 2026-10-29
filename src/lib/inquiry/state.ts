@@ -30,16 +30,3 @@ export function clearDraft() {
     /* no-op */
   }
 }
-
-type DataLayerWindow = Window & { dataLayer?: Record<string, unknown>[] };
-
-/**
- * Pushes inquiry funnel events into the existing GTM dataLayer.
- * Free-text answers are never sent — only counts and non-sensitive selections.
- */
-export function trackInquiry(event: string, params: Record<string, string | number> = {}) {
-  if (typeof window === "undefined") return;
-  const w = window as DataLayerWindow;
-  w.dataLayer = w.dataLayer || [];
-  w.dataLayer.push({ event, ...params });
-}
