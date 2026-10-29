@@ -46,8 +46,6 @@ export const submitInquiry = createServerFn({ method: "POST" })
         country: "",
         selected_service: data.selectedService,
         additional_context: data.businessAndChallenge || null,
-        source_service: data.sourceService || null,
-        source_page: sanitizedSourcePage,
         consent: true,
       });
 
@@ -73,8 +71,8 @@ export const submitInquiry = createServerFn({ method: "POST" })
             companyName: data.companyName,
             selectedService: data.selectedService,
             businessAndChallenge: data.businessAndChallenge,
-            sourceService: data.sourceService,
-            sourcePage: sanitizedSourcePage,
+            sourceService: "",
+            sourcePage: "",
             submittedAt: new Date().toUTCString(),
           },
         });

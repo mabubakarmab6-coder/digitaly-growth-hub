@@ -26,8 +26,8 @@ export function mapGoogleInquiry(data: ValidatedInquiry, submissionId: string) {
     userAgent: data.userAgent,
     selectedService: data.selectedService,
     businessAndChallenge: data.businessAndChallenge,
-    sourceService: data.sourceService,
-    sourcePage: sanitizedSourcePage,
+    sourceService: "",
+    sourcePage: "",
     submissionId,
   };
 }

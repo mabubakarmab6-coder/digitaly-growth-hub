@@ -108,13 +108,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
-    scripts: [
-      {
-        type: "text/javascript",
-        children:
-          "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KKPZ3XL5');",
-      },
-    ],
   }),
 
   shellComponent: RootShell,
@@ -130,14 +123,6 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KKPZ3XL5"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
         {children}
         <Scripts />
       </body>
@@ -147,21 +132,6 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  const router = useRouter();
-
-  // Meta Pixel: the base code in <head> fires the initial PageView.
-  // Track only subsequent client-side navigations to avoid duplicates.
-  useEffect(() => {
-    let lastPath = typeof window !== "undefined" ? window.location.pathname : "";
-    const unsubscribe = router.subscribe("onResolved", () => {
-      const nextPath = window.location.pathname;
-      if (nextPath === lastPath) return;
-      lastPath = nextPath;
-      const fbq = (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq;
-      if (typeof fbq === "function") fbq("track", "PageView");
-    });
-    return unsubscribe;
-  }, [router]);
 
   return (
     <QueryClientProvider client={queryClient}>

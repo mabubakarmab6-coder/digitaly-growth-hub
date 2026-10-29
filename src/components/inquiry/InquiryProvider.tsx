@@ -15,7 +15,7 @@ import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/compone
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { inquiryInputSchema, SERVICE_OPTIONS, type InquiryDraft } from "@/lib/inquiry/config";
-import { clearDraft, loadDraft, saveDraft, trackInquiry } from "@/lib/inquiry/state";
+import { clearDraft, loadDraft, saveDraft } from "@/lib/inquiry/state";
 import { submitInquiry } from "@/lib/inquiry/submit.functions";
 import { Field, TextArea, TextInput } from "./fields";
 
@@ -81,10 +81,6 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       selectedService: current.selectedService || service,
     }));
     setOpen(true);
-    trackInquiry("inquiry_popup_open", {
-      source_page: sourcePage,
-      source_service: service || "general",
-    });
   }, []);
 
   useEffect(() => {
@@ -130,10 +126,6 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   const update = <K extends keyof InquiryDraft>(key: K, value: InquiryDraft[K]) => {
     if (!formStarted.current) {
       formStarted.current = true;
-      trackInquiry("inquiry_form_started", {
-        source_page: draft.sourcePage || "unknown",
-        source_service: draft.sourceService || "general",
-      });
     }
     setDraft((current) => ({ ...current, [key]: value }));
     setErrors((current) => ({ ...current, [key]: undefined }));
@@ -180,11 +172,6 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
       });
       if (!result.ok) throw new Error("Submission was not accepted");
       pendingSubmission.current = null;
-      trackInquiry("inquiry_form_submitted", {
-        source_page: sanitizedSourcePage,
-        source_service: parsed.data.sourceService || "general",
-        selected_service: parsed.data.selectedService,
-      });
       clearDraft();
       setDraft({
         fullName: "",
@@ -204,10 +191,6 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
         "Enquiry submission failed: the server did not confirm delivery. Answers have been retained.",
       );
       setSubmitError("Something went wrong while sending your enquiry. Please try again.");
-      trackInquiry("inquiry_form_error", {
-        source_page: parsed.data.sourcePage || "unknown",
-        source_service: parsed.data.sourceService || "general",
-      });
     } finally {
       submissionInFlight.current = false;
       setSubmitting(false);
