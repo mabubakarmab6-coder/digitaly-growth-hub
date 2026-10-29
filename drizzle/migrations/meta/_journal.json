@@ -43,6 +43,13 @@
       "when": 1791174884731,
       "tag": "0005_restrict_inquiry_submission_function",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1793256669871,
+      "tag": "0006_retire_inquiry_attribution",
+      "breakpoints": true
     }
   ]
 }
