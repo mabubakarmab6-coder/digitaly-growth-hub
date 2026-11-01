@@ -10,8 +10,8 @@ export function BrandLogo({ className }: { className?: string }) {
     <img
       src={logoAsset.url}
       alt="DigitalyMarket"
-      width={935}
-      height={400}
+      width={768}
+      height={512}
       className={cn("h-8 w-auto object-contain sm:h-9 lg:h-10", className)}
     />
   );
