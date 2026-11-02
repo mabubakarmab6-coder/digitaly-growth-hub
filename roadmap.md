@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Correct header logo visibility using the approved artwork; measure before/after and verify all requested widths without publishing.
+- [x] Correct header logo visibility using the approved artwork; measure before/after and verify all requested widths without publishing.
 
 - [x] Reorder agency service listings, summaries and enquiry choices to Web Creation → Paid Marketing → GEO; verify across the website without publishing.
 
