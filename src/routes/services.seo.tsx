@@ -1,3 +1,4 @@
+import { DymServiceDetail } from "@/components/dym-next/DymPages";
 import { createFileRoute } from "@tanstack/react-router";
 import { seoService } from "@/data/expanded-services";
 import { ExpandedServicePage } from "@/components/services/ExpandedServicePage";
@@ -16,4 +17,4 @@ export const Route = createFileRoute("/services/seo")({
     scripts:[{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"Service",name:service.eyebrow,description,url,provider:{"@type":"Organization",name:"DigitalyMarket",url:"https://digitalymarket.com"}})}],
   }),
 });
-function Page(){return <div className="min-h-dvh bg-background"><SiteNav/><main><ExpandedServicePage service={service}/></main><SiteFooter/><GlobalFloatingCta/></div>;}
+function Page(){return <DymServiceDetail name="seo"/>;}
