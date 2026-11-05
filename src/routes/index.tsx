@@ -1,19 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteNav } from "@/components/site/SiteNav";
-import { Hero } from "@/components/site/Hero";
-import { Positioning } from "@/components/site/Positioning";
-import { Industries } from "@/components/site/Industries";
-import { Services } from "@/components/site/Services";
-import { WhyUs } from "@/components/site/WhyUs";
-import { Process } from "@/components/site/Process";
-import { Credibility } from "@/components/site/Credibility";
-import { WorkAndInsights } from "@/components/site/WorkAndInsights";
-import { Faq } from "@/components/site/Faq";
-import { Founder } from "@/components/site/Founder";
-import { FinalCta } from "@/components/site/FinalCta";
-import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
+import { DymHome } from "@/components/dym-next/DymHome";
 
-import { SiteFooter } from "@/components/site/SiteFooter";
 
 const title = "DigitalyMarket | Business-First Digital Growth Consultancy";
 const description =
@@ -59,28 +46,5 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-function Home() {
-  return (
-    <div className="min-h-dvh bg-background">
-      <SiteNav />
-      <main>
-        <Hero />
-        <Positioning />
-        <Industries />
-        <Process />
-        <Services />
-        <WhyUs />
-        <Credibility />
-        <WorkAndInsights />
-        <div id="faq">
-          <Faq />
-        </div>
-        <Founder />
-        <FinalCta />
-      </main>
-      <SiteFooter />
-      <GlobalFloatingCta />
-    </div>
 
-  );
-}
+function Home(){return <DymHome/>;}
