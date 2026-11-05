@@ -74,7 +74,7 @@ function DesktopDropdown({ item }: { item: NavItem }) {
         </button>
       </div>
       {open && (
-        <div id={menuId} className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3">
+        <div id={menuId} className={cn("absolute top-full z-50 pt-3", (item.label === "Contact" || item.label === "About") ? "right-0" : "left-1/2 -translate-x-1/2")}>
           <ul className="w-72 rounded-2xl border border-hairline bg-popover p-2 text-popover-foreground shadow-lg">
             {item.children!.map((c) => (
               <li key={c.href}>
@@ -134,8 +134,8 @@ export function SiteNav() {
           <BrandLogo placement="header" />
         </a>
 
-        <nav aria-label="Primary" className="hidden lg:block">
-          <ul className="flex items-center gap-7">
+        <nav aria-label="Primary" className="hidden xl:block">
+          <ul className="flex items-center gap-4">
             {links.map((link) =>
               link.children ? (
                 <DesktopDropdown key={link.label} item={link} />
@@ -153,7 +153,7 @@ export function SiteNav() {
           </ul>
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <Cta href={INQUIRY_PATH}>Start a Conversation</Cta>
         </div>
 
@@ -163,7 +163,7 @@ export function SiteNav() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-hairline bg-card text-foreground lg:hidden"
+          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-hairline bg-card text-foreground xl:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -172,7 +172,7 @@ export function SiteNav() {
       {open && (
         <div
           id="mobile-nav"
-          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-hairline bg-background lg:hidden"
+          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-hairline bg-background xl:hidden"
         >
           <nav aria-label="Mobile" className="container-page py-6">
             <ul className="flex flex-col">

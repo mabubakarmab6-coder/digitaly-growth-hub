@@ -12,7 +12,7 @@ const agencyLinks = [
   { label: "Work", href: "/work" },
   { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
-  { label: "About Founder", href: "/about#founder" },
+  { label: "About Founder", href: "/founder" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: INQUIRY_PATH },
 ];
@@ -22,6 +22,9 @@ const serviceLinks = [
   { label: "Website Creation", href: "/services/web-creation" },
   { label: "Paid Marketing", href: "/services/paid-marketing" },
   { label: "Generative Engine Optimization", href: "/services/GEO" },
+  { label: "Search Engine Optimisation", href: "/services/seo" },
+  { label: "E-commerce & Marketplace Growth", href: "/services/ecommerce-marketplace-growth" },
+  { label: "Analytics & CRO", href: "/services/analytics-cro" },
 ];
 
 export function SiteFooter() {
