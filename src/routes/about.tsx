@@ -1,3 +1,4 @@
+import { DymAboutPage } from "@/components/dym-next/DymPages";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -74,25 +75,4 @@ export const Route = createFileRoute("/about")({
   }),
 });
 
-function AboutPage() {
-  return (
-    <div className="min-h-dvh bg-background">
-      <SiteNav />
-      <main>
-        <AboutHero />
-        <AboutStory />
-        <AboutWhyWeExist />
-        <AboutHowWeThink />
-        <AboutBeliefs />
-        <AboutExperience />
-        <AboutCapabilities />
-        <AboutFounder />
-        <AboutWhoWeWorkWith />
-        <AboutFaq />
-        <AboutFinalCta />
-      </main>
-      <SiteFooter />
-      <GlobalFloatingCta />
-    </div>
-  );
-}
+function AboutPage(){return <DymAboutPage/>;}

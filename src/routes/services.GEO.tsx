@@ -1,3 +1,4 @@
+import { DymServiceDetail } from "@/components/dym-next/DymPages";
 import { createFileRoute } from "@tanstack/react-router";
 import { GeoServicePage } from "@/components/services/GeoServicePage";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
@@ -58,15 +59,4 @@ export const Route = createFileRoute("/services/GEO")({
   }),
 });
 
-function GeoPage() {
-  return (
-    <div className="min-h-dvh bg-background">
-      <SiteNav />
-      <main>
-        <GeoServicePage />
-      </main>
-      <SiteFooter />
-      <GlobalFloatingCta />
-    </div>
-  );
-}
+function GeoPage(){return <DymServiceDetail name="geo"/>;}

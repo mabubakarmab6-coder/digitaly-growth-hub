@@ -1,3 +1,4 @@
+import { DymIndustryDetail } from "@/components/dym-next/DymPages";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -66,19 +67,7 @@ export const Route = createFileRoute("/industries/$slug")({
   component: IndustryPage,
 });
 
-function IndustryPage() {
-  const { industry } = Route.useLoaderData();
-  return (
-    <div className="min-h-dvh bg-background">
-      <SiteNav />
-      <main>
-        <IndustryDetail industry={industry} />
-      </main>
-      <SiteFooter />
-      <GlobalFloatingCta />
-    </div>
-  );
-}
+function IndustryPage(){const { slug }=Route.useParams();return <DymIndustryDetail slug={slug}/>;}
 
 function IndustryNotFound() {
   return (

@@ -1,3 +1,4 @@
+import { DymServiceDetail } from "@/components/dym-next/DymPages";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -65,15 +66,4 @@ export const Route = createFileRoute("/services/paid-marketing")({
   }),
 });
 
-function PaidPage() {
-  return (
-    <div className="min-h-dvh bg-background">
-      <SiteNav />
-      <main>
-        <PaidMarketingPage />
-      </main>
-      <SiteFooter />
-      <GlobalFloatingCta />
-    </div>
-  );
-}
+function PaidPage(){return <DymServiceDetail name="paid"/>;}
