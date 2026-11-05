@@ -23,7 +23,7 @@ export const dymServices=[
   ["06","Analytics, Tracking & CRO","/services/analytics-cro","Measure the customer journey and prioritise improvements."],
 ] as const;
 const navigation:NavigationItem[]=[
-  {title:"Home",path:"/",children:[{title:"Overview",path:"/"},{title:"Business challenges",path:"/#challenges"},{title:"Our approach",path:"/#method"},{title:"Selected work",path:"/#projects"}]},
+  {title:"Home",path:"/",children:[{title:"Overview",path:"/"},{title:"Business challenges",path:"/#challenges"},{title:"Our approach",path:"/#method"},{title:"Selected work",path:"/#projects"},{title:"Interactive challenge explorer",path:"/diagnostic-demo"}]},
   {title:"Services",path:"/services",children:serviceMenu},
   {title:"Industries",path:"/industries",children:[{title:"All industries",path:"/industries"},{title:"E-commerce businesses",path:"/industries/ecommerce"},{title:"Manufacturers",path:"/industries/manufacturing-b2b"},{title:"Local businesses",path:"/industries/local-business"},{title:"Professional services",path:"/industries/professional-services"}]},
   {title:"Work",path:"/work",children:[{title:"Selected work",path:"/work"},{title:"Gems Gallery",path:"/work/gemstone-gallery"},{title:"SensyTalk",path:"/work/SensyTalk"}]},
