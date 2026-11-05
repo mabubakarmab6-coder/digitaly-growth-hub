@@ -46,8 +46,8 @@ export function AboutFounder() {
             <Cta href={INQUIRY_PATH} size="lg" className="w-full sm:w-auto">
               Start a Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href="/work" variant="outline" size="lg" className="w-full sm:w-auto">
-              View Case Studies
+            <Cta href="/founder" variant="outline" size="lg" className="w-full sm:w-auto">
+              Explore Founder Profile
             </Cta>
           </div>
         </Reveal>

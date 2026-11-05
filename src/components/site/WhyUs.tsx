@@ -27,8 +27,8 @@ export function WhyUs() {
             customers, improving operations and building growth initiatives. That experience shapes
             how we approach digital marketing today.
           </p>
-          <Cta href="/about#founder" variant="onNavy" size="lg" className="mt-9">
-            Our Leadership &amp; Methodology <ArrowRight className="h-4 w-4" />
+          <Cta href="/founder" variant="onNavy" size="lg" className="mt-9">
+            Meet the Founder <ArrowRight className="h-4 w-4" />
           </Cta>
           <p className="mt-6 max-w-md text-xs leading-relaxed text-navy-foreground/50">
             Founded on real commercial execution across previous enterprises and ventures — shaping

@@ -1,0 +1,22 @@
+name: Redesign build verification
+on:
+  push:
+    branches:
+      - redesign/digitalymarket-v2
+  pull_request:
+    branches:
+      - main
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install exact dependencies
+        run: bun install --frozen-lockfile
+      - name: Build TanStack application
+        run: bun run build

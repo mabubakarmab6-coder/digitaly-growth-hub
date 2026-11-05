@@ -65,8 +65,8 @@ export function Founder() {
             <Cta href={INQUIRY_PATH} size="lg">
               Start a Growth Conversation <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Cta>
-            <Cta href="/about" variant="outline" size="lg">
-              Our Strategic Methodology
+            <Cta href="/founder" variant="outline" size="lg">
+              Meet the Founder
             </Cta>
           </div>
         </Reveal>
