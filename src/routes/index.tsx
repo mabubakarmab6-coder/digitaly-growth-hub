@@ -15,9 +15,9 @@ import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 
 import { SiteFooter } from "@/components/site/SiteFooter";
 
-const title = "DigitalyMarket | Digital Growth Agency for Modern Businesses";
+const title = "DigitalyMarket | Business-First Digital Growth Consultancy";
 const description =
-  "DigitalyMarket helps manufacturers, B2B companies, service businesses and e-commerce brands grow through web creation, paid marketing and GEO.";
+  "DigitalyMarket helps e-commerce brands, manufacturers and local businesses identify growth constraints through websites, paid acquisition, SEO, GEO and marketplace strategy.";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -50,6 +50,8 @@ export const Route = createFileRoute("/")({
             "Website Creation",
             "Paid Marketing",
             "Generative Engine Optimization",
+            "Search Engine Optimization",
+            "E-commerce and Marketplace Growth",
           ],
         }),
       },
@@ -65,9 +67,9 @@ function Home() {
         <Hero />
         <Positioning />
         <Industries />
+        <Process />
         <Services />
         <WhyUs />
-        <Process />
         <Credibility />
         <WorkAndInsights />
         <div id="faq">
