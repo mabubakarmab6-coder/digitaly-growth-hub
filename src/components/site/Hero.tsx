@@ -1,68 +1,14 @@
-import heroImage from "@/assets/hero-ecosystem.jpg";
-import { Cta } from "./Cta";
-import { INQUIRY_PATH } from "./constants";
-import { Compass, ArrowRight } from "lucide-react";
-
-export function Hero() {
-  return (
-    <section id="top" className="hero-glow relative overflow-hidden">
-      <div className="container-page grid items-center gap-12 pt-14 pb-16 md:pt-20 md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-24 lg:pb-32">
-        <div className="max-w-xl">
-          <p className="eyebrow">Digital Growth Agency</p>
-          <h1 className="mt-5 text-[2.4rem] leading-[1.06] font-semibold text-foreground sm:text-5xl lg:text-[3.75rem]">
-            Turn Your Digital Presence{" "}
-            <span className="text-gradient-accent">Into Business Growth.</span>
-          </h1>
-          <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Web creation, paid marketing and GEO solutions built around your business goals
-            — not a one-size-fits-all package.
-          </p>
-
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Cta href={INQUIRY_PATH} size="lg">
-              Start a Conversation <ArrowRight className="h-4 w-4" />
-            </Cta>
-            <Cta href="/services" variant="outline" size="lg">
-              <Compass className="h-4 w-4" /> Explore What We Do
-            </Cta>
-          </div>
-
-          <p className="mt-6 text-sm text-muted-foreground">
-            Custom strategies <span className="text-primary/60">•</span> Global-first{" "}
-            <span className="text-primary/60">•</span> Built around your business
-          </p>
-        </div>
-
-        <div className="relative">
-          <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-accent/50 blur-2xl" aria-hidden="true" />
-          <div className="overflow-hidden rounded-[1.75rem] border border-hairline bg-card shadow-lift">
-            <img
-              src={heroImage}
-              width={1200}
-              height={1200}
-              alt="Abstract visualization of a connected digital growth ecosystem linking search discovery, website, analytics and e-commerce signals"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:absolute lg:-bottom-8 lg:left-6 lg:mt-0 lg:grid-cols-3 lg:gap-2">
-            {[
-              ["Web Creation", "Conversion"],
-              ["Paid", "Acquisition"],
-              ["GEO", "AI discovery"],
-            ].map(([term, desc], i) => (
-              <div
-                key={term}
-                className={`rounded-xl border border-hairline bg-card/90 px-4 py-3 shadow-soft backdrop-blur${
-                  i === 2 ? " col-span-2 sm:col-span-1" : ""
-                }`}
-              >
-                <dt className="text-xs font-semibold tracking-wide text-foreground">{term}</dt>
-                <dd className="text-xs text-muted-foreground">{desc}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </div>
-    </section>
-  );
-}
+import {ArrowRight,Compass} from "lucide-react";
+import manufacturing from "@/assets/industry-manufacturing.jpg";
+import ecommerce from "@/assets/industry-ecommerce.jpg";
+import local from "@/assets/industry-local.jpg";
+import {Cta} from "./Cta";
+import {INQUIRY_PATH} from "./constants";
+export function Hero(){return <section className="relative overflow-hidden border-b border-hairline bg-background"><div className="container-page grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.06fr_0.94fr] lg:items-center lg:gap-16 lg:py-28"><div>
+<p className="eyebrow">A more thoughtful approach to business growth</p><h1 className="mt-6 max-w-3xl text-[2.75rem] leading-[1.04] font-semibold tracking-[-0.045em] text-foreground sm:text-[3.5rem] lg:text-[4.2rem]">Find what's holding your business back.<span className="mt-2 block text-primary">Build what moves it forward.</span></h1>
+<p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">From your website and marketplaces to customer acquisition and digital operations, we identify what's limiting progress and help address it through strategy, technology and execution.</p>
+<div className="mt-9 flex flex-col gap-3 sm:flex-row"><Cta href={INQUIRY_PATH} size="lg">Start a Growth Conversation <ArrowRight className="h-4 w-4"/></Cta><Cta href="/services" variant="outline" size="lg"><Compass className="h-4 w-4"/> Explore What We Do</Cta></div>
+<p className="mt-6 max-w-lg text-sm leading-relaxed text-muted-foreground">No predetermined packages. No unnecessary solutions. Just a clear understanding of what your business needs.</p>
+<div className="mt-10 flex flex-wrap gap-x-6 gap-y-2 border-t border-hairline pt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase"><span>E-commerce</span><span>Manufacturers</span><span>Local businesses</span></div></div>
+<div className="relative mx-auto w-full max-w-[34rem] lg:max-w-none"><div className="overflow-hidden rounded-[2rem] border border-hairline bg-surface shadow-lift"><img src={manufacturing} alt="Manufacturing facility representing B2B business needs" className="aspect-[5/4] w-full object-cover" width={1024} height={820}/><div className="border-t border-hairline bg-card px-6 py-5"><p className="text-xs font-semibold tracking-[0.15em] text-primary uppercase">Understand → Diagnose → Prioritise</p><p className="mt-2 text-sm text-muted-foreground">Commercial context comes before choosing tactics.</p></div></div>
+<div className="absolute -bottom-8 -left-3 hidden w-[38%] overflow-hidden rounded-2xl border-[5px] border-background shadow-lift sm:block lg:-left-9"><img src={ecommerce} alt="E-commerce product presentation" className="aspect-[4/3] w-full object-cover" loading="lazy"/></div><div className="absolute -right-4 top-[8%] hidden w-[29%] overflow-hidden rounded-2xl border-[5px] border-background shadow-lift sm:block lg:-right-8"><img src={local} alt="Local business context" className="aspect-[4/5] w-full object-cover" loading="lazy"/></div></div></div></section>;}
