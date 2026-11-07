@@ -41,7 +41,7 @@ export function DymHeader(){
     document.addEventListener("keydown",onKey);document.addEventListener("mousedown",onOutside);
     return ()=>{document.removeEventListener("keydown",onKey);document.removeEventListener("mousedown",onOutside)};
   },[]);
-  useEffect(()=>{const body=document.body; if(mobile){const previous=body.style.overflow;body.style.overflow="hidden";return()=>{body.style.overflow=previous;}}},[mobile]);
+  useEffect(()=>{const body=document.body; if(mobile){const previous=body.style.overflow;body.style.overflow="hidden";return()=>{body.style.overflow=previous;}} return undefined;},[mobile]);
   return <header className="dm-nav" ref={header}>
     <div className="dm-container dm-nav-row">
       <a href="/" className="dm-brand" aria-label="DigitalyMarket homepage"><BrandLogo placement="header"/></a>

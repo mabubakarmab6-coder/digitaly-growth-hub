@@ -32,6 +32,7 @@ export function DymServiceHub(){
 }
 export function DymServiceDetail({name}:{name:keyof typeof services}){
  const d=services[name];
+ if(!d) return null;
  return <DymShell><DymPageHero eyebrow={d.eyebrow} title={d.title} description={d.intro} crumb="Services"/><section className="dm-block"><div className="dm-container dm-content-split"><div><span className="dm-eyebrow">THE BUSINESS QUESTION</span><h2>Don't start with the tool.</h2><p>{d.context}</p><p>The appropriate scope follows from the objective and the actual bottlenecks. A service is not an automatic recommendation.</p>{d.image&&<figure className="dm-detail-photo" style={{marginTop:30}}><img src={d.image} loading="lazy" alt={"Editorial photograph illustrating "+d.title}/><figcaption>Illustrative editorial photograph · not a client result</figcaption></figure>}</div><div className="dm-bullet-card"><span className="dm-eyebrow">POTENTIAL SCOPE</span><h3>What this can include</h3><ul>{d.bullets.map(s=><li key={s}>{s}</li>)}</ul><p>These are possible capabilities, not fixed packages or guaranteed outcomes.</p>{d.related&&<a href={d.related.href} className="dm-link">{d.related.label} ↗</a>}</div></div></section><DymMethod/><section className="dm-block"><div className="dm-container"><span className="dm-eyebrow">RELATED CAPABILITIES</span><h2>Connected work. Distinct purposes.</h2><DymServiceRows/></div></section><DymCta/></DymShell>;
 }
 type Industry={eyebrow:string;title:string;intro:string;challenges:string[];path:string;links:string[];image:string};
