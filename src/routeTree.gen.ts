@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as DiagnosticDemoRouteImport } from './routes/diagnostic-demo'
+import { Route as FounderRouteImport } from './routes/founder'
 import { Route as InsightsRouteImport } from './routes/insights'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ServicesRouteImport } from './routes/services'
@@ -22,7 +24,10 @@ import { Route as InsightsIndexRouteImport } from './routes/insights.index'
 import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as ServicesGEORouteImport } from './routes/services.GEO'
+import { Route as ServicesAnalyticsCroRouteImport } from './routes/services.analytics-cro'
+import { Route as ServicesEcommerceMarketplaceGrowthRouteImport } from './routes/services.ecommerce-marketplace-growth'
 import { Route as ServicesPaidMarketingRouteImport } from './routes/services.paid-marketing'
+import { Route as ServicesSeoRouteImport } from './routes/services.seo'
 import { Route as ServicesWebCreationRouteImport } from './routes/services.web-creation'
 import { Route as WorkIndexRouteImport } from './routes/work.index'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
@@ -38,6 +43,16 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiagnosticDemoRoute = DiagnosticDemoRouteImport.update({
+  id: '/diagnostic-demo',
+  path: '/diagnostic-demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FounderRoute = FounderRouteImport.update({
+  id: '/founder',
+  path: '/founder',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InsightsRoute = InsightsRouteImport.update({
@@ -95,9 +110,25 @@ const ServicesGEORoute = ServicesGEORouteImport.update({
   path: '/GEO',
   getParentRoute: () => ServicesRoute,
 } as any)
+const ServicesAnalyticsCroRoute = ServicesAnalyticsCroRouteImport.update({
+  id: '/analytics-cro',
+  path: '/analytics-cro',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesEcommerceMarketplaceGrowthRoute =
+  ServicesEcommerceMarketplaceGrowthRouteImport.update({
+    id: '/ecommerce-marketplace-growth',
+    path: '/ecommerce-marketplace-growth',
+    getParentRoute: () => ServicesRoute,
+  } as any)
 const ServicesPaidMarketingRoute = ServicesPaidMarketingRouteImport.update({
   id: '/paid-marketing',
   path: '/paid-marketing',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesSeoRoute = ServicesSeoRouteImport.update({
+  id: '/seo',
+  path: '/seo',
   getParentRoute: () => ServicesRoute,
 } as any)
 const ServicesWebCreationRoute = ServicesWebCreationRouteImport.update({
@@ -135,6 +166,8 @@ const LovableEmailTransactionalPreviewRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/diagnostic-demo': typeof DiagnosticDemoRoute
+  '/founder': typeof FounderRoute
   '/insights': typeof InsightsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
@@ -143,7 +176,10 @@ export interface FileRoutesByFullPath {
   '/industries/$slug': typeof IndustriesSlugRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/services/GEO': typeof ServicesGEORoute
+  '/services/analytics-cro': typeof ServicesAnalyticsCroRoute
+  '/services/ecommerce-marketplace-growth': typeof ServicesEcommerceMarketplaceGrowthRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
+  '/services/seo': typeof ServicesSeoRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/SensyTalk': typeof WorkSensyTalkRoute
@@ -157,13 +193,18 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/diagnostic-demo': typeof DiagnosticDemoRoute
+  '/founder': typeof FounderRoute
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/services/GEO': typeof ServicesGEORoute
+  '/services/analytics-cro': typeof ServicesAnalyticsCroRoute
+  '/services/ecommerce-marketplace-growth': typeof ServicesEcommerceMarketplaceGrowthRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
+  '/services/seo': typeof ServicesSeoRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/SensyTalk': typeof WorkSensyTalkRoute
@@ -178,6 +219,8 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/diagnostic-demo': typeof DiagnosticDemoRoute
+  '/founder': typeof FounderRoute
   '/insights': typeof InsightsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
@@ -186,7 +229,10 @@ export interface FileRoutesById {
   '/industries/$slug': typeof IndustriesSlugRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/services/GEO': typeof ServicesGEORoute
+  '/services/analytics-cro': typeof ServicesAnalyticsCroRoute
+  '/services/ecommerce-marketplace-growth': typeof ServicesEcommerceMarketplaceGrowthRoute
   '/services/paid-marketing': typeof ServicesPaidMarketingRoute
+  '/services/seo': typeof ServicesSeoRoute
   '/services/web-creation': typeof ServicesWebCreationRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/SensyTalk': typeof WorkSensyTalkRoute
@@ -202,6 +248,8 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/diagnostic-demo'
+    | '/founder'
     | '/insights'
     | '/privacy'
     | '/services'
@@ -210,7 +258,10 @@ export interface FileRouteTypes {
     | '/industries/$slug'
     | '/insights/$slug'
     | '/services/GEO'
+    | '/services/analytics-cro'
+    | '/services/ecommerce-marketplace-growth'
     | '/services/paid-marketing'
+    | '/services/seo'
     | '/services/web-creation'
     | '/work/$slug'
     | '/work/SensyTalk'
@@ -224,13 +275,18 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/diagnostic-demo'
+    | '/founder'
     | '/privacy'
     | '/sitemap.xml'
     | '/start'
     | '/industries/$slug'
     | '/insights/$slug'
     | '/services/GEO'
+    | '/services/analytics-cro'
+    | '/services/ecommerce-marketplace-growth'
     | '/services/paid-marketing'
+    | '/services/seo'
     | '/services/web-creation'
     | '/work/$slug'
     | '/work/SensyTalk'
@@ -244,6 +300,8 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/diagnostic-demo'
+    | '/founder'
     | '/insights'
     | '/privacy'
     | '/services'
@@ -252,7 +310,10 @@ export interface FileRouteTypes {
     | '/industries/$slug'
     | '/insights/$slug'
     | '/services/GEO'
+    | '/services/analytics-cro'
+    | '/services/ecommerce-marketplace-growth'
     | '/services/paid-marketing'
+    | '/services/seo'
     | '/services/web-creation'
     | '/work/$slug'
     | '/work/SensyTalk'
@@ -267,6 +328,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  DiagnosticDemoRoute: typeof DiagnosticDemoRoute
+  FounderRoute: typeof FounderRoute
   InsightsRoute: typeof InsightsRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRouteWithChildren
@@ -295,6 +358,20 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diagnostic-demo': {
+      id: '/diagnostic-demo'
+      path: '/diagnostic-demo'
+      fullPath: '/diagnostic-demo'
+      preLoaderRoute: typeof DiagnosticDemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/founder': {
+      id: '/founder'
+      path: '/founder'
+      fullPath: '/founder'
+      preLoaderRoute: typeof FounderRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/insights': {
@@ -374,11 +451,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesGEORouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/services/analytics-cro': {
+      id: '/services/analytics-cro'
+      path: '/analytics-cro'
+      fullPath: '/services/analytics-cro'
+      preLoaderRoute: typeof ServicesAnalyticsCroRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/ecommerce-marketplace-growth': {
+      id: '/services/ecommerce-marketplace-growth'
+      path: '/ecommerce-marketplace-growth'
+      fullPath: '/services/ecommerce-marketplace-growth'
+      preLoaderRoute: typeof ServicesEcommerceMarketplaceGrowthRouteImport
+      parentRoute: typeof ServicesRoute
+    }
     '/services/paid-marketing': {
       id: '/services/paid-marketing'
       path: '/paid-marketing'
       fullPath: '/services/paid-marketing'
       preLoaderRoute: typeof ServicesPaidMarketingRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/seo': {
+      id: '/services/seo'
+      path: '/seo'
+      fullPath: '/services/seo'
+      preLoaderRoute: typeof ServicesSeoRouteImport
       parentRoute: typeof ServicesRoute
     }
     '/services/web-creation': {
@@ -442,14 +540,21 @@ const InsightsRouteWithChildren = InsightsRoute._addFileChildren(
 
 interface ServicesRouteChildren {
   ServicesGEORoute: typeof ServicesGEORoute
+  ServicesAnalyticsCroRoute: typeof ServicesAnalyticsCroRoute
+  ServicesEcommerceMarketplaceGrowthRoute: typeof ServicesEcommerceMarketplaceGrowthRoute
   ServicesPaidMarketingRoute: typeof ServicesPaidMarketingRoute
+  ServicesSeoRoute: typeof ServicesSeoRoute
   ServicesWebCreationRoute: typeof ServicesWebCreationRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
 }
 
 const ServicesRouteChildren: ServicesRouteChildren = {
   ServicesGEORoute: ServicesGEORoute,
+  ServicesAnalyticsCroRoute: ServicesAnalyticsCroRoute,
+  ServicesEcommerceMarketplaceGrowthRoute:
+    ServicesEcommerceMarketplaceGrowthRoute,
   ServicesPaidMarketingRoute: ServicesPaidMarketingRoute,
+  ServicesSeoRoute: ServicesSeoRoute,
   ServicesWebCreationRoute: ServicesWebCreationRoute,
   ServicesIndexRoute: ServicesIndexRoute,
 }
@@ -461,6 +566,8 @@ const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  DiagnosticDemoRoute: DiagnosticDemoRoute,
+  FounderRoute: FounderRoute,
   InsightsRoute: InsightsRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRouteWithChildren,
