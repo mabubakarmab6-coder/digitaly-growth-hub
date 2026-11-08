@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Implement V5 immersive homepage against supplied reference, preserving approved services/content and all integrations; capture baseline/recovery, preview QA and A–M report; do not publish.
+
 - [x] Integrate approved hero creatives (PC.png desktop, mobile.png mobile) into the homepage hero with locked two-column desktop layout and tested mobile architecture; widen homepage containers; full QA; do not publish (Master Prompt V4.0).
 
 - [x] Correct header logo visibility using the approved artwork; measure before/after and verify all requested widths without publishing.
