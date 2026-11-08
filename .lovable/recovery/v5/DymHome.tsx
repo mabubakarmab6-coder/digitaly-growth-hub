@@ -1,0 +1,72 @@
+import { useState } from "react";
+import founderSeated from "@/assets/founder-seated.jpg.asset.json";
+import heroDesktop1672 from "@/assets/consultation_meeting_landscape_1672w.webp.asset.json";
+import heroDesktop1200 from "@/assets/consultation_meeting_landscape_1200w.webp.asset.json";
+import heroMobile1122 from "@/assets/consultation_meeting_portrait_1122w.webp.asset.json";
+import heroMobile800 from "@/assets/consultation_meeting_portrait_800w.webp.asset.json";
+import { DymShell,DymCta,dymServices } from "./DymShell";
+import { INQUIRY_PATH } from "@/components/site/constants";
+const PHOTO={
+  team:"https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1500&q=84",
+  commerce:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1500&q=84",
+  factory:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1500&q=84",
+  local:"https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1500&q=84",
+  gems:"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=84",
+  saas:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=84",
+  seo:"https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1400&q=84",
+};
+const audiences=[
+  ["E-COMMERCE","E-commerce businesses","Stronger storefronts, product discovery, marketplace listings and customer journeys.","/industries/ecommerce",PHOTO.commerce,"Retail checkout"],
+  ["MANUFACTURERS","Manufacturers","Communicate capabilities clearly and create better opportunities for buyer enquiries.","/industries/manufacturing-b2b",PHOTO.factory,"Industrial manufacturing context"],
+  ["LOCAL BUSINESSES","Local businesses","Improve local search, trust signals and the path from discovery to enquiries.","/industries/local-business",PHOTO.local,"Local business service context"],
+] as const;
+const steps=[
+  ["01","Understand","The business, customer, objectives and existing context."],
+  ["02","Diagnose","The bottlenecks and opportunities worth exploring."],
+  ["03","Prioritise","The changes with the strongest practical rationale."],
+  ["04","Build","The agreed solutions, from strategy to execution."],
+  ["05","Measure & Improve","What happened, what we learned and what changes next."],
+] as const;
+const challenges=[
+  "Your website gets visitors but too few enquiries",
+  "Marketplace listings are underperforming",
+  "Paid acquisition lacks commercial clarity",
+  "Customers struggle to find you on search engines",
+  "AI answer engines lack reliable information about you",
+  "You cannot clearly measure what works",
+];
+const articles=[
+  ["E-COMMERCE","Marketplace growth without the guesswork","What to review before investing more in marketplace advertising.","/insights",PHOTO.commerce],
+  ["WEBSITES","Why a better website needs a better brief","How positioning and customer journeys shape more useful websites.","/insights",PHOTO.team],
+  ["SEARCH & AI DISCOVERY","SEO and GEO: related, but not identical","Understand traditional search rankings versus AI-generated answers.","/insights/what-is-seo",PHOTO.seo],
+] as const;
+export function DymMethod(){return <section id="method" className="dm-block dm-method"><div className="dm-container"><div className="dm-section-head"><div><span className="dm-eyebrow">THE DIGITALYMARKET METHOD</span><h2>We don't start with a service.<br/>We start with your business.</h2></div><p>Direction is valuable only when it leads to clear priorities and meaningful execution.</p></div><div className="dm-method-grid">{steps.map(s=><div className="dm-method-step" key={s[0]}><div className="dm-step-num">{s[0]} / 05</div><h3>{s[1]}</h3><p>{s[2]}</p></div>)}</div><div className="dm-method-foot">A framework for project conversations—not a claim that every project needs all five phases.</div></div></section>}
+export function DymServiceRows(){return <div className="dm-services-list">{dymServices.map(s=><a className="dm-service-line" href={s[2]} key={s[0]}><span className="dm-service-index">{s[0]}</span><h3>{s[1]}</h3><p>{s[3]}</p><span className="dm-arrow-round" aria-hidden="true">↗</span></a>)}</div>}
+export function DymHome(){
+ return <DymShell>
+  <section id="top" className="dm-hero"><div className="dm-container dm-hero-main"><div><span className="dm-eyebrow">A MORE THOUGHTFUL APPROACH TO BUSINESS GROWTH</span><h1>Find what's holding your business back. <span className="dm-accent">Build what moves it forward.</span></h1><p className="dm-subtitle">Digital challenges rarely exist in isolation. We help businesses identify what matters, prioritise the work and connect strategic thinking with practical execution.</p><div className="dm-cta-row"><a className="dm-btn dm-btn-primary" href={INQUIRY_PATH}>Start a growth conversation ↗</a><a className="dm-btn dm-btn-outline" href="/services">Explore our services</a></div><div className="dm-hero-note"><span><b>✓</b> Diagnosis first</span><span><b>✓</b> Strategy or execution</span><span><b>✓</b> Practical priorities</span></div></div>
+  <div className="dm-hero-visual"><picture><source media="(max-width: 900px)" srcSet={`${heroMobile800.url} 800w, ${heroMobile1122.url} 1122w`} sizes="(max-width: 680px) calc(100vw - 34px), 680px"/><img src={heroDesktop1672.url} srcSet={`${heroDesktop1200.url} 1200w, ${heroDesktop1672.url} 1672w`} sizes="(max-width: 1440px) 54vw, 760px" alt="DigitalyMarket founder leading a growth strategy consultation with three clients around a meeting table, an analytics dashboard on the screen behind them" width={1672} height={941} loading="eager" fetchPriority="high"/></picture></div></div></section>
+  <div className="dm-proof-strip"><div className="dm-container dm-proof-flex"><span className="dm-proof-intro">Different requirements. One considered approach.</span><div className="dm-proof-points"><span><b>↗</b> E-commerce</span><span><b>↗</b> Manufacturing</span><span><b>↗</b> Local business</span></div></div></div>
+  <section id="challenges" className="dm-block"><div className="dm-container dm-challenge-layout"><div><span className="dm-eyebrow">THE PROBLEM BEHIND THE REQUEST</span><h2>More activity isn't always the answer.</h2><p className="dm-body-lg">A business might ask for ads, a new website, SEO or AI visibility. Before recommending any of them, we ask what's actually preventing progress.</p><div className="dm-challenge-quote">The first step isn't choosing a channel. It's understanding the business problem.</div></div><div className="dm-challenge-list">{challenges.map((s,i)=><div className="dm-challenge-item" key={s}><span className="dm-num">0{i+1}</span><strong>{s}</strong><span aria-hidden="true">↗</span></div>)}</div></div></section>
+  <section id="audiences" className="dm-block dm-soft"><div className="dm-container"><div className="dm-section-head"><div><span className="dm-eyebrow">WHO WE HELP</span><h2>Different business models. Different challenges.</h2></div><p>The right digital solution depends on the way your business finds, serves and retains customers.</p></div><div className="dm-audience-grid">{audiences.map((a,i)=><a className="dm-audience-card" href={a[3]} key={a[3]}><div className="dm-audience-photo"><img src={a[4]} alt={a[5]} loading="lazy"/></div><div className="dm-audience-body"><span className="dm-tag">0{i+1} / {a[0]}</span><h3>{a[1]}</h3><p>{a[2]}</p><span className="dm-link">Explore {a[1].toLowerCase()} ↗</span></div></a>)}</div><p className="dm-stock-note">Editorial photographs illustrate business contexts and do not depict DigitalyMarket clients.</p></div></section>
+  <DymMethod/>
+  <section id="capabilities" className="dm-block"><div className="dm-container"><div className="dm-services-intro"><div><span className="dm-eyebrow">OUR SIX CAPABILITIES</span><h2>The right capabilities, in the right combination.</h2></div><p>SEO and GEO address distinct discovery environments. Both can work alongside websites, commerce, paid acquisition and measurement.</p></div><DymServiceRows/><div style={{marginTop:27}}><a href="/services" className="dm-link">Explore all six services ↗</a></div></div></section>
+  <section className="dm-block dm-soft"><div className="dm-container"><div className="dm-section-head"><div><span className="dm-eyebrow">WAYS TO WORK TOGETHER</span><h2>Direction, execution or both.</h2></div><p>Engagements should match the task, resources and readiness of the business.</p></div><div className="dm-engagement-grid"><article className="dm-engagement"><span className="dm-eyebrow">STRATEGY & DIRECTION</span><h3>Understand the challenge. Plan the right move.</h3><p>For teams that need diagnosis, priorities and an actionable roadmap before implementation.</p><ul><li>Digital assessment and prioritisation</li><li>Research and opportunity mapping</li><li>Practical action roadmap</li></ul><a className="dm-link" href={INQUIRY_PATH}>Discuss strategy ↗</a></article><article className="dm-engagement featured"><span className="dm-eyebrow">STRATEGY & EXECUTION</span><h3>Make the plan real—and keep improving.</h3><p>For teams that need coordinated development, acquisition, discoverability and measurement.</p><ul><li>Strategic planning and implementation</li><li>Relevant capability delivery</li><li>Measurement and ongoing improvement</li></ul><a className="dm-link" href={INQUIRY_PATH}>Discuss execution ↗</a></article></div></div></section>
+  <section className="dm-block" id="projects"><div className="dm-container"><div className="dm-section-head"><div><span className="dm-eyebrow">SELECTED WORK</span><h2>Work should do the talking.</h2></div><p>Project discussions should be grounded in scope and deliverables, never invented commercial metrics.</p></div><div className="dm-work-grid"><a className="dm-work-item" href="/work/gemstone-gallery"><div className="dm-work-art"><img src={PHOTO.gems} alt="Editorial gemstone photography; not a case-study screenshot" loading="lazy"/><span className="dm-photo-label">Editorial image · not a project screenshot</span></div><div className="dm-work-info"><span className="dm-tag">B2B WEBSITE DEVELOPMENT</span><h3>Gems Gallery ↗</h3><p>A manufacturing-focused web experience designed to make gemstone capabilities and enquiry pathways easier to understand. Commercial outcomes have not been verified.</p></div></a><a className="dm-work-item" href="/work/SensyTalk"><div className="dm-work-art"><img src={PHOTO.saas} alt="Editorial SaaS interface photograph; not a project screenshot" loading="lazy"/><span className="dm-photo-label">Editorial image · not a project screenshot</span></div><div className="dm-work-info"><span className="dm-tag">SAAS WEBSITE EXPLORATION</span><h3>SensyTalk ↗</h3><p>Product positioning and web experience exploration. Delivery status and business outcomes require verification.</p></div></a></div><div className="dm-honesty">Photographs are contextual editorial images. They do not depict the work itself; check project scope and permissions before making public claims.</div></div></section>
+  <section className="dm-block dm-soft" id="founder"><div className="dm-container dm-founder-grid"><figure className="dm-founder-photo"><img src={founderSeated.url} alt="Mohammad Abubakar Siddiqui, founder of DigitalyMarket, seated at a desk" loading="lazy"/></figure><div><span className="dm-eyebrow">MEET THE FOUNDER</span><h2>Business understanding before digital execution.</h2><p className="dm-body-lg">Mohammad Abubakar Siddiqui brings experience across e-commerce, commercial operations, marketplaces and business development. The emphasis is on choosing the work that makes sense for the business.</p><a className="dm-link" href="/founder">Meet the founder ↗</a></div></div></section>
+  <section className="dm-block" id="insights"><div className="dm-container"><div className="dm-section-head"><div><span className="dm-eyebrow">INSIGHTS</span><h2>Better questions. Better digital decisions.</h2></div><a className="dm-link" href="/insights">Explore insights ↗</a></div><div className="dm-insight-grid">{articles.map(a=><a href={a[3]} className="dm-article" key={a[1]}><div className="dm-article-art"><img src={a[4]} alt={"Editorial image for "+a[0]} loading="lazy"/></div><div className="dm-article-body"><span className="dm-tag">{a[0]}</span><h3>{a[1]}</h3><p>{a[2]}</p><span className="dm-link">Read more ↗</span></div></a>)}</div></div></section>
+  <DymCta/>
+ </DymShell>;
+}
+const diagnosticOptions=[
+  ["website","Visitors, but not enough enquiries","What happens between arrival and enquiry?","Review the promise, trust signals and conversion path before paying for more traffic.","/services/web-creation"],
+  ["commerce","Products aren't moving online","Is the limitation visibility, listing quality or conversion?","Compare catalogue clarity, discoverability and advertising economics.","/services/ecommerce-marketplace-growth"],
+  ["ads","Campaigns feel expensive","Which campaigns generate qualified commercial outcomes?","Separate clicks from qualified leads and inspect measurement.","/services/paid-marketing"],
+  ["search","Customers can't find us","Where should customers discover you?","Investigate search intent, technical accessibility and local presence.","/services/seo"],
+  ["data","We can't tell what is working","Can the business trust its events and definitions?","Confirm conversion ownership before optimising from reports.","/services/analytics-cro"],
+] as const;
+export function DymDiagnostic(){
+ const [choice,setChoice]=useState<string|null>(null);
+ const selected=diagnosticOptions.find(s=>s[0]===choice);
+ return <section className="dm-block"><div className="dm-container dm-content-split"><div><span className="dm-eyebrow">START WITH A CHALLENGE</span><h2>What feels most stuck?</h2><p>Choose a common business symptom and consider the first useful discovery question. This is not an automated diagnosis or a scored audit.</p></div><div><div className="dm-diagnostic-choices">{diagnosticOptions.map(s=><button key={s[0]} type="button" aria-pressed={choice===s[0]} onClick={()=>setChoice(s[0])}>{s[1]} ↗</button>)}</div><div className="dm-diagnostic-result" aria-live="polite"><span className="dm-eyebrow">ILLUSTRATIVE FIRST STEP</span><h3>{selected?.[2]||"Choose a challenge above."}</h3><p>{selected?.[3]||"We'll suggest a question to investigate, not an unsupported readiness score."}</p>{selected&&<a className="dm-link" href={selected[4]}>Explore a related capability ↗</a>}</div></div></div></section>;
+}
