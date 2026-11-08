@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { BrandLogo } from "@/components/site/BrandLogo";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { CONTACT_EMAIL, INQUIRY_PATH, INSTAGRAM_URL, LINKEDIN_URL } from "@/components/site/constants";
@@ -52,7 +54,7 @@ export function DymHeader(){
           <button className="dm-nav-subtoggle" type="button" aria-label={"Toggle "+item.title+" dropdown"} aria-expanded={expanded===item.title} aria-controls={"dm-submenu-"+item.title.toLowerCase()} onClick={()=>setExpanded(v=>v===item.title?null:item.title)} onKeyDown={e=>{if(e.key==="ArrowDown"){e.preventDefault();setExpanded(item.title);const first=header.current?.querySelector<HTMLAnchorElement>("#dm-submenu-"+item.title.toLowerCase()+" a");requestAnimationFrame(()=>first?.focus())}}}>⌄</button>
           <div className="dm-nav-submenu" id={"dm-submenu-"+item.title.toLowerCase()} role="group" aria-label={item.title+" links"}>{item.children.map(child=><a href={child.path} key={child.path} onClick={()=>{setMobile(false);setExpanded(null)}}>{child.title}</a>)}</div>
         </div>)}
-        <a className="dm-btn dm-btn-primary dm-nav-cta" href={INQUIRY_PATH} onClick={()=>{setMobile(false);setExpanded(null)}}>Start a conversation <span aria-hidden="true">↗</span></a>
+        <Button asChild className="dm-btn dm-btn-primary dm-nav-cta"><a href={INQUIRY_PATH} onClick={()=>{setMobile(false);setExpanded(null)}}>Get a Consultation <ArrowRight aria-hidden="true"/></a></Button>
       </nav>
     </div>
   </header>;
@@ -68,8 +70,8 @@ export function DymFooter(){
 export function DymCta(){
  return <div className="dm-container dm-cta-wrap"><section className="dm-cta-section"><div><span className="dm-eyebrow">START WITH CLARITY</span><h2>Before choosing a service, understand the challenge.</h2><p>Tell us what you're trying to achieve. We'll start with the business problem.</p></div><a href={INQUIRY_PATH} className="dm-btn dm-btn-white">Start a conversation ↗</a></section></div>;
 }
-export function DymShell({children}:{children:ReactNode}){
- return <div className="dm-site"><a className="dm-skip-link" href="#main">Skip to content</a><DymHeader/><main id="main">{children}</main><DymFooter/><GlobalFloatingCta/></div>;
+export function DymShell({children,homepage=false}:{children:ReactNode;homepage?:boolean}){
+ return <div className={"dm-site"+(homepage?" dm-home":"")}><a className="dm-skip-link" href="#main">Skip to content</a><DymHeader/><main id="main">{children}</main><DymFooter/><GlobalFloatingCta/></div>;
 }
 export function DymPageHero({eyebrow,title,description,crumb}:{eyebrow:string;title:string;description:string;crumb:string}){
  return <section className="dm-page-hero"><div className="dm-container"><div className="dm-breadcrumb"><a href="/">Home</a><span>/</span><span>{crumb}</span></div><span className="dm-eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p><div className="dm-cta-row"><a href={INQUIRY_PATH} className="dm-btn dm-btn-primary">Start a conversation ↗</a><a href="/work" className="dm-btn dm-btn-outline">Explore project examples</a></div></div></section>;
