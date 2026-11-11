@@ -25,7 +25,7 @@ export const dymServices=[
   ["06","Analytics, Tracking & CRO","/services/analytics-cro","Measure the customer journey and prioritise improvements."],
 ] as const;
 const navigation:NavigationItem[]=[
-  {title:"Home",path:"/",children:[{title:"Overview",path:"/"},{title:"Business challenges",path:"/#challenges"},{title:"Our approach",path:"/#method"},{title:"Selected work",path:"/#projects"},{title:"Interactive challenge explorer",path:"/diagnostic-demo"}]},
+  {title:"Home",path:"/",children:[]},
   {title:"Services",path:"/services",children:serviceMenu},
   {title:"Industries",path:"/industries",children:[{title:"All industries",path:"/industries"},{title:"E-commerce businesses",path:"/industries/ecommerce"},{title:"Manufacturers",path:"/industries/manufacturing-b2b"},{title:"Local businesses",path:"/industries/local-business"},{title:"Professional services",path:"/industries/professional-services"}]},
   {title:"Work",path:"/work",children:[{title:"Selected work",path:"/work"},{title:"Gems Gallery",path:"/work/gemstone-gallery"},{title:"SensyTalk",path:"/work/SensyTalk"}]},
@@ -49,10 +49,10 @@ export function DymHeader(){
       <a href="/" className="dm-brand" aria-label="DigitalyMarket homepage"><BrandLogo placement="header"/></a>
       <button className="dm-menu-toggle" aria-expanded={mobile} aria-controls="dm-main-menu" aria-label={mobile?"Close navigation menu":"Open navigation menu"} onClick={()=>{setMobile(v=>!v);setExpanded(null)}} type="button">{mobile?"✕":"☰"}</button>
       <nav className={"dm-nav-links"+(mobile?" open":"")} id="dm-main-menu" aria-label="Main navigation">
-        {navigation.map(item=><div key={item.title} className={"dm-nav-group"+(expanded===item.title?" expanded":"")} onMouseEnter={()=>{if(typeof window!=="undefined"&&window.innerWidth>1100)setExpanded(item.title)}} onMouseLeave={()=>{if(typeof window!=="undefined"&&window.innerWidth>1100)setExpanded(null)}}>
+        {navigation.map(item=><div key={item.title} className={"dm-nav-group"+(expanded===item.title?" expanded":"")} onMouseEnter={()=>{if(item.children.length&&typeof window!=="undefined"&&window.innerWidth>1100)setExpanded(item.title)}} onMouseLeave={()=>{if(item.children.length&&typeof window!=="undefined"&&window.innerWidth>1100)setExpanded(null)}}>
           <a href={item.path} className="dm-nav-parent" onClick={()=>setMobile(false)}>{item.title}</a>
-          <button className="dm-nav-subtoggle" type="button" aria-label={"Toggle "+item.title+" dropdown"} aria-expanded={expanded===item.title} aria-controls={"dm-submenu-"+item.title.toLowerCase()} onClick={()=>setExpanded(v=>v===item.title?null:item.title)} onKeyDown={e=>{if(e.key==="ArrowDown"){e.preventDefault();setExpanded(item.title);const first=header.current?.querySelector<HTMLAnchorElement>("#dm-submenu-"+item.title.toLowerCase()+" a");requestAnimationFrame(()=>first?.focus())}}}>⌄</button>
-          <div className="dm-nav-submenu" id={"dm-submenu-"+item.title.toLowerCase()} role="group" aria-label={item.title+" links"}>{item.children.map(child=><a href={child.path} key={child.path} onClick={()=>{setMobile(false);setExpanded(null)}}>{child.title}</a>)}</div>
+          {item.children.length>0&&<><button className="dm-nav-subtoggle" type="button" aria-label={"Toggle "+item.title+" dropdown"} aria-expanded={expanded===item.title} aria-controls={"dm-submenu-"+item.title.toLowerCase()} onClick={()=>setExpanded(v=>v===item.title?null:item.title)} onKeyDown={e=>{if(e.key==="ArrowDown"){e.preventDefault();setExpanded(item.title);const first=header.current?.querySelector<HTMLAnchorElement>("#dm-submenu-"+item.title.toLowerCase()+" a");requestAnimationFrame(()=>first?.focus())}}}>⌄</button>
+          <div className="dm-nav-submenu" id={"dm-submenu-"+item.title.toLowerCase()} role="group" aria-label={item.title+" links"}>{item.children.map(child=><a href={child.path} key={child.path} onClick={()=>{setMobile(false);setExpanded(null)}}>{child.title}</a>)}</div></>}
         </div>)}
         <Button asChild className="dm-btn dm-btn-primary dm-nav-cta"><a href={INQUIRY_PATH} onClick={()=>{setMobile(false);setExpanded(null)}}>Get a Consultation <ArrowRight aria-hidden="true"/></a></Button>
       </nav>
