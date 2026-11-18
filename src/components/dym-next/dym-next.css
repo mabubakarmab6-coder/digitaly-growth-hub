@@ -33,3 +33,4 @@
 .dm-diagnostic-result h3{margin:14px 0;font-size:23px}
 .dm-diagnostic-result p{font-size:14px}
 @media(max-width:680px){.dm-diagnostic-choices{grid-template-columns:1fr}}
+.dm-founder-profile img{object-position:center 8%}.dm-founder-detail .dm-detail-photo img{object-position:center 12%}
