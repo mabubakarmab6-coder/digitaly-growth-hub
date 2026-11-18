@@ -211,7 +211,7 @@ function GrowthDiagnostic() {
 
 export function DymServicesLanding() {
   return (
-    <DymShell>
+    <DymShell showFloatingCta={false}>
       <div className="dms-landing">
         <section className="dms-hero" aria-labelledby="services-title">
           <div className="dm-container dms-wrap">
@@ -284,6 +284,9 @@ export function DymServicesLanding() {
                   </article>
                 );
               })}
+            </div>
+            <div className="dms-services-action">
+              <EnquiryLink />
             </div>
           </div>
         </section>

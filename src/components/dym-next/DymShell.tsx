@@ -70,8 +70,8 @@ export function DymFooter(){
 export function DymCta(){
  return <div className="dm-container dm-cta-wrap"><section className="dm-cta-section"><div><span className="dm-eyebrow">START WITH CLARITY</span><h2>Before choosing a service, understand the challenge.</h2><p>Tell us what you're trying to achieve. We'll start with the business problem.</p></div><a href={INQUIRY_PATH} className="dm-btn dm-btn-white">Start a conversation ↗</a></section></div>;
 }
-export function DymShell({children,homepage=false}:{children:ReactNode;homepage?:boolean}){
- return <div className={"dm-site"+(homepage?" dm-home":"")}><a className="dm-skip-link" href="#main">Skip to content</a><DymHeader/><main id="main">{children}</main><DymFooter/><GlobalFloatingCta/></div>;
+export function DymShell({children,homepage=false,showFloatingCta=true}:{children:ReactNode;homepage?:boolean;showFloatingCta?:boolean}){
+ return <div className={"dm-site"+(homepage?" dm-home":"")}><a className="dm-skip-link" href="#main">Skip to content</a><DymHeader/><main id="main">{children}</main><DymFooter/>{showFloatingCta && <GlobalFloatingCta/>}</div>;
 }
 export function DymPageHero({eyebrow,title,description,crumb}:{eyebrow:string;title:string;description:string;crumb:string}){
  return <section className="dm-page-hero"><div className="dm-container"><div className="dm-breadcrumb"><a href="/">Home</a><span>/</span><span>{crumb}</span></div><span className="dm-eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p><div className="dm-cta-row"><a href={INQUIRY_PATH} className="dm-btn dm-btn-primary">Start a conversation ↗</a><a href="/work" className="dm-btn dm-btn-outline">Explore project examples</a></div></div></section>;
