@@ -9,7 +9,7 @@ test("agency services are ordered Web Creation, Paid Marketing, then GEO", () =>
 
 test("enquiry service choices follow the agency order without changing saved values", () => {
   assert.deepEqual(SERVICE_OPTIONS.slice(0, 3), ["Website", "Paid Marketing", "GEO"]);
-  assert.deepEqual([...SERVICE_OPTIONS].sort(), ["Website", "Paid Marketing", "GEO", "SEO", "E-commerce / Marketplace", "Not sure yet"].sort());
+  assert.deepEqual([...SERVICE_OPTIONS].sort(), ["Website", "Paid Marketing", "GEO", "SEO", "E-commerce / Marketplace", "Analytics, Tracking & CRO", "Not sure yet"].sort());
 });
 
 test("E-commerce Growth is retired from service data and related capabilities", () => {
