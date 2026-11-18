@@ -34,8 +34,15 @@ function normalizeService(value?: string) {
   const normalized = value.toLowerCase();
   if (normalized.includes("geo") || normalized.includes("generative")) return "GEO";
   if (normalized.includes("paid") || normalized.includes("performance")) return "Paid Marketing";
-  if (normalized === "seo" || normalized.includes("search engine optimization")) return "SEO";
-  if (normalized.includes("website") || normalized.includes("web creation")) return "Website";
+  if (normalized === "seo" || normalized === "/services/seo" || /search engine optimi[sz]ation/.test(normalized)) {
+    return "SEO";
+  }
+  if (normalized.includes("analytics") || normalized.includes("tracking") || normalized === "cro") {
+    return "Analytics, Tracking & CRO";
+  }
+  if (normalized.includes("website") || normalized.includes("web creation") || normalized.includes("web-creation")) {
+    return "Website";
+  }
   if (
     normalized.includes("e-commerce") ||
     normalized.includes("ecommerce") ||
@@ -86,7 +93,8 @@ export function InquiryProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
-    if (params.get("inquire") === "true" || window.location.hash === "#inquire") {
+    const inquiryParam = params.get("inquire");
+    if (inquiryParam === "true" || inquiryParam === '"true"' || window.location.hash === "#inquire") {
       openInquiry();
       const cleanUrl = window.location.pathname;
       window.history.replaceState({}, document.title, cleanUrl);

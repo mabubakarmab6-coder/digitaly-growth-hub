@@ -6,6 +6,7 @@ export const SERVICE_OPTIONS = [
   "GEO",
   "SEO",
   "E-commerce / Marketplace",
+  "Analytics, Tracking & CRO",
   "Not sure yet",
 ] as const;
 
