@@ -421,7 +421,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Content Quality and Authority:</strong> AI models are trained to prioritize highly credible, factual, and deeply informative content over thin, SEO-stuffed articles.</li>
       </ul>
       
-      <h2 class="text-3xl font-bold mt-8 mb-4">Why E-E-a-T Matters More than Ever</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">Why E-E-A-T Matters More than Ever</h2>
       <p class="mb-4">Google's concept of E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) is critical in the GEO era. AI engines want to cite trusted experts. Showcasing real-world experience, author credentials, and generating brand mentions across high-authority websites will signal to the AI that your brand is the definitive authority in your niche.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Limitations and Misconceptions of GEO</h2>
