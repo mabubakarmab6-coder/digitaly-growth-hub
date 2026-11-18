@@ -68,7 +68,7 @@ export function DymFooter(){
  </div><div className="dm-footer-bottom"><span>© {new Date().getFullYear()} DigitalyMarket · Understand · Strategize · Grow.</span><span><a href="/sitemap.xml">Sitemap</a> · <a href="/privacy">Privacy</a></span></div></div></footer>;
 }
 export function DymCta(){
- return <div className="dm-container dm-cta-wrap"><section className="dm-cta-section"><div><span className="dm-eyebrow">START WITH CLARITY</span><h2>Before choosing a service, understand the challenge.</h2><p>Tell us what you're trying to achieve. We'll start with the business problem.</p></div><a href={INQUIRY_PATH} className="dm-btn dm-btn-white">Start a conversation ↗</a></section></div>;
+ return <div className="dm-container dm-cta-wrap"><section className="dm-cta-section"><div><span className="dm-eyebrow">START WITH CLARITY</span><h2>Before Choosing a Service, Understand the Challenge.</h2><p>Tell us what you're trying to achieve. We'll start with the business problem.</p></div><a href={INQUIRY_PATH} className="dm-btn dm-btn-white">Start a conversation ↗</a></section></div>;
 }
 export function DymShell({children,homepage=false}:{children:ReactNode;homepage?:boolean}){
  return <div className={"dm-site"+(homepage?" dm-home":"")}><a className="dm-skip-link" href="#main">Skip to content</a><DymHeader/><main id="main">{children}</main><DymFooter/><GlobalFloatingCta/></div>;

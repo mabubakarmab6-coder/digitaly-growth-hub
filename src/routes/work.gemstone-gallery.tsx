@@ -251,7 +251,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Project overview"
-              heading="An Offline Manufacturing Business, Translated Into a Focused Digital Presence."
+              heading="An Offline Manufacturing Business, Translated into a Focused Digital Presence."
               intro="Gems Gallery is an independent portfolio project exploring how an established, manufacturing-oriented gemstone business can communicate its expertise to professional buyers online."
             />
             <dl className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -324,10 +324,10 @@ function GemsGalleryCaseStudy() {
             <SectionHead eyebrow="Objectives" heading="Four Objectives Defined the Project." />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                ["01", "Create an owned digital presence", "A destination capable of communicating manufacturing capability."],
-                ["02", "Facilitate professional inquiries", "Through Quote Requests and WhatsApp."],
-                ["03", "Position toward B2B buyers", "Professional buyers rather than retail consumers."],
-                ["04", "Build focused information architecture", "A structure designed to build trust."],
+                ["01", "Create an Owned Digital Presence", "A destination capable of communicating manufacturing capability."],
+                ["02", "Facilitate Professional Inquiries", "Through Quote Requests and WhatsApp."],
+                ["03", "Position toward B2B Buyers", "Professional buyers rather than retail consumers."],
+                ["04", "Build Focused Information Architecture", "A structure designed to build trust."],
               ].map(([index, t, body], i) => (
                 <Reveal key={index} delay={i * 70}>
                   <Card index={index!} title={t!} body={body!} />
@@ -342,16 +342,16 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Research"
-              heading="Understanding the Business Before Deciding the Structure."
+              heading="Understanding the Business before Deciding the Structure."
               intro="Research was discussion and questionnaire based: understanding how the business operates, how gemstones are processed and what professional buyers need to know before making contact. It preceded every structural decision."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                ["Business understanding", "How the business operates and where its real capability sits."],
-                ["Manufacturing processes", "How stones move from rough material to finished output."],
-                ["B2B requirements", "What professional buyers evaluate before engaging a manufacturer."],
-                ["Buyer communication", "The language and detail buyers expect to see."],
-                ["Digital opportunity", "Where an owned digital presence could realistically help."],
+                ["Business Understanding", "How the business operates and where its real capability sits."],
+                ["Manufacturing Processes", "How stones move from rough material to finished output."],
+                ["B2B Requirements", "What professional buyers evaluate before engaging a manufacturer."],
+                ["Buyer Communication", "The language and detail buyers expect to see."],
+                ["Digital Opportunity", "Where an owned digital presence could realistically help."],
               ].map(([t, body], i) => (
                 <Reveal key={t} delay={i * 60}>
                   <Card title={t!} body={body!} />
@@ -632,7 +632,7 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="ACTDF framework"
-              heading="Five Factors Behind the B2B Digital Experience."
+              heading="Five Factors behind the B2B Digital Experience."
             />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
               {[
@@ -644,7 +644,7 @@ function GemsGalleryCaseStudy() {
               ].map(([t, q, note], i) => (
                 <Reveal key={t} delay={i * 60}>
                   <div className="h-full rounded-3xl border border-hairline bg-card p-6 shadow-soft">
-                    <h3 className="text-sm font-bold tracking-widest text-primary uppercase">{t}</h3>
+                    <h3 className="text-sm font-bold tracking-widest text-primary">{t}</h3>
                     <p className="mt-3 text-sm font-semibold tracking-tight text-foreground">{q}</p>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{note}</p>
                   </div>
@@ -670,8 +670,8 @@ function GemsGalleryCaseStudy() {
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {[
                 ["Advantage", "Broader visual positioning across materials."],
-                ["Trade-off", "Less immediate semantic specificity."],
-                ["Future opportunity", "Dedicated gemstone-specific content can increase specificity and search opportunities."],
+                ["Trade-Off", "Less immediate semantic specificity."],
+                ["Future Opportunity", "Dedicated gemstone-specific content can increase specificity and search opportunities."],
               ].map(([t, body], i) => (
                 <Reveal key={t} delay={i * 70}>
                   <Card title={t!} body={body!} />
@@ -688,7 +688,7 @@ function GemsGalleryCaseStudy() {
               <div className="h-full rounded-3xl border border-hairline bg-card p-8">
                 <p className="eyebrow">SEO foundations</p>
                 <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-                  Search-Friendly Structure, Built in From the Start.
+                  Search-Friendly Structure, Built in from the Start.
                 </h2>
                 <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
                   {[
@@ -752,7 +752,7 @@ function GemsGalleryCaseStudy() {
               ].map(([t, items], i) => (
                 <Reveal key={t as string} delay={i * 80}>
                   <div className="h-full rounded-3xl border border-hairline bg-card p-8 shadow-soft">
-                    <h3 className="text-sm font-bold tracking-widest text-primary uppercase">{t as string}</h3>
+                    <h3 className="text-sm font-bold tracking-widest text-primary">{t as string}</h3>
                     <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                       {(items as string[]).map((x) => (
                         <li key={x} className="flex gap-2">
@@ -809,13 +809,13 @@ function GemsGalleryCaseStudy() {
             />
             <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                "B2B audience",
-                "Focused architecture",
-                "Website completed",
-                "Inquiry paths",
-                "SEO foundations",
-                "GEO awareness",
-                "Published digital asset",
+                "B2B Audience",
+                "Focused Architecture",
+                "Website Completed",
+                "Inquiry Paths",
+                "SEO Foundations",
+                "GEO Awareness",
+                "Published Digital Asset",
               ].map((x, i) => (
                 <li key={x}>
                   <Reveal delay={i * 50}>
@@ -844,11 +844,11 @@ function GemsGalleryCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Next steps"
-              heading="What Could Come Next — Clearly Separate From What Is Complete."
+              heading="What Could Come Next — Clearly Separate from What Is Complete."
             />
             <ol className="mt-12 space-y-5">
               {[
-                ["Technical foundation", "Complete remaining technical SEO work."],
+                ["Technical Foundation", "Complete remaining technical SEO work."],
                 ["Measurement", "Track traffic → engagement → inquiry."],
                 ["Content", "Expand manufacturing and gemstone-specific content."],
                 ["Acquisition", "SEO · GEO · Paid · Outreach · Social · Partnerships"],
@@ -908,7 +908,7 @@ function GemsGalleryCaseStudy() {
                 Next
               </p>
               <h2 className="mt-4 text-3xl leading-[1.15] font-semibold tracking-tight text-navy-foreground sm:text-4xl">
-                See the Project, or Talk About Yours.
+                See the Project, or Talk about Yours.
               </h2>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Cta href={liveUrl} target="_blank" rel="noopener noreferrer" variant="onNavy" size="lg">
