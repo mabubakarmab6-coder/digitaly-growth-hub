@@ -26,27 +26,27 @@ export const Route = createFileRoute("/privacy")({
 
 const sections: { heading: string; body: string[] }[] = [
   {
-    heading: "What We Collect",
+    heading: "What we collect",
     body: [
       "When you submit an enquiry, we collect your name, work email, company or business name, the service you select, and any optional context you share about your business or challenge. We also record the page and service context from which you opened the enquiry form, and your browser's user agent.",
       "We do not ask for a phone number, home address or any payment information.",
     ],
   },
   {
-    heading: "Why We Collect It",
+    heading: "Why we collect it",
     body: [
       "We use your enquiry to understand your business, assess whether we can genuinely help, and reply to you by email with the next appropriate step. That is the only purpose.",
       "Enquiries are stored securely and sent to our connected Google Sheet through Google Apps Script so we can manage and respond to them. These details are not sent to website analytics.",
     ],
   },
   {
-    heading: "How We Contact You",
+    heading: "How we contact you",
     body: [
       "We follow up by email using the work email address you provide. We do not add you to a marketing list, and we do not contact you by phone or messaging apps.",
     ],
   },
   {
-    heading: "How Long We Keep It",
+    heading: "How long we keep it",
     body: [
       "Enquiries are retained only as long as needed to evaluate and respond to them, and to keep a record of our business correspondence. You can ask us to delete your enquiry at any time.",
     ],
@@ -58,7 +58,7 @@ const sections: { heading: string; body: string[] }[] = [
     ],
   },
   {
-    heading: "Your Choices",
+    heading: "Your choices",
     body: [
       "You can request access to, correction of, or deletion of the information you shared with us. Email us and we'll action it.",
     ],

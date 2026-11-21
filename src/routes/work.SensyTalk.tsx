@@ -258,7 +258,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <SectionHead
               eyebrow="Project overview"
-              heading="A High-Performance SaaS Platform Trapped behind an Outdated Web Storefront."
+              heading="A High-Performance SaaS Platform Trapped Behind an Outdated Web Storefront."
               intro="SensyTalk is an official Meta WhatsApp Business Solution Partner (BSP) with enterprise-grade tech: 24/7 AI chatbots, a multi-agent shared inbox, and the SensyConnect telecalling CRM Android app. DigitalyMarket led an end-to-end transformation to align their web presence with enterprise buyer expectations."
             />
             <dl className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -486,7 +486,7 @@ function SensyTalkCaseStudy() {
           <div className="container-page">
             <Reveal className="rounded-3xl border border-hairline bg-gradient-to-br from-card via-surface to-card p-10 sm:p-16 text-center shadow-lift">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-                Is Your SaaS Trapped behind an Outdated Website?
+                Is Your SaaS Trapped Behind an Outdated Website?
               </h2>
               <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
                 We combine deep CRO audits, B2B outcome positioning, and modern front-end engineering to turn websites into 24/7 revenue engines.

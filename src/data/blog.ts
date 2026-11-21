@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Honest expectations matter more than big promises. Paid campaigns can generate enquiries within days of launch, but need testing budget and iteration before they become efficient. SEO and content typically take three to six months to show meaningful traction, then compound. GEO—being recommended by AI assistants—is newer still, and depends heavily on how clearly your business entity, services, and expertise are described across the web.</p>
       <p class="mb-4">No reputable agency can guarantee a specific ranking or a fixed number of leads. What a good partner can guarantee is a disciplined process: diagnose before prescribing, measure everything, and tell you plainly what is working and what is not.</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">How to Start with Digital Marketing</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">How to Start With Digital Marketing</h2>
       <p class="mb-4">If you are new to digital marketing, getting started can feel overwhelming. Follow these practical steps:</p>
       <ol class="list-decimal pl-6 mb-4 space-y-2">
         <li><strong>Define your goals:</strong> Are you looking for brand awareness, direct sales, or B2B leads?</li>
@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-2xl font-semibold mt-6 mb-2">Search Engine Optimization (SEO)</h3>
       <p class="mb-4">E-commerce SEO involves optimizing your product pages and category pages so they rank high on Google. This ensures that when a customer searches for a product you sell, your store appears first. It involves keyword research, optimizing meta tags, and ensuring fast page load speeds. For a deeper walkthrough, read <a href="/insights/what-is-ecommerce-seo" class="text-primary hover:underline">what e-commerce SEO is and how it works</a>.</p>
       
-      <h3 class="text-2xl font-semibold mt-6 mb-2">Pay-per-Click (PPC) Advertising</h3>
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Pay-Per-Click (PPC) Advertising</h3>
       <p class="mb-4">Running Google Shopping Ads or Meta (Facebook/Instagram) Ads allows you to put your products directly in front of targeted audiences. <a href="/services/paid-marketing" class="text-primary hover:underline">Paid marketing</a> is highly measurable and can provide immediate sales.</p>
       
       <h3 class="text-2xl font-semibold mt-6 mb-2">Email Marketing</h3>
@@ -277,7 +277,7 @@ export const blogPosts: BlogPost[] = [
       
       <p class="mb-4">E-commerce SEO (Search Engine Optimization) is the process of optimizing your online store so that your product pages, category pages, and content rank higher in search engine results like Google. When someone searches for a product you sell, your store appears at the top—for free.</p>
       
-      <h2 class="text-3xl font-bold mt-8 mb-4">How It Differs from General SEO</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">How It Differs From General SEO</h2>
       <p class="mb-4">While traditional <a href="/insights/what-is-seo" class="text-primary hover:underline">SEO</a> often focuses on long-form blog content and lead generation, e-commerce SEO is highly transactional. The goal isn't just to educate; it's to sell. The primary focus is on optimizing hundreds or thousands of specific product pages and category architectures rather than just a few informational articles.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Core Components of E-Commerce SEO</h2>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-3xl font-bold mt-8 mb-4">The Role of Search Intent</h2>
       <p class="mb-4">Understanding <strong>search intent</strong> is crucial for e-commerce growth. If a user searches "best running shoes" (informational/comparative intent), a blog post is best. If they search "buy Nike Pegasus size 10" (transactional intent), they need to land directly on a highly optimized product page.</p>
       
-      <h2 class="text-3xl font-bold mt-8 mb-4">Turning Organic Traffic into Organic Sales</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">Turning Organic Traffic Into Organic Sales</h2>
       <p class="mb-4">Getting traffic is only half the battle. E-commerce SEO must work hand-in-hand with Conversion Rate Optimization (CRO). Clear calls-to-action (Add to Cart), trustworthy reviews, and a frictionless checkout process ensure that your hard-earned organic traffic actually converts into revenue.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Common E-Commerce SEO Mistakes</h2>
@@ -421,7 +421,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Content Quality and Authority:</strong> AI models are trained to prioritize highly credible, factual, and deeply informative content over thin, SEO-stuffed articles.</li>
       </ul>
       
-      <h2 class="text-3xl font-bold mt-8 mb-4">Why E-E-A-T Matters More than Ever</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">Why E-E-A-T Matters More Than Ever</h2>
       <p class="mb-4">Google's concept of E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) is critical in the GEO era. AI engines want to cite trusted experts. Showcasing real-world experience, author credentials, and generating brand mentions across high-authority websites will signal to the AI that your brand is the definitive authority in your niche.</p>
       
       <h2 class="text-3xl font-bold mt-8 mb-4">Limitations and Misconceptions of GEO</h2>
@@ -483,7 +483,7 @@ export const blogPosts: BlogPost[] = [
         <li>Analyze and optimize</li>
       </ol>
 
-      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">1. Start with the Business Objective</h2>
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">1. Start With the Business Objective</h2>
       <p class="mb-5">Digital marketing should begin with the business problem, not with a particular platform. A business may want to generate qualified leads, increase online sales, enter a new market, build awareness, reduce customer acquisition costs, increase repeat purchases, or improve website conversions. The objective determines what kind of strategy may be appropriate.</p>
 
       <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">2. Understand the Target Audience</h2>
@@ -522,7 +522,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
       <p class="mb-5">Website structure, content quality, page speed, mobile experience, navigation, product or service presentation, trust signals, and calls to action can all affect the experience. This is where <a href="/services/web-creation" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">website creation and optimization</a> and conversion optimization become important.</p>
 
-      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">8. Convert Visitors into Meaningful Actions</h2>
+      <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">8. Convert Visitors Into Meaningful Actions</h2>
       <p class="mb-5">A conversion is the desired action a visitor takes. For e-commerce: Visitor → Product → Cart → Checkout → Purchase. For a service business: Visitor → Service → Enquiry → Consultation → Customer. For B2B: Visitor → Research → Enquiry → Sales process → Customer. Not every visitor converts immediately, so the <strong>digital marketing funnel</strong> should be viewed as a customer journey rather than a single advertisement or post. The same principle is explored in our guides to <a href="/insights/what-is-ecommerce-marketing" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce marketing</a> and <a href="/insights/what-is-ecommerce-growth" class="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">e-commerce growth</a>.</p>
 
       <h2 class="mt-12 mb-5 text-3xl font-semibold leading-tight">9. Measure What Happens</h2>

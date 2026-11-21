@@ -10,7 +10,6 @@ interface SitemapEntry {
   path: string;
   changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
   priority?: string;
-  lastmod?: string;
 }
 
 export const Route = createFileRoute("/sitemap.xml")({
@@ -22,11 +21,12 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/about", changefreq: "monthly", priority: "0.8" },
           { path: "/founder", changefreq: "monthly", priority: "0.7" },
           { path: "/services", changefreq: "weekly", priority: "0.9" },
-          { path: "/services/web-creation", changefreq: "monthly", priority: "0.8" },
-          { path: "/services/paid-marketing", changefreq: "monthly", priority: "0.8" },
-          { path: "/services/GEO", changefreq: "monthly", priority: "0.8" },
+          { path: "/services/GEO", changefreq: "monthly", priority: "0.7" },
           { path: "/services/seo", changefreq: "monthly", priority: "0.7" },
+          { path: "/services/ecommerce-marketplace-growth", changefreq: "monthly", priority: "0.7" },
           { path: "/services/analytics-cro", changefreq: "monthly", priority: "0.7" },
+          { path: "/services/paid-marketing", changefreq: "monthly", priority: "0.7" },
+          { path: "/services/web-creation", changefreq: "monthly", priority: "0.7" },
           { path: "/industries", changefreq: "weekly", priority: "0.9" },
           ...industries.map((industry) => ({
             path: `/industries/${industry.slug}`,
@@ -38,7 +38,6 @@ export const Route = createFileRoute("/sitemap.xml")({
             path: `/insights/${post.slug}`,
             changefreq: "monthly" as const,
             priority: "0.8",
-            lastmod: post.modifiedDate ?? post.publishDate,
           })),
           { path: "/work", changefreq: "monthly", priority: "0.8" },
           { path: "/work/gemstone-gallery", changefreq: "monthly", priority: "0.8" },
@@ -51,7 +50,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           [
             `  <url>`,
             `    <loc>${BASE_URL}${e.path}</loc>`,
-            `    <lastmod>${e.lastmod ?? LAST_MODIFIED}</lastmod>`,
+            `    <lastmod>${LAST_MODIFIED}</lastmod>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,

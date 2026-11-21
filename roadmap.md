@@ -1,7 +1,5 @@
 # Roadmap
 
-- [x] Apply heading-only Title Case across all public pages and shared titles; verify desktop/mobile, dynamic headings and unchanged metadata; preview only.
-
 - [x] Implement approved V5 preview scope, preserve three services/content/integrations, verify recovery, capture screenshots and deliver A–M report; not published.
 - [ ] Resolve literal V5 four-service/reference-fidelity acceptance (blocked: approved plan preserves three services and current copy/logo/portfolio inventory; needs a separate content decision).
 
