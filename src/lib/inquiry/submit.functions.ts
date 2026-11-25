@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { inquiryInputSchema } from "./config";
 
 export const submitInquiry = createServerFn({ method: "POST" })
-  .inputValidator((input: unknown) => inquiryInputSchema.parse(input))
+  .validator((input: unknown) => inquiryInputSchema.parse(input))
   .handler(async ({ data }) => {
     if (data.website) return { ok: true as const };
     const inquiryId = data.submissionId ?? crypto.randomUUID();
