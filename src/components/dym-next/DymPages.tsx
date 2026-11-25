@@ -1,21 +1,12 @@
-import standing from "@/assets/founder-standing.jpg.asset.json";
-import seated from "@/assets/founder-seated.jpg.asset.json";
-import portrait from "@/assets/founder-portrait.jpg.asset.json";
+import { editorialImages as PHOTOS } from "@/data/editorial-images";
+import standing from "@/assets/founder-standing.webp.asset.json";
+import seated from "@/assets/founder-seated.webp.asset.json";
+import portrait from "@/assets/founder-portrait.webp.asset.json";
 import { DymShell,DymPageHero,DymCta,dymServices } from "./DymShell";
 import { DymMethod,DymServiceRows,DymDiagnostic } from "./DymHome";
 import { INQUIRY_PATH } from "@/components/site/constants";
 
-const PHOTOS={
-  team:"https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1500&q=84",
-  commerce:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1500&q=84",
-  factory:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1500&q=84",
-  local:"https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1500&q=84",
-  seo:"https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1400&q=84",
-  geo:"https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=84",
-  analytics:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=84",
-  gems:"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=84",
-  saas:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=84"
-};
+
 type Service={
  eyebrow:string;title:string;intro:string;context:string;bullets:string[];image?:string;related?:{label:string;href:string};
 };

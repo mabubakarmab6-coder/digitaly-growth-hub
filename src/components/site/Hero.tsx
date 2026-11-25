@@ -1,9 +1,13 @@
 import {ArrowRight,Compass} from "lucide-react";
-import manufacturing from "@/assets/industry-manufacturing.jpg";
-import ecommerce from "@/assets/industry-ecommerce.jpg";
-import local from "@/assets/industry-local.jpg";
+import manufacturingAsset from "@/assets/industry-manufacturing.webp.asset.json";
+import ecommerceAsset from "@/assets/industry-ecommerce.webp.asset.json";
+import localAsset from "@/assets/industry-local.webp.asset.json";
 import {Cta} from "./Cta";
 import {INQUIRY_PATH} from "./constants";
+
+const manufacturing = manufacturingAsset.url;
+const ecommerce = ecommerceAsset.url;
+const local = localAsset.url;
 export function Hero(){return <section className="relative overflow-hidden border-b border-hairline bg-background"><div className="container-page grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.06fr_0.94fr] lg:items-center lg:gap-16 lg:py-28"><div>
 <p className="eyebrow">A more thoughtful approach to business growth</p><h1 className="mt-6 max-w-3xl text-[2.75rem] leading-[1.04] font-semibold tracking-[-0.045em] text-foreground sm:text-[3.5rem] lg:text-[4.2rem]">Find what's holding your business back.<span className="mt-2 block text-primary">Build what moves it forward.</span></h1>
 <p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">From your website and marketplaces to customer acquisition and digital operations, we identify what's limiting progress and help address it through strategy, technology and execution.</p>

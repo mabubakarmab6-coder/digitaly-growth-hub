@@ -1,5 +1,5 @@
-import logoAsset from "@/assets/digitalymarket-logo.png.asset.json";
-import headerLogoAsset from "@/assets/digitalymarket-header-logo.png.asset.json";
+import logoAsset from "@/assets/digitalymarket-logo.webp.asset.json";
+import headerLogoAsset from "@/assets/digitalymarket-header-logo.webp.asset.json";
 import { cn } from "@/lib/utils";
 
 /**

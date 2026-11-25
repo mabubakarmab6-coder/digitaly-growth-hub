@@ -2,7 +2,9 @@ import { ArrowRight, Compass } from "lucide-react";
 import { Cta } from "@/components/site/Cta";
 import { Reveal } from "@/components/site/Reveal";
 import { INQUIRY_PATH } from "@/components/site/constants";
-import heroEcosystem from "@/assets/hero-ecosystem.jpg";
+import heroEcosystemAsset from "@/assets/hero-ecosystem.webp.asset.json";
+
+const heroEcosystem = heroEcosystemAsset.url;
 
 const arc = ["Business", "Diagnosis", "Growth"];
 

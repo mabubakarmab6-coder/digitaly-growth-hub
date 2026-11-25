@@ -1,4 +1,4 @@
-import founderSeated from "@/assets/founder-seated.jpg.asset.json";
+import founderSeated from "@/assets/founder-seated.webp.asset.json";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Cta } from "./Cta";

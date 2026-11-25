@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/site/Reveal";
-import founderStanding from "@/assets/founder-standing.jpg.asset.json";
+import founderStanding from "@/assets/founder-standing.webp.asset.json";
 
 const beats = [
   {

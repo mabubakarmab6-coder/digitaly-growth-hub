@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Convert website PNG/JPG images to WebP, update every active reference, preserve favicon/social-preview compatibility, and verify image delivery and page layouts without publishing.
+
 - [x] Implement approved V5 preview scope, preserve three services/content/integrations, verify recovery, capture screenshots and deliver A–M report; not published.
 - [ ] Resolve literal V5 four-service/reference-fidelity acceptance (blocked: approved plan preserves three services and current copy/logo/portfolio inventory; needs a separate content decision).
 

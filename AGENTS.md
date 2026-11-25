@@ -18,3 +18,4 @@
 - Keep Web Creation's illustrative HTML mockups and scoped styles in page-specific modules within the existing route shell, because its visual narrative must not alter shared site branding or enquiry behavior.
 - Retire service routes by removing their listing/data/SEO entries and unwrapping contextual links, while preserving educational content and shared enquiry options; redirect mappings require explicit approval to avoid unrelated destinations.
 - Keep immersive homepage presentation scoped through the homepage shell class and use shared portfolio records for its work preview, because visual redesigns must not change unrelated reading layouts or duplicate project facts.
+- Serve website photography and approved logos through WebP asset pointers, keep shared editorial URLs in one data module, and retain PNG favicon/JPEG social-preview compatibility copies and original CDN pointers, because image optimization must preserve artwork and earlier deployments.

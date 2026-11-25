@@ -1,3 +1,4 @@
+import fallbackImage from "@/assets/sensytalk-hero.webp.asset.json";
 import { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
@@ -157,7 +158,7 @@ export function WorkAndInsights() {
                         className="group relative aspect-16/10 overflow-hidden rounded-2xl border border-hairline bg-surface shadow-inner block"
                       >
                         <img
-                          src={project.imageUrl || "/work/sensytalk-hero.jpg"}
+                          src={project.imageUrl || fallbackImage.url}
                           alt={`${project.title} preview`}
                           loading="lazy"
                           width={1200}

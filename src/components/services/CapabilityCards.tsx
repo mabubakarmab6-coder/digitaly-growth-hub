@@ -1,9 +1,13 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import geoImage from "@/assets/service-geo.jpg";
-import paidImage from "@/assets/service-paid.jpg";
-import webImage from "@/assets/service-web.jpg";
+import geoImageAsset from "@/assets/service-geo.webp.asset.json";
+import paidImageAsset from "@/assets/service-paid.webp.asset.json";
+import webImageAsset from "@/assets/service-web.webp.asset.json";
 import { Reveal } from "@/components/site/Reveal";
+
+const geoImage = geoImageAsset.url;
+const paidImage = paidImageAsset.url;
+const webImage = webImageAsset.url;
 
 
 

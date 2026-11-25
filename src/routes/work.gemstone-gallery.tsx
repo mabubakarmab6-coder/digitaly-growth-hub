@@ -1,3 +1,4 @@
+import heroImage from "@/assets/gems-gallery-hero.webp.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { SiteNav } from "@/components/site/SiteNav";
@@ -170,7 +171,7 @@ function GemsGalleryCaseStudy() {
         {/* Hero */}
         <section className="relative overflow-hidden bg-navy">
           <img
-            src="/work/gems-gallery-hero.jpg"
+            src={heroImage.url}
             alt="Abstract composition of faceted and polished gemstone forms over a navy digital grid, representing gemstone manufacturing and digital strategy"
             width={1600}
             height={1008}

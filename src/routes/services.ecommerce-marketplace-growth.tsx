@@ -12,7 +12,7 @@ const description = service.summary.slice(0, 155);
 export const Route = createFileRoute("/services/ecommerce-marketplace-growth")({
   component: Page,
   head: () => ({
-    meta: [{title},{name:"description",content:description},{property:"og:title",content:title},{property:"og:description",content:description},{property:"og:url",content:url},{name:"twitter:card",content:"summary_large_image"}],
+    meta: [{title},{name:"description",content:description},{property:"og:title",content:title},{property:"og:description",content:description},{property:"og:type",content:"website"},{property:"og:url",content:url},{name:"twitter:card",content:"summary_large_image"}],
     links:[{rel:"canonical",href:url}],
     scripts:[{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"Service",name:service.eyebrow,description,url,provider:{"@type":"Organization",name:"DigitalyMarket",url:"https://digitalymarket.com"}})}],
   }),

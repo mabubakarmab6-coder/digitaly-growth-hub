@@ -1,11 +1,20 @@
-import manufacturingHero from "@/assets/hero-manufacturing.jpg";
-import professionalHero from "@/assets/hero-professional.jpg";
-import localHero from "@/assets/hero-local.jpg";
-import ecommerceHero from "@/assets/hero-ecommerce.jpg";
-import manufacturingCard from "@/assets/industry-manufacturing.jpg";
-import professionalCard from "@/assets/industry-professional.jpg";
-import localCard from "@/assets/industry-local.jpg";
-import ecommerceCard from "@/assets/industry-ecommerce.jpg";
+import manufacturingHeroAsset from "@/assets/hero-manufacturing.webp.asset.json";
+import professionalHeroAsset from "@/assets/hero-professional.webp.asset.json";
+import localHeroAsset from "@/assets/hero-local.webp.asset.json";
+import ecommerceHeroAsset from "@/assets/hero-ecommerce.webp.asset.json";
+import manufacturingCardAsset from "@/assets/industry-manufacturing.webp.asset.json";
+import professionalCardAsset from "@/assets/industry-professional.webp.asset.json";
+import localCardAsset from "@/assets/industry-local.webp.asset.json";
+import ecommerceCardAsset from "@/assets/industry-ecommerce.webp.asset.json";
+
+const manufacturingHero = manufacturingHeroAsset.url;
+const professionalHero = professionalHeroAsset.url;
+const localHero = localHeroAsset.url;
+const ecommerceHero = ecommerceHeroAsset.url;
+const manufacturingCard = manufacturingCardAsset.url;
+const professionalCard = professionalCardAsset.url;
+const localCard = localCardAsset.url;
+const ecommerceCard = ecommerceCardAsset.url;
 
 export type Industry = {
   slug: string;

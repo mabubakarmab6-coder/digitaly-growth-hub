@@ -1,5 +1,7 @@
 import { ArrowUpRight, Menu, Plus } from "lucide-react";
-import lamps from "@/assets/web-studio-lamps.jpg";
+import lampsAsset from "@/assets/web-studio-lamps.webp.asset.json";
+
+const lamps = lampsAsset.url;
 
 export function StudioScreen({
   mobile = false,

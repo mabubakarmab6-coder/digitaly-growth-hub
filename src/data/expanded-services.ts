@@ -1,6 +1,10 @@
-import seoImage from "@/assets/hero-professional.jpg";
-import commerceImage from "@/assets/service-ecommerce.jpg";
-import measurementImage from "@/assets/hero-ecommerce.jpg";
+import seoImageAsset from "@/assets/hero-professional.webp.asset.json";
+import commerceImageAsset from "@/assets/service-ecommerce.webp.asset.json";
+import measurementImageAsset from "@/assets/hero-ecommerce.webp.asset.json";
+
+const seoImage = seoImageAsset.url;
+const commerceImage = commerceImageAsset.url;
+const measurementImage = measurementImageAsset.url;
 
 export type ExpandedService = {
   key: string; eyebrow: string; h1: string; summary: string; image: string; alt: string;

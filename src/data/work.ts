@@ -1,3 +1,6 @@
+import gemsGalleryHero from "@/assets/gems-gallery-hero.webp.asset.json";
+import sensytalkHero from "@/assets/sensytalk-hero.webp.asset.json";
+
 export const GEMS_GALLERY_LIVE_URL = "https://lapidary-lab-suite.vercel.app/";
 
 /** Project featured in the homepage Work section. */
@@ -72,7 +75,7 @@ export const workProjects: WorkProject[] = [
       { id: "marketplace-optimization", title: "Marketplace Optimization", status: "Not Applicable" }
     ],
     technologies: ["UX Strategy", "Information Architecture", "AI-Assisted Development", "SEO", "GEO"],
-    imageUrl: "/work/gems-gallery-hero.jpg",
+    imageUrl: gemsGalleryHero.url,
     liveUrl: GEMS_GALLERY_LIVE_URL,
     status: "Completed",
     nextSteps: "Future improvements could include technical SEO completion, tracking measurement from traffic to inquiry, and content expansion around manufacturing processes.",
@@ -123,7 +126,7 @@ export const workProjects: WorkProject[] = [
       { id: "geo", title: "Generative Engine Optimization (GEO)", status: "Completed", shortDescription: "Architected Schema.org JSON-LD and direct question-and-answer vectors for AI answer engines." }
     ],
     technologies: ["React 19", "Vite 8", "Tailwind CSS", "Lucide Icons", "TypeScript", "CRO", "SEO", "GEO"],
-    imageUrl: "/work/sensytalk-hero.jpg",
+    imageUrl: sensytalkHero.url,
     liveUrl: "https://sensytalk-redesign.vercel.app",
     status: "Preview Deployed (Production Rollout Pending)",
     nextSteps: "Production DNS cutover from legacy WordPress to Vercel, automated CRM webhook ingestion, and 30-day post-launch conversion tracking.",

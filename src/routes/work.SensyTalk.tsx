@@ -1,3 +1,6 @@
+import heroImage from "@/assets/sensytalk-hero.webp.asset.json";
+import inboxImage from "@/assets/sensytalk-inbox.webp.asset.json";
+import pricingImage from "@/assets/sensytalk-pricing.webp.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Check, ExternalLink, ShieldCheck, Zap, MessageSquare, Sparkles } from "lucide-react";
 import { SiteNav } from "@/components/site/SiteNav";
@@ -170,7 +173,7 @@ function SensyTalkCaseStudy() {
         {/* Hero */}
         <section className="relative overflow-hidden bg-navy">
           <img
-            src="/work/sensytalk-hero.jpg"
+            src={heroImage.url}
             alt="SensyTalk redesigned homepage hero interface showing official Meta WhatsApp Business Solution Partner positioning and live product tour"
             width={1600}
             height={1008}
@@ -403,7 +406,7 @@ function SensyTalkCaseStudy() {
               <Reveal>
                 <div className="overflow-hidden rounded-3xl border border-hairline bg-card shadow-soft">
                   <img
-                    src="/work/sensytalk-inbox.jpg"
+                    src={inboxImage.url}
                     alt="SensyTalk multi-agent shared inbox and visual drag-and-drop chatbot builder interface"
                     className="w-full object-cover"
                   />
@@ -419,7 +422,7 @@ function SensyTalkCaseStudy() {
               <Reveal delay={100}>
                 <div className="overflow-hidden rounded-3xl border border-hairline bg-card shadow-soft">
                   <img
-                    src="/work/sensytalk-pricing.jpg"
+                    src={pricingImage.url}
                     alt="SensyTalk transparent pricing tiers with interactive dynamic ROI calculator"
                     className="w-full object-cover"
                   />

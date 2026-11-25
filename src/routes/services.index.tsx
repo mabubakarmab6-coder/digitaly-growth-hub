@@ -1,12 +1,14 @@
 import { DymServiceHub } from "@/components/dym-next/DymPages";
 import {createFileRoute} from "@tanstack/react-router";
 import {ArrowRight} from "lucide-react";
-import photo from "@/assets/industry-manufacturing.jpg";
+import photoAsset from "@/assets/industry-manufacturing.webp.asset.json";
 import {SiteNav} from "@/components/site/SiteNav";
 import {SiteFooter} from "@/components/site/SiteFooter";
 import {GlobalFloatingCta} from "@/components/site/GlobalFloatingCta";
 import {Cta} from "@/components/site/Cta";
 import {INQUIRY_PATH} from "@/components/site/constants";
+
+const photo = photoAsset.url;
 const offerings=[
  {title:"Website & E-commerce Development",href:"/services/web-creation",description:"Creation, redevelopment and redesign of useful, persuasive websites."},
  {title:"E-commerce & Marketplace Growth",href:"/services/ecommerce-marketplace-growth",description:"Catalogue, storefront, seller operations and marketplace performance."},
@@ -21,7 +23,7 @@ const url="https://digitalymarket.com/services";
 export const Route=createFileRoute("/services/")({
  component:Page,
  head:()=>({
- meta:[{title},{name:"description",content:description},{property:"og:title",content:title},{property:"og:description",content:description},{property:"og:url",content:url},{name:"twitter:card",content:"summary_large_image"}],
+ meta:[{title},{name:"description",content:description},{property:"og:title",content:title},{property:"og:description",content:description},{property:"og:type",content:"website"},{property:"og:url",content:url},{name:"twitter:card",content:"summary_large_image"}],
  links:[{rel:"canonical",href:url}],
  scripts:[{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"ItemList",itemListElement:offerings.map((s,i)=>({"@type":"ListItem",position:i+1,name:s.title,url:"https://digitalymarket.com"+s.href}))})}]
  })});

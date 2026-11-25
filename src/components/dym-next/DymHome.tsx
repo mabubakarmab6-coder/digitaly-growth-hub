@@ -1,23 +1,16 @@
+import { editorialImages as PHOTO } from "@/data/editorial-images";
 import { useState } from "react";
 import { ArrowRight, ChartNoAxesColumnIncreasing, Layers, Megaphone, Search, ShieldCheck, Target, TrendingUp, Users, PanelsTopLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { homepageServices, homepageWork } from "@/data/homepage";
-import founderSeated from "@/assets/founder-seated.jpg.asset.json";
+import founderSeated from "@/assets/founder-seated.webp.asset.json";
 import heroDesktop1672 from "@/assets/consultation_meeting_landscape_1672w.webp.asset.json";
 import heroDesktop1200 from "@/assets/consultation_meeting_landscape_1200w.webp.asset.json";
 import heroMobile1122 from "@/assets/consultation_meeting_portrait_1122w.webp.asset.json";
 import heroMobile800 from "@/assets/consultation_meeting_portrait_800w.webp.asset.json";
 import { DymShell,DymCta,dymServices } from "./DymShell";
 import { INQUIRY_PATH } from "@/components/site/constants";
-const PHOTO={
-  team:"https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1500&q=84",
-  commerce:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1500&q=84",
-  factory:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1500&q=84",
-  local:"https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1500&q=84",
-  gems:"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=84",
-  saas:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=84",
-  seo:"https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1400&q=84",
-};
+
 const audiences=[
   ["E-COMMERCE","E-commerce businesses","Stronger storefronts, product discovery, marketplace listings and customer journeys.","/industries/ecommerce",PHOTO.commerce,"Retail checkout"],
   ["MANUFACTURERS","Manufacturers","Communicate capabilities clearly and create better opportunities for buyer enquiries.","/industries/manufacturing-b2b",PHOTO.factory,"Industrial manufacturing context"],
