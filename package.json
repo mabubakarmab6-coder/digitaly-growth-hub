@@ -96,5 +96,8 @@
     "overrides": {
       "entities": "4.5.0"
     }
+  },
+  "overrides": {
+    "html-to-text": "9.0.5"
   }
 }
