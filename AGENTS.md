@@ -21,3 +21,4 @@
 - Serve website photography and approved logos through WebP asset pointers, keep shared editorial URLs in one data module, and retain PNG favicon/JPEG social-preview compatibility copies and original CDN pointers, because image optimization must preserve artwork and earlier deployments.
 
 - Retire article sections by deleting their route files and data and removing navigation, previews, and sitemap entries together, because removed articles must return real 404 responses without dangling links.
+- Apply heading capitalization in the global heading-only CSS rule, including nested accents and overrides of uppercase utilities, because dynamic headings must stay consistent without changing shared data, brands, or body copy.

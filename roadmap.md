@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Display all website headings in Title Case, preserve brand/acronym casing and non-heading text, and verify desktop/mobile without publishing (354 headings across 20 pages; five screen widths; enquiry opens; 14 regression checks pass).
+
 - [x] Remove all nine articles and the Insights section, clean navigation/homepage/sitemap references, and verify remaining pages and enquiries without publishing (10 URLs return 404; 14 tests pass; desktop/mobile menus and enquiry opening checked).
 
 - [x] Convert website PNG/JPG images to WebP, update every active reference, preserve favicon/social-preview compatibility, and verify image delivery and page layouts without publishing.

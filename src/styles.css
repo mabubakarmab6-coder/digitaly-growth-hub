@@ -4,6 +4,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Headings use word-initial capitals without lowercasing brands or acronyms.
+ * Override uppercase utilities and inherited section styles, including nested accents. */
+:is(h1, h2, h3, h4, h5, h6),
+:is(h1, h2, h3, h4, h5, h6) * {
+  text-transform: capitalize !important;
+}
+
 /*
  * Design system definition.
  *
