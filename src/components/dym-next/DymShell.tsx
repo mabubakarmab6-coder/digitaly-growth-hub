@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { BrandLogo } from "@/components/site/BrandLogo";
 import { GlobalFloatingCta } from "@/components/site/GlobalFloatingCta";
 import { CONTACT_EMAIL, INQUIRY_PATH, INSTAGRAM_URL, LINKEDIN_URL } from "@/components/site/constants";
@@ -48,10 +48,14 @@ export function DymHeader(){
       <a href="/" className="dm-brand" aria-label="DigitalyMarket homepage"><BrandLogo placement="header"/></a>
       <button className="dm-menu-toggle" aria-expanded={mobile} aria-controls="dm-main-menu" aria-label={mobile?"Close navigation menu":"Open navigation menu"} onClick={()=>{setMobile(v=>!v);setExpanded(null)}} type="button">{mobile?"✕":"☰"}</button>
       <nav className={"dm-nav-links"+(mobile?" open":"")} id="dm-main-menu" aria-label="Main navigation">
-        {navigation.map(item=><div key={item.title} className={"dm-nav-group"+(expanded===item.title?" expanded":"")} onMouseEnter={()=>{if(typeof window!=="undefined"&&window.innerWidth>1100)setExpanded(item.children.length?item.title:null)}} onMouseLeave={()=>{if(typeof window!=="undefined"&&window.innerWidth>1100)setExpanded(null)}}>
-          <a href={item.path} className="dm-nav-parent" onClick={()=>{setMobile(false);setExpanded(null)}}>{item.title}</a>
+        {navigation.map(item=><div key={item.title} className={"dm-nav-group"+(expanded===item.title?" expanded":"")} onMouseEnter={()=>{if(window.matchMedia("(hover: hover) and (pointer: fine)").matches)setExpanded(item.children.length?item.title:null)}} onMouseLeave={()=>{if(window.matchMedia("(hover: hover) and (pointer: fine)").matches)setExpanded(null)}} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))setExpanded(null)}}>
+          <a href={item.path} className="dm-nav-parent"
+            aria-expanded={item.children.length>0?expanded===item.title:undefined}
+            aria-controls={item.children.length>0?"dm-submenu-"+item.title.toLowerCase():undefined}
+            onFocus={e=>{if(e.currentTarget.matches(":focus-visible"))setExpanded(item.children.length?item.title:null)}}
+            onKeyDown={e=>{if(e.key==="ArrowDown"&&item.children.length>0){e.preventDefault();setExpanded(item.title);const first=header.current?.querySelector<HTMLAnchorElement>("#dm-submenu-"+item.title.toLowerCase()+" a");requestAnimationFrame(()=>first?.focus())}}}
+            onClick={e=>{if(item.children.length>0&&(window.innerWidth<=1100||!window.matchMedia("(hover: hover) and (pointer: fine)").matches)&&expanded!==item.title){e.preventDefault();setExpanded(item.title);return;}setMobile(false);setExpanded(null)}}>{item.title}</a>
           {item.children.length>0&&<>
-            <Button variant="ghost" size="icon" className="dm-nav-subtoggle" type="button" aria-label={"Toggle "+item.title+" dropdown"} aria-expanded={expanded===item.title} aria-controls={"dm-submenu-"+item.title.toLowerCase()} onClick={()=>setExpanded(v=>v===item.title?null:item.title)} onKeyDown={e=>{if(e.key==="ArrowDown"){e.preventDefault();setExpanded(item.title);const first=header.current?.querySelector<HTMLAnchorElement>("#dm-submenu-"+item.title.toLowerCase()+" a");requestAnimationFrame(()=>first?.focus())}}}><ChevronDown aria-hidden="true"/></Button>
             <div className="dm-nav-submenu" id={"dm-submenu-"+item.title.toLowerCase()} role="group" aria-label={item.title+" links"}>{item.children.map(child=><a href={child.path} key={child.path} onClick={()=>{setMobile(false);setExpanded(null)}}>{child.title}</a>)}</div>
           </>}
         </div>)}

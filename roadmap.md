@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Remove separate header dropdown buttons; verify cursor-open menus, keyboard access, phone taps, and consultation opening without publishing (five widths, no overflow/runtime errors, 14 regression tests pass).
+
 - [x] Remove the Home dropdown and align shared navigation/consultation-button typography and styling; verify desktop/mobile without publishing (seven widths, direct Home navigation, Services dropdown, consultation dialog, 14 regression checks).
 
 - [x] Display all website headings in Title Case, preserve brand/acronym casing and non-heading text, and verify desktop/mobile without publishing (354 headings across 20 pages; five screen widths; enquiry opens; 14 regression checks pass).

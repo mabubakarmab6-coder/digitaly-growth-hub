@@ -157,17 +157,14 @@
 .dm-nav .dm-nav-links { font-size: 14px; font-weight: 600; line-height: 1.5; }
 .dm-nav .dm-nav-parent { color: var(--foreground); }
 .dm-nav .dm-nav-parent:hover { color: var(--primary); }
-.dm-nav .dm-nav-subtoggle { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 44px; padding: 0; color: var(--muted-foreground); border-radius: 6px; }
-.dm-nav .dm-nav-subtoggle svg { width: 14px; height: 14px; transition: transform .2s; }
-.dm-nav .dm-nav-subtoggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.dm-nav .dm-nav-parent { padding-inline: 10px; }
 .dm-nav .dm-nav-submenu { border-radius: 8px; }
 .dm-nav .dm-nav-submenu a { font-size: 13px; font-weight: 500; line-height: 1.5; }
 .dm-nav .dm-nav-links .dm-nav-cta { font-family: inherit; font-size: 13px; font-weight: 700; line-height: 1.5; letter-spacing: 0; min-height: 44px; height: auto; padding: 12px 18px; border-radius: 8px; box-shadow: none; background: var(--primary); color: var(--primary-foreground); }
 .dm-nav .dm-nav-links .dm-nav-cta:hover { background: color-mix(in oklab, var(--primary) 90%, var(--foreground)); transform: none; }
 .dm-nav a:focus-visible, .dm-nav button:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
 @media (max-width: 1100px) {
-  .dm-nav .dm-nav-subtoggle { width: 44px; }
-  .dm-nav .dm-nav-group > .dm-nav-parent:only-child { grid-column: 1 / -1; }
+  .dm-nav .dm-nav-group > .dm-nav-parent { grid-column: 1 / -1; }
 }
 .dm-home .dm-hero { background: var(--dm-home-navy); overflow: hidden; }
 .dm-home .dm-hero-main { width: 100%; max-width: 1920px; margin-inline: auto; grid-template-columns: minmax(0, .4fr) minmax(0, .6fr); gap: 0; min-height: 0; padding: 0; align-items: center; }

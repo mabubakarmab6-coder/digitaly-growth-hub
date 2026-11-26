@@ -22,4 +22,4 @@
 
 - Retire article sections by deleting their route files and data and removing navigation, previews, and sitemap entries together, because removed articles must return real 404 responses without dangling links.
 - Apply heading capitalization in the global heading-only CSS rule, including nested accents and overrides of uppercase utilities, because dynamic headings must stay consistent without changing shared data, brands, or body copy.
-- Style the shared header with global font/color tokens independently of its page shell and render submenu controls only for populated menus, because standalone case-study/privacy headers and homepage headers must remain consistent.
+- Style the shared header with global font/color tokens independently of its page shell; open populated menus from the parent link by pointer hover, keyboard focus, or first touch without separate dropdown buttons, because all headers must stay consistent and accessible.
