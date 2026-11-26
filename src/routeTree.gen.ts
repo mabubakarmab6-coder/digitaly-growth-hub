@@ -13,15 +13,12 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as DiagnosticDemoRouteImport } from './routes/diagnostic-demo'
 import { Route as FounderRouteImport } from './routes/founder'
-import { Route as InsightsRouteImport } from './routes/insights'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as StartRouteImport } from './routes/start'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as IndustriesSlugRouteImport } from './routes/industries.$slug'
-import { Route as InsightsIndexRouteImport } from './routes/insights.index'
-import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as ServicesGEORouteImport } from './routes/services.GEO'
 import { Route as ServicesAnalyticsCroRouteImport } from './routes/services.analytics-cro'
@@ -55,11 +52,6 @@ const FounderRoute = FounderRouteImport.update({
   path: '/founder',
   getParentRoute: () => rootRouteImport,
 } as any)
-const InsightsRoute = InsightsRouteImport.update({
-  id: '/insights',
-  path: '/insights',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -89,16 +81,6 @@ const IndustriesSlugRoute = IndustriesSlugRouteImport.update({
   id: '/industries/$slug',
   path: '/industries/$slug',
   getParentRoute: () => rootRouteImport,
-} as any)
-const InsightsIndexRoute = InsightsIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => InsightsRoute,
-} as any)
-const InsightsSlugRoute = InsightsSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => InsightsRoute,
 } as any)
 const ServicesIndexRoute = ServicesIndexRouteImport.update({
   id: '/',
@@ -168,13 +150,11 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/diagnostic-demo': typeof DiagnosticDemoRoute
   '/founder': typeof FounderRoute
-  '/insights': typeof InsightsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
-  '/insights/$slug': typeof InsightsSlugRoute
   '/services/GEO': typeof ServicesGEORoute
   '/services/analytics-cro': typeof ServicesAnalyticsCroRoute
   '/services/ecommerce-marketplace-growth': typeof ServicesEcommerceMarketplaceGrowthRoute
@@ -185,7 +165,6 @@ export interface FileRoutesByFullPath {
   '/work/SensyTalk': typeof WorkSensyTalkRoute
   '/work/gemstone-gallery': typeof WorkGemstoneGalleryRoute
   '/industries/': typeof IndustriesIndexRoute
-  '/insights/': typeof InsightsIndexRoute
   '/services/': typeof ServicesIndexRoute
   '/work/': typeof WorkIndexRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -199,7 +178,6 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
-  '/insights/$slug': typeof InsightsSlugRoute
   '/services/GEO': typeof ServicesGEORoute
   '/services/analytics-cro': typeof ServicesAnalyticsCroRoute
   '/services/ecommerce-marketplace-growth': typeof ServicesEcommerceMarketplaceGrowthRoute
@@ -210,7 +188,6 @@ export interface FileRoutesByTo {
   '/work/SensyTalk': typeof WorkSensyTalkRoute
   '/work/gemstone-gallery': typeof WorkGemstoneGalleryRoute
   '/industries': typeof IndustriesIndexRoute
-  '/insights': typeof InsightsIndexRoute
   '/services': typeof ServicesIndexRoute
   '/work': typeof WorkIndexRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -221,13 +198,11 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/diagnostic-demo': typeof DiagnosticDemoRoute
   '/founder': typeof FounderRoute
-  '/insights': typeof InsightsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/start': typeof StartRoute
   '/industries/$slug': typeof IndustriesSlugRoute
-  '/insights/$slug': typeof InsightsSlugRoute
   '/services/GEO': typeof ServicesGEORoute
   '/services/analytics-cro': typeof ServicesAnalyticsCroRoute
   '/services/ecommerce-marketplace-growth': typeof ServicesEcommerceMarketplaceGrowthRoute
@@ -238,7 +213,6 @@ export interface FileRoutesById {
   '/work/SensyTalk': typeof WorkSensyTalkRoute
   '/work/gemstone-gallery': typeof WorkGemstoneGalleryRoute
   '/industries/': typeof IndustriesIndexRoute
-  '/insights/': typeof InsightsIndexRoute
   '/services/': typeof ServicesIndexRoute
   '/work/': typeof WorkIndexRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -250,13 +224,11 @@ export interface FileRouteTypes {
     | '/about'
     | '/diagnostic-demo'
     | '/founder'
-    | '/insights'
     | '/privacy'
     | '/services'
     | '/sitemap.xml'
     | '/start'
     | '/industries/$slug'
-    | '/insights/$slug'
     | '/services/GEO'
     | '/services/analytics-cro'
     | '/services/ecommerce-marketplace-growth'
@@ -267,7 +239,6 @@ export interface FileRouteTypes {
     | '/work/SensyTalk'
     | '/work/gemstone-gallery'
     | '/industries/'
-    | '/insights/'
     | '/services/'
     | '/work/'
     | '/lovable/email/transactional/preview'
@@ -281,7 +252,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/start'
     | '/industries/$slug'
-    | '/insights/$slug'
     | '/services/GEO'
     | '/services/analytics-cro'
     | '/services/ecommerce-marketplace-growth'
@@ -292,7 +262,6 @@ export interface FileRouteTypes {
     | '/work/SensyTalk'
     | '/work/gemstone-gallery'
     | '/industries'
-    | '/insights'
     | '/services'
     | '/work'
     | '/lovable/email/transactional/preview'
@@ -302,13 +271,11 @@ export interface FileRouteTypes {
     | '/about'
     | '/diagnostic-demo'
     | '/founder'
-    | '/insights'
     | '/privacy'
     | '/services'
     | '/sitemap.xml'
     | '/start'
     | '/industries/$slug'
-    | '/insights/$slug'
     | '/services/GEO'
     | '/services/analytics-cro'
     | '/services/ecommerce-marketplace-growth'
@@ -319,7 +286,6 @@ export interface FileRouteTypes {
     | '/work/SensyTalk'
     | '/work/gemstone-gallery'
     | '/industries/'
-    | '/insights/'
     | '/services/'
     | '/work/'
     | '/lovable/email/transactional/preview'
@@ -330,7 +296,6 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   DiagnosticDemoRoute: typeof DiagnosticDemoRoute
   FounderRoute: typeof FounderRoute
-  InsightsRoute: typeof InsightsRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -374,13 +339,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FounderRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/insights': {
-      id: '/insights'
-      path: '/insights'
-      fullPath: '/insights'
-      preLoaderRoute: typeof InsightsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -422,20 +380,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/industries/$slug'
       preLoaderRoute: typeof IndustriesSlugRouteImport
       parentRoute: typeof rootRouteImport
-    }
-    '/insights/': {
-      id: '/insights/'
-      path: '/'
-      fullPath: '/insights/'
-      preLoaderRoute: typeof InsightsIndexRouteImport
-      parentRoute: typeof InsightsRoute
-    }
-    '/insights/$slug': {
-      id: '/insights/$slug'
-      path: '/$slug'
-      fullPath: '/insights/$slug'
-      preLoaderRoute: typeof InsightsSlugRouteImport
-      parentRoute: typeof InsightsRoute
     }
     '/services/': {
       id: '/services/'
@@ -524,20 +468,6 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface InsightsRouteChildren {
-  InsightsSlugRoute: typeof InsightsSlugRoute
-  InsightsIndexRoute: typeof InsightsIndexRoute
-}
-
-const InsightsRouteChildren: InsightsRouteChildren = {
-  InsightsSlugRoute: InsightsSlugRoute,
-  InsightsIndexRoute: InsightsIndexRoute,
-}
-
-const InsightsRouteWithChildren = InsightsRoute._addFileChildren(
-  InsightsRouteChildren,
-)
-
 interface ServicesRouteChildren {
   ServicesGEORoute: typeof ServicesGEORoute
   ServicesAnalyticsCroRoute: typeof ServicesAnalyticsCroRoute
@@ -568,7 +498,6 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   DiagnosticDemoRoute: DiagnosticDemoRoute,
   FounderRoute: FounderRoute,
-  InsightsRoute: InsightsRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,

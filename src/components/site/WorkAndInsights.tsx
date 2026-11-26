@@ -2,7 +2,6 @@ import fallbackImage from "@/assets/sensytalk-hero.webp.asset.json";
 import { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { blogPosts } from "@/data/blog";
 import { FEATURED_WORK_SLUG, workProjects } from "@/data/work";
 import { Link } from "@tanstack/react-router";
 import {
@@ -195,52 +194,6 @@ export function WorkAndInsights() {
         </div>
       </section>
 
-      <section id="insights" className="section-y border-t border-hairline bg-surface/60">
-        <div className="container-page">
-          <Reveal className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
-            <div className="max-w-2xl">
-              <p className="eyebrow">Insights</p>
-              <h2 className="mt-4 text-3xl leading-[1.15] font-semibold text-foreground sm:text-4xl lg:text-[2.75rem]">
-                Ideas for Businesses That Want to Grow.
-              </h2>
-            </div>
-            <Link
-              to="/insights"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
-            >
-              Explore Insights <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Reveal>
-
-          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {blogPosts.slice(0, 4).map((post, i) => (
-              <li key={post.slug}>
-                <Reveal
-                  delay={i * 80}
-                  className="h-full"
-                >
-                  <Link 
-                    to="/insights/$slug" 
-                    params={{ slug: post.slug }}
-                    className="flex h-full flex-col rounded-2xl border border-hairline bg-card p-7 transition-all duration-500 hover:-translate-y-1 hover:shadow-soft group"
-                  >
-                    <span className="text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
-                      Digital Marketing
-                    </span>
-                    <h3 className="mt-4 flex-1 text-base leading-snug font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {post.title}
-                    </h3>
-                    <span className="mt-6 text-xs font-medium tracking-wide text-muted-foreground flex items-center justify-between">
-                      {post.publishDate}
-                      <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </span>
-                  </Link>
-                </Reveal>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
     </>
   );
 }

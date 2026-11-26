@@ -29,7 +29,6 @@ const navigation:NavigationItem[]=[
   {title:"Services",path:"/services",children:serviceMenu},
   {title:"Industries",path:"/industries",children:[{title:"All industries",path:"/industries"},{title:"E-commerce businesses",path:"/industries/ecommerce"},{title:"Manufacturers",path:"/industries/manufacturing-b2b"},{title:"Local businesses",path:"/industries/local-business"},{title:"Professional services",path:"/industries/professional-services"}]},
   {title:"Work",path:"/work",children:[{title:"Selected work",path:"/work"},{title:"Gems Gallery",path:"/work/gemstone-gallery"},{title:"SensyTalk",path:"/work/SensyTalk"}]},
-  {title:"Insights",path:"/insights",children:[{title:"All insights",path:"/insights"},{title:"Digital marketing explained",path:"/insights/what-is-digital-marketing"},{title:"Search engine optimisation",path:"/insights/what-is-seo"}]},
   {title:"About",path:"/about",children:[{title:"About DigitalyMarket",path:"/about"},{title:"Meet the founder",path:"/founder"},{title:"Our methodology",path:"/#method"}]},
   {title:"Contact",path:INQUIRY_PATH,children:[{title:"Start a growth conversation",path:INQUIRY_PATH},{title:"Our approach",path:"/#method"},{title:"Frequently asked questions",path:"/#faq"}]},
 ];
@@ -64,7 +63,7 @@ export function DymFooter(){
   <div><a href="/" className="dm-footer-logo" aria-label="DigitalyMarket homepage"><BrandLogo/></a><p>DigitalyMarket is a business-first digital growth consultancy. Understand · Strategize · Grow.</p></div>
   <div><h4>Explore</h4><a href="/about">About</a><a href="/founder">Meet the founder</a><a href="/industries">Who we help</a><a href="/work">Selected work</a></div>
   <div><h4>Capabilities</h4>{dymServices.map(x=><a key={x[2]} href={x[2]}>{x[1]}</a>)}</div>
-  <div><h4>Connect</h4><a href={INQUIRY_PATH}>Start a conversation</a><a href="/insights">Insights</a><a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Instagram</a><a href="/privacy">Privacy policy</a></div>
+  <div><h4>Connect</h4><a href={INQUIRY_PATH}>Start a conversation</a><a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Instagram</a><a href="/privacy">Privacy policy</a></div>
  </div><div className="dm-footer-bottom"><span>© {new Date().getFullYear()} DigitalyMarket · Understand · Strategize · Grow.</span><span><a href="/sitemap.xml">Sitemap</a> · <a href="/privacy">Privacy</a></span></div></div></footer>;
 }
 export function DymCta(){

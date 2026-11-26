@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { industries } from "@/data/industries";
-import { blogPosts } from "@/data/blog";
 
 const BASE_URL = "https://digitalymarket.com";
 const LAST_MODIFIED = "2026-10-13";
@@ -30,12 +29,6 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/industries", changefreq: "weekly", priority: "0.9" },
           ...industries.map((industry) => ({
             path: `/industries/${industry.slug}`,
-            changefreq: "monthly" as const,
-            priority: "0.8",
-          })),
-          { path: "/insights", changefreq: "weekly", priority: "0.9" },
-          ...blogPosts.map((post) => ({
-            path: `/insights/${post.slug}`,
             changefreq: "monthly" as const,
             priority: "0.8",
           })),

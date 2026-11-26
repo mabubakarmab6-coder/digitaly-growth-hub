@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Remove all nine articles and the Insights section, clean navigation/homepage/sitemap references, and verify remaining pages and enquiries without publishing (10 URLs return 404; 14 tests pass; desktop/mobile menus and enquiry opening checked).
+
 - [x] Convert website PNG/JPG images to WebP, update every active reference, preserve favicon/social-preview compatibility, and verify image delivery and page layouts without publishing.
 
 - [x] Implement approved V5 preview scope, preserve three services/content/integrations, verify recovery, capture screenshots and deliver A–M report; not published.
